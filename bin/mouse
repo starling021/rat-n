@@ -1,0 +1,5 @@
+#! /bin/bash
+
+cd
+cd mouse
+python mouse.py
