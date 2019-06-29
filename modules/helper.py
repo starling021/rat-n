@@ -6,17 +6,17 @@ import socket
 
 WINDOWS = sys.platform.startswith('win')
 #colors
-GREEN = '' if WINDOWS else '\033[1;33m'
+GREEN = '' if WINDOWS else '\033[0;33m'
 RED = '' if WINDOWS else '\033[1;91m'
 WHITE = '' if WINDOWS else '\033[0;97m'
-GREEN_THIN = '' if WINDOWS else '\033[1;33m'
+GREEN_THIN = '' if WINDOWS else '\033[0;33m'
 CYAN = '' if WINDOWS else '\033[0;96m'
 YELLOW = '' if WINDOWS else '\033[0;93m'
 ENDC = '' if WINDOWS else '\033[0m'
 UNDERLINE_GREEN = '' if WINDOWS else '\033[4;92m'
 WHITEBU = '' if WINDOWS else '\033[1;4m'
 COLOR_INFO = '' if WINDOWS else '\033[0;36m'
-NES = ('SELECT' if WINDOWS else '\033[1;33m')+"Mouse"+WHITE+"("+GREEN_THIN+"console"+WHITE+")> "
+NES = ('SELECT' if WINDOWS else '\033[0;33m')+"Mouse"+WHITE+"("+GREEN_THIN+"console"+WHITE+")> "
 #cmds
 CMD_CLEAR = 'cls' if WINDOWS else 'clear'
 CMD_PWD = 'cd' if WINDOWS else 'pwd'
