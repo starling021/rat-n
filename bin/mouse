@@ -9,11 +9,13 @@
 	RS="-e \033[1;91m"
 #green start
 	GNS="-e \033[0;92m"
+#white start
+        WHS="\033[0;97m"
 
 if [[ "$1" = "-u" || "$1" = "--update" ]]
 then
 sleep 1
-echo ""$BS"[*] "$CE"Installing update..."$CE""
+echo ""$BS"[*] "$WHS"Installing update..."$CE""
 {
 rm -r ~/mouse
 rm /bin/mouse
@@ -24,7 +26,7 @@ cd mouse
 chmod +x install.sh
 ./install.sh
 } &> /dev/null
-echo ""$GNS"[*] "$CE"Successfully updated..."$CE""
+echo ""$GNS"[*] "$WHS"Successfully updated..."$CE""
 sleep 1
 exit
 fi
