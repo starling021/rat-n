@@ -7,11 +7,7 @@ WHO="$( whoami )"
 
 if [[ "$WHO" != "root" ]]
 then
-sleep 1
-echo -e "$RSA"run it as"$CE" "$YSA"root"$CE"
-sleep 1
-echo -e "$RSA"or use"$CE" "$YSA"sudo"$CE"
-sleep 1
+    echo -e ""$RSA"[*]"$CEA" Errno [001] Can't get privilegies"
 exit
 fi
 
