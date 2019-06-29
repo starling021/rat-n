@@ -99,16 +99,7 @@ class mouse:
 
 
     def import_payloads(self):
-        path = "modules/payloads"
-        sys.path.append(path)
-        modules = dict()
-        for mod in os.listdir(path):
-            if mod == '__init__.py' or mod[-3:] != '.py':
-                continue
-            else:
-                m = __import__(mod[:-3]).payload()
-                modules[m.name] = m
-        return modules
+        
 
 
     def exit_menu(self):
