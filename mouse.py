@@ -5,6 +5,24 @@ import sys, os
 
 
 #banner
+
+def banner():
+    self.banner_text = h.WHITE+"""
+               _     __,..---""-._                 ';-,
+        ,    _/_),-"`             '-.                `\\
+       \|.-"`    -_)                 '.                ||
+       /`   a   ,                      \              .'/
+       '.___,__/                 .-'    \_        _.-'.'
+          |\  \      \         /`        _`""""""`_.-'
+             _/;--._, >        |   --.__/ `""""""`
+           (((-'  __//`'-......-;\      )
+                (((-'       __//  '--. /   Mouse/RAT
+                          (((-'    __//
+                                 (((-'
+"""+h.WHITE+"\nVersion: 1.6\nDeveloped by Entynetproject (Ivan Nikolsky)\n"+h.ENDC
+        self.main_menu_text = h.WHITE+"-"*40+"""
+        
+
 class mouse:
     def __init__(self):
         h.generate_keys()
@@ -78,10 +96,12 @@ class mouse:
 
 
     def exit_menu(self):
+        os.system("clear")
         exit()
 
 
     def choose_payload(self):
+        os.system("clear")
         print h.WHITE+"-"*40+h.ENDC
         print("")
         number_option = 1
