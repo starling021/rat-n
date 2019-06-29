@@ -27,7 +27,7 @@ class mouse:
                 (((-'       __//  '--. /   Mouse/RAT
                           (((-'    __//
                                  (((-'
-"""+h.WHITE+"\nVersion: 1.6\nDeveloped by Entynetproject (Ivan Nikolsky)\n"+h.ENDC
+"""+h.WHITE+"Version: 1.6\nDeveloped by Entynetproject (Ivan Nikolsky)\n"+h.ENDC
         self.main_menu_text = h.WHITE+"-"*40+"""
 
     """+h.GREEN_THIN+"""1"""+h.WHITE+""") Start Server
@@ -58,7 +58,7 @@ class mouse:
                 (((-'       __//  '--. /   Mouse/RAT
                           (((-'    __//
                                  (((-'
-"""+h.WHITE+"\nVersion: 1.6\nDeveloped by Entynetproject (Ivan Nikolsky)"+h.ENDC)
+"""+h.WHITE+"Version: 1.6\nDeveloped by Entynetproject (Ivan Nikolsky)"+h.ENDC)
         print(h.WHITE+"-"*40)
         print("")
         if not self.server.set_host_port():
@@ -80,7 +80,7 @@ class mouse:
                 (((-'       __//  '--. /   Mouse/RAT
                           (((-'    __//
                                  (((-'
-"""+h.WHITE+"\nVersion: 1.6\nDeveloped by Entynetproject (Ivan Nikolsky)"+h.ENDC)
+"""+h.WHITE+"Version: 1.6\nDeveloped by Entynetproject (Ivan Nikolsky)"+h.ENDC)
         print(h.WHITE+"-"*40)
         print("")
         if not self.server.set_host_port():
@@ -125,7 +125,7 @@ class mouse:
                 (((-'       __//  '--. /   Mouse/RAT
                           (((-'    __//
                                  (((-'
-"""+h.WHITE+"\nVersion: 1.6\nDeveloped by Entynetproject (Ivan Nikolsky)"+h.ENDC)
+"""+h.WHITE+"Version: 1.6\nDeveloped by Entynetproject (Ivan Nikolsky)"+h.ENDC)
         print(h.WHITE+"-"*40)
         print("")
         exit()
@@ -145,7 +145,7 @@ class mouse:
                 (((-'       __//  '--. /   Mouse/RAT
                           (((-'    __//
                                  (((-'
-"""+h.WHITE+"\nVersion: 1.6\nDeveloped by Entynetproject (Ivan Nikolsky)"+h.ENDC)
+"""+h.WHITE+"Version: 1.6\nDeveloped by Entynetproject (Ivan Nikolsky)"+h.ENDC)
         print(h.WHITE+"-"*40)
         print("")
         number_option = 1
