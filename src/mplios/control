@@ -1,0 +1,10 @@
+Package: com.entynetproject.py.mouse
+Name: Mouse Payload iOS
+Depends: 
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: Mouse iOS
+Maintainer: Entynetproject
+Author: Entynetproject
+Section: System
+Tag: role::hacker
