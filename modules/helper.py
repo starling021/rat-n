@@ -16,7 +16,7 @@ ENDC = '' if WINDOWS else '\033[0m'
 UNDERLINE_GREEN = '' if WINDOWS else '\033[4;92m'
 WHITEBU = '' if WINDOWS else '\033[1;4m'
 COLOR_INFO = '' if WINDOWS else '\033[0;36m'
-NES = ('SELECT' if WINDOWS else '\033[0;32m')+"mouse"+WHITE+"> "
+NES = ('SELECT' if WINDOWS else '\033[1;33m')+"Mouse"+WHITE+"("+GREEN_THIN+"console"+WHITE+")> "
 #cmds
 CMD_CLEAR = 'cls' if WINDOWS else 'clear'
 CMD_PWD = 'cd' if WINDOWS else 'pwd'
