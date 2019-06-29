@@ -35,3 +35,8 @@ cp bin/mouse /bin
 chmod +x /bin/mouse
 } &> /dev/null
 fi
+
+if [[ -d /System/Library/CoreServices/SpringBoard.app ]]
+then
+uicache -r
+fi
