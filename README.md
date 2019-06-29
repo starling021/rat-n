@@ -55,6 +55,8 @@
     INFO: Entynet PI is a development board that can be programmed 
     with the Arduino ide. It emulates usb keyboard strokes extremely 
     fast and can inject the Mouse payload just in a few seconds.
+    
+You can buy Entynet PI here: [Entynet PI](http://entynetproject.simplesite.com/441030055)
 
 ![i284008264539754632 _szw1280h1280_](https://user-images.githubusercontent.com/43011806/60388328-67582280-9ab8-11e9-9adc-f0248f31ac38.jpg)
 
