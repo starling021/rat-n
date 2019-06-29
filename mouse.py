@@ -6,7 +6,7 @@ import platform
 
 #banner
 
-SAS = platform.machine
+SAS='dev'
 
 class mouse:
     def __init__(self):
