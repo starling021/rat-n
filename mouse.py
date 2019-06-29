@@ -6,7 +6,7 @@ import sys, os
 
 #banner
 
-SAS = os.system("arch")
+SAS = 'x64'
 
 class mouse:
     def __init__(self):
