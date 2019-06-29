@@ -29,10 +29,10 @@ class mouse:
 """+h.WHITE+"\nVersion: 1.6\nDeveloped by Entynetproject (Ivan Nikolsky)\n"+h.ENDC
         self.main_menu_text = h.WHITE+"-"*40+"""
 
-    """+h.GREEN+"""1"""+h.WHITE+""") Start Server
-    """+h.GREEN+"""2"""+h.WHITE+""") Start MultiHandler
-    """+h.GREEN+"""3"""+h.WHITE+""") Create Payload
-    """+h.GREEN+"""0"""+h.WHITE+""") Exit
+    """+h.GREEN_THIN+"""1"""+h.WHITE+""") Start Server
+    """+h.GREEN_THIN+"""2"""+h.WHITE+""") Start MultiHandler
+    """+h.GREEN_THIN+"""3"""+h.WHITE+""") Create Payload
+    """+h.GREEN_THIN+"""0"""+h.WHITE+""") Exit
 
 """+h.NES
 
