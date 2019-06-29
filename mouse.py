@@ -41,22 +41,6 @@ class mouse:
     # Actions
     def print_payload(self,payload,number_option):
         print " " * 4 + str(number_option) + "): " + payload.name
-        
-    def banner():
-        self.banner_text = h.WHITE+"""
-               _     __,..---""-._                 ';-,
-        ,    _/_),-"`             '-.                `\\
-       \|.-"`    -_)                 '.                ||
-       /`   a   ,                      \              .'/
-       '.___,__/                 .-'    \_        _.-'.'
-          |\  \      \         /`        _`""""""`_.-'
-             _/;--._, >        |   --.__/ `""""""`
-           (((-'  __//`'-......-;\      )
-                (((-'       __//  '--. /   Mouse/RAT
-                          (((-'    __//
-                                 (((-'
-"""+h.WHITE+"\nVersion: 1.6\nDeveloped by Entynetproject (Ivan Nikolsky)\n"+h.ENDC
-        self.main_menu_text = h.WHITE+"-"*40
     
 
 
@@ -75,7 +59,7 @@ class mouse:
                           (((-'    __//
                                  (((-'
 """+h.WHITE+"\nVersion: 1.6\nDeveloped by Entynetproject (Ivan Nikolsky)\n"+h.ENDC
-        self.main_menu_text = h.WHITE+"-"*40
+        self.start_single_server = h.WHITE+"-"*40
         if not self.server.set_host_port():
             return
         self.server.start_single_handler()
@@ -96,7 +80,7 @@ class mouse:
                           (((-'    __//
                                  (((-'
 """+h.WHITE+"\nVersion: 1.6\nDeveloped by Entynetproject (Ivan Nikolsky)\n"+h.ENDC
-        self.main_menu_text = h.WHITE+"-"*40
+        self.start_multi_handler = h.WHITE+"-"*40
         if not self.server.set_host_port():
             return
         self.server.start_multi_handler()
@@ -140,7 +124,7 @@ class mouse:
                           (((-'    __//
                                  (((-'
 """+h.WHITE+"\nVersion: 1.6\nDeveloped by Entynetproject (Ivan Nikolsky)\n"+h.ENDC
-        self.main_menu_text = h.WHITE+"-"*40
+        self.exit_menu = h.WHITE+"-"*40
         exit()
 
 
@@ -159,7 +143,7 @@ class mouse:
                           (((-'    __//
                                  (((-'
 """+h.WHITE+"\nVersion: 1.6\nDeveloped by Entynetproject (Ivan Nikolsky)\n"+h.ENDC
-        self.main_menu_text = h.WHITE+"-"*40
+        self.choose_payload = h.WHITE+"-"*40
         number_option = 1
         for key in self.payloads:
             payload = self.payloads[key]
