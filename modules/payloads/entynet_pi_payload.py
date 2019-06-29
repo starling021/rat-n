@@ -3,7 +3,7 @@ import os, time
 
 class payload:
 	def __init__(self):
-		self.name = "Entynet PI"
+		self.name = "Entynet PI macOS"
 		self.description = "arduino payload that replicates keystrokes for shell script execution"
 		self.usage = "install via arduino"
 
