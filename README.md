@@ -14,8 +14,6 @@
 
 # About mouse
 
-![1](https://user-images.githubusercontent.com/43011806/60388760-a0939100-9abe-11e9-8456-a0abaad9892e.png)
-
     INFO: Most Often Useful Super Exploit (Mouse) is a post exploitation 
     surveillance tool written in Python, C and Objective-C. It gives you a command 
     line session with extra functionality between you and a target machine. Mouse 
@@ -43,34 +41,24 @@
 
 # Creating payloads
 
-![2](https://user-images.githubusercontent.com/43011806/60388758-a0939100-9abe-11e9-8695-9db9caabda3c.png)
-
     INFO: Mouse payloads are executed on the target machine. The payload first sends over 
     instructions for getting and sending back device details to our server and then chooses 
     the appropriate executable to establish a secure remote control session.
 
 ## Bourne-Again Shell payloads
 
-![6](https://user-images.githubusercontent.com/43011806/60388761-a12c2780-9abe-11e9-8a02-053d2807dffe.png)
-
     INFO: Selecting bash from the payload menu will give us a 1 liner that 
     establishes an eggshell session upon execution on the target machine.
     
 ## Entynet PI payload (USB injection)
 
-![3](https://user-images.githubusercontent.com/43011806/60388757-a0939100-9abe-11e9-8077-f00bf521c061.png)
-
     INFO: Entynet PI is a development board that can be programmed 
     with the Arduino ide. It emulates usb keyboard strokes extremely 
     fast and can inject the Mouse payload just in a few seconds.
     
-You can buy Entynet PI here: [Entynet PI](http://entynetproject.simplesite.com/441030055)
-
-![i284008264539754632 _szw1280h1280_](https://user-images.githubusercontent.com/43011806/60388328-67582280-9ab8-11e9-9adc-f0248f31ac38.jpg)
+You can buy Entynet PI here:  [Entynet PI](http://entynetproject.simplesite.com/441030055)
 
 # Interacting with a session
-
-![4](https://user-images.githubusercontent.com/43011806/60388759-a0939100-9abe-11e9-9be7-9b8fa902c762.png)
 
     INFO: After a session is established, we can execute commands 
     on that device through the Mouse command line interface. 
@@ -78,23 +66,17 @@ You can buy Entynet PI here: [Entynet PI](http://entynetproject.simplesite.com/4
     
 ## Taking pictures
 
-![pic](https://user-images.githubusercontent.com/43011806/60388763-a12c2780-9abe-11e9-8ba4-1a88bdd31b5d.png)
-
     INFO: Both iOS and macOS payloads have picture taking capability. 
     The picture command lets you take a picture from the iSight on 
     macOS as well as the front or back camera on iOS.
     
 ## Tab completion
 
-![help](https://user-images.githubusercontent.com/43011806/60388764-a12c2780-9abe-11e9-9c3d-da9a236bf67e.png)
-
     INFO: Similar to most command line interfaces, Mouse supports 
     tab completion. When you start typing the path to a directory or 
     filename, we can complete the rest of the path using the tab key.
 
 # Multihandler CLI
-
-![23](https://user-images.githubusercontent.com/43011806/60388762-a12c2780-9abe-11e9-96ff-b9f637f0bff0.png)
 
     INFO: The Multihandler option lets us handler multiple 
     sessions. We can choose to interact with different devices 
