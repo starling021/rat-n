@@ -6,9 +6,6 @@ import sys, os
 
 #banner
 
-
-        
-
 class mouse:
     def __init__(self):
         h.generate_keys()
@@ -46,7 +43,7 @@ class mouse:
         print " " * 4 + str(number_option) + "): " + payload.name
         
     def banner():
-    self.banner_text = h.WHITE+"""
+        self.banner_text = h.WHITE+"""
                _     __,..---""-._                 ';-,
         ,    _/_),-"`             '-.                `\\
        \|.-"`    -_)                 '.                ||
@@ -60,6 +57,7 @@ class mouse:
                                  (((-'
 """+h.WHITE+"\nVersion: 1.6\nDeveloped by Entynetproject (Ivan Nikolsky)\n"+h.ENDC
         self.main_menu_text = h.WHITE+"-"*40
+    
 
 
     def start_single_server(self):
