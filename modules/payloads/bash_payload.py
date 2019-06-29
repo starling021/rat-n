@@ -1,7 +1,7 @@
 from modules import helper as h
 class payload:
 	def __init__(self):
-		self.name = "bourne-again shell"
+		self.name = "Bourne-again shell"
 		self.description = "creates a bash payload"
 		self.usage = "run in terminal"
 
