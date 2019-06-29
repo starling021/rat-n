@@ -15,7 +15,6 @@ class mouse:
             self.server.debug = False
         self.payloads = self.import_payloads() 
         self.banner_text = h.WHITE+"""
-
                _     __,..---""-._                 ';-,
         ,    _/_),-"`             '-.                `\\
        \|.-"`    -_)                 '.                ||
@@ -28,12 +27,12 @@ class mouse:
                           (((-'    __//
                                  (((-'
 """+h.WHITE+"\nVersion: 1.6\nDeveloped by Entynetproject (Ivan Nikolsky)\n"+h.ENDC
-        self.main_menu_text = h.WHITE+"-"*40+"\n"+"""
+        self.main_menu_text = h.WHITE+"-"*40+"""
 
     """+h.GREEN+"""1"""+h.WHITE+""") Start Server
     """+h.GREEN+"""2"""+h.WHITE+""") Start MultiHandler
     """+h.GREEN+"""3"""+h.WHITE+""") Create Payload
-    """+h.GREEN+"""4"""+h.WHITE+""") Exit
+    """+h.GREEN+"""0"""+h.WHITE+""") Exit
 
 """+h.NES
 
@@ -126,21 +125,21 @@ class mouse:
                     "1" : self.start_single_server,
                     "2" : self.start_multi_handler,
                     "3" : self.choose_payload,
-                    "4" : self.exit_menu
+                    "0" : self.exit_menu
                 }
                 try:
                     choose[option]()
                     self.menu()
                 except KeyError:
                     if option:
-                        self.menu("Oops: " + option + " is not an option")
+                        self.menu()
                     else:
                         self.menu()
                 except KeyboardInterrupt:
                     continue
                     # TODO: quit socket listener
             except KeyboardInterrupt:
-                print "\nBye!"
+                
                 exit()
 
 
