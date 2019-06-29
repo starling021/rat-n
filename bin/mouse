@@ -8,7 +8,7 @@
 #red start
 	RS="-e \033[1;91m"
 #green start
-	GNS="-e \033[1;92m"
+	GNS="-e \033[0;92m"
 
 if [[ "$1" = "-u" || "$1" = "--update" ]]
 then
