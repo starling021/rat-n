@@ -3,7 +3,7 @@ import os, time
 
 class payload:
 	def __init__(self):
-		self.name = "Teensy macOS"
+		self.name = "Entynet PI macOS"
 		self.description = "arduino payload that replicates keystrokes for shell script execution"
 		self.usage = "install via arduino"
 
@@ -22,9 +22,9 @@ class payload:
 		shell_command += "history -wc;killall Terminal"
 		if os.path.exists("payloads") == False:
 			os.mkdir("payloads")
-		if os.path.exists("payloads/teensy_macos") == False:
-			os.mkdir("payloads/teensy_macos")
-		payload_save_path = "payloads/teensy_macos/teensy_macos.ino"
+		if os.path.exists("payloads/entynet_pi_macos") == False:
+			os.mkdir("payloads/entynet_pi_macos")
+		payload_save_path = "payloads/entynet_pi_macos/teensy_macos.ino"
 		payload = """\
 #include "Keyboard.h"
 const int LED = 13;
