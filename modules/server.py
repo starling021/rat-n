@@ -161,7 +161,7 @@ class Server:
 
         # identify device
         hostAddress = addr[0]
-        self.verbose_print("Connecting to "+hostAddress)
+        self.verbose_print("Connecting to "+hostAddress+"...")
         conn.send(identification_shell_command)
         device_arch = conn.recv(128).strip()
         if not device_arch:
@@ -172,14 +172,14 @@ class Server:
             bash_stager, executable = self.craft_payload(device_arch)
         except Exception as e:
             h.info_error(str(e))
-            raw_input("Press the enter key to continue")
+            raw_input("Press the enter key to continue...")
             return
-        self.verbose_print("Sending Payload")
+        self.verbose_print("Sending Payload...")
         self.debug_print(bash_stager.strip())
         conn.send(bash_stager)
 
         # send executable
-        self.debug_print("Sending Executable")
+        self.debug_print("Sending Executable...")
         conn.send(executable)
         conn.close()
         self.verbose_print("Establishing Secure Connection...")
