@@ -1,3 +1,5 @@
+# The Mouse helper
+# Colors, banner, etc.
 
 import sys
 import base64
@@ -16,7 +18,7 @@ ENDC = '' if WINDOWS else '\033[0m'
 UNDERLINE_GREEN = '' if WINDOWS else '\033[4;92m'
 WHITEBU = '' if WINDOWS else '\033[1;4m'
 COLOR_INFO = '' if WINDOWS else '\033[0;36m'
-NES = ('SELECT' if WINDOWS else '\033[0;33m')+"Mouse"+WHITE+"("+GREEN_THIN+"console"+WHITE+")> "
+NES = ('SELECT' if WINDOWS else '\033[0;33m')+""+WHITE+"("+GREEN_THIN+"mouse"+WHITE+"@"+GREEN_THIN+"RAT"+WHITE+")> "
 #cmds
 CMD_CLEAR = 'cls' if WINDOWS else 'clear'
 CMD_PWD = 'cd' if WINDOWS else 'pwd'
