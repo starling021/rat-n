@@ -27,7 +27,7 @@ class mouse:
                 (((-'       __//  '--. /   Mouse/RAT
                           (((-'    __//
                                  (((-'
-"""+h.WHITE+"Version: 1.6\nDeveloped by Entynetproject (Ivan Nikolsky)\n"+h.ENDC
+"""+h.WHITE+"Public Version: "+h.GREEN_THIN+"mouse-v1.6-dev"+h.WHITE+"\nDeveloped by Entynetproject (Ivan Nikolsky)\n"+h.ENDC
         self.main_menu_text = h.WHITE+"-"*40+"""
 
     """+h.GREEN_THIN+"""1"""+h.WHITE+""") Start Server
