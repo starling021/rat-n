@@ -1,25 +1,14 @@
 #! /bin/bash
 
-if [[ -d /System/Library/CoreServices/Finder.app ]]
-then
+
 #blue start 
-	BS="-e \033[1;34m"
+	BS="-e \033[0;96m"
 #color end
 	CE="\033[0m"
 #red start
-	RS="-e \033[31m"
+	RS="-e \033[1;91m"
 #green start
-	GNS="-e \033[1;32m"
-else
-#blue start 
-	BS="-e \e[1;34m"
-#color end
-	CE="\e[0m"
-#red start
-	RS="-e \e[0;31m"
-#green start
-	GNS="-e \e[1;32m"
-fi
+	GNS="-e \033[1;92m"
 
 if [[ "$1" = "-u" || "$1" = "--update" ]]
 then
