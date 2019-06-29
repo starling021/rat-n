@@ -20,7 +20,7 @@ def banner():
                           (((-'    __//
                                  (((-'
 """+h.WHITE+"\nVersion: 1.6\nDeveloped by Entynetproject (Ivan Nikolsky)\n"+h.ENDC
-        self.main_menu_text = h.WHITE+"-"*40+"""
+        self.main_menu_text = h.WHITE+"-"*40
         
 
 class mouse:
@@ -61,12 +61,16 @@ class mouse:
 
 
     def start_single_server(self):
+        os.system("clear")
+        banner()
         if not self.server.set_host_port():
             return
         self.server.start_single_handler()
 
 
     def start_multi_handler(self):
+        os.system("clear")
+        banner()
         if not self.server.set_host_port():
             return
         self.server.start_multi_handler()
@@ -97,13 +101,13 @@ class mouse:
 
     def exit_menu(self):
         os.system("clear")
+        banner()
         exit()
 
 
     def choose_payload(self):
         os.system("clear")
-        print h.WHITE+"-"*40+h.ENDC
-        print("")
+        banner()
         number_option = 1
         for key in self.payloads:
             payload = self.payloads[key]
