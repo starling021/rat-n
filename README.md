@@ -50,13 +50,13 @@
     INFO: Selecting bash from the payload menu will give us a 1 liner that 
     establishes an eggshell session upon execution on the target machine.
     
-## Teensy macOS payload (USB injection)
+## Entynet PI payload (USB injection)
 
-    INFO: Teensy is a USB development board that can be programmed 
+    INFO: Entynet PI is a development board that can be programmed 
     with the Arduino ide. It emulates usb keyboard strokes extremely 
     fast and can inject the Mouse payload just in a few seconds.
 
-![687474703a2f2f6c756361736a61636b736f6e2e696f2f696d616765732f6567677368656c6c2f7465656e73792e6a7067](https://user-images.githubusercontent.com/43011806/60386737-e42bd200-9aa1-11e9-89b4-1431e7bbd731.jpeg)
+![i284008264539754632 _szw1280h1280_](https://user-images.githubusercontent.com/43011806/60388328-67582280-9ab8-11e9-9adc-f0248f31ac38.jpg)
 
 # Interacting with a session
 
