@@ -83,7 +83,7 @@ class mouse:
 
     def choose_payload(self):
         print h.WHITE+"-"*40+h.ENDC
-        print "Payloads:\n"
+        print("")
         number_option = 1
         for key in self.payloads:
             payload = self.payloads[key]
