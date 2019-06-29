@@ -2,11 +2,11 @@
 from modules import server
 from modules import helper as h
 import sys, os
-
+import platform
 
 #banner
 
-SAS = 'x64'
+SAS = platform.machine
 
 class mouse:
     def __init__(self):
