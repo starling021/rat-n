@@ -2,6 +2,7 @@
 
 RSA="\033[1;31m"
 YSA="\033[1;93m"
+CEA="\033[0m"
 
 WHO="$( whoami )"
 
@@ -11,10 +12,12 @@ then
 exit
 fi
 
+{
 rm /bin/mouse
 rm /usr/local/bin/mouse
 cd
 rm -r mouse
+} &> /dev/null
 
 if [[ -d /System/Library/CoreServices/SpringBoard.app ]]
 then
