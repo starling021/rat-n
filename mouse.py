@@ -14,7 +14,7 @@ class mouse:
         else:
             self.server.debug = False
         self.payloads = self.import_payloads() 
-        self.banner_text = h.GREEN+"""
+        self.banner_text = h.WHITE+"""
 
                _     __,..---""-._                 ';-,
         ,    _/_),-"`             '-.                `\\
@@ -28,14 +28,14 @@ class mouse:
                           (((-'    __//
                                  (((-'
 """+h.WHITE+"\nVersion: 1.6\nDeveloped by Entynetproject (Ivan Nikolsky)\n"+h.ENDC
-        self.main_menu_text = h.WHITE+"-"*40+"\n"+"""Menu:\n
+        self.main_menu_text = h.WHITE+"-"*40+"\n"+"""
 
-    1) Start Server
-    2) Start MultiHandler
-    3) Create Payload
-    4) Exit
+    """+h.GREEN+"""1"""+h.WHITE+""") Start Server
+    """+h.GREEN+"""2"""+h.WHITE+""") Start MultiHandler
+    """+h.GREEN+"""3"""+h.WHITE+""") Create Payload
+    """+h.GREEN+"""4"""+h.WHITE+""") Exit
 
-""" + "\n"+h.NES
+"""+h.NES
 
 
     # Actions
