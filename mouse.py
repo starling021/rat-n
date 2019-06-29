@@ -59,7 +59,7 @@ class mouse:
                           (((-'    __//
                                  (((-'
 """+h.WHITE+"\nVersion: 1.6\nDeveloped by Entynetproject (Ivan Nikolsky)\n"+h.ENDC
-        self.start_single_server = h.WHITE+"-"*40
+        print(h.WHITE+"-"*40)
         if not self.server.set_host_port():
             return
         self.server.start_single_handler()
@@ -80,7 +80,7 @@ class mouse:
                           (((-'    __//
                                  (((-'
 """+h.WHITE+"\nVersion: 1.6\nDeveloped by Entynetproject (Ivan Nikolsky)\n"+h.ENDC
-        self.start_multi_handler = h.WHITE+"-"*40
+        print(h.WHITE+"-"*40)
         if not self.server.set_host_port():
             return
         self.server.start_multi_handler()
@@ -124,7 +124,7 @@ class mouse:
                           (((-'    __//
                                  (((-'
 """+h.WHITE+"\nVersion: 1.6\nDeveloped by Entynetproject (Ivan Nikolsky)\n"+h.ENDC
-        self.exit_menu = h.WHITE+"-"*40
+        print(h.WHITE+"-"*40)
         exit()
 
 
@@ -143,7 +143,7 @@ class mouse:
                           (((-'    __//
                                  (((-'
 """+h.WHITE+"\nVersion: 1.6\nDeveloped by Entynetproject (Ivan Nikolsky)\n"+h.ENDC
-        self.choose_payload = h.WHITE+"-"*40
+        print(h.WHITE+"-"*40)
         number_option = 1
         for key in self.payloads:
             payload = self.payloads[key]
