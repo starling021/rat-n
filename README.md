@@ -82,4 +82,79 @@
     sessions. We can choose to interact with different devices 
     while listening for new connections in the background.
 
+# Commands
+
+## macOS
+
+    brightness : adjust screen brightness
+    cd : change directory
+    download : download file
+    getfacebook : retrieve facebook session cookies
+    getpaste : get pasteboard contents
+    getvol : get speaker output volume
+    idletime : get the amount of time since the keyboard/cursor were touched
+    imessage : send message through the messages app
+    itunes : iTunes Controller
+    keyboard : your keyboard -> is target's keyboard
+    lazagne : firefox password retrieval
+    ls : list contents of a directory
+    mic : record mic
+    persistence : attempts to re establish connection after close
+    picture : take picture through iSight
+    pid : get process id
+    prompt : prompt user to type password
+    screenshot : take screenshot
+    setvol : set output volume
+    sleep : put device into sleep mode
+    su : su login
+    suspend : suspend current session (goes back to login screen)
+    upload : upload file
+
+## iOS
+
+    alert : make alert show up on device
+    battery : get battery level
+    bundleids : list bundle identifiers
+    cd : change directory
+    dhome : simulate a double home button press
+    dial : dial a phone number
+    download : download file
+    getcontacts : download addressbook
+    getnotes : download notes
+    getpasscode : retreive the device passcode
+    getsms : download SMS
+    getvol : get volume level
+    home : simulate a home button press
+    installpro : install substrate commands
+    ipod : control music player
+    islocked : check if the device is locked
+    lastapp : get last opened application
+    locate : get device location coordinates
+    locationservice: toggle location services
+    lock : simulate a lock button press
+    ls : list contents of a directory
+    mic : record mic
+    mute : update and view mute status
+    open : open apps
+    openurl : open url on device
+    persistence : attempts to re establish connection after close
+    picture : take picture through the front or back camera
+    pid : get process id
+    respring : restart springboard
+    safemode : put device into safe mode
+    say : text to speach
+    setvol : set device volume
+    sysinfo : view system information
+    upload : upload file
+    vibrate : vibrate device
+    
+## Linux
+
+    cd : change directory
+    download : download file
+    ls : list contents of a directory
+    pid : get process id
+    pwd : show current directory
+    upload : upload file
+
 # Thats all!
