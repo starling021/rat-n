@@ -46,7 +46,7 @@ class mouse:
 
     def start_single_server(self):
         os.system("clear")
-        self.banner_text = h.WHITE+"""
+        print(h.WHITE+"""
                _     __,..---""-._                 ';-,
         ,    _/_),-"`             '-.                `\\
        \|.-"`    -_)                 '.                ||
@@ -58,7 +58,7 @@ class mouse:
                 (((-'       __//  '--. /   Mouse/RAT
                           (((-'    __//
                                  (((-'
-"""+h.WHITE+"\nVersion: 1.6\nDeveloped by Entynetproject (Ivan Nikolsky)\n"+h.ENDC
+"""+h.WHITE+"\nVersion: 1.6\nDeveloped by Entynetproject (Ivan Nikolsky)\n"+h.ENDC)
         print(h.WHITE+"-"*40)
         if not self.server.set_host_port():
             return
@@ -67,7 +67,7 @@ class mouse:
 
     def start_multi_handler(self):
         os.system("clear")
-        self.banner_text = h.WHITE+"""
+        print(h.WHITE+"""
                _     __,..---""-._                 ';-,
         ,    _/_),-"`             '-.                `\\
        \|.-"`    -_)                 '.                ||
@@ -79,7 +79,7 @@ class mouse:
                 (((-'       __//  '--. /   Mouse/RAT
                           (((-'    __//
                                  (((-'
-"""+h.WHITE+"\nVersion: 1.6\nDeveloped by Entynetproject (Ivan Nikolsky)\n"+h.ENDC
+"""+h.WHITE+"\nVersion: 1.6\nDeveloped by Entynetproject (Ivan Nikolsky)\n"+h.ENDC)
         print(h.WHITE+"-"*40)
         if not self.server.set_host_port():
             return
@@ -111,7 +111,7 @@ class mouse:
 
     def exit_menu(self):
         os.system("clear")
-        self.banner_text = h.WHITE+"""
+        print(h.WHITE+"""
                _     __,..---""-._                 ';-,
         ,    _/_),-"`             '-.                `\\
        \|.-"`    -_)                 '.                ||
@@ -123,14 +123,14 @@ class mouse:
                 (((-'       __//  '--. /   Mouse/RAT
                           (((-'    __//
                                  (((-'
-"""+h.WHITE+"\nVersion: 1.6\nDeveloped by Entynetproject (Ivan Nikolsky)\n"+h.ENDC
+"""+h.WHITE+"\nVersion: 1.6\nDeveloped by Entynetproject (Ivan Nikolsky)\n"+h.ENDC)
         print(h.WHITE+"-"*40)
         exit()
 
 
     def choose_payload(self):
         os.system("clear")
-        self.banner_text = h.WHITE+"""
+        print(h.WHITE+"""
                _     __,..---""-._                 ';-,
         ,    _/_),-"`             '-.                `\\
        \|.-"`    -_)                 '.                ||
@@ -142,7 +142,7 @@ class mouse:
                 (((-'       __//  '--. /   Mouse/RAT
                           (((-'    __//
                                  (((-'
-"""+h.WHITE+"\nVersion: 1.6\nDeveloped by Entynetproject (Ivan Nikolsky)\n"+h.ENDC
+"""+h.WHITE+"\nVersion: 1.6\nDeveloped by Entynetproject (Ivan Nikolsky)\n"+h.ENDC)
         print(h.WHITE+"-"*40)
         number_option = 1
         for key in self.payloads:
