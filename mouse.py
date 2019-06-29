@@ -6,21 +6,7 @@ import sys, os
 
 #banner
 
-def banner():
-    self.banner_text = h.WHITE+"""
-               _     __,..---""-._                 ';-,
-        ,    _/_),-"`             '-.                `\\
-       \|.-"`    -_)                 '.                ||
-       /`   a   ,                      \              .'/
-       '.___,__/                 .-'    \_        _.-'.'
-          |\  \      \         /`        _`""""""`_.-'
-             _/;--._, >        |   --.__/ `""""""`
-           (((-'  __//`'-......-;\      )
-                (((-'       __//  '--. /   Mouse/RAT
-                          (((-'    __//
-                                 (((-'
-"""+h.WHITE+"\nVersion: 1.6\nDeveloped by Entynetproject (Ivan Nikolsky)\n"+h.ENDC
-        self.main_menu_text = h.WHITE+"-"*40
+
         
 
 class mouse:
@@ -58,6 +44,22 @@ class mouse:
     # Actions
     def print_payload(self,payload,number_option):
         print " " * 4 + str(number_option) + "): " + payload.name
+        
+    def banner():
+    self.banner_text = h.WHITE+"""
+               _     __,..---""-._                 ';-,
+        ,    _/_),-"`             '-.                `\\
+       \|.-"`    -_)                 '.                ||
+       /`   a   ,                      \              .'/
+       '.___,__/                 .-'    \_        _.-'.'
+          |\  \      \         /`        _`""""""`_.-'
+             _/;--._, >        |   --.__/ `""""""`
+           (((-'  __//`'-......-;\      )
+                (((-'       __//  '--. /   Mouse/RAT
+                          (((-'    __//
+                                 (((-'
+"""+h.WHITE+"\nVersion: 1.6\nDeveloped by Entynetproject (Ivan Nikolsky)\n"+h.ENDC
+        self.main_menu_text = h.WHITE+"-"*40
 
 
     def start_single_server(self):
