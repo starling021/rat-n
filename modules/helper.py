@@ -77,7 +77,7 @@ def find_longest_common_prefix(values):
 
 
 def generate_keys():
-    print (CYAN+"[*]"+ENDC+" Initializing server...")
+    print (CYAN+"[*]"+WHITE+" Initializing server...")
     if not os.path.exists(".keys"):
         os.makedirs(".keys")
     os.system(
