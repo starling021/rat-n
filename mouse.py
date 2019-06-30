@@ -32,12 +32,11 @@ class mouse:
 """+h.WHITE+"Public Version: "+h.GREEN_THIN+"mouse-v1.6-"+SAS+h.WHITE+"\nDeveloped by Entynetproject (Ivan Nikolsky)\n"+h.ENDC
         self.main_menu_text = h.WHITE+"-"*40
 
-    print(h.GREEN_THIN+"1"+h.WHITE+") Start Server")
-    print(h.GREEN_THIN+"2"+h.WHITE+") Start MultiHandler")
-    print(h.GREEN_THIN+"3"+h.WHITE+") Create Payload")
-    print(h.GREEN_THIN+"0"+h.WHITE+") Exit")
-    print(h.NES)
-
+        print(h.GREEN_THIN+"1"+h.WHITE+") Start Server")
+        print(h.GREEN_THIN+"2"+h.WHITE+") Start MultiHandler")
+        print(h.GREEN_THIN+"3"+h.WHITE+") Create Payload")
+        print(h.GREEN_THIN+"0"+h.WHITE+") Exit")
+        print(h.NES)
 
     # Actions
     def print_payload(self,payload,number_option):
