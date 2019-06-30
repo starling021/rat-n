@@ -4,7 +4,7 @@ import json
 class command:
     def __init__(self):
         self.name = "cd"
-        self.description = "change directory"
+        self.description = "Change directory."
     
     def run(self,session,cmd_data):
         result = json.loads(session.send_command(cmd_data))
