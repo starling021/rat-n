@@ -11,10 +11,10 @@ SAS='dev'
 def show_graphic():
     print(h.WHITE+"-"*40)
     print("")
-    print(h.GREEN_THIN+"1"+h.WHITE+") Start Server")
-    print(h.GREEN_THIN+"2"+h.WHITE+") Start MultiHandler")
-    print(h.GREEN_THIN+"3"+h.WHITE+") Create Payload")
-    print(h.GREEN_THIN+"0"+h.WHITE+") Exit")
+    print(h.GREEN_THIN+"    1"+h.WHITE+") Start Server")
+    print(h.GREEN_THIN+"    2"+h.WHITE+") Start MultiHandler")
+    print(h.GREEN_THIN+"    3"+h.WHITE+") Create Payload")
+    print(h.GREEN_THIN+"    0"+h.WHITE+") Exit")
     print("")
     
 class mouse:
