@@ -5,7 +5,7 @@ import modules.helper as h
 class command:
 	def __init__(self):
 		self.name = "getcontacts"
-		self.description = "download addressbook"
+		self.description = "Download addressbook."
 
 	def run(self,session,cmd_data):
 		file_name = "AddressBook.sqlitedb"
