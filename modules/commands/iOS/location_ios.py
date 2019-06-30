@@ -1,6 +1,6 @@
 class command:
     def __init__(self):
-        self.name = "locationservice"
+        self.name = "location"
         self.description = "toggle location services"
         self.usage = "Usage: locationservice on|off"
     
