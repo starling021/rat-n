@@ -119,7 +119,7 @@ class MultiHandler:
 			("sessions","list sessions"),
 			("exit","close all sessions and exit to menu"),
 		]
-		print h.WHITEBU+"MultiHandler Commands:"+h.ENDC
+		print h.WHITEBU+"MultiHandler Commands:"+h.WHITE
 		for command in commands:
 			self.show_command(command[0],command[1])
 
