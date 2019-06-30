@@ -58,18 +58,18 @@
     with the Arduino IDE. It emulates usb keyboard strokes extremely 
     fast and can inject the Mouse payload just in a few seconds.
     
-    Entynet PI developer: Entynetproject (Ivan Nikolsky)
+    Developer: Entynetproject (Ivan Nikolsky)
     
 You can buy Entynet PI here:  [Entynet PI](http://entynetproject.simplesite.com/441030055)
 
 ## Rubber Duck payload (USB injection)
 
-![duck3_760x](https://user-images.githubusercontent.com/43011806/60395770-19d3c800-9b41-11e9-828b-9b114a8d1b71.jpg)
+![duck5_600x](https://user-images.githubusercontent.com/43011806/60395718-71256880-9b40-11e9-8f39-44c522df1498.png)
 
     INFO: USB Rubber Duck is a development USB board that can inject 
     uploaded to duck SD card inject.bin payload in a few seconds!
     
-    USB Rubber Duck developer: hak5 (Darren Kitchen)
+    Developer: hak5 (Darren Kitchen)
     
 You can buy USB Rubber Duck here: [USB Rubber Duck](https://shop.hak5.org/products/usb-rubber-ducky-deluxe)
 
