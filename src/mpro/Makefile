@@ -1,6 +1,6 @@
 include $(THEOS)/makefiles/common.mk
 # sudo xcode-select /Applications/xcode7.2.1.app
-TWEAK_NAME = mpro
+TWEAK_NAME = 'Mouse Substrate'
 mpro_FILES = Tweak.xm
 mpro_PRIVATE_FRAMEWORKS = AppSupport
 include $(THEOS_MAKE_PATH)/tweak.mk
