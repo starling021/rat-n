@@ -57,8 +57,6 @@
     fast and can inject the Mouse payload just in a few seconds.
     
     Developer: Entynetproject (Ivan Nikolsky)
-    
-You can buy Entynet PI here:  [Entynet PI](http://entynetproject.simplesite.com/441030055)
 
 ## Rubber Duck payload (USB injection)
 
@@ -66,8 +64,6 @@ You can buy Entynet PI here:  [Entynet PI](http://entynetproject.simplesite.com/
     uploaded to duck SD card inject.bin payload in a few seconds!
     
     Developer: hak5 (Darren Kitchen)
-    
-You can buy USB Rubber Duck here: [USB Rubber Duck](https://shop.hak5.org/products/usb-rubber-ducky-deluxe)
 
 # Interacting with a session
 
