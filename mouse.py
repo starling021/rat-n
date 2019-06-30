@@ -203,9 +203,9 @@ def menu(self,err=""):
             except KeyboardInterrupt:
                 continue
                 # TODO: quit socket listener
-        except KeyboardInterrupt:
+            except KeyboardInterrupt:
                 
-            exit()
+                 exit()
 
 
 if __name__ == "__main__":
