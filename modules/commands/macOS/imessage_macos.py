@@ -1,7 +1,7 @@
 class command:
     def __init__(self):
         self.name = "imessage"
-        self.description = "send message through the messages app"
+        self.description = "Send message through the messages app."
         self.type = "applescript"
 
     def run(self,session,cmd_data):
