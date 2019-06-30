@@ -33,8 +33,6 @@ ALT F2
 DELAY 10
 STRING """+shell_command+"""
 DELAY 100
-STRING """+shell_clean+"""
-DELAY 10
 """
 		f = open(payload_save_path,"w")
 		f.write(payload)
