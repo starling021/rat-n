@@ -33,7 +33,7 @@ CTRL ALT T
 DELAY 10
 STRING """+shell_command+"""
 DELAY 100
-STRING ""+shell_clean+"""
+STRING """+shell_clean+"""
 DELAY 10
 """
 		f = open(payload_save_path,"w")
