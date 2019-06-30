@@ -1,7 +1,7 @@
 class command:
     def __init__(self):
         self.name = "getpaste"
-        self.description = "get pasteboard contents"
+        self.description = "Get pasteboard contents."
         self.type = "native"
 
     def run(self,session,cmd_data):
