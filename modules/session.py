@@ -11,6 +11,8 @@ try:
 except:
 	pass
 
+WHITE_C='\033[4;97m'
+
 class Session:
 	def __init__(self,server,conn,device_info):
 		self.server = server
@@ -78,7 +80,7 @@ class Session:
 		"""Interact with an active session"""
 		if self.needs_refresh:
 			return h.info_general_raw("Waiting for connection...")
-		return h.GREEN+ "[" + self.hostname + h.WHITE + "@" + h.GREEN + self.username + h.ENDC + " " + h.WHITE + self.current_directory + h.GREEN + "]" + h.WHITE + "$ " + h.ENDC
+		return h.GREEN+ "[" + self.hostname + h.WHITE + "@" + h.GREEN + self.username + h.ENDC + " " + WHITE_C + self.current_directory + h.GREEN + "]" + h.WHITE + "$ " + h.ENDC
 
 
 	def tab_complete(self, text, state):
