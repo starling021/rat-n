@@ -4,7 +4,7 @@ import modules.helper as h
 class command:
     def __init__(self):
         self.name = "picture"
-        self.description = "take picture through iSight"
+        self.description = "Take picture through iSight."
         self.type = "native"
 
     def run(self,session,cmd_data):
