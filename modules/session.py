@@ -145,13 +145,13 @@ class Session:
 
 
 	def show_commands(self):
-		print h.WHITEBU+"Local Commands:"+h.WHITE
+		print h.WHITEBU+"Local Commands:"+h.ENDC
 		names_local = self.server.modules_local.keys()
 		names_local.sort()
 		for key in names_local:
 			h.show_command(self.server.modules_local[key])
 
-		print "\n"+h.WHITEBU+"Device Commands:"+h.WHITE
+		print "\n"+h.WHITEBU+"Device Commands:"+h.ENDC
 		command_modules = self.server.get_modules(self.type)
 		names = command_modules.keys()
 		names.sort()
