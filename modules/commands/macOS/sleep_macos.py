@@ -1,7 +1,7 @@
 class command:
     def __init__(self):
         self.name = "sleep"
-        self.description = "put device into sleep mode"
+        self.description = "Put device into sleep mode."
 
     def run(self,session,cmd_data):
     	cmd_data["cmd"] = "osascript"
