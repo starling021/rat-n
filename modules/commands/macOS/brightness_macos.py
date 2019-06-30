@@ -1,8 +1,8 @@
 class command:
     def __init__(self):
         self.name = "brightness"
-        self.description = "adjust screen brightness"
-        self.usage = "Usage: brightness 0.x"
+        self.description = "Adjust screen brightness."
+        self.usage = "Usage: brightness <level: 0.0>"
         self.type = "native"
     
     def run(self,session,cmd_data):
