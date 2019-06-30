@@ -1,9 +1,9 @@
-Package: com.entynetproject.py.mousePRO
+Package: com.entynetproject.mouse
 Name: mousePRO
 Depends: mobilesubstrate
 Version: 0.0.1
 Architecture: iphoneos-arm
-Description: mousePRO
+Description: mouse/MPL
 Maintainer: Entynetproject
-Author: Ivan Nikolsky
+Author: Entynetproject
 Section: Tweaks
