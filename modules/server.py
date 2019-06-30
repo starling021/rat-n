@@ -41,8 +41,7 @@ class Server:
             result = self.modules_macos
         elif device_type == "iOS":
             result = self.modules_ios
-        return result
-        result.update(self.modules_universal)
+      
         
 
 
