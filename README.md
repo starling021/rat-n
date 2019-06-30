@@ -45,18 +45,35 @@
     instructions for getting and sending back device details to our server and then chooses 
     the appropriate executable to establish a secure remote control session.
 
-## Bourne-Again Shell payloads
+## Bourne-Again Shell payload
 
     INFO: Selecting bash from the payload menu will give us a 1 liner that 
     establishes a remote session upon execution on the target machine.
     
 ## Entynet PI payload (USB injection)
 
+   _      _      _      USB       _      _      _
+
+__(.)< __(.)> __(.)=   Rubber   >(.)__ <(.)__ =(.)__
+
+\___)  \___)  \___)    Ducky!    (___/  (___/  (___/ 
+
     INFO: Entynet PI is a development board that can be programmed 
     with the Arduino IDE. It emulates usb keyboard strokes extremely 
     fast and can inject the Mouse payload just in a few seconds.
     
+    Entynet PI developer: Entynetproject (Ivan Nikolsky)
+    
 You can buy Entynet PI here:  [Entynet PI](http://entynetproject.simplesite.com/441030055)
+
+## Rubber Duck (USB injection)
+
+    INFO: USB Rubber Duck is a development USB board that can inject 
+    uploaded to duck SD card inject.bin payload in a few seconds!
+    
+    USB Rubber Duck developer: hak5 (Darren Kitchen
+    
+You can buy USB Rubber Duck here: [USB Rubber Duck](https://shop.hak5.org/products/usb-rubber-ducky-deluxe)
 
 # Interacting with a session
 
