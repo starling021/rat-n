@@ -93,7 +93,7 @@ class MultiHandler:
 		try:
 			session = self.sessions_id[int(session_number)]
 			session.disconnect(False)
-			h.info_general('Closing session ' + session_number + '...')
+			h.info_general('Closing session ' + session_number)
 		except Exception as e:
 			print e
 			h.info_error("Invalid Session")
