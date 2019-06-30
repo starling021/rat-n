@@ -19,6 +19,8 @@
     you and a target machine. Mouse gives you the power and convenience of uploading/downloading 
     files, tab completion, taking pictures, location tracking, shell command execution, persistence, 
     escalating privileges, password retrieval, and much more.
+  
+***
     
 # Getting started
 
@@ -37,6 +39,8 @@
 > chmod +x install.sh
 
 > ./install.sh
+
+***
 
 # Creating payloads
 
@@ -63,6 +67,8 @@
     uploaded to duck SD card inject.bin payload in a few seconds!
     
     Developer: Hak5 (Darren Kitchen)
+    
+***
 
 # Interacting with a session
 
@@ -82,11 +88,15 @@
     tab completion. When you start typing the path to a directory or 
     filename, we can complete the rest of the path using the tab key.
 
+***
+
 # Multihandler CLI
 
     INFO: The Multihandler option lets us handler multiple 
     sessions. We can choose to interact with different devices 
     while listening for new connections in the background.
+    
+***
     
 # MPL commands
 
