@@ -41,6 +41,8 @@ class Server:
             result = self.modules_macos
         elif device_type == "iOS":
             result = self.modules_ios
+        result.update(self.modules_universal)
+        return result
 
     def set_host_port(self):
         try:
