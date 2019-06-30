@@ -155,7 +155,6 @@ class mouse:
         print(h.WHITE+"-"*40)
         print("")
         os.system("cd && cd mouse && chmod +x bin/mouse && bin/mouse -u")
-        os.system("cd && cd mouse && chmod +x bin/mouse && bin/mouse")
         
         
     def clean_downloads(self):
