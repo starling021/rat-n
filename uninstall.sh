@@ -19,8 +19,3 @@ rm /usr/local/bin/mouse
 cd
 rm -r mouse
 } &> /dev/null
-
-if [[ -d /System/Library/CoreServices/SpringBoard.app ]]
-then
-    uicache -r
-fi
