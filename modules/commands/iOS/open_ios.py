@@ -1,8 +1,8 @@
 class command:
     def __init__(self):
         self.name = "open"
-        self.description = "open apps"
-        self.usage = "Usage: open bundleid"
+        self.description = "Open application."
+        self.usage = "Usage: open <bundleid>"
     
     def run(self,session,cmd_data):
     	if not cmd_data['args']:
