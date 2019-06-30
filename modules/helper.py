@@ -38,11 +38,11 @@ def info_general_raw(string):
     
 
 def info_error(string):
-    print "{0}[*] {1}{2}".format(RED,WHITE,string)
+    print "{0}[-] {1}{2}".format(RED,WHITE,string)
 
 
 def info_warning(string):
-    print "{0}[*] {1}{2}".format(YELLOW,WHITE,string)
+    print "{0}[!] {1}{2}".format(YELLOW,WHITE,string)
 
 
 def show_command(mod):
