@@ -97,6 +97,15 @@
     while listening for new connections in the background.
     
 ***
+
+# Mouse Substrate (MPL Substrate)
+
+    INFO: This is a package that is installed on the victim's 
+    iOS device using the 'intall' command after receiving remote 
+    control. Mouse Substrate allows you to run substrate commands 
+    and services on a victim’s remote iOS device.
+
+***
     
 # MPL commands
 
@@ -142,7 +151,7 @@
     getsms         : Download SMS.
     getvol         : Get volume level.
     home           : Simulate a home button press.
-    install        : Install substrate commands.
+    install        : Install Mouse Substrate.
     ipod           : Control music player.
     islocked       : Check if the device is locked.
     lastapp        : Get last opened application.
