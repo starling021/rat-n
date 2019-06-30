@@ -125,7 +125,7 @@ You can buy Entynet PI here:  [Entynet PI](http://entynetproject.simplesite.com/
     getsms : download SMS
     getvol : get volume level
     home : simulate a home button press
-    installpro : install substrate commands
+    install : install substrate commands
     ipod : control music player
     islocked : check if the device is locked
     lastapp : get last opened application
