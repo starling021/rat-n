@@ -22,6 +22,7 @@ cp bin/mouse /usr/local/bin
 chmod +x /usr/local/bin/mouse
 cp bin/mouse /bin
 chmod +x /bin/mouse
+make
 } &> /dev/null
 else
 cd ~
