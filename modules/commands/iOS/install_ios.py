@@ -4,7 +4,7 @@ import re, os, time
 class command:
     def __init__(self):
         self.name = "install"
-        self.description = "install substrate commands"
+        self.description = "Install substrate commands."
     
     def run(self,session,cmd_data):
     	h.info_general("Uploading dylib 1/2...")
