@@ -30,11 +30,11 @@ def clear():
 
 
 def info_general(string):
-    print "{0}[*] {1}{2}".format(COLOR_INFO,WHITE,string)
+    print "{0}[*] {1}{2}".format(GREEN_THIN,WHITE,string)
 
 
 def info_general_raw(string):
-    return "{0}[*] {1}{2}".format(COLOR_INFO,WHITE,string)
+    return "{0}[*] {1}{2}".format(GREEN_THIN,WHITE,string)
     
 
 def info_error(string):
