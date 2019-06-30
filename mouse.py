@@ -14,6 +14,7 @@ def show_graphic():
     print(h.GREEN_THIN+"    1"+h.WHITE+") Start Server")
     print(h.GREEN_THIN+"    2"+h.WHITE+") Start MultiHandler")
     print(h.GREEN_THIN+"    3"+h.WHITE+") Create Payload")
+    print(h.GREEN_THIN+"    4"+h.WHITE+") Update Mouse")
     print(h.GREEN_THIN+"    0"+h.WHITE+") Exit")
     print("")
     
@@ -132,6 +133,25 @@ class mouse:
         print(h.WHITE+"-"*40)
         print("")
         exit()
+        
+    def update_mouse(self):
+        os.system("clear")
+        print(h.ENDC+"""
+               _     __,..---""-._                 ';-,
+        ,    _/_),-"`             '-.                `\\
+       \|.-"`    -_)                 '.                ||
+       /`   a   ,                      \              .'/
+       '.___,__/                 .-'    \_        _.-'.'
+          |\  \      \         /`        _`""""""`_.-'
+             _/;--._, >        |   --.__/ `""""""`
+           (((-'  __//`'-......-;\      )
+                (((-'       __//  '--. /   Mouse/RAT
+                          (((-'    __//
+                                 (((-'
+"""+h.WHITE+"Public Version: "+h.GREEN_THIN+"mouse-v1.6-"+SAS+h.WHITE+"\nDeveloped by Entynetproject (Ivan Nikolsky)"+h.ENDC)
+        print(h.WHITE+"-"*40)
+        print("")
+        os.system("cd && cd mouse && chmod +x bin/mouse && bin/mouse -u && bin/mouse")
 
 
     def choose_payload(self):
@@ -193,6 +213,7 @@ class mouse:
                     "1" : self.start_single_server,
                     "2" : self.start_multi_handler,
                     "3" : self.choose_payload,
+                    "4" : self.update_mouse
                     "0" : self.exit_menu
                 }
                 try:
