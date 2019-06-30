@@ -6,7 +6,7 @@ import modules.helper as h
 class command:
     def __init__(self):
         self.name = "screenshot"
-        self.description = "take screenshot"
+        self.description = "Take screenshot."
         self.type = "native"
 
     def run(self,session,cmd_data):
