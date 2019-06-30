@@ -1,5 +1,5 @@
 Package: com.entynetproject.mouse
-Name: mousePRO
+Name: mouse/MPL
 Depends: mobilesubstrate
 Version: 0.0.1
 Architecture: iphoneos-arm
