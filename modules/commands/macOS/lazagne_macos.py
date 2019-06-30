@@ -4,7 +4,7 @@ import os
 class command:
     def __init__(self):
         self.name = "lazagne"
-        self.description = "Firefox password retrieval | (https://github.com/AlessandroZ/LaZagne/wiki)."
+        self.description = "Firefox password retrieval."
         self.type = "custom"
     
     def run(self,session,cmd_data):
