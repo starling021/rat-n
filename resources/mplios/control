@@ -1,0 +1,10 @@
+Package: com.entynetproject.mouse
+Name: Mouse iOS
+Depends: 
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: mouse/MPL iOS
+Maintainer: Entynetproject
+Author: Entynetproject
+Section: System
+Tag: role::hacker
