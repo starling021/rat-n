@@ -102,6 +102,31 @@
 
 ## macOS
 
+    brightness     : Adjust screen brightness.
+    cd             : Change directory.
+    download       : Download file.
+    getfacebook    : Retrieve facebook session cookies.
+    getpaste       : Get pasteboard contents.
+    getvol         : Get speaker output volume.
+    idletime       : Get the amount of time since the keyboard/cursor were touched.
+    imessage       : Send message through the messages app.
+    itunes         : iTunes Controller.
+    keyboard       : Your keyboard -> is target's keyboard.
+    lazagne        : Firefox password retrieval.
+    ls             : List contents of a directory.
+    mic            : Record mic sound.
+    persistence    : Attempts to re establish connection after close.
+    picture        : Take picture through iSight.
+    pid            : Get MPL process ID.
+    prompt         : Prompt user to type password.
+    pwd            : Show current directory.
+    screenshot     : Take screenshot.
+    setvol         : Set output volume.
+    sleep          : Put device into sleep mode.
+    su             : Login as root.
+    suspend        : Suspend current session (goes back to login screen).
+    upload         : Upload local file.
+
 ## iOS
 
     alert          : Make alert show up on device.
