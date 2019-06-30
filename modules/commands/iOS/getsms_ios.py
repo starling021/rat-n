@@ -5,7 +5,7 @@ import modules.helper as h
 class command:
 	def __init__(self):
 		self.name = "getsms"
-		self.description = "download SMS"
+		self.description = "Download SMS."
 
 	def run(self,session,cmd_data):
 		file_name = "sms.db"
