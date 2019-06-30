@@ -1,5 +1,5 @@
 Package: com.entynetproject.mouse
-Name: Mouse
+Name: Mouse iOS
 Depends: 
 Version: 0.0.1
 Architecture: iphoneos-arm
