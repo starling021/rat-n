@@ -22,4 +22,4 @@ macos:
 	rm ../../resources/mplmacos;\
 	mv build/Release/mplmacos ../../resources/mplmacos
 
-all: ios macos iospro
+all: ios macos mpl
