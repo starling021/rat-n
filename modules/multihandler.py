@@ -1,6 +1,8 @@
 from modules import helper as h
 import threading, socket, time, sys
 
+DOJ='\033[1;34m[*]\033[0m'
+
 class MultiHandler:
 	def __init__(self,server):
 		self.server = server
@@ -38,7 +40,7 @@ class MultiHandler:
 						self.sessions_id[id_number] = session
 						session.id = id_number
 						id_number += 1
-						sys.stdout.write("\n{0}[*]"+h.WHITE+" Session {1} opened{2}\n{3}".format(h.CYAN,str(session.id),h.WHITE,self.handle))
+						sys.stdout.write("\n{0} Session {1} opened{2}\n{3}".format(DOJ,str(session.id),h.WHITE,self.handle))
 						sys.stdout.flush()
 			else:
 				return
@@ -91,7 +93,7 @@ class MultiHandler:
 		try:
 			session = self.sessions_id[int(session_number)]
 			session.disconnect(False)
-			h.info_general('Closing session ' + session_number)
+			h.info_general('Closing session ' + session_number + '...')
 		except Exception as e:
 			print e
 			h.info_error("Invalid Session")
