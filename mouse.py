@@ -36,7 +36,7 @@ print(h.GREEN_THIN+"1"+h.WHITE+") Start Server")
 print(h.GREEN_THIN+"2"+h.WHITE+") Start MultiHandler")
 print(h.GREEN_THIN+"3"+h.WHITE+") Create Payload")
 print(h.GREEN_THIN+"0"+h.WHITE+") Exit")
-      print(h.NES)
+print(h.NES)
       
 
     # Actions
