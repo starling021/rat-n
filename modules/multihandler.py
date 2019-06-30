@@ -7,7 +7,7 @@ class MultiHandler:
 		self.thread = None
 		self.sessions_id = dict()
 		self.sessions_uid = dict()
-		self.handle = h.WHITE+"("+h.RED + "MultiHandler" + h.WHITE + ")> "
+		self.handle = h.WHITE+"("+h.GREEN_THIN + "MultiHandler" + h.WHITE + ")> "
 		self.is_running = False
 
 
