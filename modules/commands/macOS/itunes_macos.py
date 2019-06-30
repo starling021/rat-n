@@ -1,7 +1,7 @@
 class command:
     def __init__(self):
         self.name = "itunes"
-        self.description = "iTunes Controller"
+        self.description = "iTunes Controller."
         self.type = "applescript"
 
     def run(self,session,cmd_data):
@@ -57,7 +57,7 @@ class command:
                 end timeout
         	end tell"""
         else:
-            print "Usage: itunes play|pause|next|prev|info|airplay"
+            print "Usage: itunes <play|pause|next|prev|info|airplay>"
             return
         cmd_data.update({"cmd":"applescript","args":payload})
         result = session.send_command(cmd_data)
