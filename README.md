@@ -62,9 +62,9 @@
     
 You can buy Entynet PI here:  [Entynet PI](http://entynetproject.simplesite.com/441030055)
 
-## Rubber Duck (USB injection)
+## Rubber Duck payload (USB injection)
 
-![duck5_600x](https://user-images.githubusercontent.com/43011806/60395718-71256880-9b40-11e9-8f39-44c522df1498.png)
+![physical-access-3_760x](https://user-images.githubusercontent.com/43011806/60395744-d5e0c300-9b40-11e9-8367-d8febcfe8b99.jpg)
 
     INFO: USB Rubber Duck is a development USB board that can inject 
     uploaded to duck SD card inject.bin payload in a few seconds!
