@@ -623,7 +623,7 @@ char* parseBinary(int* searchChars,int sizeOfSearch) {
 -(void)rocketMC:(NSString *)command {
     NSDictionary *userInfo = [NSDictionary dictionaryWithObject:command forKey:@"cmd"];
     if ([_messagingCenter sendMessageName:@"commandWithNoReply" userInfo:userInfo] == false) {
-        [self sendString:@"You dont have MousePro Extension"];
+        [self sendString:@"You don’t have MPL Extension"];
     }
     [self term];
 }
