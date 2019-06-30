@@ -26,7 +26,7 @@ class mouse:
         else:
             self.server.debug = False
         self.payloads = self.import_payloads() 
-        self.banner_text = h.WHITE+"""
+        self.banner_text = h.ENDC+"""
                _     __,..---""-._                 ';-,
         ,    _/_),-"`             '-.                `\\
        \|.-"`    -_)                 '.                ||
@@ -49,7 +49,7 @@ class mouse:
 
     def start_single_server(self):
         os.system("clear")
-        print(h.WHITE+"""
+        print(h.ENDC+"""
                _     __,..---""-._                 ';-,
         ,    _/_),-"`             '-.                `\\
        \|.-"`    -_)                 '.                ||
@@ -71,7 +71,7 @@ class mouse:
 
     def start_multi_handler(self):
         os.system("clear")
-        print(h.WHITE+"""
+        print(h.ENDC+"""
                _     __,..---""-._                 ';-,
         ,    _/_),-"`             '-.                `\\
        \|.-"`    -_)                 '.                ||
@@ -116,7 +116,7 @@ class mouse:
 
     def exit_menu(self):
         os.system("clear")
-        print(h.WHITE+"""
+        print(h.ENDC+"""
                _     __,..---""-._                 ';-,
         ,    _/_),-"`             '-.                `\\
        \|.-"`    -_)                 '.                ||
@@ -136,7 +136,7 @@ class mouse:
 
     def choose_payload(self):
         os.system("clear")
-        print(h.WHITE+"""
+        print(h.ENDC+"""
                _     __,..---""-._                 ';-,
         ,    _/_),-"`             '-.                `\\
        \|.-"`    -_)                 '.                ||
