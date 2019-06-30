@@ -39,7 +39,7 @@ class mouse:
           |\  \      \         /`        _`""""""`_.-'
              _/;--._, >        |   --.__/ `""""""`
            (((-'  __//`'-......-;\      )
-                (((-'       __//  '--. /   Mouse/RAT
+                (((-'       __//  '--. /   mouse/MPL
                           (((-'    __//
                                  (((-'
 """+h.WHITE+"Public Version: "+h.GREEN_THIN+"mouse-v1.6-"+SAS+h.WHITE+"\nDeveloped by Entynetproject (Ivan Nikolsky)\n"+h.ENDC
@@ -62,7 +62,7 @@ class mouse:
           |\  \      \         /`        _`""""""`_.-'
              _/;--._, >        |   --.__/ `""""""`
            (((-'  __//`'-......-;\      )
-                (((-'       __//  '--. /   Mouse/RAT
+                (((-'       __//  '--. /   mouse/MPL
                           (((-'    __//
                                  (((-'
 """+h.WHITE+"Public Version: "+h.GREEN_THIN+"mouse-v1.6-"+SAS+h.WHITE+"\nDeveloped by Entynetproject (Ivan Nikolsky)"+h.ENDC)
@@ -84,7 +84,7 @@ class mouse:
           |\  \      \         /`        _`""""""`_.-'
              _/;--._, >        |   --.__/ `""""""`
            (((-'  __//`'-......-;\      )
-                (((-'       __//  '--. /   Mouse/RAT
+                (((-'       __//  '--. /   mouse/MPL
                           (((-'    __//
                                  (((-'
 """+h.WHITE+"Public Version: "+h.GREEN_THIN+"mouse-v1.6-"+SAS+h.WHITE+"\nDeveloped by Entynetproject (Ivan Nikolsky)"+h.ENDC)
@@ -129,7 +129,7 @@ class mouse:
           |\  \      \         /`        _`""""""`_.-'
              _/;--._, >        |   --.__/ `""""""`
            (((-'  __//`'-......-;\      )
-                (((-'       __//  '--. /   Mouse/RAT
+                (((-'       __//  '--. /   mouse/MPL
                           (((-'    __//
                                  (((-'
 """+h.WHITE+"Public Version: "+h.GREEN_THIN+"mouse-v1.6-"+SAS+h.WHITE+"\nDeveloped by Entynetproject (Ivan Nikolsky)"+h.ENDC)
@@ -148,7 +148,7 @@ class mouse:
           |\  \      \         /`        _`""""""`_.-'
              _/;--._, >        |   --.__/ `""""""`
            (((-'  __//`'-......-;\      )
-                (((-'       __//  '--. /   Mouse/RAT
+                (((-'       __//  '--. /   mouse/MPL
                           (((-'    __//
                                  (((-'
 """+h.WHITE+"Public Version: "+h.GREEN_THIN+"mouse-v1.6-"+SAS+h.WHITE+"\nDeveloped by Entynetproject (Ivan Nikolsky)"+h.ENDC)
@@ -168,7 +168,7 @@ class mouse:
           |\  \      \         /`        _`""""""`_.-'
              _/;--._, >        |   --.__/ `""""""`
            (((-'  __//`'-......-;\      )
-                (((-'       __//  '--. /   Mouse/RAT
+                (((-'       __//  '--. /   mouse/MPL
                           (((-'    __//
                                  (((-'
 """+h.WHITE+"Public Version: "+h.GREEN_THIN+"mouse-v1.6-"+SAS+h.WHITE+"\nDeveloped by Entynetproject (Ivan Nikolsky)"+h.ENDC)
@@ -187,7 +187,7 @@ class mouse:
           |\  \      \         /`        _`""""""`_.-'
              _/;--._, >        |   --.__/ `""""""`
            (((-'  __//`'-......-;\      )
-                (((-'       __//  '--. /   Mouse/RAT
+                (((-'       __//  '--. /   mouse/MPL
                           (((-'    __//
                                  (((-'
 """+h.WHITE+"Public Version: "+h.GREEN_THIN+"mouse-v1.6-"+SAS+h.WHITE+"\nDeveloped by Entynetproject (Ivan Nikolsky)"+h.ENDC)
@@ -206,7 +206,7 @@ class mouse:
           |\  \      \         /`        _`""""""`_.-'
              _/;--._, >        |   --.__/ `""""""`
            (((-'  __//`'-......-;\      )
-                (((-'       __//  '--. /   Mouse/RAT
+                (((-'       __//  '--. /   mouse/MPL
                           (((-'    __//
                                  (((-'
 """+h.WHITE+"Public Version: "+h.GREEN_THIN+"mouse-v1.6-"+SAS+h.WHITE+"\nDeveloped by Entynetproject (Ivan Nikolsky)"+h.ENDC)
