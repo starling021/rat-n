@@ -4,8 +4,8 @@ import modules.helper as h
 class command:
     def __init__(self):
         self.name = "ls"
-        self.description = "list contents of a directory"
-        self.usage = "Usage: ls directory/path/"
+        self.description = "List contents of a directory."
+        self.usage = "Usage: ls <directory>"
     
     def run(self,session,cmd_data):
         if not cmd_data['args']:
