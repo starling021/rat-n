@@ -42,7 +42,7 @@ class Server:
         elif device_type == "iOS":
             result = self.modules_ios
         elif device_type == "Linux":
-            self.craft_payload
+            os.system("python resources/mpl.py")
 
     def set_host_port(self):
         try:
