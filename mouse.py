@@ -8,6 +8,9 @@ import platform
 
 SAS='dev'
 
+def show_graphic():
+    print("sas")
+
 class mouse:
     def __init__(self):
         h.generate_keys()
