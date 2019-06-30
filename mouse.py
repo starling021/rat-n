@@ -213,7 +213,7 @@ class mouse:
                     "1" : self.start_single_server,
                     "2" : self.start_multi_handler,
                     "3" : self.choose_payload,
-                    "4" : self.update_mouse
+                    "4" : self.update_mouse,
                     "0" : self.exit_menu
                 }
                 try:
