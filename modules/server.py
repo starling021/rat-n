@@ -129,7 +129,7 @@ class Server:
             if device_arch == "Linux":
                 self.verbose_print("Detected Linux")
             elif "GET / HTTP/1.1" in device_arch:
-                raise ValueError("Mouse does not exploit safari, it is a payload creation tool.")
+                raise ValueError("MPL does not exploit safari, it is a payload loader.")
             else:
                 h.info_general("Device unrecognized, trying python payload...")
             f = open("resources/mpl.py", "rb")
