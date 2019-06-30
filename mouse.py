@@ -39,7 +39,7 @@ class mouse:
                           (((-'    __//
                                  (((-'
 """+h.WHITE+"Public Version: "+h.GREEN_THIN+"mouse-v1.6-"+SAS+h.WHITE+"\nDeveloped by Entynetproject (Ivan Nikolsky)\n"+h.ENDC
-        self.main_menu_text = show_graphic()
+        
         
     # Actions
     def print_payload(self,payload,number_option):
