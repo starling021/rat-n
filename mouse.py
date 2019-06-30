@@ -188,7 +188,7 @@ class mouse:
                 if self.server.debug:
                     print "Debug On"
                 sys.stdout.write(self.banner_text)
-                option = raw_input(show_graphic)
+                option = raw_input(show_graphic())
                 choose = {
                     "1" : self.start_single_server,
                     "2" : self.start_multi_handler,
