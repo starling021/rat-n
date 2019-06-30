@@ -40,14 +40,14 @@ print(h.NES)
       
 
     # Actions
-    def print_payload(self,payload,number_option):
-        print (h.GREEN_THIN+" " * 4 + str(number_option) +h.WHITE+") "+ payload.name)
+def print_payload(self,payload,number_option):
+    print (h.GREEN_THIN+" " * 4 + str(number_option) +h.WHITE+") "+ payload.name)
     
 
 
-    def start_single_server(self):
-        os.system("clear")
-        print(h.WHITE+"""
+def start_single_server(self):
+    os.system("clear")
+    print(h.WHITE+"""
                _     __,..---""-._                 ';-,
         ,    _/_),-"`             '-.                `\\
        \|.-"`    -_)                 '.                ||
