@@ -166,13 +166,4 @@
     upload         : Upload local file.
     vibrate        : Vibrate device.
 
-## Linux
-
-    cd             : Change directory.
-    download       : Download file.
-    ls             : List contents of a directory.
-    pid            : Get process ID.
-    pwd            : Show current directory.
-    upload         : Upload local file.
-
 # Thats all!
