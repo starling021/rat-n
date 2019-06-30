@@ -63,7 +63,7 @@
     INFO: USB Rubber Duck is a development USB board that can inject 
     uploaded to duck SD card inject.bin payload in a few seconds!
     
-    Developer: hak5 (Darren Kitchen)
+    Developer: Hak5 (Darren Kitchen)
 
 # Interacting with a session
 
