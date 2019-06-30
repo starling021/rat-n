@@ -3,8 +3,8 @@ import modules.helper as h
 class command:
     def __init__(self):
         self.name = "persistence"
-        self.description = "attempts to re establish connection after close"
-        self.usage = "Usage: persistence install|uninstall"
+        self.description = "Attempts to re establish connection after close."
+        self.usage = "Usage: persistence <install|uninstall>"
 
     def run(self,session,cmd_data):
         if cmd_data['args'] == "install":
