@@ -1,8 +1,8 @@
 class command:
     def __init__(self):
         self.name = "dial"
-        self.description = "dial a phone number"
-        self.usage = "Usage: dial 1234567890"
+        self.description = "Dial a phone number."
+        self.usage = "Usage: dial <1234567890>"
     
     def run(self,session,cmd_data):
     	if not cmd_data['args']:
