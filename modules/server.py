@@ -43,7 +43,6 @@ class Server:
             result = self.modules_ios
         elif device_type == "Linux":
             result = self.modules_universal
-        result.update(self.modules_universal)
         return result
 
 
