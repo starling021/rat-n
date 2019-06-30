@@ -38,7 +38,7 @@ class MultiHandler:
 						self.sessions_id[id_number] = session
 						session.id = id_number
 						id_number += 1
-						sys.stdout.write("\n{0}[*] {1}{2} Session {1} opened{2}\n{3}".format(h.GREEN_THIN,str(session.id),h.WHITE,self.handle))
+						sys.stdout.write("\n{0}[*] Session {1} opened{2}\n{3}".format(h.CYAN,str(session.id),h.WHITE,self.handle))
 						sys.stdout.flush()
 			else:
 				return
