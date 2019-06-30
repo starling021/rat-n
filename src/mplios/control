@@ -1,4 +1,4 @@
-Package: com.entynetproject.py.mouse
+Package: com.entynetproject.mouse
 Name: Mouse Payload iOS
 Depends: 
 Version: 0.0.1
