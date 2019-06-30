@@ -78,7 +78,7 @@ class Session:
 		"""Interact with an active session"""
 		if self.needs_refresh:
 			return h.info_general_raw("Waiting for connection...")
-		return h.GREEN + self.hostname + ":" + h.UNDERLINE_GREEN + self.current_directory + h.ENDC + " " + h.GREEN + self.username + "> " + h.ENDC
+		return h.GREEN+ "[" + self.hostname + h.WHITE + "@" + h.GREEN + self.username + h.ENDC + " " + h.WHITE + self.current_directory + h.GREEN + "]" + h.WHITE + "$ " + h.ENDC
 
 
 	def tab_complete(self, text, state):
@@ -145,13 +145,13 @@ class Session:
 
 
 	def show_commands(self):
-		print h.WHITEBU+"Local Commands:"+h.ENDC
+		print h.WHITEBU+"Local Commands:"+h.WHITE
 		names_local = self.server.modules_local.keys()
 		names_local.sort()
 		for key in names_local:
 			h.show_command(self.server.modules_local[key])
 
-		print "\n"+h.WHITEBU+"Device Commands:"+h.ENDC
+		print "\n"+h.WHITEBU+"Device Commands:"+h.WHITE
 		command_modules = self.server.get_modules(self.type)
 		names = command_modules.keys()
 		names.sort()
@@ -231,7 +231,7 @@ class Session:
 	def disconnect(self,verbose):
 		self.conn.close()
 		if verbose:
-			h.info_general("Closing session")
+			h.info_general("Closing session...")
 			time.sleep(0.5)
 		if self.server.multihandler.is_running:
 			del self.server.multihandler.sessions_id[self.id]
