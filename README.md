@@ -52,11 +52,7 @@
     
 ## Entynet PI payload (USB injection)
 
-   _      _      _      USB       _      _      _
-
-__(.)< __(.)> __(.)=   Rubber   >(.)__ <(.)__ =(.)__
-
-\___)  \___)  \___)    Ducky!    (___/  (___/  (___/ 
+![i284008264539754632 _szw1280h1280_](https://user-images.githubusercontent.com/43011806/60395717-6ec30e80-9b40-11e9-94fc-e7b592a69af6.jpg)
 
     INFO: Entynet PI is a development board that can be programmed 
     with the Arduino IDE. It emulates usb keyboard strokes extremely 
@@ -67,6 +63,8 @@ __(.)< __(.)> __(.)=   Rubber   >(.)__ <(.)__ =(.)__
 You can buy Entynet PI here:  [Entynet PI](http://entynetproject.simplesite.com/441030055)
 
 ## Rubber Duck (USB injection)
+
+![duck5_600x](https://user-images.githubusercontent.com/43011806/60395718-71256880-9b40-11e9-8f39-44c522df1498.png)
 
     INFO: USB Rubber Duck is a development USB board that can inject 
     uploaded to duck SD card inject.bin payload in a few seconds!
