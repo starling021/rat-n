@@ -10,6 +10,7 @@ WHO="$( whoami )"
 if [[ "$WHO" != "root" ]]
 then
     echo -e ""$RSA"[*]"$WHS" Errno [001] Can't get privilegies"$CEA""
+    exit
 exit
 fi
 
