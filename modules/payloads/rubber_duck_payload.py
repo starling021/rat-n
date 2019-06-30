@@ -24,8 +24,8 @@ class payload:
 			        os.mkdir("payloads")
 		        if os.path.exists("payloads/rubber_duck") == False:
 			        os.mkdir("payloads/rubber_duck")
-		payload_save_path = "payloads/rubber_duck/payload.txt"
-		payload = """\
+		        payload_save_path = "payloads/rubber_duck/payload.txt"
+		        payload = """\
     DELAY 10
     CTRL ALT T
     DELAY 10
