@@ -7,10 +7,7 @@ import platform
 #banner
 
 SAS='dev'
-
-def show_graphic():
     
-
 class mouse:
     def __init__(self):
         h.generate_keys()
