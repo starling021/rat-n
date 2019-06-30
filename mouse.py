@@ -174,9 +174,7 @@ class mouse:
 """+h.WHITE+"Public Version: "+h.GREEN_THIN+"mouse-v1.6-"+SAS+h.WHITE+"\nDeveloped by Entynetproject (Ivan Nikolsky)"+h.ENDC)
         print(h.WHITE+"-"*40)
         print("")
-        os.system("cd && rm -r mouse/downloads")
-        print(h.CYAN+"[*]"+h.WHITE+" Cleaning up...")
-        time.sleep(10)
+        os.system("cd && cd mouse && chmod +x bin/mouse && bin/mouse -c downloads")
         
     def clean_payloads(self):
         os.system("clear")
@@ -195,9 +193,7 @@ class mouse:
 """+h.WHITE+"Public Version: "+h.GREEN_THIN+"mouse-v1.6-"+SAS+h.WHITE+"\nDeveloped by Entynetproject (Ivan Nikolsky)"+h.ENDC)
         print(h.WHITE+"-"*40)
         print("")
-        os.system("cd && rm -r mouse/payloads")
-        print(h.CYAN+"[*]"+h.WHITE+" Cleaning up...")
-        time.sleep(10)
+        os.system("cd && cd mouse && chmod +x bin/mouse && bin/mouse -c payloads")
 
     def choose_payload(self):
         os.system("clear")
