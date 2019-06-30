@@ -87,5 +87,50 @@
     INFO: The Multihandler option lets us handler multiple 
     sessions. We can choose to interact with different devices 
     while listening for new connections in the background.
+    
+# MPL commands
+
+## macOS
+
+## iOS
+
+    alert          : Make alert show up on device.
+    battery        : Get battery level.
+    bundleids      : List bundle identifiers.
+    cd             : Change directory.
+    dhome          : Simulate a double home button press.
+    dial           : Dial a phone number.
+    download       : Download file.
+    getcontacts    : Download addressbook.
+    getnotes       : Download notes.
+    getpasscode    : Retreive the device passcode.
+    getsms         : Download SMS.
+    getvol         : Get volume level.
+    home           : Simulate a home button press.
+    install        : Install substrate commands.
+    ipod           : Control music player.
+    islocked       : Check if the device is locked.
+    lastapp        : Get last opened application.
+    locate         : Get device location coordinates.
+    location       : Toggle location services.
+    lock           : Simulate a lock button press.
+    ls             : List contents of a directory.
+    mic            : Record mic sound.
+    mute           : Update and view mute status.
+    open           : Open application.
+    openurl        : Open URL on device.
+    persistence    : Attempts to re establish connection after close.
+    picture        : Take picture through iSight.
+    pid            : Get MPL process ID.
+    pwd            : Show current directory.
+    respring       : Restart SpringBoard.
+    safemode       : Put device into safe mode.
+    say            : Text to speach.
+    setvol         : Set device volume.
+    sysinfo        : View system information.
+    upload         : Upload local file.
+    vibrate        : Vibrate device.
+
+## Linux
 
 # Thats all!
