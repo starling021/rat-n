@@ -5,7 +5,7 @@ import sys
 import time
 import binascii
 import os
-import modules.helper as h
+import helper as h
 try:
 	import readline
 except:
