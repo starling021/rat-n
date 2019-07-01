@@ -117,7 +117,7 @@ class Server:
             return (instructions,payload)
         elif device_arch in self.ios_architectures:
             self.verbose_print("Detected iOS")
-    	    os.system("python ~/mouse/modules/commands/iOS/install_ios.py")
+    	    os.system("cd ~/mouse && python ~/mouse/modules/commands/iOS/install_ios.py")
             f = open("resources/mplios", "rb")
             payload = f.read()
             f.close()
