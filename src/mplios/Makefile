@@ -4,7 +4,7 @@ export TARGET_CODESIGN_FLAGS="-Ssign.plist"
 TOOL_NAME = mplios
 
 mplios_FILES = main.mm mpl.m
-mplios_OBJ_FILES = libcrypto.a libssl.a
+
 mplios_FRAMEWORKS = Foundation Security AudioToolbox CoreFoundation AVFoundation MediaPlayer UIKit
 mplios_PRIVATE_FRAMEWORKS = AppSupport SpringBoardServices IOSurface
 
