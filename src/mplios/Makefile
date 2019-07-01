@@ -4,3 +4,9 @@ TOOL_NAME = mplios
 
 mplios_FILES = main.mm mpl.m
 
+include ~/theos/makefiles/tool.mk
+
+export ARCHS = armv7 arm64
+
+CFLAGS = -Wall -g
+
