@@ -1,6 +1,6 @@
 include /Users/Enty8080/theos/makefiles/common.mk
 # sudo xcode-select /Applications/xcode7.2.1.app
-TWEAK_NAME = Mouse
+TWEAK_NAME = mpl
 mpl_FILES = Tweak.xm
 mpl_PRIVATE_FRAMEWORKS = AppSupport
 include /Users/Enty8080/theos/makefiles/tweak.mk
