@@ -3,6 +3,7 @@ ios:
 	rm -rf packages;\
 	make clean;\
 	make package;\
+	make -f Makefile --no-keep-going COLOR=1 --no-print-directory internal-tweak-all _THEOS_CURRENT_TYPE="tweak" THEOS_CURRENT_INSTANCE="mpl" _THEOS_CURRENT_OPERATION="all" THEOS_BUILD_DIR=".";\
 	dpkg -x packages/* new;\
 	mv new/usr/bin/mplios ../../resources/mplios
 
@@ -11,6 +12,7 @@ mpl:
 	rm -rf packages;\
 	make clean;\
 	make package;\
+	make -f Makefile --no-keep-going COLOR=1 --no-print-directory internal-tweak-all _THEOS_CURRENT_TYPE="tweak" THEOS_CURRENT_INSTANCE="mpl" _THEOS_CURRENT_OPERATION="all" THEOS_BUILD_DIR=".";\
 	dpkg -x packages/* new;\
 	mv new/Library/MobileSubstrate/DynamicLibraries/* ../../resources/;\
 	rm -rf new
