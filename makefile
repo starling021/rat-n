@@ -7,7 +7,7 @@ ios:
 	mv new/usr/bin/mplios ../../resources/mplios
 
 mpl:
-	cd src/mpro;\
+	cd src/mpl;\
 	rm -rf packages;\
 	make clean;\
 	make package;\
