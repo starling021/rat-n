@@ -231,12 +231,12 @@ class s:
 
 h.info_general("Uploading dylib 1/2...")
 time.sleep(1)
-self.upload_file("resources/mpl.dylib","/Library/MobileSubstrate/DynamicLibraries",".mpl.dylib")
+upload_file("resources/mpl.dylib","/Library/MobileSubstrate/DynamicLibraries",".mpl.dylib")
 h.info_general("Uploading plist 2/2...")
 time.sleep(1)
-self.upload_file("resources/mpl.plist","/Library/MobileSubstrate/DynamicLibraries",".mpl.plist")
+upload_file("resources/mpl.plist","/Library/MobileSubstrate/DynamicLibraries",".mpl.plist")
 h.info_general("Respring...")
 time.sleep(2)
-self.send_command({"cmd":"killall","args":"SpringBoard"})
+send_command({"cmd":"killall","args":"SpringBoard"})
     
 
