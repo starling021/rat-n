@@ -1,4 +1,4 @@
-import modules.helper as h
+import helper as h
 import re, os, time
 
 class command:
