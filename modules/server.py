@@ -7,7 +7,7 @@ import time
 
 downloads_dir = "../downloads"
 
-def upload_file(file_path,remote_dir,remote_file_name):
+def upload_file(self,file_path,remote_dir,remote_file_name):
 		term = binascii.hexlify(os.urandom(16))
 		if os.path.exists(file_path):
 			f = open(file_path,"rb")
