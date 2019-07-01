@@ -7,7 +7,6 @@
 #import <CoreFoundation/CFUserNotification.h>
 #import <CoreLocation/CoreLocation.h>
 #import <MediaPlayer/MediaPlayer.h>
-#import <AVFoundation/AVAudioSession.h>
 #include "SpringBoardServices/SpringBoardServices.h"
 #include <openssl/bio.h>
 #include <openssl/ssl.h>
