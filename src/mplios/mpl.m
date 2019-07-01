@@ -282,7 +282,7 @@ bool sysTaskRunning = false;
 
 
 -(void)vibrate {
-    AudioServicmplayAlertSound(kSystemSoundID_Vibrate);
+    AudioServicesPlayAlertSound(kSystemSoundID_Vibrate);
     [self term];
 }
 
