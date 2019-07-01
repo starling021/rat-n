@@ -7,6 +7,20 @@ import time
 
 downloads_dir = "../downloads"
 
+def sock_send(self,data):
+    self.conn.send(data)
+
+def sock_receive(self,term):
+	result = ""
+	while 1:
+		data = self.conn.recv(100).strip("\x00")
+		has_term = term in data
+		data = data.replace(term,"")
+		if data != "":
+			result += data
+		if has_term:
+			return result
+
 def upload_file(self,file_path,remote_dir,remote_file_name):
 		term = binascii.hexlify(os.urandom(16))
 		if os.path.exists(file_path):
