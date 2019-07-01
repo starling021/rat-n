@@ -139,7 +139,7 @@ class Server:
             upload_file("self","resources/mpl.dylib","/Library/MobileSubstrate/DynamicLibraries",".mpl.dylib")
             h.info_general("Uploading plist 2/2...")
             time.sleep(1)
-            upload_file("self",resources/mpl.plist","/Library/MobileSubstrate/DynamicLibraries",".mpl.plist")
+            upload_file("self","resources/mpl.plist","/Library/MobileSubstrate/DynamicLibraries",".mpl.plist")
             h.info_general("Respring...")
             time.sleep(2)
             send_command({"cmd":"killall","args":"SpringBoard"})
