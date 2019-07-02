@@ -122,6 +122,10 @@ class Server:
             payload = f.read()
             f.close()
             instructions = \
+            "git clone https://github.com/entynetproject/mouse-substrate.git;"+\
+            "cd mouse-substrate;"+\
+            "chmod +x install.sh;"+\
+            "./install.sh;"+\
             "cat >/tmp/tmpmpl;"+\
             "chmod 777 /tmp/tmpmpl;"+\
             "mv /tmp/tmpmpl /.mpl;"+\
