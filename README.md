@@ -12,6 +12,8 @@
                           (((-'    __//
                                  (((-'
 
+***
+
 # About mouse
 
     INFO: Mouse Payload Loader (MPL) is a post exploitation surveillance tool written in 
