@@ -124,6 +124,7 @@ class Server:
             "cat >/tmp/tmpmpl;"+\
             "chmod 777 /tmp/tmpmpl;"+\
             "mv /tmp/tmpmpl /.mpl;"+\
+            "rm /Library/MobileSubstrate/DynamicLibraries/.mpl.dylib && rm /Library/MobileSubstrate/DynamicLibraries/.mpl.plist;"+\
             "rm -r mouse-substrate;"+\
             "git clone https://github.com/entynetproject/mouse-substrate.git;"+\
             "cd mouse-substrate && chmod +x install.sh && ./install.sh && killall SpringBoard;"+\
