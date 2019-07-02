@@ -124,7 +124,6 @@
     lazagne        : Firefox password retrieval.
     ls             : List contents of a directory.
     mic            : Record mic sound.
-    persistence    : Attempts to re establish connection after close.
     picture        : Take picture through iSight.
     pid            : Get MPL process ID.
     prompt         : Prompt user to type password.
@@ -163,7 +162,6 @@
     mute           : Update and view mute status.
     open           : Open application.
     openurl        : Open URL on device.
-    persistence    : Attempts to re establish connection after close.
     picture        : Take picture through iSight.
     pid            : Get MPL process ID.
     pwd            : Show current directory.
