@@ -1,0 +1,3 @@
+#! /bin/bash
+
+clang ~/mouse/src/mplios/main.mm
