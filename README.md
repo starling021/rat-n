@@ -42,7 +42,7 @@
 
 ***
 
-# Creating payloads
+# Building payloads
 
     INFO: MPL payloads are executed on the target machine. The payload first sends over 
     instructions for getting and sending back device details to our server and then chooses 
