@@ -16,11 +16,11 @@
 
 # About mouse
 
-    INFO: Mouse Payload Loader (MPL) is a post exploitation surveillance tool written in 
-    Python, C and Objective-C. It gives you a command line session with extra functionality 
-    between you and a target machine with simple MPL payload. MPL gives you the power and 
-    convenience of uploading/downloading files, tab completion, taking pictures, location tracking, 
-    shell command execution, persistence, escalating privileges, password retrieval, and much more.
+    INFO: Mouse Payload Loader (MPL) is a post exploitation surveillance tool written 
+    in Python, C and Objective-C. It gives you a command line session with extra functionality 
+    between you and a target machine with simple MPL payload. MPL gives you the power and convenience 
+    of uploading/downloading files, tab completion, taking pictures, location tracking, shell command 
+    execution, persistence, escalating privileges, password retrieval, and much more.
   
 ***
     
@@ -102,9 +102,10 @@
 
 # Mouse Substrate (MPL Substrate)
 
-    INFO: This is a package that will be installed on the victim's iOS 
-    device after receiving remote control. Mouse Substrate allows you to 
-    run substrate commands and services on the victim’s remote iOS device.
+    INFO: Mouse Substrate (MPL Substrate) is a package that will 
+    be installed on the victim's iOS device after receiving remote 
+    control. Mouse Substrate allows you to run substrate commands 
+    and services on the victim’s remote iOS device.
 
 ***
     
