@@ -1,5 +1,3 @@
-***
-
 # Mouse Payload Loader (MPL)
 
                _     __,..---""-._                 ';-,
