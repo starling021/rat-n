@@ -3,7 +3,7 @@ Name: Mouse Substrate
 Depends: mobilesubstrate
 Version: 0.0.1
 Architecture: iphoneos-arm
-Description: mouse/MPL Substrate
+Description: Mouse Substrate (MPL Substrate)
 Maintainer: Entynetproject
 Author: Entynetproject
 Section: Tweaks
