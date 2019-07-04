@@ -2,7 +2,7 @@ class command:
     def __init__(self):
         self.name = "dial"
         self.description = "Dial a phone number."
-        self.usage = "Usage: dial <1234567890>"
+        self.usage = "Usage: dial <number>"
     
     def run(self,session,cmd_data):
     	if not cmd_data['args']:
