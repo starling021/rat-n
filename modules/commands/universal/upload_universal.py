@@ -5,7 +5,7 @@ class command:
     def __init__(self):
         self.name = "upload"
         self.description = "Upload local file."
-        self.usage = "Usage: upload <path/to/localfile> <upload/path>"
+        self.usage = "Usage: upload <filename> <path>"
     
     def run(self,session,cmd_data):
         if not cmd_data['args']:
