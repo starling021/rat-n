@@ -113,7 +113,6 @@
 
 ## macOS
 
-    brightness     : Adjust screen brightness.
     cd             : Change directory.
     download       : Download file.
     getfacebook    : Retrieve facebook session cookies.
@@ -131,6 +130,7 @@
     prompt         : Prompt user to type password.
     pwd            : Show current directory.
     screenshot     : Take screenshot.
+    setbright      : Set screen brightness.
     setvol         : Set output volume.
     sleep          : Put device into sleep mode.
     su             : Login as root.
