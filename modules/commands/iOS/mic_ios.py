@@ -26,7 +26,7 @@ class command:
                 f.close()
                 h.info_general("Saved to ./downloads/{0}".format(file_name))
             
-        elif cmd_data["args"] == "record":
+        elif cmd_data["args"] == "start":
             h.info_general(session.send_command(cmd_data))
         else:
-            print "Usage: mic <record|stop>"
+            print "Usage: mic [start|stop]"
