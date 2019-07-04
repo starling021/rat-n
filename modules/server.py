@@ -60,10 +60,10 @@ class Server:
                 try:
                     lport = int(lport)
                 except ValueError:
-                    h.info_general("invalid port, please enter a valid integer")
+                    h.info_error("Invalid port, please enter a valid integer")
                     continue
                 if lport < 1024:
-                    h.info_general("invalid port, please enter a value >= 1024")
+                    h.info_error("Invalid port, please enter a value >= 1024")
                     continue
                 break
             h.info_general("LPORT = " + str(lport))
