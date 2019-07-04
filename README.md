@@ -72,11 +72,10 @@
     
 ***
 
-# Interacting with a session
+# Mouse CLI
 
-    INFO: After a session is established, we can execute commands 
-    on that device through the MPL command line interface. 
-    We can show all the available commands by typing "help".
+    INFO: After a session is established, we can execute commands on that device 
+    through the Mouse CLI. We can show all available commands by typing "help".
     
 ## Taking pictures
 
@@ -92,7 +91,7 @@
 
 ***
 
-# Multihandler CLI
+# MultiHandler CLI
 
     INFO: The Multihandler option lets us handler multiple 
     sessions. We can choose to interact with different devices 
@@ -110,6 +109,10 @@
 ***
     
 # MPL commands
+
+    INFO: MPL commands are commands that allow you to control a remote device via 
+    Mouse CLI or via MultiHandler CLI. Each operating system of the remote device 
+    has its own set of commands. You can explore supported operating systems bellow.
 
 ## macOS
 
