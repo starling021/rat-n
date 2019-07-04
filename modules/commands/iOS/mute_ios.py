@@ -2,7 +2,7 @@ class command:
     def __init__(self):
         self.name = "mute"
         self.description = "Update and view mute status."
-        self.usage = "Usage: mute <status|on|off>"
+        self.usage = "Usage: mute [status|on|off]"
     
     def run(self,session,cmd_data):
        	if not cmd_data['args'] or not cmd_data['args'] in ['status','on','off']:
