@@ -2,7 +2,7 @@ class command:
     def __init__(self):
         self.name = "location"
         self.description = "Toggle location services."
-        self.usage = "Usage: location <on|off>"
+        self.usage = "Usage: location [on|off]"
     
     def run(self,session,cmd_data):
        	if not cmd_data['args'] or not cmd_data['args'] in ['on','off']:
