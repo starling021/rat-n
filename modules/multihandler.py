@@ -88,7 +88,7 @@ class MultiHandler:
 
 	def close_session(self,session_number):
 		if not session_number:
-			print "Usage: close (session number)"
+			print "Usage: close <session>"
 			return
 		try:
 			session = self.sessions_id[int(session_number)]
