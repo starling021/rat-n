@@ -29,9 +29,9 @@ class payload:
 		payload_save_path = "payloads/rubber_duck/payload.txt"
 		payload = """\
 DELAY 500
-ALT F2
+CMD SPACE
 DELAY 500
-STRING xterm
+STRING terminal
 DELAY 500
 ENTER
 DELAY 500
