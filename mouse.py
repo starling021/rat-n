@@ -96,10 +96,10 @@ class mouse:
 
 
     def prompt_run_server(self):
-        if raw_input(h.NES+"Start Server? (Y/n): ") == "n":
+        if raw_input(h.info_general+"Start Server? (Y/n): ") == "n":
             return
         else:
-            if raw_input(h.NES+"MultiHandler? (y/N): ") == "y":
+            if raw_input(h.info_general+"MultiHandler? (y/N): ") == "y":
                 self.server.start_multi_handler()
             else:
                 self.server.start_single_handler()
