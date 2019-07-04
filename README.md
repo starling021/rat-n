@@ -170,7 +170,7 @@
     respring       : Restart SpringBoard.
     safemode       : Put device into safe mode.
     say            : Text to speach.
-    setvol         : Set device volume.
+    setvol         : Set output volume.
     sysinfo        : View system information.
     upload         : Upload local file.
     vibrate        : Vibrate device.
