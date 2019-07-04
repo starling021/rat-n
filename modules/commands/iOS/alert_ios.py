@@ -1,5 +1,6 @@
 import base64
 import json
+import modules.helper as h
 
 class command:
     def __init__(self):
