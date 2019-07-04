@@ -1,7 +1,7 @@
 class command:
     def __init__(self):
         self.name = "suspend"
-        self.description = "Suspend current session (goes back to login screen)."
+        self.description = "Suspend current session."
 
     def run(self,session,cmd_data):
     	cmd_data["cmd"] = ";"
