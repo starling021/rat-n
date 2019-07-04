@@ -2,7 +2,7 @@ class command:
     def __init__(self):
         self.name = "setvol"
         self.description = "Set output volume."
-        self.usage = "Usage: setvol <level: 0.0>"
+        self.usage = "Usage: setvol <level: 0-1>"
     
     def run(self,session,cmd_data):
     	if not cmd_data['args']:
