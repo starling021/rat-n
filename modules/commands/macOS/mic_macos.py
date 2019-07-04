@@ -29,4 +29,4 @@ class command:
         elif cmd_data["args"] == "record":
             h.info_general(session.send_command(cmd_data))
         else:
-            print "Usage: mic <record|stop>"
+            print "Usage: mic [record|stop]"
