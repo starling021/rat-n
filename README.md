@@ -58,7 +58,7 @@
 ## Entynet PI payload (USB injection)
 
     INFO: Entynet PI is a development board that can be programmed 
-    with the Arduino IDE. It emulates usb keyboard strokes extremely 
+    with the Arduino IDE. It emulates USB keyboard strokes extremely 
     fast and can inject the MPL payload just in a few seconds.
     
     Developer: Entynetproject (Ivan Nikolsky)
