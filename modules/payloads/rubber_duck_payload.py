@@ -29,7 +29,7 @@ class payload:
 		payload_save_path = "payloads/rubber_duck/payload.txt"
 		payload = """\
 DELAY 500
-CMD SPACE
+COMMAND SPACE
 DELAY 500
 STRING terminal
 DELAY 500
