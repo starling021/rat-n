@@ -180,4 +180,12 @@
     
 ***
 
+# Terms of use
+
+    INFO: This tool is only for educational purposes only.
+    Use this tool wisely and never without permission.
+    I am not responsible for anything you do with this tool.
+
+***
+
 # Thats all!
