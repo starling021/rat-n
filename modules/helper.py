@@ -1,5 +1,4 @@
-# The Mouse helper
-# Colors, banner, etc.
+# The Mouse Payload Loader (MPL) helper
 
 # 
 #            --------------------------------------------------
