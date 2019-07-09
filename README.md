@@ -155,7 +155,6 @@
     getsms         : Download SMS.
     getvol         : Get volume level.
     home           : Simulate a home button press.
-    install        : Install Mouse Substrate.
     ipod           : Control music player.
     islocked       : Check if the device is locked.
     lastapp        : Get last opened application.
