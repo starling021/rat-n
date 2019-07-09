@@ -72,7 +72,7 @@
     
 ***
 
-# Mouse (MPL) CLI
+# Mouse CLI
 
     INFO: After a session is established, we can execute commands on that device 
     through the Mouse (MPL) CLI. We can show all available commands by typing "help".
@@ -108,7 +108,7 @@
 
 ***
     
-# Mouse (MPL) commands
+# MPL commands
 
     INFO: MPL commands are commands that allow you to control a remote device via 
     Mouse CLI or via MultiHandler CLI. Each operating system of the remote device has 
