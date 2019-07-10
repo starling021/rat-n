@@ -45,20 +45,26 @@ if [[ "$2" = "downloads" ]]
 then
 {
 cd
-rm -r mouse/dewnloads
-echo -e ""$BS"[*]"$WHS" Cleaning up..."
-sleep 10
+cd mouse
+rm -r downloads
+mkdir downloads
 } &> /dev/null
+sleep 1
+echo -e ""$BS"[*]"$WHS" Cleaning up..."$CE""
+sleep 10
 exit
 
 elif [[ "$2" = "payloads" ]]
 then
 {
 cd
-rm -r mouse/payloads
-echo -e ""$BS"[*]"$WHS" Cleaning up..."
-sleep 10
+cd mouse
+rm -r payloads
+mkdir payloads
 } &> /dev/null
+sleep 1
+echo -e ""$BS"[*]"$WHS" Cleaning up..."$CE""
+sleep 10
 exit
 fi
 fi
