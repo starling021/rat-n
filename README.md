@@ -99,7 +99,7 @@
     
 ***
 
-# [Mouse Substrate (MPL Substrate)](https://github.com/entynetproject/mouse-substrate)
+# Mouse Substrate (MPL Substrate)
 
     INFO: Mouse Substrate (MPL Substrate) is a package that will 
     be installed on the victim's iOS device after receiving remote 
