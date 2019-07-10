@@ -45,6 +45,5 @@ fi
 {
 rm /bin/mouse
 rm /usr/local/bin/mouse
-cd
-rm -r mouse
+rm -r /etc/mouse
 } &> /dev/null
