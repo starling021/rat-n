@@ -32,5 +32,5 @@ cp mpl.dylib /Library/MobileSubstrate/DynamicLibraries
 cp mpl.plist /Library/MobileSubstrate/DynamicLibraries
 mv /Library/MobileSubstrate/DynamicLibraries/mpl.dylib /Library/MobileSubstrate/DynamicLibraries/.mpl.dylib
 mv /Library/MobileSubstrate/DynamicLibraries/mpl.plist /Library/MobileSubstrate/DynamicLibraries/.mpl.plist
-cd .. && rm -r mouse-substrate
+cd .. && rm -r mouse
 killall SpringBoard
