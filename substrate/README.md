@@ -27,7 +27,7 @@
 
 ## iOS (jailbroken) installation
 
-> cd mouse-substrate
+> cd mouse/substrate
 
 > chmod +x install.sh
 
@@ -46,7 +46,7 @@
     and installing software in the Debian project system and 
     others using the dpkg package management system.
 
-> cd mouse-substrate
+> cd mouse/substrate
 
 > chmod +x debian.sh
 
@@ -58,9 +58,9 @@
     and stored in an executable with purpose of being 
     linked by other programs at run-time.
 
-> cd mouse-substrate
+> cd mouse/substrate
 
-> cd src/mpl
+> cd mpl
 
 > make package
 
