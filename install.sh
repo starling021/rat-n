@@ -42,9 +42,9 @@ then
 exit
 fi
 
-if [[ -d /etc/mouse ]]
+if [[ -d ~/mouse ]]
 then
-cd /etc/mouse
+cd ~/mouse
 {
 cp bin/mouse /usr/local/bin
 chmod +x /usr/local/bin/mouse
@@ -52,10 +52,10 @@ cp bin/mouse /bin
 chmod +x /bin/mouse
 } &> /dev/null
 else
-cd /etc
+cd ~
 {
 git clone https://github.com/entynetproject/mouse.git
-cd  /etc/mouse
+cd  ~/mouse
 cp bin/mouse /usr/local/bin
 chmod +x /usr/local/bin/mouse
 cp bin/mouse /bin

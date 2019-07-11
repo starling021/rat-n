@@ -51,7 +51,7 @@ then
 if [[ "$2" = "downloads" ]]
 then
 {
-cd /etc/mouse
+cd ~/mouse
 rm -r downloads
 mkdir downloads
 } &> /dev/null
@@ -63,7 +63,7 @@ exit
 elif [[ "$2" = "payloads" ]]
 then
 {
-cd /etc/mouse
+cd ~/mouse
 rm -r payloads
 mkdir payloads
 } &> /dev/null
@@ -79,10 +79,10 @@ then
 sleep 1
 echo ""$BS"[*] "$WHS"Installing update..."$CE""
 {
-rm -r /etc/mouse
+rm -r ~/mouse
 rm /bin/mouse
 rm /usr/local/bin/mouse
-cd /etc
+cd ~
 git clone https://github.com/entynetproject/mouse.git
 cd mouse
 chmod +x install.sh
@@ -93,11 +93,11 @@ sleep 1
 exit
 fi
 
-cd /etc
-if [[ -d /etc/mouse ]]
+cd ~
+if [[ -d ~/mouse ]]
 then
 {
-cd /etc/mouse
+cd ~/mouse
 } &> /dev/null
 trap '' INT TSTP
 trap '' 2
@@ -108,16 +108,16 @@ ASESR="$( timeout -s SIGTERM 40 curl -s checkip.dyndns.org | sed -e 's/.*Current
 } &> /dev/null
 if [[ "$ASESR" != "" ]]
 then 
-cd /etc
+cd ~
 {
 git clone https://github.com/entynetproject/mouse.git
-cd /etc/mouse
+cd ~/mouse
 } &> /dev/null
 trap '' INT TSTP
 trap '' 2
 python mouse.py
 else
-cd /etc
+cd ~
 sleep 1
 exit
 fi
