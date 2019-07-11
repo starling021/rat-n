@@ -116,6 +116,7 @@
 
 ## macOS
 
+    alert          : Make alert show up on device.
     setbright      : Set screen brightness.
     cd             : Change directory.
     download       : Download file.
