@@ -39,6 +39,15 @@
 #white start
         WHS="\033[0;97m"
 	
+	WHO="$( whoami )"
+	if [[ "$WHO" != "root" ]]
+	then
+	sleep 1
+	echo ""$RS"[-]"$WHS" [Errno 2] Failed to start server: Operation not permitted"$CE""
+	sleep 1
+	exit
+	fi
+	
 if [[ "$1" = "-c" || "$1" = "-c" ]]
 then
 if [[ "$2" = "downloads" ]]
