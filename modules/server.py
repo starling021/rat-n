@@ -30,7 +30,6 @@ EZE = os.system("whoami")
 
 if EZE != root:
     exit()
-    return
 
 
 import socket, ssl, os, json, sys
