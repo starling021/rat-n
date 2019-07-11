@@ -37,7 +37,7 @@ WHO="$( whoami )"
 
 if [[ "$WHO" != "root" ]]
 then
-    echo -e ""$RSA"[-]"$WHS" [Errno 1] Can't get privilegies"$CEA""
+    echo -e ""$RSA"[-]"$WHS" [Errno 1] Failed to copy files: Operation not permitted"$CEA""
     exit
 exit
 fi
