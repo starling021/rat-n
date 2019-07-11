@@ -26,14 +26,6 @@
 #    Email     : entynetproject@gmail.com
 #
 
-import os
-
-EZE = os.system("whoami")
-
-if EZE != root:
-    exit()
-
-
 import socket, ssl, os, json, sys
 import helper as h
 import session
