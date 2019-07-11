@@ -15,10 +15,10 @@ class command:
         sbutton = raw_input(h.CYAN+"[*]"+h.WHITE+" Second button: ")
         one = '"'
         payload = """
-        set theAlertText to """+one+""""""+title+""""""+one+"""
-        set theAlertMessage to """+one+""""""+message+""""""+one+"""
+        set theAlertText to "hello"
+        set theAlertMessage to "hello"
         display alert theAlertText message theAlertMessage as critical buttons {"Don't Continue", "Continue"} default 
-              button """+one+""""""+fbutton+""""""+one+""" cancel button """+one+""""""+sbutton+""""""+one+"""
+              button "hello" cancel button "hello"
 
         """
         cmd_data.update({"cmd":"applescript","args":payload})
