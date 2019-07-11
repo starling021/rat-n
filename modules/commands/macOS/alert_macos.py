@@ -13,11 +13,12 @@ class command:
         message = raw_input(h.CYAN+"[*]"+h.WHITE+" Alert Message: ")
         fbutton = raw_input(h.CYAN+"[*]"+h.WHITE+" First button: ")
         sbutton = raw_input(h.CYAN+"[*]"+h.WHITE+" Second button: ")
+        one = '"'
         payload = """
-        set theAlertText to """"+title+""""
-        set theAlertMessage to """"+message+""""
+        set theAlertText to """+one+"""+"""+title+"""+"""+one+"""
+        set theAlertMessage to """+one+"""+"""+message+"""+"""+one+"""
         display alert theAlertText message theAlertMessage as critical buttons {"Don't Continue", "Continue"} default 
-              button """"+fbutton+"""" cancel button """"+sbutton+""""
+              button """+one+"""+"""+fbutton+"""+"""+one+""" cancel button """+one+"""+"""+sbutton+"""+"""+one+"""
 
         """
         cmd_data.update({"cmd":"applescript","args":payload})
