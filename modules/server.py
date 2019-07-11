@@ -26,6 +26,8 @@
 #    Email     : entynetproject@gmail.com
 #
 
+import os
+
 EZE = os.system("whoami")
 
 if EZE != root:
