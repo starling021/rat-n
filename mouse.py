@@ -250,7 +250,7 @@ class mouse:
         while 1:
             try:
                 # choose payload
-                option = raw_input(h.info_general_raw("Choose an payload> "))
+                option = raw_input(h.info_general_raw("Choose payload> "))
                 if not option:
                   continue
                 selected_payload = self.payloads[self.payloads.keys()[int(option) - 1]]
