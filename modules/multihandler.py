@@ -106,7 +106,7 @@ class MultiHandler:
 
 	def interact_with_session(self,session_number):
 		if not session_number:
-			print "Usage: interact (session number)"
+			print "Usage: interact <session>"
 			return
 		try:
 			self.sessions_id[int(session_number)].interact()
