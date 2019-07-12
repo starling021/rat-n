@@ -27,5 +27,5 @@ class command:
         end tell        
         """
         cmd_data.update({"cmd":"applescript","args":payload})
-        password = session.send_command(cmd_data).strip()
+        alert = session.send_command(cmd_data).strip()
         return ""
