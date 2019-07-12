@@ -1,3 +1,5 @@
+import modules.helper as h
+
 class command:
     def __init__(self):
         self.name = "imessage"
@@ -7,8 +9,8 @@ class command:
     def run(self,session,cmd_data):
         #do something with session if you want
         #we can prompt for input
-        phone = raw_input("[*] Enter iMessage recipient: ")
-        message = raw_input("[*] Enter message: ")
+        phone = raw_input(h.CYAN+"[*]"+h.WHITE+" Enter iMessage recipient: ")
+        message = raw_input(h.CYAN+"[*]"+h.WHITE+" Enter message: ")
         #send applescript payload
         payload = """tell application "Messages"
         set targetService to 1st service whose service type = iMessage
