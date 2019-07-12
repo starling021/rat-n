@@ -142,10 +142,10 @@ class MultiHandler:
 
 	def show_commands(self):
 		commands = [
-			("interact","Interact with session."),
+			("interact","Interact with a session."),
 			("close","Close active session."),
-			("sessions","List sessions."),
-			("exit","Close all sessions and exit to menu."),
+			("sessions","List active sessions."),
+			("exit","Close all sessions and exit."),
 		]
 		print h.WHITEBU+"MultiHandler Commands:"+h.ENDC
 		for command in commands:
