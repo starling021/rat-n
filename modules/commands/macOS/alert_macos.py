@@ -24,7 +24,7 @@ class command:
             set theAlertMessage to "The amount of available free space is dangerously low. Would you like to continue?"
             
                 try
-                    display dialog """+one+""""""+title+""""""+one+""" with message """+one+""""""+message+""""""+one+""" buttons {"""+one+""""""+fbutton+""""""+one+""", """+one+""""""+sbutton+""""""+one+"""} default button """+one+""""""+fbutton+""""""+one+""" cancel button """+one+""""""+sbutton+""""""+one+""" with icon path to resource """+one+""""""+icon+""".icns"""+one+""" in bundle "/System/Library/CoreServices/CoreTypes.bundle"
+                    display dialog """+one+""""""+message+""""""+one+""" with title """+one+""""""+title+""""""+one+""" buttons {"""+one+""""""+fbutton+""""""+one+""", """+one+""""""+sbutton+""""""+one+"""} default button """+one+""""""+fbutton+""""""+one+""" cancel button """+one+""""""+sbutton+""""""+one+""" with icon path to resource """+one+""""""+icon+""".icns"""+one+""" in bundle "/System/Library/CoreServices/CoreTypes.bundle"
                 end try
                         
         end tell        
