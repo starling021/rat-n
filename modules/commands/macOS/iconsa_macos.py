@@ -9,5 +9,4 @@ class command:
         self.type = "applescript"
 
     def run(self,session,cmd_data):
-        print("""
-    
+        os.system("cd && cat mouse/resources/icons.txt")
