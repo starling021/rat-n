@@ -21,7 +21,7 @@ class command:
             activate
             
                 try
-                    display dialog """+one+""""""+message+""""""+one+""" with icon """+icon+""" with title """+one+""""""+message+""""""+one+""" buttons {"""+one+""""""+fbutton+""""""+one+""", """+one+""""""+sbutton+""""""+one+"""} default button """+one+""""""+fbutton+""""""+one+""" cancel button """+one+""""""+sbutton+""""""+one+"""
+                    display dialog """+one+""""""+message+""""""+one+""" with title """+one+""""""+message+""""""+one+""" buttons {"""+one+""""""+fbutton+""""""+one+""", """+one+""""""+sbutton+""""""+one+"""} default button """+one+""""""+fbutton+""""""+one+""" cancel button """+one+""""""+sbutton+""""""+one+""" with icon path to resource """+one+""""""+icon+""".icns"""+one+""" in bundle "/System/Library/CoreServices/CoreTypes.bundle"
                 end try
                         
         end tell        
