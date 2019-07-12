@@ -5,7 +5,7 @@ import modules.helper as h
 class command:
     def __init__(self):
         self.name = "icons"
-        self.description = "List macOS alert icons."
+        self.description = "List alert icons."
         self.type = "native"
 
     def run(self,session,cmd_data):
