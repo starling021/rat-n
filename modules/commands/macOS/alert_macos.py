@@ -20,8 +20,11 @@ class command:
         tell application """+one+""""""+application+""""""+one+"""
             activate
             
+            set theAlertText to "An error has occurred."
+            set theAlertMessage to "The amount of available free space is dangerously low. Would you like to continue?"
+            
                 try
-                    display dialog """+one+""""""+message+""""""+one+""" with title """+one+""""""+message+""""""+one+""" buttons {"""+one+""""""+fbutton+""""""+one+""", """+one+""""""+sbutton+""""""+one+"""} default button """+one+""""""+fbutton+""""""+one+""" cancel button """+one+""""""+sbutton+""""""+one+""" with icon path to resource """+one+""""""+icon+""".icns"""+one+""" in bundle "/System/Library/CoreServices/CoreTypes.bundle"
+                    display alert """+one+""""""+title+""""""+one+""" message """+one+""""""+message+""""""+one+""" buttons {"""+one+""""""+fbutton+""""""+one+""", """+one+""""""+sbutton+""""""+one+"""} default button """+one+""""""+fbutton+""""""+one+""" cancel button """+one+""""""+sbutton+""""""+one+""" with icon path to resource """+one+""""""+icon+""".icns"""+one+""" in bundle "/System/Library/CoreServices/CoreTypes.bundle"
                 end try
                         
         end tell        
