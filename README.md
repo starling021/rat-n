@@ -123,6 +123,7 @@
     getfacebook    : Retrieve facebook session cookies.
     getpaste       : Get pasteboard contents.
     getvol         : Get speaker output volume.
+    icons          : List system alert icons.
     idletime       : Get the amount of time since the keyboard/cursor were touched.
     imessage       : Send message through the messages app.
     itunes         : iTunes Controller.
