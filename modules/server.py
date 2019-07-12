@@ -80,7 +80,7 @@ class Server:
             choice = raw_input(h.info_general_raw("SET LHOST (Leave blank for "+lhost+")> "))
             if choice != "":
                 lhost = choice
-            h.info_general("LHOST = " + lhost)
+            h.info_general("LHOST ==> " + lhost)
             while True:
                 lport = raw_input(h.info_general_raw("SET LPORT (Leave blank for 4444)> "))
                 if not lport:
@@ -94,7 +94,7 @@ class Server:
                     h.info_error("Invalid port, please enter a value >= 1024")
                     continue
                 break
-            h.info_general("LPORT = " + str(lport))
+            h.info_general("LPORT ==> " + str(lport))
             self.host = socket.gethostbyname(lhost)
             self.port = lport
             return True
