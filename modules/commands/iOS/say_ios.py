@@ -1,7 +1,7 @@
 class command:
     def __init__(self):
         self.name = "say"
-        self.description = "Text to speach."
+        self.description = "Convert text to speach."
         self.usage = "Usage: say <text>"
     
     def run(self,session,cmd_data):
