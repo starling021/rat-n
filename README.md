@@ -170,7 +170,7 @@
     pid            : Get MPL process ID.
     pwd            : Show current directory.
     respring       : Restart SpringBoard.
-    safemode       : Put device into safe mode.
+    safemode       : Put device into SafeMode.
     say            : Text to speach.
     setvol         : Set output volume.
     sysinfo        : View system information.
