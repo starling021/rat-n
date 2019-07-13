@@ -1,7 +1,7 @@
 class command:
     def __init__(self):
         self.name = "itunes"
-        self.description = "iTunes Controller."
+        self.description = "Control iTunes player."
         self.type = "applescript"
 
     def run(self,session,cmd_data):
