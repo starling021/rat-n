@@ -5,8 +5,8 @@ import modules.helper as h
 class command:
 	def __init__(self):
 		self.name = "download"
-		self.description = "Download file."
-		self.usage = "Usage: download <filename>"
+		self.description = "Download remote file."
+		self.usage = "Usage: download <filename> <path>"
 		self.type = "native"
 
 	def run(self,session,cmd_data):
