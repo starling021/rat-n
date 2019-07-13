@@ -161,7 +161,6 @@
     lastapp        : Get last opened application.
     locate         : Get device location coordinates.
     location       : Toggle location services.
-    lock           : Simulate a lock button press.
     ls             : List contents of a directory.
     mic            : Record mic sound.
     mute           : Update and view mute status.
