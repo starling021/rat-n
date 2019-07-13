@@ -1,7 +1,7 @@
 class command:
     def __init__(self):
         self.name = "safemode"
-        self.description = "Put device into safe mode."
+        self.description = "Put device into SafeMode."
 
     def run(self,session,cmd_data):
     	cmd_data["cmd"] = ";"
