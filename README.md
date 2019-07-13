@@ -153,7 +153,7 @@
     getcontacts    : Download addressbook.
     getnotes       : Download notes.
     getpasscode    : Retreive the device passcode.
-    getsms         : Download SMS.
+    getsms         : Download SMS data.
     getvol         : Get volume level.
     home           : Simulate a home button press.
     ipod           : Control music player.
