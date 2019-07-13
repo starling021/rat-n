@@ -124,7 +124,7 @@
     getpaste       : Get pasteboard contents.
     getvol         : Get speaker output volume.
     icons          : List system alert icons.
-    idletime       : Get the amount of time since the keyboard/cursor were touched.
+    idletime       : Get the amount of user active time.
     imessage       : Send message through the messages app.
     itunes         : Control iTunes player.
     keyboard       : Control target's keyboard.
