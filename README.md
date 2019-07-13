@@ -118,8 +118,8 @@
 
     alert          : Make alert show up on device.
     setbright      : Set screen brightness.
-    cd             : Change directory.
-    download       : Download file.
+    cd             : Change current directory.
+    download       : Download remote file.
     getfacebook    : Retrieve facebook session cookies.
     getpaste       : Get pasteboard contents.
     getvol         : Get speaker output volume.
@@ -146,10 +146,10 @@
     alert          : Make alert show up on device.
     battery        : Get battery level.
     bundleids      : List bundle identifiers.
-    cd             : Change directory.
+    cd             : Change current directory.
     dhome          : Simulate a double home button press.
     dial           : Dial a phone number.
-    download       : Download file.
+    download       : Download remote file.
     getcontacts    : Download addressbook.
     getnotes       : Download notes.
     getpasscode    : Retreive the device passcode.
