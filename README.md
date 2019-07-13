@@ -171,7 +171,7 @@
     pwd            : Show current directory.
     respring       : Restart SpringBoard.
     safemode       : Put device into SafeMode.
-    say            : Text to speach.
+    say            : Convert text to speach.
     setvol         : Set output volume.
     sysinfo        : View system information.
     upload         : Upload local file.
