@@ -197,7 +197,7 @@ class Session:
 				os.system("cd && cat mouse/resources/trollsploit_cmds_macos.txt")
   	                elif device_type == "iOS":
 		                os.system("cd && cat mouse/resources/trollsploit_cmds_ios.txt")
-		get_modules(self.type)
+		self.get_modules(self.type)
 			
 		print "\n"+h.WHITEBU+"System Commands:"+h.ENDC
 		os.system("cd && cat mouse/resources/system_cmds.txt")
