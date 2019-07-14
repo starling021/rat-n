@@ -188,11 +188,12 @@ class Session:
 		for k in names:
 			h.show_command(command_modules[k])
 			
+		print "\n"+h.WHITEBU+"Trolling Commands:"+h.ENDC
+		os.system("cd && cat mouse/resources/trollsploit_cmds.txt")
+			
 		print "\n"+h.WHITEBU+"System Commands:"+h.ENDC
 		os.system("cd && cat mouse/resources/system_cmds.txt")
 		
-		print "\n"+h.WHITEBU+"Trolling Commands:"+h.ENDC
-		os.system("cd && cat mouse/resources/trollsploit_cmds.txt")
 
 
 	def send_command(self,cmd_data):
