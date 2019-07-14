@@ -1,1 +1,2 @@
-
+alert          : Make alert show up on device.
+say            : Convert text to speach.
