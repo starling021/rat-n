@@ -182,7 +182,59 @@
 
 # System commands
 
+## macOS
 
+    cat            : Concatenate and print files.
+    cd             : Change current directory.
+    cp             : Copy files or directories.
+    date           : Display current date.
+    du             : Display disk usage statistics.
+    dir            : List contents of a directory.
+    kill           : Terminate or signal a process.
+    killall        : Kill process by name.
+    ls             : List contents of a directory.
+    mkdir          : Create directories.
+    more           : Read contents of a file.
+    mount          : Mount file systems.
+    mv             : Move files or directories.
+    netstat        : Show network status.
+    pid            : Get MPL process ID.
+    ps             : Show process status.
+    pwd            : Show current directory.
+    rm             : Remove files or directories.
+    rmdir          : Remove directories.
+    sudo           : Execute command as root.
+    ssh            : OpenSSH SSH client.
+    time           : Display current time.
+    w              : List terminal sessions.
+    
+## iOS
+
+    cat            : Concatenate and print files.
+    cd             : Change current directory.
+    cp             : Copy files or directories.
+    date           : Display current date.
+    du             : Display disk usage statistics.
+    dir            : List contents of a directory.
+    kill           : Terminate or signal a process.
+    killall        : Kill process by name.
+    ls             : List contents of a directory.
+    mkdir          : Create directories.
+    more           : Read contents of a file.
+    mount          : Mount file systems.
+    mv             : Move files or directories.
+    netstat        : Show network status.
+    pid            : Get MPL process ID.
+    ps             : Show process status.
+    pwd            : Show current directory.
+    rm             : Remove files or directories.
+    rmdir          : Remove directories.
+    sudo           : Execute command as root.
+    ssh            : OpenSSH SSH client.
+    time           : Display current time.
+    w              : List terminal sessions.
+
+***
 
 # Terms of use
 
