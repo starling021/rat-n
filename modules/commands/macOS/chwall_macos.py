@@ -4,9 +4,8 @@ import modules.helper as h
 
 class command:
     def __init__(self):
-        self.name = "chwall"
-        self.description = "Change desktop wallpaper."
-        self.type = "applescript"
+        time.sleep(0)
+        
 
     def run(self,session,cmd_data):
         picture = raw_input(h.CYAN+"[*]"+h.WHITE+" Remote Picture: ")
