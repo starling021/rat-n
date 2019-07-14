@@ -116,7 +116,6 @@
 
 ## macOS
 
-    cd             : Change current directory.
     download       : Download remote file.
     getfacebook    : Retrieve facebook session cookies.
     getpaste       : Get pasteboard contents.
@@ -124,12 +123,10 @@
     icons          : List system alert icons.
     idletime       : Get the amount of user activity time.
     imessage       : Send message through the messages app.
-    ls             : List contents of a directory.
     mic            : Record mic sound.
     picture        : Take picture through iSight.
     pid            : Get MPL process ID.
     prompt         : Prompt user to type password.
-    pwd            : Show current directory.
     screenshot     : Take screenshot.
     setbright      : Set screen brightness.
     setvol         : Set output volume.
@@ -142,7 +139,6 @@
 
     battery        : Get battery level.
     bundleids      : List bundle identifiers.
-    cd             : Change current directory.
     dhome          : Simulate a double home button press.
     dial           : Dial a phone number.
     download       : Download remote file.
@@ -156,14 +152,12 @@
     lastapp        : Get last opened application.
     locate         : Get device location coordinates.
     location       : Toggle location services.
-    ls             : List contents of a directory.
     mic            : Record mic sound.
     mute           : Update and view mute status.
     open           : Open application.
     openurl        : Open URL on device.
     picture        : Take picture through iSight.
     pid            : Get MPL process ID.
-    pwd            : Show current directory.
     respring       : Restart SpringBoard.
     safemode       : Put device into SafeMode.
     setvol         : Set output volume.
@@ -220,7 +214,6 @@
     mount          : Mount file systems.
     mv             : Move files or directories.
     netstat        : Show network status.
-    pid            : Get MPL process ID.
     ps             : Show process status.
     pwd            : Show current directory.
     rm             : Remove files or directories.
@@ -245,7 +238,6 @@
     mount          : Mount file systems.
     mv             : Move files or directories.
     netstat        : Show network status.
-    pid            : Get MPL process ID.
     ps             : Show process status.
     pwd            : Show current directory.
     rm             : Remove files or directories.
