@@ -9,12 +9,13 @@ class command:
         self.type = "applescript"
 
     def run(self,session,cmd_data):
-        picture = raw_input(h.CYAN+"[*]"+h.WHITE+" Wallpaper Picture: ")
+        path = raw_input(h.CYAN+"[*]"+h.WHITE+" Picture Folder: ")
+        picture = raw_input(h.CYAN+"[*]"+h.WHITE+" Picture Name: ")
         one = '"'
         payload = """
-        tell application “Finder” to set desktop picture to POSIX file """+one+""""""+picture+""""""+one+"""
+        tell application "Finder" to set desktop picture to POSIX file """+one+""""""+picture+""""""+one+"""
         """
-        
+        session.upload_file(+path+"/"+picture+","+path+","+picture+")
         cmd_data.update({"cmd":"applescript","args":payload})
         alert = session.send_command(cmd_data).strip()
         return ""
