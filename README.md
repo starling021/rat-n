@@ -190,6 +190,15 @@
     kill           : Terminate or signal a process.
     killall        : Kill process by name.
     say            : Convert text to speach.
+    
+## iOS
+
+    alert          : Make alert show up on device.
+    ipod           : Control music player.
+    kill           : Terminate or signal a process.
+    killall        : Kill process by name.
+    say            : Convert text to speach.
+    vibrate        : Vibrate device.
 
 ***
 
