@@ -119,6 +119,7 @@
     alert          : Make alert show up on device.
     setbright      : Set screen brightness.
     cd             : Change current directory.
+    chwall         : Change desktop wallpaper
     download       : Download remote file.
     getfacebook    : Retrieve facebook session cookies.
     getpaste       : Get pasteboard contents.
