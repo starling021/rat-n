@@ -18,7 +18,6 @@ pwd            : Show current directory.
 rm             : Remove files or directories.
 rmdir          : Remove directories.
 sudo           : Execute command as root.
-su             : Login as root.
 ssh            : OpenSSH SSH client.
 time           : Display current time.
 w              : List terminal sessions.
