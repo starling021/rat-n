@@ -1,6 +1,7 @@
 cat            : Concatenate and print files.
 cd             : Change current directory.
 cp             : Copy files or directories.
+date           : Print current date.
 dir            : List contents of a directory.
 kill           : Terminate or signal a process.
 killall        : Kill process by name.
