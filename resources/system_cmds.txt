@@ -11,7 +11,6 @@ more           : Read contents of a file.
 mount          : Mount file systems.
 mv             : Move files or directories.
 netstat        : Show network status.
-pid            : Get MPL process ID.
 ps             : Show process status.
 pwd            : Show current directory.
 rm             : Remove files or directories.
