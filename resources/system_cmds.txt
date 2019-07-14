@@ -13,4 +13,5 @@ mv             : Move files or directories.
 pid            : Get MPL process ID.
 ps             : Show process status.
 pwd            : Show current directory.
+time           : Print current time.
 w              : List terminal sessions.
