@@ -181,7 +181,7 @@ class Session:
 		for key in names_local:
 			h.show_command(self.server.modules_local[key])
 
-		print "\n"+h.WHITEBU+"Device Commands:"+h.ENDC
+		print "\n"+h.WHITEBU+"MPL Commands:"+h.ENDC
 		command_modules = self.server.get_modules(self.type)
 		names = command_modules.keys()
 		names.sort()
