@@ -135,6 +135,7 @@
     pid            : Get MPL process ID.
     prompt         : Prompt user to type password.
     pwd            : Show current directory.
+    say            : Convert text to speach.
     screenshot     : Take screenshot.
     setvol         : Set output volume.
     sleep          : Put device into sleep mode.
