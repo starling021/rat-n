@@ -4,7 +4,10 @@ import modules.helper as h
 
 class command:
     def __init__(self):
-        time.sleep(0)
+        self.name = "chwall"
+        self.description = "Change desktop wallpaper."
+        self.type = "applescript"
+
         
 
     def run(self,session,cmd_data):
