@@ -16,4 +16,6 @@ pid            : Get MPL process ID.
 ps             : Show process status.
 pwd            : Show current directory.
 time           : Display current time.
+rmdir          : Remove directories.
+rm             : Remove files or directories.
 w              : List terminal sessions.
