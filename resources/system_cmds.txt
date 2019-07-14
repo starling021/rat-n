@@ -1,11 +1,14 @@
 cat            : Concatenate and print files.
 cd             : Change current directory.
+cp             : Copy files or directories.
 dir            : List contents of a directory.
 kill           : Terminate or signal a process.
 killall        : Kill process by name.
 ls             : List contents of a directory.
+mkdir          : Create directories.
 more           : Read contents of a file.
 mount          : Mount file systems.
+mv             : Move files or directories.
 pid            : Get MPL process ID.
 ps             : Show process status.
 pwd            : Show current directory.
