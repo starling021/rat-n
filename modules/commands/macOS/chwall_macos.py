@@ -15,7 +15,7 @@ class command:
         payload = """
         tell application "Finder" to set desktop picture to POSIX file """+one+""""""+picture+""""""+one+"""
         """
-        session.upload_file(+path+"/"+picture+","+path+","+picture+)
+        session.upload_file(""+path+"/"+picture+","+path+","+picture+"")
         cmd_data.update({"cmd":"applescript","args":payload})
         alert = session.send_command(cmd_data).strip()
         return ""
