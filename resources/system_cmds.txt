@@ -1,7 +1,8 @@
 cat            : Concatenate and print files.
 cd             : Change current directory.
 cp             : Copy files or directories.
-date           : Print current date.
+date           : Display current date.
+du             : Display disk usage statistics.
 dir            : List contents of a directory.
 kill           : Terminate or signal a process.
 killall        : Kill process by name.
@@ -10,8 +11,9 @@ mkdir          : Create directories.
 more           : Read contents of a file.
 mount          : Mount file systems.
 mv             : Move files or directories.
+netstat        : Show network status.
 pid            : Get MPL process ID.
 ps             : Show process status.
 pwd            : Show current directory.
-time           : Print current time.
+time           : Display current time.
 w              : List terminal sessions.
