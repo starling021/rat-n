@@ -1,6 +1,5 @@
 battery        : Get battery level.
 bundleids      : List bundle identifiers.
-cd             : Change current directory.
 dhome          : Simulate a double home button press.
 dial           : Dial a phone number.
 download       : Download remote file.
@@ -14,14 +13,12 @@ islocked       : Check if the device is locked.
 lastapp        : Get last opened application.
 locate         : Get device location coordinates.
 location       : Toggle location services.
-ls             : List contents of a directory.
 mic            : Record mic sound.
 mute           : Update and view mute status.
 open           : Open application.
 openurl        : Open URL on device.
 picture        : Take picture through iSight.
 pid            : Get MPL process ID.
-pwd            : Show current directory.
 respring       : Restart SpringBoard.
 safemode       : Put device into SafeMode.
 setvol         : Set output volume.
