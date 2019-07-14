@@ -188,7 +188,7 @@ class Session:
 		for k in names:
 			h.show_command(command_modules[k])
 			
-		print h.WHITEBU+"System Commands:"+h.ENDC
+		print "\n"+h.WHITEBU+"System Commands:"+h.ENDC
 		os.system("cd && cat mouse/resources/system_cmds.txt")
 
 
