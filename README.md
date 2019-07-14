@@ -180,6 +180,19 @@
     
 ***
 
+# Trolling commands
+
+## macOS
+
+    alert          : Make alert show up on device.
+    chwall         : Change desktop wallpaper.
+    itunes         : Control iTunes player.
+    kill           : Terminate or signal a process.
+    killall        : Kill process by name.
+    say            : Convert text to speach.
+
+***
+
 # System commands
 
 ## macOS
