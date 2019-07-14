@@ -52,6 +52,13 @@ class Session:
 		self.current_directory = device_info['current_directory'].encode("utf-8")
 		self.last_tab = None
 		self.needs_refresh = False
+		
+	
+	def get_modules(self,device_type):
+		if device_type == "macos":
+			os.system("cd && cat mouse/resources/trollsploit_cmds_macos.txt")
+  	        elif device_type == "iOS":
+		        os.system("cd && cat mouse/resources/trollsploit_cmds_ios.txt")
 
 
 	def interact(self):
@@ -190,13 +197,6 @@ class Session:
 			
 		print "\n"+h.WHITEBU+"Trolling Commands:"+h.ENDC
 		
-		
-		
-		def get_modules(self,device_type):
-			if device_type == "macos":
-				os.system("cd && cat mouse/resources/trollsploit_cmds_macos.txt")
-  	                elif device_type == "iOS":
-		                os.system("cd && cat mouse/resources/trollsploit_cmds_ios.txt")
 		get_modules(self,device_type)
 			
 		print "\n"+h.WHITEBU+"System Commands:"+h.ENDC
