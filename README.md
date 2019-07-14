@@ -116,10 +116,7 @@
 
 ## macOS
 
-    alert          : Make alert show up on device.
-    setbright      : Set screen brightness.
     cd             : Change current directory.
-    chwall         : Change desktop wallpaper
     download       : Download remote file.
     getfacebook    : Retrieve facebook session cookies.
     getpaste       : Get pasteboard contents.
@@ -127,16 +124,14 @@
     icons          : List system alert icons.
     idletime       : Get the amount of user activity time.
     imessage       : Send message through the messages app.
-    itunes         : Control iTunes player.
-    keyboard       : Control target's keyboard.
     ls             : List contents of a directory.
     mic            : Record mic sound.
     picture        : Take picture through iSight.
     pid            : Get MPL process ID.
     prompt         : Prompt user to type password.
     pwd            : Show current directory.
-    say            : Convert text to speach.
     screenshot     : Take screenshot.
+    setbright      : Set screen brightness.
     setvol         : Set output volume.
     sleep          : Put device into sleep mode.
     su             : Login as root.
@@ -145,7 +140,6 @@
 
 ## iOS
 
-    alert          : Make alert show up on device.
     battery        : Get battery level.
     bundleids      : List bundle identifiers.
     cd             : Change current directory.
@@ -158,7 +152,6 @@
     getsms         : Download SMS data.
     getvol         : Get volume level.
     home           : Simulate a home button press.
-    ipod           : Control music player.
     islocked       : Check if the device is locked.
     lastapp        : Get last opened application.
     locate         : Get device location coordinates.
@@ -173,11 +166,9 @@
     pwd            : Show current directory.
     respring       : Restart SpringBoard.
     safemode       : Put device into SafeMode.
-    say            : Convert text to speach.
     setvol         : Set output volume.
     sysinfo        : View system information.
     upload         : Upload local file.
-    vibrate        : Vibrate device.
     
 ***
 
@@ -192,6 +183,7 @@
     alert          : Make alert show up on device.
     chwall         : Change desktop wallpaper.
     itunes         : Control iTunes player.
+    keyboard       : Control target's keyboard.
     kill           : Terminate or signal a process.
     killall        : Kill process by name.
     say            : Convert text to speach.
