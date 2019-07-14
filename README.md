@@ -212,7 +212,6 @@
     cp             : Copy files or directories.
     date           : Display current date.
     du             : Display disk usage statistics.
-    dir            : List contents of a directory.
     kill           : Terminate or signal a process.
     killall        : Kill process by name.
     ls             : List contents of a directory.
@@ -238,7 +237,6 @@
     cp             : Copy files or directories.
     date           : Display current date.
     du             : Display disk usage statistics.
-    dir            : List contents of a directory.
     kill           : Terminate or signal a process.
     killall        : Kill process by name.
     ls             : List contents of a directory.
