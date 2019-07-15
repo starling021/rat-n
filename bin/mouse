@@ -92,8 +92,6 @@ then
 {
 cd ~/mouse
 } &> /dev/null
-trap '' INT TSTP
-trap '' 2
 python mouse.py
 else
 {
