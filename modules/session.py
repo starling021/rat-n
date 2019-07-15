@@ -53,8 +53,13 @@ class Session:
 		self.last_tab = None
 		self.needs_refresh = False
 		
+	def get_dev(self,device_type):
+		if device_type == "macos":
+			os.system("cd && cat mouse/resources/development_cmds_macos.txt")
+  	        elif device_type == "iOS":
+		        os.system("cd && cat mouse/resources/development_cmds_ios.txt")
 	
-	def get_modules(self,device_type):
+	def get_troll(self,device_type):
 		if device_type == "macos":
 			os.system("cd && cat mouse/resources/trollsploit_cmds_macos.txt")
   	        elif device_type == "iOS":
@@ -194,18 +199,23 @@ class Session:
 		for key in names_local:
 			h.show_command(self.server.modules_local[key])
 
-		print "\n"+h.WHITEBU+"MPL Commands:"+h.ENDC
-		
-		self.get_mpl(self.type)
-			
-		print "\n"+h.WHITEBU+"Trolling Commands:"+h.ENDC
-		
-		self.get_modules(self.type)
-			
 		print "\n"+h.WHITEBU+"System Commands:"+h.ENDC
 		os.system("cd && cat mouse/resources/system_cmds.txt")
 		
-
+		print "\n"+h.WHITEBU+"Development Commands:"+h.ENDC
+		
+		self.get_dev(self.type)
+			
+		print "\n"+h.WHITEBU+"Trolling Commands:"+h.ENDC
+		
+		self.get_troll(self.type)
+		
+		
+			
+		print "\n"+h.WHITEBU+"Main Commands:"+h.ENDC
+		
+		self.get_mpl(self.type)
+		
 
 	def send_command(self,cmd_data):
 		cmd_data["term"] = binascii.hexlify(os.urandom(8))
