@@ -1,4 +1,5 @@
 alert          : Make alert show up on device.
+dial           : Dial a phone number.
 ipod           : Control music player.
 kill           : Terminate or signal a process.
 killall        : Kill process by name.
