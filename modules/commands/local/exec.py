@@ -1,16 +1,18 @@
 import os
 from os.path import expanduser
+import helper as h
 
 class command:
     def __init__(self):
-        self.name = "local"
-        self.description = "Run local shell commands."
+        self.name = "exec"
+        self.description = "Execute local shell commands."
     
     def run(self,session,cmd_data):
         if not cmd_data['args']:
             print "Usage: local <command>"
             return
         else:
+            print(h.CYAN+"[*]"+h.WHITE+" Exec: "+cmd_data['args'])
             split_args = cmd_data['args'].split()
             if split_args[0] == "cd":
                 path = cmd_data['args'][2:].strip()
