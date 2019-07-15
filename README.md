@@ -117,7 +117,7 @@
 ## Local commands
 
     clear          : Clear terminal input/output.
-    local          : Execute local shell commands.
+    exec           : Execute local shell commands.
 
 ## System commands
 
