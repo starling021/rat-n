@@ -90,7 +90,6 @@ cd ~
 if [[ -d ~/mouse ]]
 then
 {
-trap '' INT TSTP
 trap '' 2
 cd ~/mouse
 } &> /dev/null
@@ -106,7 +105,6 @@ cd ~
 git clone https://github.com/entynetproject/mouse.git
 cd ~/mouse
 } &> /dev/null
-trap '' INT TSTP
 trap '' 2
 python mouse.py
 else
