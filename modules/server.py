@@ -101,9 +101,6 @@ class Server:
         except KeyboardInterrupt:
             return
 
-    def mouse_cli(self):
-        print("*** Connected to ["+h.CYAN+""+self.host+""+h.ENDC+"] ***")
-
     def verbose_print(self,text):
         if self.is_multi == False:
             h.info_general(text)
