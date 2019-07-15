@@ -205,7 +205,6 @@
 ### macOS
 
     icons          : List system alert icons.
-    imessage       : Send message through the messages app.
     pid            : Get MPL process ID.
     su             : Login as root.
     upload         : Upload local file.
@@ -213,13 +212,7 @@
 ### iOS
 
     bundleids      : List bundle identifiers.
-    dhome          : Simulate a double home button press.
-    dial           : Dial a phone number.
-    home           : Simulate a home button press.
     islocked       : Check if the device is locked.
-    lastapp        : Get last opened application.
-    open           : Open application.
-    openurl        : Open URL on device.
     pid            : Get MPL process ID.
     upload         : Upload local file.
 
