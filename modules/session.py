@@ -57,6 +57,7 @@ class Session:
 		if device_type == "macos":
 			time.sleep(0)
   	        elif device_type == "iOS":
+			print "\n"+h.WHITEBU+"Substrate Commands:"+h.ENDC
 		        os.system("cd && cat mouse/resources/substrate_cmds.txt")
 		
 	def get_boot(self,device_type):
@@ -229,8 +230,6 @@ class Session:
 		print "\n"+h.WHITEBU+"Settings Commands:"+h.ENDC
 		
 		self.get_set(self.type)
-		
-		print "\n"+h.WHITEBU+"Substrate Commands:"+h.ENDC
 		
 		self.get_sub(self.type)
 		
