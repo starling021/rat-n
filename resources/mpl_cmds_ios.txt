@@ -7,6 +7,4 @@ lastapp        : Get last opened application.
 open           : Open application.
 openurl        : Open URL on device.
 pid            : Get MPL process ID.
-respring       : Restart SpringBoard.
-safemode       : Put device into SafeMode.
 upload         : Upload local file.
