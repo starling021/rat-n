@@ -1,5 +1,4 @@
 icons          : List system alert icons.
-imessage       : Send message through the messages app.
 pid            : Get MPL process ID.
 su             : Login as root.
 upload         : Upload local file.
