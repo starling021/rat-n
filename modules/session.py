@@ -34,6 +34,7 @@ import time
 import binascii
 import os
 import helper as h
+import server as s
 try:
 	import readline
 except:
@@ -152,7 +153,7 @@ class Session:
 		if self.needs_refresh:
 			return h.info_general_raw("Waiting for connection...")
 		os.system("clear && cd && cat mouse/banner/banner.txt")
-		os.system("cd && chmod +x mouse/banner/banner.sh && mouse/banner/banner.sh")
+		print(s.host)
 		return h.GREEN+ "[" + self.hostname + h.WHITE + "@" + h.GREEN + self.username + h.ENDC + " " + WHITE_C + self.current_directory + h.GREEN + "]" + h.WHITE + "$ " + h.ENDC
         
 
