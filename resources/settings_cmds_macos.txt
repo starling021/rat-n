@@ -1,0 +1,5 @@
+getpaste       : Get pasteboard contents.
+getvol         : Get speaker output volume.
+idletime       : Get the amount of user activity time.
+setbright      : Set screen brightness.
+setvol         : Set output volume.
