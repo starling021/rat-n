@@ -114,17 +114,30 @@
     Mouse CLI or via MultiHandler CLI. Each operating system of the remote device has 
     its own set of MPL commands. You can explore supported operating systems bellow.
     
+## Local commands
+
+    clear          : Clear terminal input/output.
+    local          : Execute local shell commands.
+
 ## System commands
 
 ### macOS
 
     cat            : Concatenate and print files.
     cd             : Change current directory.
+    chflags        : Change flags on file.
+    chgrp          : Change files groups.
+    chmod          : Change permissions.
     cp             : Copy files or directories.
     date           : Display current date.
     du             : Display disk usage statistics.
+    echo           : Write arguments to standard output.
+    exit           : Close current session and exit.
+    hash           : Display last executed commands.
+    head           : Display first new lines of file.
     kill           : Terminate or signal a process.
     killall        : Kill process by name.
+    ln             : Create softlink on oldname.  
     ls             : List contents of a directory.
     mkdir          : Create directories.
     more           : Read contents of a file.
@@ -133,22 +146,33 @@
     netstat        : Show network status.
     ps             : Show process status.
     pwd            : Show current directory.
+    read           : Read user input.
     rm             : Remove files or directories.
     rmdir          : Remove directories.
     sudo           : Execute command as root.
     ssh            : OpenSSH SSH client.
     time           : Display current time.
+    touch          : Create files.
+    trap           : Configure signals.
     w              : List terminal sessions.
     
 ### iOS
 
     cat            : Concatenate and print files.
     cd             : Change current directory.
+    chflags        : Change flags on file.
+    chgrp          : Change files groups.
+    chmod          : Change permissions.
     cp             : Copy files or directories.
     date           : Display current date.
     du             : Display disk usage statistics.
+    echo           : Write arguments to standard output.
+    exit           : Close current session and exit.
+    hash           : Display last executed commands.
+    head           : Display first new lines of file.
     kill           : Terminate or signal a process.
     killall        : Kill process by name.
+    ln             : Create softlink on oldname.  
     ls             : List contents of a directory.
     mkdir          : Create directories.
     more           : Read contents of a file.
@@ -157,13 +181,16 @@
     netstat        : Show network status.
     ps             : Show process status.
     pwd            : Show current directory.
+    read           : Read user input.
     rm             : Remove files or directories.
     rmdir          : Remove directories.
     sudo           : Execute command as root.
     ssh            : OpenSSH SSH client.
     time           : Display current time.
+    touch          : Create files.
+    trap           : Configure signals.
     w              : List terminal sessions.
-
+    
 ## Settings commands
 
 ### macOS
