@@ -220,10 +220,6 @@ class Session:
 		
 		self.get_troll(self.type)
 		
-		
-		
-		
-			
 		print "\n"+h.WHITEBU+"Other Commands:"+h.ENDC
 		
 		self.get_mpl(self.type)
