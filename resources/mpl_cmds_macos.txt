@@ -1,17 +1,12 @@
 download       : Download remote file.
 getfacebook    : Retrieve facebook session cookies.
-getpaste       : Get pasteboard contents.
-getvol         : Get speaker output volume.
 icons          : List system alert icons.
-idletime       : Get the amount of user activity time.
 imessage       : Send message through the messages app.
 mic            : Record mic sound.
 picture        : Take picture through iSight.
 pid            : Get MPL process ID.
 prompt         : Prompt user to type password.
 screenshot     : Take screenshot.
-setbright      : Set screen brightness.
-setvol         : Set output volume.
 sleep          : Put device into sleep mode.
 su             : Login as root.
 suspend        : Suspend current session.
