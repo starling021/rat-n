@@ -1,5 +1,6 @@
 PORT="$( cd && cat .lport )"
 IP="$( cd && cat .lhost )"
+TIP="$( cd && cat .rhost )"
 
 	BS="\033[1;34m"
 	CE="\033[0m"
