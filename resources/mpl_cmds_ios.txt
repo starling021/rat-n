@@ -1,6 +1,4 @@
 bundleids      : List bundle identifiers.
-dhome          : Simulate a double home button press.
-home           : Simulate a home button press.
 islocked       : Check if the device is locked.
 pid            : Get MPL process ID.
 upload         : Upload local file.
