@@ -113,8 +113,10 @@
     INFO: MPL commands are commands that allow you to control a remote device via 
     Mouse CLI or via MultiHandler CLI. Each operating system of the remote device has 
     its own set of MPL commands. You can explore supported operating systems bellow.
+    
+## Main commands
 
-## macOS
+### macOS
 
     download       : Download remote file.
     getfacebook    : Retrieve facebook session cookies.
@@ -135,7 +137,7 @@
     suspend        : Suspend current session.
     upload         : Upload local file.
 
-## iOS
+### iOS
 
     battery        : Get battery level.
     bundleids      : List bundle identifiers.
@@ -166,13 +168,9 @@
     
 ***
 
-# Trolling commands
+## Trolling commands
 
-    INFO: Trolling commands are commands that allow you to control a remote device via 
-    Mouse CLI or via MultiHandler CLI. Each operating system of the remote device has 
-    its own set of MPL commands. You can explore supported operating systems bellow.
-
-## macOS
+### macOS
 
     alert          : Make alert show up on device.
     chwall         : Change desktop wallpaper.
@@ -182,7 +180,7 @@
     killall        : Kill process by name.
     say            : Convert text to speach.
     
-## iOS
+### iOS
 
     alert          : Make alert show up on device.
     ipod           : Control music player.
@@ -193,13 +191,26 @@
 
 ***
 
-# System commands
+## Development commands
 
-    INFO: System commands are commands that allow you to control a remote device via 
-    Mouse CLI or via MultiHandler CLI. Each operating system of the remote device has 
-    its own set of MPL commands. You can explore supported operating systems bellow.
+### macOS
 
-## macOS
+    clang          : The Clang compiler.
+    make           : GNU make utility.
+    osascript      : Execute OSA scripts.
+    python         : The Python compiler.
+    
+### iOS
+
+    clang          : The Clang compiler.
+    make           : GNU make utility.
+    python         : The Python compiler.
+
+***
+
+## System commands
+
+### macOS
 
     cat            : Concatenate and print files.
     cd             : Change current directory.
@@ -223,7 +234,7 @@
     time           : Display current time.
     w              : List terminal sessions.
     
-## iOS
+### iOS
 
     cat            : Concatenate and print files.
     cd             : Change current directory.
