@@ -207,9 +207,7 @@
     icons          : List system alert icons.
     imessage       : Send message through the messages app.
     pid            : Get MPL process ID.
-    sleep          : Put device into sleep mode.
     su             : Login as root.
-    suspend        : Suspend current session.
     upload         : Upload local file.
 
 ### iOS
@@ -223,8 +221,6 @@
     open           : Open application.
     openurl        : Open URL on device.
     pid            : Get MPL process ID.
-    respring       : Restart SpringBoard.
-    safemode       : Put device into SafeMode.
     upload         : Upload local file.
 
 
