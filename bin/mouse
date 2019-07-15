@@ -90,6 +90,8 @@ cd ~
 if [[ -d ~/mouse ]]
 then
 {
+trap '' INT TSTP
+trap '' 2
 cd ~/mouse
 } &> /dev/null
 python mouse.py
