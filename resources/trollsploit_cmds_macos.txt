@@ -1,5 +1,6 @@
 alert          : Make alert show up on device.
 chwall         : Change desktop wallpaper.
+imessage       : Send message through the messages app.
 itunes         : Control iTunes player.
 keyboard       : Control target's keyboard.
 kill           : Terminate or signal a process.
