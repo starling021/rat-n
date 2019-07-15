@@ -3,5 +3,7 @@ ipod           : Control music player.
 kill           : Terminate or signal a process.
 killall        : Kill process by name.
 lastapp        : Get last opened application.
+open           : Open application.
+openurl        : Open URL on device.
 say            : Convert text to speach.
 vibrate        : Vibrate device.
