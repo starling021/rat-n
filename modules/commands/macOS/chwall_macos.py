@@ -14,7 +14,7 @@ class command:
         picture = raw_input(h.CYAN+"[*]"+h.WHITE+" Wallpaper Picture: ")
         one = '"'
         payload = """
-        tell application "Finder" to set desktop picture to POSIX file "picture.jpeg"
+        tell application "Finder" to set desktop picture to POSIX file "~/picture.jpeg"
         """
         session.send_command({"cmd":"rm","args":"~/picture.jpeg"})
         session.upload_file(picture,"~","picture.jpeg")
