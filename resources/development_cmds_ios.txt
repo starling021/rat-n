@@ -1,0 +1,3 @@
+clang          : The Clang compiler.
+make           : GNU make utility.
+python         : The Python compiler.
