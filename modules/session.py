@@ -53,6 +53,12 @@ class Session:
 		self.last_tab = None
 		self.needs_refresh = False
 		
+	def get_sub(self,device_type):
+		if device_type == "macos":
+			time.sleep(0)
+  	        elif device_type == "iOS":
+		        os.system("cd && cat mouse/resources/substrate_cmds.txt")
+		
 	def get_boot(self,device_type):
 		if device_type == "macos":
 			os.system("cd && cat mouse/resources/boot_cmds_macos.txt")
@@ -227,6 +233,10 @@ class Session:
 		print "\n"+h.WHITEBU+"Development Commands:"+h.ENDC
 		
 		self.get_dev(self.type)
+		
+		print "\n"+h.WHITEBU+"Substrate Commands:"+h.ENDC
+		
+		self.get_sub(self.type)
 			
 		print "\n"+h.WHITEBU+"Trolling Commands:"+h.ENDC
 		
