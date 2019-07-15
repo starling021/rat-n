@@ -230,13 +230,13 @@ class Session:
 		
 		self.get_set(self.type)
 		
-		print "\n"+h.WHITEBU+"Development Commands:"+h.ENDC
-		
-		self.get_dev(self.type)
-		
 		print "\n"+h.WHITEBU+"Substrate Commands:"+h.ENDC
 		
 		self.get_sub(self.type)
+		
+		print "\n"+h.WHITEBU+"Development Commands:"+h.ENDC
+		
+		self.get_dev(self.type)
 			
 		print "\n"+h.WHITEBU+"Trolling Commands:"+h.ENDC
 		
