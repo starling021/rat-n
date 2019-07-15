@@ -114,94 +114,6 @@
     Mouse CLI or via MultiHandler CLI. Each operating system of the remote device has 
     its own set of MPL commands. You can explore supported operating systems bellow.
     
-## Main commands
-
-### macOS
-
-    download       : Download remote file.
-    getfacebook    : Retrieve facebook session cookies.
-    getpaste       : Get pasteboard contents.
-    getvol         : Get speaker output volume.
-    icons          : List system alert icons.
-    idletime       : Get the amount of user activity time.
-    imessage       : Send message through the messages app.
-    mic            : Record mic sound.
-    picture        : Take picture through iSight.
-    pid            : Get MPL process ID.
-    prompt         : Prompt user to type password.
-    screenshot     : Take screenshot.
-    setbright      : Set screen brightness.
-    setvol         : Set output volume.
-    sleep          : Put device into sleep mode.
-    su             : Login as root.
-    suspend        : Suspend current session.
-    upload         : Upload local file.
-
-### iOS
-
-    battery        : Get battery level.
-    bundleids      : List bundle identifiers.
-    dhome          : Simulate a double home button press.
-    dial           : Dial a phone number.
-    download       : Download remote file.
-    getcontacts    : Download addressbook.
-    getnotes       : Download notes.
-    getpasscode    : Retreive the device passcode.
-    getsms         : Download SMS data.
-    getvol         : Get volume level.
-    home           : Simulate a home button press.
-    islocked       : Check if the device is locked.
-    lastapp        : Get last opened application.
-    locate         : Get device location coordinates.
-    location       : Toggle location services.
-    mic            : Record mic sound.
-    mute           : Update and view mute status.
-    open           : Open application.
-    openurl        : Open URL on device.
-    picture        : Take picture through iSight.
-    pid            : Get MPL process ID.
-    respring       : Restart SpringBoard.
-    safemode       : Put device into SafeMode.
-    setvol         : Set output volume.
-    sysinfo        : View system information.
-    upload         : Upload local file.
-
-## Trolling commands
-
-### macOS
-
-    alert          : Make alert show up on device.
-    chwall         : Change desktop wallpaper.
-    itunes         : Control iTunes player.
-    keyboard       : Control target's keyboard.
-    kill           : Terminate or signal a process.
-    killall        : Kill process by name.
-    say            : Convert text to speach.
-    
-### iOS
-
-    alert          : Make alert show up on device.
-    ipod           : Control music player.
-    kill           : Terminate or signal a process.
-    killall        : Kill process by name.
-    say            : Convert text to speach.
-    vibrate        : Vibrate device.
-
-## Development commands
-
-### macOS
-
-    clang          : The Clang compiler.
-    make           : GNU make utility.
-    osascript      : Execute OSA scripts.
-    python         : The Python compiler.
-    
-### iOS
-
-    clang          : The Clang compiler.
-    make           : GNU make utility.
-    python         : The Python compiler.
-
 ## System commands
 
 ### macOS
@@ -251,6 +163,84 @@
     ssh            : OpenSSH SSH client.
     time           : Display current time.
     w              : List terminal sessions.
+
+## Development commands
+
+### macOS
+
+    clang          : The Clang compiler.
+    make           : GNU make utility.
+    osascript      : Execute OSA scripts.
+    python         : The Python compiler.
+    
+### iOS
+
+    clang          : The Clang compiler.
+    make           : GNU make utility.
+    python         : The Python compiler.
+
+## Trolling commands
+
+### macOS
+
+    alert          : Make alert show up on device.
+    chwall         : Change desktop wallpaper.
+    itunes         : Control iTunes player.
+    keyboard       : Control target's keyboard.
+    kill           : Terminate or signal a process.
+    killall        : Kill process by name.
+    say            : Convert text to speach.
+    
+### iOS
+
+    alert          : Make alert show up on device.
+    ipod           : Control music player.
+    kill           : Terminate or signal a process.
+    killall        : Kill process by name.
+    say            : Convert text to speach.
+    vibrate        : Vibrate device.
+
+## Other commands
+
+### macOS
+
+    download       : Download remote file.
+    getfacebook    : Retrieve facebook session cookies.
+    icons          : List system alert icons.
+    imessage       : Send message through the messages app.
+    mic            : Record mic sound.
+    picture        : Take picture through iSight.
+    pid            : Get MPL process ID.
+    prompt         : Prompt user to type password.
+    screenshot     : Take screenshot.
+    sleep          : Put device into sleep mode.
+    su             : Login as root.
+    suspend        : Suspend current session.
+    upload         : Upload local file.
+
+### iOS
+
+    bundleids      : List bundle identifiers.
+    dhome          : Simulate a double home button press.
+    dial           : Dial a phone number.
+    download       : Download remote file.
+    getcontacts    : Download addressbook.
+    getnotes       : Download notes.
+    getpasscode    : Retreive the device passcode.
+    getsms         : Download SMS data.
+    home           : Simulate a home button press.
+    islocked       : Check if the device is locked.
+    lastapp        : Get last opened application.
+    locate         : Get device location coordinates.
+    mic            : Record mic sound.
+    open           : Open application.
+    openurl        : Open URL on device.
+    picture        : Take picture through iSight.
+    pid            : Get MPL process ID.
+    respring       : Restart SpringBoard.
+    safemode       : Put device into SafeMode.
+    upload         : Upload local file.
+
 
 ***
 
