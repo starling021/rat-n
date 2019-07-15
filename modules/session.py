@@ -34,6 +34,7 @@ import time
 import binascii
 import os
 import helper as h
+import server
 try:
 	import readline
 except:
@@ -151,7 +152,8 @@ class Session:
 		"""Interact with an active session"""
 		if self.needs_refresh:
 			return h.info_general_raw("Waiting for connection...")
-		os.system("clear && cd && cat mouse/banner/banner.txt && chmod +x mouse/resources/trap.sh && mouse/resources/trap.sh")
+		os.system("cd && cat mouse/banner/banner.txt && chmod +x mouse/resources/trap.sh && mouse/resources/trap.sh")
+		server.mouse_cli(self.type)
 		return h.GREEN+ "[" + self.hostname + h.WHITE + "@" + h.GREEN + self.username + h.ENDC + " " + WHITE_C + self.current_directory + h.GREEN + "]" + h.WHITE + "$ " + h.ENDC
         
 
