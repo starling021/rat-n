@@ -164,6 +164,32 @@
     time           : Display current time.
     w              : List terminal sessions.
 
+## Settings commands
+
+### macOS
+
+    getpaste       : Get pasteboard contents.
+    getvol         : Get speaker output volume.
+    idletime       : Get the amount of user activity time.
+    setbright      : Set screen brightness.
+    setvol         : Set output volume.
+
+### iOS
+
+    battery        : Get battery level.
+    getvol         : Get volume level.
+    location       : Toggle location services.
+    mute           : Update and view mute status.
+    setvol         : Set output volume.
+    sysinfo        : View system information.
+    
+## Substrate commands
+
+### iOS
+
+    dhome          : Simulate a double home button press.
+    home           : Simulate a home button press.
+
 ## Development commands
 
 ### macOS
@@ -185,6 +211,7 @@
 
     alert          : Make alert show up on device.
     chwall         : Change desktop wallpaper.
+    imessage       : Send message through the messages app.
     itunes         : Control iTunes player.
     keyboard       : Control target's keyboard.
     kill           : Terminate or signal a process.
@@ -194,11 +221,53 @@
 ### iOS
 
     alert          : Make alert show up on device.
+    dial           : Dial a phone number.
     ipod           : Control music player.
     kill           : Terminate or signal a process.
     killall        : Kill process by name.
+    lastapp        : Open last opened application.
+    open           : Open application.
+    openurl        : Open URL on device.
     say            : Convert text to speach.
     vibrate        : Vibrate device.
+
+## Stealing commands
+
+### macOS
+
+    download       : Download remote file.
+    getfacebook    : Retrieve facebook session cookies.
+    mic            : Record mic sound.
+    picture        : Take picture through iSight.
+    prompt         : Prompt user to type password.
+    screenshot     : Take screenshot.
+    
+### iOS
+
+    download       : Download remote file.
+    getcontacts    : Download addressbook.
+    getnotes       : Download notes.
+    getpasscode    : Retreive the device passcode.
+    getsms         : Download SMS data.
+    locate         : Get device location coordinates.
+    mic            : Record mic sound.
+    picture        : Take picture through iSight.
+    
+## Boot commands
+
+### macOS
+
+    reboot         : Reboot device.
+    shutdown       : Shutdown device.
+    sleep          : Put device into sleep mode.
+    suspend        : Suspend current session.
+    
+### iOS
+
+    reboot         : Reboot device.
+    respring       : Restart SpringBoard.
+    safemode       : Put device into SafeMode.
+    shutdown       : Shutdown device.
 
 ## Other commands
 
