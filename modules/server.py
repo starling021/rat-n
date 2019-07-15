@@ -81,6 +81,7 @@ class Server:
             if choice != "":
                 lhost = choice
             h.info_general("LHOST ==> " + lhost)
+            os.system("rm ~/.lhost && echo "+lhost+" >> ~/.lhost")
             while True:
                 lport = raw_input(h.info_general_raw("Set Local Port> "))
                 if not lport:
@@ -95,6 +96,7 @@ class Server:
                     continue
                 break
             h.info_general("LPORT ==> " + str(lport))
+            os.system("rm ~/.lhost && echo "+lport+" >> ~/.lport")
             self.host = socket.gethostbyname(lhost)
             self.port = lport
             return True
