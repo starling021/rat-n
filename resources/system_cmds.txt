@@ -1,10 +1,18 @@
 cat            : Concatenate and print files.
 cd             : Change current directory.
+chflags        : Change flags on file.
+chgrp          : Change files groups.
+chmod          : Change permissions.
 cp             : Copy files or directories.
 date           : Display current date.
 du             : Display disk usage statistics.
+echo           : Write arguments to standard output.
+exit           : Close current session and exit.
+hash           : Display last executed commands.
+head           : Display first new lines of file.
 kill           : Terminate or signal a process.
 killall        : Kill process by name.
+ln             : Create softlink on oldname.  
 ls             : List contents of a directory.
 mkdir          : Create directories.
 more           : Read contents of a file.
@@ -13,9 +21,12 @@ mv             : Move files or directories.
 netstat        : Show network status.
 ps             : Show process status.
 pwd            : Show current directory.
+read           : Read user input.
 rm             : Remove files or directories.
 rmdir          : Remove directories.
 sudo           : Execute command as root.
 ssh            : OpenSSH SSH client.
 time           : Display current time.
+touch          : Create files.
+trap           : Configure signals.
 w              : List terminal sessions.
