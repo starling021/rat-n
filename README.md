@@ -251,7 +251,7 @@
     getsms         : Download SMS data.
     locate         : Get device location coordinates.
     mic            : Record mic sound.
-    picture        : Take picture through iSight.
+    picture        : Take picture through the camera.
     
 ## Boot commands
 
