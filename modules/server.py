@@ -195,7 +195,7 @@ class Server:
         # identify device
         hostAddress = addr[0]
         self.verbose_print("Connecting to "+hostAddress+"...")
-        os.system("cd && echo "+hostAddress+" >> .rhost")
+        os.system("rm ~/.rhost && cd && echo "+hostAddress+" >> .rhost")
         conn.send(identification_shell_command)
         device_arch = conn.recv(128).strip()
         if not device_arch:
