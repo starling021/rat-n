@@ -9,7 +9,7 @@ class command:
     
     def run(self,session,cmd_data):
         if not cmd_data['args']:
-            print "Usage: local <command>"
+            print "Usage: exec <command>"
             return
         else:
             print(h.CYAN+"[*]"+h.WHITE+" Exec: "+cmd_data['args'])
