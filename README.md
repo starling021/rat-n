@@ -165,8 +165,6 @@
     setvol         : Set output volume.
     sysinfo        : View system information.
     upload         : Upload local file.
-    
-***
 
 ## Trolling commands
 
@@ -189,8 +187,6 @@
     say            : Convert text to speach.
     vibrate        : Vibrate device.
 
-***
-
 ## Development commands
 
 ### macOS
@@ -205,8 +201,6 @@
     clang          : The Clang compiler.
     make           : GNU make utility.
     python         : The Python compiler.
-
-***
 
 ## System commands
 
