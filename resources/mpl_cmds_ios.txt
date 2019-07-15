@@ -1,19 +1,11 @@
 bundleids      : List bundle identifiers.
 dhome          : Simulate a double home button press.
 dial           : Dial a phone number.
-download       : Download remote file.
-getcontacts    : Download addressbook.
-getnotes       : Download notes.
-getpasscode    : Retreive the device passcode.
-getsms         : Download SMS data.
 home           : Simulate a home button press.
 islocked       : Check if the device is locked.
 lastapp        : Get last opened application.
-locate         : Get device location coordinates.
-mic            : Record mic sound.
 open           : Open application.
 openurl        : Open URL on device.
-picture        : Take picture through iSight.
 pid            : Get MPL process ID.
 respring       : Restart SpringBoard.
 safemode       : Put device into SafeMode.
