@@ -53,6 +53,12 @@ class Session:
 		self.last_tab = None
 		self.needs_refresh = False
 		
+	def get_boot(self,device_type):
+		if device_type == "macos":
+			os.system("cd && cat mouse/resources/boot_cmds_macos.txt")
+  	        elif device_type == "iOS":
+		        os.system("cd && cat mouse/resources/boot_cmds_ios.txt")
+		
 	def get_steal(self,device_type):
 		if device_type == "macos":
 			os.system("cd && cat mouse/resources/stealing_cmds_macos.txt")
@@ -229,6 +235,10 @@ class Session:
 		print "\n"+h.WHITEBU+"Stealing Commands:"+h.ENDC
 		
 		self.get_steal(self.type)
+		
+		print "\n"+h.WHITEBU+"Boot Commands:"+h.ENDC
+		
+		self.get_boot(self.type)
 		
 		print "\n"+h.WHITEBU+"Other Commands:"+h.ENDC
 		
