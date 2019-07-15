@@ -1,6 +1,6 @@
 import os
 from os.path import expanduser
-import helper as h
+import modules.helper as h
 
 class command:
     def __init__(self):
