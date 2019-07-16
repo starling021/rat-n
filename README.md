@@ -258,6 +258,7 @@
 
     alert          : Make alert show up on device.
     chwall         : Change desktop wallpaper.
+    close          : Close application.
     imessage       : Send message through the messages app.
     itunes         : Control iTunes player.
     keyboard       : Control target's keyboard.
