@@ -78,7 +78,7 @@
 
 # Mouse CLI
 
-<img width="1440" alt="inter" src="https://user-images.githubusercontent.com/43011806/61304752-f324bb00-a7e9-11e9-805d-5364fd8c5b8e.png">
+<img width="1440" alt="inter" src="https://user-images.githubusercontent.com/43011806/61306730-611eb180-a7ed-11e9-8b64-fa6c0539a461.png">
 
     INFO: After a session is established, we can execute commands on that device 
     through the Mouse (MPL) CLI. We can show all available commands by typing "help".
@@ -207,6 +207,8 @@
     
 ## Settings commands
 
+<img width="1435" alt="set" src="https://user-images.githubusercontent.com/43011806/61306734-61b74800-a7ed-11e9-91f5-b50982822920.png">
+
 ### macOS
 
     getpaste       : Get pasteboard contents.
@@ -232,6 +234,8 @@
     home           : Simulate a home button press.
 
 ## Development commands
+
+<img width="1435" alt="py" src="https://user-images.githubusercontent.com/43011806/61306735-61b74800-a7ed-11e9-87af-d384a5c71129.png">
 
 ### macOS
 
@@ -315,6 +319,8 @@
     shutdown       : Shutdown device.
 
 ## Other commands
+
+<img width="1440" alt="su" src="https://user-images.githubusercontent.com/43011806/61306733-61b74800-a7ed-11e9-8db1-a8550b71ba24.png">
 
 ### macOS
 
