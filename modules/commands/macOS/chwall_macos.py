@@ -13,8 +13,11 @@ class command:
     def run(self,session,cmd_data):
         picture = raw_input(h.CYAN+"[*]"+h.WHITE+" Wallpaper Picture: ")
         one = '"'
+        payload = """
+        tell application "Finder" to set desktop picture to POSIX file "/var/picture.jpg"
+        """
         session.send_command({"cmd":"rm","args":"/var/picture.jpg"})
         session.upload_file(picture,"/var","picture.jpg")
-        cmd_data.update({"cmd":"osascript","args":"-e 'tell application "+one+"Finder"+one+" to set desktop picture to POSIX file "+one+"/var/picture.jpg"+one+"'"})
+        cmd_data.update({"cmd":"applescript","args":payload})
         picture = session.send_command(cmd_data).strip()
         return ""
