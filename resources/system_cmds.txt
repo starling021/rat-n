@@ -7,7 +7,6 @@ cp             : Copy files or directories.
 date           : Display current date.
 du             : Display disk usage statistics.
 echo           : Write arguments to standard output.
-exit           : Close current session and exit.
 hash           : Display last executed commands.
 head           : Display first new lines of file.
 kill           : Terminate or signal a process.
