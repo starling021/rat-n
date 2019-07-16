@@ -12,7 +12,7 @@ class command:
             print "Usage: exec <command>"
             return
         else:
-            print(h.CYAN+"[*]"+h.WHITE+" Exec: "+cmd_data['args'])
+            print(h.CYAN+"[*]"+h.WHITE+" exec: "+cmd_data['args'])
             split_args = cmd_data['args'].split()
             if split_args[0] == "cd":
                 path = cmd_data['args'][2:].strip()
