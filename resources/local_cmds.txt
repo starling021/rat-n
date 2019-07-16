@@ -1,0 +1,4 @@
+clear          : Clear terminal input/output.
+help           : Show all available commands.
+exec           : Execute local shell commands.
+exit           : Close current session and exit.
