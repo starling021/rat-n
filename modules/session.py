@@ -219,10 +219,7 @@ class Session:
 
 	def show_commands(self):
 		print h.WHITEBU+"Local Commands:"+h.ENDC
-		names_local = self.server.modules_local.keys()
-		names_local.sort()
-		for key in names_local:
-			h.show_command(self.server.modules_local[key])
+		os.system("cd && cat mouse/resources/local_cmds.txt")
 
 		print "\n"+h.WHITEBU+"System Commands:"+h.ENDC
 		os.system("cd && cat mouse/resources/system_cmds.txt")
