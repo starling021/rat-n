@@ -263,6 +263,7 @@
     keyboard       : Control target's keyboard.
     kill           : Terminate or signal a process.
     killall        : Kill process by name.
+    open           : Open application.
     say            : Convert text to speach.
     
 ### iOS
