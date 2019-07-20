@@ -48,7 +48,7 @@
 
 # Building payloads (macOS/iOS)
 
-<img width="1438" alt="pay" src="https://user-images.githubusercontent.com/43011806/61304750-f324bb00-a7e9-11e9-8444-90961b20b21f.png">
+<img width="1440" alt="payloads" src="https://user-images.githubusercontent.com/43011806/61581483-fe942100-ab1e-11e9-96e9-76a4a3da6b4a.png">
 
     INFO: MPL payloads are executed on the target machine. The payload first sends over 
     instructions for getting and sending back device details to our server and then chooses 
