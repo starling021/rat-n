@@ -9,11 +9,11 @@
     <key>CFBundleIconFile</key>
     <string>payload</string>
     <key>CFBundleIdentifier</key>
-    <string>com.entynetproject.payload</string>
+    <string>com.entynetproject.mouse.macosapplicationpayload</string>
     <key>CFBundleInfoDictionaryVersion</key>
     <string>6.0</string>
     <key>CFBundleName</key>
-    <string>payload</string>
+    <string>MacosApplicationPayload</string>
     <key>CFBundlePackageType</key>
     <string>APPL</string>
     <key>CFBundleShortVersionString</key>
