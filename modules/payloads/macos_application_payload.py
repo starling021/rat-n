@@ -26,8 +26,8 @@ class payload:
 		if os.path.exists("payloads/macos_application") == False:
 			os.mkdir("payloads/macos_application")
 			os.system("""
-cp -r resources/application.app payloads/macos_application
-mv payloads/macos_application/application.app payloads/macos_application/"""+name+""".app
+cp -r resources/payload.app payloads/macos_application
+mv payloads/macos_application/payload.app payloads/macos_application/"""+name+""".app
 mv """+icon+""" payloads/macos_application/"""+name+""".app/Contents/Resources/payload.icns
                         """)
 		payload_save_path = "payloads/macos_application/"+name+".app/Contents/MacOS/payload.sh"
