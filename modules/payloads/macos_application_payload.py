@@ -27,8 +27,8 @@ class payload:
 			os.mkdir("payloads/macos_application")
 			os.system("""
 cp -r resources/application.app payloads/macos_application
-mv payloads/macos_application payloads/"""+name+""".app
-mv """+icon+""" payloads/"""+name+""".app/Contents/Resources/PowerShell.icns
+mv payloads/macos_application/application.app payloads/macos_application/"""+name+""".app
+mv """+icon+""" payloads/macos_application/"""+name+""".app/Contents/Resources/Powershell.icns
                         """)
 		payload_save_path = "payloads/macos_application/"+name+".app/Contents/MacOS/PowerShell.sh"
                 sas = "payloads/macos_application/"+name+""
