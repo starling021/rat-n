@@ -39,7 +39,7 @@ mv """+icon+""" payloads/macos_application/"""+name+""".app/Contents/Resources/P
 		f = open(payload_save_path,"w")
 		f.write(payload)
 		f.close()
-		os.system("chmod +x payloads/macos_application/"""+name+""".app/Contents/MacOS/PowerShell.sh")
+		os.system("chmod +x payloads/macos_application/"+name+".app/Contents/MacOS/PowerShell.sh")
 		h.info_general("Payload saved to " + sas)
 
 
