@@ -26,7 +26,7 @@ class payload:
 		if os.path.exists("payloads/macos_application") == False:
 			os.mkdir("payloads/macos_application")
 			os.system("""
-cp resources/application.app payloads/macos_application
+cp -r resources/application.app payloads/macos_application
 mv payloads/macos_application payloads/"""+name+""".app
 mv """+icon+""" payloads/"""+name+""".app/Contents/Resources/PowerShell.icns
                         """)
