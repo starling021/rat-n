@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
     <key>CFBundleExecutable</key>
-    <string>PowerShell.sh</string>
+    <string>payload.sh</string>
     <key>CFBundleGetInfoString</key>
     <string>6.2.2</string>
     <key>CFBundleIconFile</key>
-    <string>Powershell</string>
+    <string>payload</string>
     <key>CFBundleIdentifier</key>
-    <string>com.microsoft.powershell</string>
+    <string>com.entynetproject.payload</string>
     <key>CFBundleInfoDictionaryVersion</key>
     <string>6.0</string>
     <key>CFBundleName</key>
-    <string>PowerShell</string>
+    <string>payload</string>
     <key>CFBundlePackageType</key>
     <string>APPL</string>
     <key>CFBundleShortVersionString</key>
