@@ -5,7 +5,7 @@ class payload:
 	def __init__(self):
 		self.name = "MacOS Application"
 		self.description = "Convert payload into the macOS Application."
-		self.usage = "Install via arduino."
+		self.usage = "Install via application."
 
 	def run(self,server):
 		while 1:
