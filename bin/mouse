@@ -39,6 +39,8 @@
 #white start
         WHS="\033[0;97m"
 	
+printf '\033]2;Mouse Payload Loader\a'
+	
 if [[ "$1" = "-c" || "$1" = "-c" ]]
 then
 if [[ "$2" = "downloads" ]]
