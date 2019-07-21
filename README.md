@@ -46,6 +46,15 @@
 
 ***
 
+# How to execute mouse
+
+    INFO: Use simple command to 
+    execute Mouse Paylod Loader.
+    
+> mouse
+
+***
+
 # Building payloads (macOS/iOS)
 
 <img width="1440" alt="payloads" src="https://user-images.githubusercontent.com/43011806/61581483-fe942100-ab1e-11e9-96e9-76a4a3da6b4a.png">
