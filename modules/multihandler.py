@@ -27,9 +27,10 @@
 #
 
 from modules import helper as h
-import threading, socket, time, sys
+import threading, socket, time, sys, os
 
 DOJ='\033[1;34m[*]\033[0m'
+os.system("printf '\033]2;MultiHandler CLI\a'")
 
 class MultiHandler:
 	def __init__(self,server):
