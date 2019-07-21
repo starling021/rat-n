@@ -52,26 +52,26 @@
     /usr/local/bin as /bin/mouse and /usr/local/bin/mouse. You 
     can execute Mouse Payload Loader via this simple commands.
     
-## Standart execution
+## Execute mouse
 
     INFO: Use this command to 
     execute Mouse Payload Loader.
     
 > mouse
 
-## Update execution
+## Update mouse
 
     INFO: Use this command to 
     update Mouse Payload Loader.
 
 > mouse -u
 
-## Cleaner execution
+## Clean mouse
 
     INFO: Use this command to 
     clean Mouse Payload Loader.
 
-> mouse -c [ downloads | payloads ]
+> mouse -c [downloads|payloads]
 
 ***
 
