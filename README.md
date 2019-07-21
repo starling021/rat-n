@@ -50,9 +50,28 @@
 
     INFO: Mouse Payload Loader will be installed to /bin and 
     /usr/local/bin as /bin/mouse and /usr/local/bin/mouse. You 
-    can execute Mouse Payload Loader via this simple command.
+    can execute Mouse Payload Loader via this simple commands.
+    
+## Standart execution
+
+    INFO: Use this command to 
+    execute Mouse Payload Loader.
     
 > mouse
+
+## Update execution
+
+    INFO: Use this command to 
+    update Mouse Payload Loader.
+
+> mouse -u
+
+## Cleaner execution
+
+    INFO: Use this command to 
+    clean Mouse Payload Loader.
+
+> mouse -c [downloads|payloads]
 
 ***
 
