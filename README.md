@@ -48,8 +48,9 @@
 
 # How to execute mouse
 
-    INFO: Use simple command to 
-    execute Mouse Paylod Loader.
+    INFO: Mouse Payload Loader installed to /bin and 
+    /usr/local/bin as /bin/mouse and /usr/local/bin/mouse.
+    You can execute Mouse Payload Loader via this simple command.
     
 > mouse
 
