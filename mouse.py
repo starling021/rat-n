@@ -37,6 +37,7 @@ import time
 #banner
 
 SAS='dev'
+os.system("printf '\033]2;Mouse Payload Loader\a'")
 
 def show_graphic():
     print(h.WHITE+"-"*40)
