@@ -71,7 +71,7 @@
     INFO: Use this command to 
     clean Mouse Payload Loader.
 
-> mouse -c <folder>
+> mouse -c [ downloads | payloads ]
 
 ***
 
