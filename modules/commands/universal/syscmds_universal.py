@@ -10,4 +10,4 @@ class command:
 
     def run(self,session,cmd_data):
         print h.WHITEBU+"System Commands:"+h.ENDC
-        cmd_data({"cmd":"compgen","args":"-c | sort"})
+        session.send_command({"cmd":"compgen","args":"-c | sort"})
