@@ -171,6 +171,7 @@
     rmdir          : Remove directories.
     sudo           : Execute command as root.
     ssh            : OpenSSH SSH client.
+    syscmds        : Display all system commands.
     time           : Display current time.
     touch          : Create files.
     trap           : Configure signals.
@@ -205,6 +206,7 @@
     rmdir          : Remove directories.
     sudo           : Execute command as root.
     ssh            : OpenSSH SSH client.
+    syscmds        : Display all system commands.
     time           : Display current time.
     touch          : Create files.
     trap           : Configure signals.
