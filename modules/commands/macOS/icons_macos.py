@@ -9,5 +9,4 @@ class command:
         self.description = "List system alert icons."
 
     def run(self,session,cmd_data):
-        print h.WHITEBU+"Alert Icons:"+h.ENDC
         os.system("cd && sort mouse/resources/icons.txt")
