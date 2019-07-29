@@ -10,4 +10,4 @@ class command:
 
     def run(self,session,cmd_data):
         print h.WHITEBU+"System Commands:"+h.ENDC
-        cmd_data.update({"cmd":"compgen","args":"-c"})
+        cmd_data.update({"cmd":"echo","args":"sas"})
