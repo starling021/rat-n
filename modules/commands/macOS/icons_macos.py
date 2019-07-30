@@ -9,4 +9,4 @@ class command:
         self.description = "List system alert icons."
 
     def run(self,session,cmd_data):
-        os.system("cd && sort mouse/resources/icons.txt")
+        os.system("cd && cat mouse/resources/icons.txt")
