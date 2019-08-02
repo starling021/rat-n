@@ -83,7 +83,7 @@
 
 # Mouse CLI
 
-<img width="1440" alt="inter" src="https://user-images.githubusercontent.com/43011806/61306730-611eb180-a7ed-11e9-8b64-fa6c0539a461.png">
+<img width="1440" alt="cli" src="https://user-images.githubusercontent.com/43011806/62371639-a0f7cf80-b535-11e9-97e1-5298c99c117a.png">
 
     INFO: After a session is established, we can execute commands on that device 
     through the Mouse (MPL) CLI. We can show all available commands by typing "help".
@@ -104,7 +104,7 @@
 
 # MultiHandler CLI
 
-<img width="1440" alt="mh" src="https://user-images.githubusercontent.com/43011806/62371325-de0f9200-b534-11e9-9fc9-7da8a8157b5a.png">
+<img width="1440" alt="mh" src="https://user-images.githubusercontent.com/43011806/62371637-a0f7cf80-b535-11e9-95cb-d2801225aa78.png">
 
     INFO: The Multihandler option lets us handler multiple 
     sessions. We can choose to interact with different devices 
