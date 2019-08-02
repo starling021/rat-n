@@ -123,15 +123,12 @@
 
 # Mouse Entypreter (osx/entypreter/reverse_tcp)
 
-    INFO: Mouse Entypreter is an entypreter macOS 
-    TCP payload for Mouse Payload Loader (MPL).
-    
 <img width="1440" alt="entypreter" src="https://user-images.githubusercontent.com/43011806/62374318-0a7adc80-b53c-11e9-8d29-77c94f03dcd4.png">
 
-    INFO: Mouse Entypreter will load Entypreter 
-    CLI to the Mouse Payload Loader (MPL).
+    INFO: Mouse Entypreter is an osx/entypreter/reverse_tcp 
+    payload configured for the Mouse Payload Loader (MPL).
     
-
+<img width="1440" alt="entypreter_tcp" src="https://user-images.githubusercontent.com/43011806/62374961-6eea6b80-b53d-11e9-800c-cb18bc671d53.png">
     
 ***
 
