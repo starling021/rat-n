@@ -1,4 +1,7 @@
-reboot         : Reboot device.
-respring       : Restart SpringBoard.
-safemode       : Put device into SafeMode.
-shutdown       : Shutdown device.
+
+    Command          Description 
+    -------          -----------
+    reboot           Reboot device.
+    respring         Restart SpringBoard.
+    safemode         Put device into SafeMode.
+    shutdown         Shutdown device.
