@@ -123,6 +123,8 @@
     
 # MPL commands
 
+<img width="1440" alt="s" src="https://user-images.githubusercontent.com/43011806/62371839-1cf21780-b536-11e9-91f9-dfa4d211aa27.png">
+
     INFO: MPL commands are commands that allow you to control a remote device via 
     Mouse CLI or via MultiHandler CLI. Each operating system of the remote device has 
     its own set of MPL commands. You can explore supported operating systems bellow.
