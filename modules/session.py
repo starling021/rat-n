@@ -40,6 +40,7 @@ except:
 	pass
 
 WHITE_C='\033[4;97m'
+entypreter = raw_input(h.CYAN+"[*]"+h.WHITE+" Entypreter? (y/N): ")
 
 class Session:
 	def __init__(self,server,conn,device_info):
