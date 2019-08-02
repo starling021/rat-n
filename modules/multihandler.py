@@ -140,11 +140,13 @@ class MultiHandler:
                 print("\nMultiHandler Commands")
                 print("=====================")
 		os.system("cd && cat mouse/resources/multihandler_cmds.txt")
+		print("")
 
 	def show_commands(self):
 		print("\nMultiHandler Commands")
                 print("=====================")
 		os.system("cd && cat mouse/resources/multihandler_cmds.txt")
+		print("")
 
 
 	def interact(self):
