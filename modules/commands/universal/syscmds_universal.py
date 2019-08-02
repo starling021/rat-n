@@ -10,4 +10,5 @@ class command:
         cmd_data.update({"cmd":"compgen","args":payload})
         print("\nSystem Commands")
         print("===============")
+        print("")
         print session.send_command(cmd_data)
