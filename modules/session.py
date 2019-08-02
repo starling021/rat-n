@@ -245,17 +245,22 @@ class Session:
 		
 		self.get_troll(self.type)
 		
-		print "\n"+h.WHITEBU+"Stealing Commands:"+h.ENDC
+		print("\nStealing Commands")
+                print("=================")
 		
 		self.get_steal(self.type)
 		
-		print "\n"+h.WHITEBU+"Boot Commands:"+h.ENDC
+		print("\nBoot Commands")
+                print("=============")
 		
 		self.get_boot(self.type)
 		
-		print "\n"+h.WHITEBU+"Other Commands:"+h.ENDC
+	        print("\nOther Commands")
+                print("==============")
 		
 		self.get_mpl(self.type)
+
+                print("")
 		
 
 	def send_command(self,cmd_data):
@@ -335,4 +340,3 @@ class Session:
 		if self.server.multihandler.is_running:
 			del self.server.multihandler.sessions_id[self.id]
 			del self.server.multihandler.sessions_uid[self.uid]
-
