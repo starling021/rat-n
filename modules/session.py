@@ -219,7 +219,8 @@ class Session:
 
 
 	def show_commands(self):
-		print h.WHITEBU+"Local Commands:"+h.ENDC
+		print("\nLocal Commands")
+                print("==============")
 		os.system("cd && cat mouse/resources/local_cmds.txt")
 
 		print "\n"+h.WHITEBU+"System Commands:"+h.ENDC
