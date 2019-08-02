@@ -1,3 +1,6 @@
-clang          : The Clang compiler.
-make           : GNU make utility.
-python         : The Python compiler.
+
+    Command          Description
+    -------          -----------
+    clang            The Clang compiler.
+    make             GNU make utility.
+    python           The Python compiler.
