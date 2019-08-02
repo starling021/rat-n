@@ -12,4 +12,4 @@ class command:
         print("\nAlert Icons")
         print("===========")
         print("")
-        os.system("cd && cat mouse/resources/icons.txt")
+        os.system("cd && sort mouse/resources/icons.txt")
