@@ -50,7 +50,7 @@ if entypreter == 'y':
 	h.info_general("Loading mouse/resources/entypreter/session.py...")
 	time.sleep(3)
 	h.info_general("Configuring...")
-	h.ingo_general("Saving and exiting...")
+	h.info_general("Saving and exiting...")
 	exit()
 else:
         time.sleep(0)	
