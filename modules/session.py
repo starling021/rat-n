@@ -40,11 +40,13 @@ except:
 	pass
 
 WHITE_C='\033[4;97m'
-entypreter = raw_input(h.CYAN+"[*]"+h.WHITE+" Entypreter? (y/N): ")
+
+entypreter = raw_input(h.CYAN+"[*]"+h.WHITE+" Load Entypreter? (y/N): ")
 if entypreter == 'y':
-	SHELL = 'entypreter > '
+	os.system("cd && mv mouse/modules/session.py mouse/resources/session.py && cp mouse/resources/entypreter/session.py mouse/modules/session.py")
 else:
-	SHELL = 'h.GREEN+ "[" + self.hostname + h.WHITE + "@" + h.GREEN + self.username + h.ENDC + " " + WHITE_C + self.current_directory + h.GREEN + "]" + h.WHITE + "$ " + h.ENDC'
+        time.sleep(0)	
+
 
 class Session:
 	def __init__(self,server,conn,device_info):
@@ -158,7 +160,8 @@ class Session:
 		if self.needs_refresh:
 			return h.info_general_raw("Waiting for connection...")
 		os.system("printf '\033]2;Mouse CLI\a'")
-		return SHELL
+		return h.GREEN+ "[" + self.hostname + h.WHITE + "@" + h.GREEN + self.username + h.ENDC + " " + WHITE_C + self.current_directory + h.GREEN + "]" + h.WHITE + "$ " + h.ENDC"
+
         
 
 	def tab_complete(self, text, state):
