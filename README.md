@@ -214,6 +214,8 @@
     
 ## Settings commands
 
+<img width="1440" alt="mc" src="https://user-images.githubusercontent.com/43011806/62374110-80cb0f00-b53b-11e9-9450-e15dffb03d03.png">
+
 ### macOS
 
     getpaste       : Get pasteboard contents.
