@@ -1,4 +1,7 @@
-clang          : The Clang compiler.
-make           : GNU make utility.
-osascript      : Execute OSA scripts.
-python         : The Python compiler.
+
+    Command          Description 
+    -------          -----------
+    clang            The Clang compiler.
+    make             GNU make utility.
+    osascript        Execute OSA scripts.
+    python           The Python compiler.
