@@ -90,7 +90,7 @@ class MultiHandler:
 	def show_session(self,session):
 		try:
 			print str(session.id) + " | " +\
-			session.username + "@" + session.hostname + " | " + \
+			session.hostname + "@" + session.username + " | " + \
 			str(session.conn.getpeername()[0]) 
 		except Exception as e:
 			h.info_error(str(e))
