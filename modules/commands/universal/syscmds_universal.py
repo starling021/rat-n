@@ -8,5 +8,6 @@ class command:
     def run(self,session,cmd_data):
         payload = "-c"
         cmd_data.update({"cmd":"compgen","args":payload})
-        print(h.WHITEBU+"System Commands:"+h.ENDC)
+        print("\nSystem Commands")
+        print("===============")
         print session.send_command(cmd_data)
