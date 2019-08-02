@@ -44,6 +44,14 @@ WHITE_C='\033[4;97m'
 entypreter = raw_input(h.CYAN+"[*]"+h.WHITE+" Load Entypreter? (y/N): ")
 if entypreter == 'y':
 	os.system("cd && mv mouse/modules/session.py mouse/resources/session.py && cp mouse/resources/entypreter/session.py mouse/modules/session.py")
+        time.sleep(2)
+	h.info_general("Loading osx/entypreter/reverse_tcp...")
+	time.sleep(1)
+	h.info_general("Loading mouse/resources/entypreter/session.py...")
+	time.sleep(3)
+	h.info_general("Configuring...")
+	h.ingo_general("Saving and exiting...")
+	exit()
 else:
         time.sleep(0)	
 
