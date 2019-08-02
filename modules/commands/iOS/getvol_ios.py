@@ -4,4 +4,4 @@ class command:
         self.description = "Get volume level."
     
     def run(self,session,cmd_data):
-        print session.send_command(cmd_data)
+        print("Current volume: "+session.send_command(cmd_data))
