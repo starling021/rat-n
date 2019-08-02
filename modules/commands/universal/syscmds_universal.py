@@ -6,7 +6,7 @@ class command:
         self.description = "Display all system commands."
     
     def run(self,session,cmd_data):
-        payload = "-c"
+        payload = "-c | sort"
         cmd_data.update({"cmd":"compgen","args":payload})
         print("\nSystem Commands")
         print("===============")
