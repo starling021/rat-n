@@ -83,6 +83,8 @@
 
 # Mouse CLI
 
+<img width="1440" alt="cli" src="https://user-images.githubusercontent.com/43011806/62390190-f3e77c00-b561-11e9-926f-c648473222b3.png">
+
     INFO: After a session is established, we can execute commands on that device 
     through the Mouse (MPL) CLI. We can show all available commands by typing "help".
     
