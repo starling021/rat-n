@@ -83,8 +83,6 @@
 
 # Mouse CLI
 
-<img width="1440" alt="cli" src="https://user-images.githubusercontent.com/43011806/62371639-a0f7cf80-b535-11e9-97e1-5298c99c117a.png">
-
     INFO: After a session is established, we can execute commands on that device 
     through the Mouse (MPL) CLI. We can show all available commands by typing "help".
     
@@ -118,17 +116,6 @@
     be installed on the victim's iOS device after receiving remote 
     control. Mouse Substrate allows you to run substrate commands 
     and services on the victim’s remote iOS device.
-
-***
-
-# Mouse Entypreter (osx/entypreter/reverse_tcp)
-
-<img width="1440" alt="entypreter" src="https://user-images.githubusercontent.com/43011806/62374318-0a7adc80-b53c-11e9-8d29-77c94f03dcd4.png">
-
-    INFO: Mouse Entypreter is an osx/entypreter/reverse_tcp 
-    payload configured for the Mouse Payload Loader (MPL).
-    
-<img width="1440" alt="entypreter_tcp" src="https://user-images.githubusercontent.com/43011806/62374961-6eea6b80-b53d-11e9-800c-cb18bc671d53.png">
     
 ***
 
