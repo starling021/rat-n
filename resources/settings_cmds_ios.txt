@@ -1,6 +1,9 @@
-battery        : Get battery level.
-getvol         : Get volume level.
-location       : Toggle location services.
-mute           : Update and view mute status.
-setvol         : Set output volume.
-sysinfo        : View system information.
+
+    Command          Description 
+    -------          -----------
+    battery          Get battery level.
+    getvol           Get volume level.
+    location         Toggle location services.
+    mute             Update and view mute status.
+    setvol           Set output volume.
+    sysinfo          View system information.
