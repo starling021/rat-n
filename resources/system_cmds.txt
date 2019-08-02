@@ -1,18 +1,19 @@
-cat            : Concatenate and print files.
-cd             : Change current directory.
-chflags        : Change flags on file.
-chgrp          : Change files groups.
-chmod          : Change permissions.
-cp             : Copy files or directories.
-date           : Display current date.
-du             : Display disk usage statistics.
-echo           : Write arguments to standard output.
-hash           : Display last executed commands.
-head           : Display first new lines of file.
-kill           : Terminate or signal a process.
-killall        : Kill process by name.
-ln             : Create softlink on oldname.  
-ls             : List contents of a directory.
+
+    Command          Description 
+    -------          -----------
+    cat              Concatenate and print files.
+    cd               Change current directory.
+    chflags          Change flags on file.
+    chgrp            Change files groups.
+    chmod            Change permissions.
+    cp               Copy files or directories.
+    date             Display current date.
+    du               Display disk usage statistics.
+    echo             Write arguments to standard output.
+    hash             Display last executed commands.
+    head             Display first new lines of file.
+    ln               Create softlink on oldname.  
+    ls               List contents of a directory.
 mkdir          : Create directories.
 more           : Read contents of a file.
 mount          : Mount file systems.
