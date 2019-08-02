@@ -149,7 +149,6 @@
     chflags        : Change flags on file.
     chgrp          : Change files groups.
     chmod          : Change permissions.
-    compgen (-c)   : Display all system commands.
     cp             : Copy files or directories.
     date           : Display current date.
     du             : Display disk usage statistics.
@@ -172,6 +171,7 @@
     rmdir          : Remove directories.
     sudo           : Execute command as root.
     ssh            : OpenSSH SSH client.
+    syscmds        : Display all system commands.
     time           : Display current time.
     touch          : Create files.
     trap           : Configure signals.
@@ -184,7 +184,6 @@
     chflags        : Change flags on file.
     chgrp          : Change files groups.
     chmod          : Change permissions.
-    compgen (-c)   : Display all system commands.
     cp             : Copy files or directories.
     date           : Display current date.
     du             : Display disk usage statistics.
@@ -207,6 +206,7 @@
     rmdir          : Remove directories.
     sudo           : Execute command as root.
     ssh            : OpenSSH SSH client.
+    syscmds        : Display all system commands.
     time           : Display current time.
     touch          : Create files.
     trap           : Configure signals.
