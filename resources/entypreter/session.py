@@ -130,7 +130,7 @@ class Session:
 		if self.needs_refresh:
 			return h.info_general_raw("Waiting for connection...")
 		os.system("printf '\033]2;Mouse CLI\a'")
-		return WHTC+"entypreter"+WHT+" > "+WHT
+		return WHTC+"entypreter"+WHT+"> "+WHT
 
         
 
