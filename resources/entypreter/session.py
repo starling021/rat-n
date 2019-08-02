@@ -129,7 +129,7 @@ class Session:
 		"""Interact with an active session"""
 		if self.needs_refresh:
 			return h.info_general_raw("Waiting for connection...")
-		os.system("printf '\033]2;Mouse CLI\a'")
+		os.system("printf '\033]2;osx/entypreter/reverse_tcp\a'")
 		return WHTC+"entypreter"+WHT+"> "+WHT
 
         
