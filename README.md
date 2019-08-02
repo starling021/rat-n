@@ -123,8 +123,6 @@
     
 # MPL commands
 
-<img width="1436" alt="cmds" src="https://user-images.githubusercontent.com/43011806/61304759-f455e800-a7e9-11e9-8b02-134725327c07.png">
-
     INFO: MPL commands are commands that allow you to control a remote device via 
     Mouse CLI or via MultiHandler CLI. Each operating system of the remote device has 
     its own set of MPL commands. You can explore supported operating systems bellow.
@@ -213,8 +211,6 @@
     w              : List terminal sessions.
     
 ## Settings commands
-
-<img width="1435" alt="set" src="https://user-images.githubusercontent.com/43011806/61306734-61b74800-a7ed-11e9-91f5-b50982822920.png">
 
 ### macOS
 
