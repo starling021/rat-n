@@ -14,12 +14,8 @@ except:
 	pass
 
 WHITE_C='\033[4;97m'
-
-entypreter = raw_input(h.CYAN+"[*]"+h.WHITE+" Load Entypreter? (y/N): ")
-if entypreter == 'y':
-	os.system("cd && mv mouse/modules/session.py mouse/resources/session.py && cp mouse/resources/entypreter/session.py mouse/modules/session.py")
-else:
-        time.sleep(0)	
+WHT='\033[0m'
+WHTC='\033[0;4m'
 
 
 class Session:
@@ -134,7 +130,7 @@ class Session:
 		if self.needs_refresh:
 			return h.info_general_raw("Waiting for connection...")
 		os.system("printf '\033]2;Mouse CLI\a'")
-		return \033[0;4m+"entypreter"+\033[0m+">"
+		return WHTC+"entypreter"+WHT+">"+WHT
 
         
 
