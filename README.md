@@ -104,6 +104,8 @@
 
 # MultiHandler CLI
 
+<img width="1440" alt="mh" src="https://user-images.githubusercontent.com/43011806/62371325-de0f9200-b534-11e9-9fc9-7da8a8157b5a.png">
+
     INFO: The Multihandler option lets us handler multiple 
     sessions. We can choose to interact with different devices 
     while listening for new connections in the background.
