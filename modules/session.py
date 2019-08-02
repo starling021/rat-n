@@ -57,7 +57,8 @@ class Session:
 		if device_type == "macos":
 			time.sleep(0)
   	        elif device_type == "iOS":
-			print "\n"+h.WHITEBU+"Substrate Commands:"+h.ENDC
+			print("\nSubstrate Commands")
+                        print("==================")
 		        os.system("cd && cat mouse/resources/substrate_cmds.txt")
 		
 	def get_boot(self,device_type):
@@ -223,20 +224,24 @@ class Session:
                 print("==============")
 		os.system("cd && cat mouse/resources/local_cmds.txt")
 
-		print "\n"+h.WHITEBU+"System Commands:"+h.ENDC
+	        print("\nSystem Commands")
+                print("===============")
 		os.system("cd && cat mouse/resources/system_cmds.txt")
 		
-		print "\n"+h.WHITEBU+"Settings Commands:"+h.ENDC
+		print("\nSettings Commands")
+                print("=================")
 		
 		self.get_set(self.type)
 		
 		self.get_sub(self.type)
 		
-		print "\n"+h.WHITEBU+"Development Commands:"+h.ENDC
+		print("\nDevelopment Commands")
+                print("====================")
 		
 		self.get_dev(self.type)
 			
-		print "\n"+h.WHITEBU+"Trolling Commands:"+h.ENDC
+		print("\nTrolling Commands")
+                print("=================")
 		
 		self.get_troll(self.type)
 		
@@ -330,5 +335,4 @@ class Session:
 		if self.server.multihandler.is_running:
 			del self.server.multihandler.sessions_id[self.id]
 			del self.server.multihandler.sessions_uid[self.uid]
-
 
