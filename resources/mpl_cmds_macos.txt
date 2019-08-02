@@ -1,4 +1,7 @@
-icons          : List system alert icons.
-pid            : Get MPL process ID.
-su             : Login as root.
-upload         : Upload local file.
+
+    Command          Description 
+    -------          -----------
+    icons            List system alert icons.
+    pid              Get MPL process ID.
+    su               Login as root.
+    upload           Upload local file.
