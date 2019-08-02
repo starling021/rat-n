@@ -137,19 +137,14 @@ class MultiHandler:
 
 
 	def show_command(self,name,description):
-		print name + " " * (15 - len(name)) + ": " + description
-
+                print("\nMultiHandler Commands")
+                print("=====================")
+		os.system("cd && cat mouse/resources/multihandler_cmds.txt")
 
 	def show_commands(self):
-		commands = [
-			("interact","Interact with a session."),
-			("close","Close active session."),
-			("sessions","List active sessions."),
-			("exit","Close all sessions and exit."),
-		]
-		print h.WHITEBU+"MultiHandler Commands:"+h.ENDC
-		for command in commands:
-			self.show_command(command[0],command[1])
+		print("\nMultiHandler Commands")
+                print("=====================")
+		os.system("cd && cat mouse/resources/multihandler_cmds.txt")
 
 
 	def interact(self):
@@ -180,5 +175,4 @@ class MultiHandler:
 				sys.stdout.write("\n")
 				self.stop_server()
 				return
-
 
