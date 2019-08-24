@@ -23,22 +23,6 @@
     
 ***
 
-# Getting started
-
-    INFO: It's not recomended to install, because 
-    this package depended by the Mouse Payload Loader 
-    (MPL) and Mouse Substrate will not work without MPL!
-
-## iOS (jailbroken) installation
-
-> cd mouse/substrate
-
-> chmod +x install.sh
-
-> ./install.sh
-
-***
-
 # Building substrate (iOS)
 
     INFO: You can build Mouse Substrate as a debian package,
