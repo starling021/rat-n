@@ -13,3 +13,4 @@ class command:
         print("===========")
         print("")
         os.system("cd && sort mouse/resources/icons.txt")
+        print("")
