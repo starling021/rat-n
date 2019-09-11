@@ -10,3 +10,4 @@ class command:
         print("==================")
         print("")
         print session.send_command(cmd_data).rstrip()
+        print("")
