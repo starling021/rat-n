@@ -28,7 +28,7 @@
     
 # Getting started
 
-## How to install
+## Installation
 
 > cd mouse
 
@@ -36,7 +36,7 @@
 
 > ./install.sh
 
-## How to uninstall
+## Uninstallation
 
 > cd mouse
 
