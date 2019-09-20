@@ -28,7 +28,7 @@
     
 # Getting started
 
-## Mouse (MPL) installation
+## Installation
 
 > cd mouse
 
@@ -36,7 +36,7 @@
 
 > ./install.sh
 
-## Mouse (MPL) uninstallation
+## Uninstallation
 
 > cd mouse
 
