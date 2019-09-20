@@ -28,7 +28,7 @@
     
 # Getting started
 
-## macOS/Linux installation
+## Mouse installation
 
 > cd mouse
 
@@ -36,13 +36,13 @@
 
 > ./install.sh
 
-## iOS (jailbroken) installation
+## Mouse uninstallation
 
 > cd mouse
 
-> chmod +x install.sh
+> chmod +x uninstall.sh
 
-> ./install.sh
+> ./uninstall.sh
 
 ***
 
