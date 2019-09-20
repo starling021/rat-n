@@ -14,7 +14,7 @@
 
 ***
 
-# About mouse/MPL
+# About mouse (MPL)
 
 <img width="1438" alt="mpl" src="https://user-images.githubusercontent.com/43011806/61304748-f28c2480-a7e9-11e9-98eb-31e0ef33f09e.png">
 
@@ -28,7 +28,7 @@
     
 # Getting started
 
-## mouse/MPL installation
+## mouse (MPL) installation
 
 > cd mouse
 
@@ -36,7 +36,7 @@
 
 > ./install.sh
 
-## mouse/MPL uninstallation
+## mouse (MPL) uninstallation
 
 > cd mouse
 
