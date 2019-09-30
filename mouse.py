@@ -63,7 +63,7 @@ class mouse:
         self.payloads = self.import_payloads() 
         self.banner_text = h.ENDC+"""
                _     __,..---""-._                 ';-,
-        ,    _/_),-"`             '-.                `\
+        ,    _/_),-"`             '-.                '\\
        \|.-"`    -_)                 '.                ||
        /`   a   ,                      \              .'/
        '.___,__/                 .-'    \_        _.-'.'
