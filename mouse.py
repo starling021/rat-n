@@ -61,10 +61,19 @@ class mouse:
         else:
             self.server.debug = False
         self.payloads = self.import_payloads() 
-        print(h.ENDC)
-        os.system("cat ~/mouse/banner/banner.txt")
-        print(h.WHITE+"Public Version: "+h.GREEN_THIN+"mouse-v1.6-"+SAS+h.WHITE+"\nDeveloped by Entynetproject (Ivan Nikolsky)\n"+h.ENDC)
-        
+        self.banner_text = h.ENDC+"""
+               _     __,..---""-._                 ';-,
+        ,    _/_),-"`             '-.                ``\
+       \|.-"`    -_)                 '.                ||
+       /`   a   ,                      \              .'/
+       '.___,__/                 .-'    \_        _.-'.'
+          |\  \      \         /`        _`------`_.-'
+             _/;--._, >        |   --.__/ `------`
+           (((-'  __//`'-......-;\      )
+                (((-'       __//  '--. /   mouse/MPL
+                          (((-'    __//
+                                 (((-'
+"""+h.WHITE+"Public Version: "+h.GREEN_THIN+"mouse-v1.6-"+SAS+h.WHITE+"\nDeveloped by Entynetproject (Ivan Nikolsky)\n"+h.ENDC
         
     # Actions
     def print_payload(self,payload,number_option):
