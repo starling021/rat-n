@@ -62,8 +62,8 @@ class mouse:
             self.server.debug = False
         self.payloads = self.import_payloads() 
         self.banner_text = h.ENDC+"""
-               _     __,..---""-._                 ';-,
-        ,    _/_),-"`             '-.                `"""+DC+"""
+               _     __,..---""-._                  ';-,
+        ,    _/_),-"`             '-.                 `,\
        \|.-"`    -_)                 '.                ||
        /`   a   ,                      \              .'/
        '.___,__/                 .-'    \_        _.-'.'
