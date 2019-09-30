@@ -96,7 +96,7 @@ class mouse:
                           (((-'    __//
                                  (((-'
 """+h.WHITE+"Public Version: "+h.GREEN_THIN+"mouse-v1.6-"+SAS+h.WHITE+"\nDeveloped by Entynetproject (Ivan Nikolsky)"+h.ENDC)
-        print(h.WHITE+"-"*40)
+        print(h.WHITE+"-"*43)
         print("")
         if not self.server.set_host_port():
             return
@@ -118,7 +118,7 @@ class mouse:
                           (((-'    __//
                                  (((-'
 """+h.WHITE+"Public Version: "+h.GREEN_THIN+"mouse-v1.6-"+SAS+h.WHITE+"\nDeveloped by Entynetproject (Ivan Nikolsky)"+h.ENDC)
-        print(h.WHITE+"-"*40)
+        print(h.WHITE+"-"*43)
         print("")
         if not self.server.set_host_port():
             return
@@ -163,7 +163,7 @@ class mouse:
                           (((-'    __//
                                  (((-'
 """+h.WHITE+"Public Version: "+h.GREEN_THIN+"mouse-v1.6-"+SAS+h.WHITE+"\nDeveloped by Entynetproject (Ivan Nikolsky)"+h.ENDC)
-        print(h.WHITE+"-"*40)
+        print(h.WHITE+"-"*43)
         print("")
         exit()
         
@@ -182,7 +182,7 @@ class mouse:
                           (((-'    __//
                                  (((-'
 """+h.WHITE+"Public Version: "+h.GREEN_THIN+"mouse-v1.6-"+SAS+h.WHITE+"\nDeveloped by Entynetproject (Ivan Nikolsky)"+h.ENDC)
-        print(h.WHITE+"-"*40)
+        print(h.WHITE+"-"*43)
         print("")
         os.system("cd ~ && cd mouse && chmod +x bin/mouse && bin/mouse -u")
         
@@ -202,7 +202,7 @@ class mouse:
                           (((-'    __//
                                  (((-'
 """+h.WHITE+"Public Version: "+h.GREEN_THIN+"mouse-v1.6-"+SAS+h.WHITE+"\nDeveloped by Entynetproject (Ivan Nikolsky)"+h.ENDC)
-        print(h.WHITE+"-"*40)
+        print(h.WHITE+"-"*43)
         print("")
         os.system("cd ~ && cd mouse && chmod +x bin/mouse && bin/mouse -c downloads")
         
@@ -221,7 +221,7 @@ class mouse:
                           (((-'    __//
                                  (((-'
 """+h.WHITE+"Public Version: "+h.GREEN_THIN+"mouse-v1.6-"+SAS+h.WHITE+"\nDeveloped by Entynetproject (Ivan Nikolsky)"+h.ENDC)
-        print(h.WHITE+"-"*40)
+        print(h.WHITE+"-"*43)
         print("")
         os.system("cd ~ && cd mouse && chmod +x bin/mouse && bin/mouse -c payloads")
 
@@ -240,7 +240,7 @@ class mouse:
                           (((-'    __//
                                  (((-'
 """+h.WHITE+"Public Version: "+h.GREEN_THIN+"mouse-v1.6-"+SAS+h.WHITE+"\nDeveloped by Entynetproject (Ivan Nikolsky)"+h.ENDC)
-        print(h.WHITE+"-"*40)
+        print(h.WHITE+"-"*43)
         print("")
         number_option = 1
         for key in self.payloads:
