@@ -16,7 +16,7 @@
 
 # About mouse (MPL)
 
-<img width="1438" alt="mpl" src="https://user-images.githubusercontent.com/43011806/61304748-f28c2480-a7e9-11e9-98eb-31e0ef33f09e.png">
+![mouse](https://user-images.githubusercontent.com/54115104/65906360-14e61500-e3cb-11e9-8e85-5a8513347828.png)
 
     INFO: Mouse Payload Loader (MPL) is a post exploitation surveillance tool written 
     in Python, C and Objective-C. It gives you a command line session with extra functionality 
