@@ -37,6 +37,7 @@ import time
 #banner
 
 SAS='dev'
+DC='//'
 os.system("printf '\033]2;Mouse Payload Loader\a'")
 
 def show_graphic():
@@ -62,7 +63,7 @@ class mouse:
         self.payloads = self.import_payloads() 
         self.banner_text = h.ENDC+"""
                _     __,..---""-._                 ';-,
-        ,    _/_),-"`             '-.                `"\\"
+        ,    _/_),-"`             '-.                `"""+DC+"""
        \|.-"`    -_)                 '.                ||
        /`   a   ,                      \              .'/
        '.___,__/                 .-'    \_        _.-'.'
