@@ -61,9 +61,9 @@ class mouse:
         else:
             self.server.debug = False
         self.payloads = self.import_payloads() 
-        self.banner_text = h.ENDC+"""
+print(h.ENDC+"""
 """+os.system("cat ~/mouse/banner/banner.txt")+"""
-"""+h.WHITE+"Public Version: "+h.GREEN_THIN+"mouse-v1.6-"+SAS+h.WHITE+"\nDeveloped by Entynetproject (Ivan Nikolsky)\n"+h.ENDC
+"""+h.WHITE+"Public Version: "+h.GREEN_THIN+"mouse-v1.6-"+SAS+h.WHITE+"\nDeveloped by Entynetproject (Ivan Nikolsky)\n"+h.ENDC)
         
         
     # Actions
