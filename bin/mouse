@@ -74,6 +74,8 @@ then
 sleep 1
 echo ""$BS"[*] "$WHS"Installing update..."$CE""
 {
+cp -r ~/mouse/downloads ~
+cp -r ~/mouse/payloads ~
 rm -r ~/mouse
 rm /bin/mouse
 rm /usr/local/bin/mouse
@@ -82,6 +84,12 @@ git clone https://github.com/entynetproject/mouse.git
 cd mouse
 chmod +x install.sh
 ./install.sh
+rm -r ~/mouse/downloads
+rm -r ~/mouse/payloads
+cp -r ~/downloads ~/mouse
+rm -r ~/downloads
+cp -r ~/payloads ~/mouse
+rm -r ~/payloads
 } &> /dev/null
 echo ""$GNS"[*] "$WHS"Successfully updated..."$CE""
 sleep 1
