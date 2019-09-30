@@ -74,8 +74,9 @@ then
 sleep 1
 echo ""$BS"[*] "$WHS"Installing update..."$CE""
 {
-cp -r ~/mouse/downloads ~
-cp -r ~/mouse/payloads ~
+mkdir ~/.mouse
+cp -r ~/mouse/downloads ~/.mouse
+cp -r ~/mouse/payloads ~/.mouse
 rm -r ~/mouse
 rm /bin/mouse
 rm /usr/local/bin/mouse
@@ -86,10 +87,9 @@ chmod +x install.sh
 ./install.sh
 rm -r ~/mouse/downloads
 rm -r ~/mouse/payloads
-cp -r ~/downloads ~/mouse
-rm -r ~/downloads
-cp -r ~/payloads ~/mouse
-rm -r ~/payloads
+cp -r ~/.mouse/downloads ~/mouse
+cp -r ~/.mouse/payloads ~/mouse
+rm -r ~/.mouse
 } &> /dev/null
 echo ""$GNS"[*] "$WHS"Successfully updated..."$CE""
 sleep 1
