@@ -77,7 +77,7 @@ class mouse:
         
     # Actions
     def print_payload(self,payload,number_option):
-        print (h.GREEN_THIN+" " * 4 + str(number_option) +h.WHITE+") "+ payload.name)
+        print (h.GREEN_THIN+" " * 4 + str(number_option) +h.ENDC+") "+ payload.name)
     
 
 
@@ -276,7 +276,7 @@ class mouse:
                 if err:
                     print err
                 if self.server.debug:
-                    print "Debug: on"
+                    print "Debug On"
                 sys.stdout.write(self.banner_text)
                 show_graphic()
                 option = raw_input(h.NES)
