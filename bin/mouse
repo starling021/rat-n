@@ -85,8 +85,6 @@ git clone https://github.com/entynetproject/mouse.git
 cd mouse
 chmod +x install.sh
 ./install.sh
-rm -r ~/mouse/downloads
-rm -r ~/mouse/payloads
 cp -r ~/.mouse/downloads ~/mouse
 cp -r ~/.mouse/payloads ~/mouse
 rm -r ~/.mouse
