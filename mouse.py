@@ -40,7 +40,7 @@ SAS='dev'
 os.system("printf '\033]2;Mouse Payload Loader\a'")
 
 def show_graphic():
-    print(h.WHITE+"-"*40)
+    print(h.WHITE+"-"*43)
     print("")
     print(h.GREEN_THIN+"    1"+h.ENDC+") Start Server")
     print(h.GREEN_THIN+"    2"+h.ENDC+") Start MultiHandler")
