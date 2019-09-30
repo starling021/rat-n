@@ -37,7 +37,7 @@ import time
 #banner
 
 SAS='dev'
-DC='//'
+DC='\\'
 os.system("printf '\033]2;Mouse Payload Loader\a'")
 
 def show_graphic():
