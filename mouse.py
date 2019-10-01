@@ -34,10 +34,22 @@ import sys, os
 import platform
 import time
 
+os.system("""
+if [[ -d ~/mouse ]]
+then
+sleep 0
+else
+cd ~
+{
+git clone https://github.com/entynetproject/mouse.git
+} &> /dev/null
+fi
+""")
+
 #banner
 
 SAS='dev'
-DC='\\'
+
 os.system("printf '\033]2;Mouse Payload Loader\a'")
 
 def show_graphic():
