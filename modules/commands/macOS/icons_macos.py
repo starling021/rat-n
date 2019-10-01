@@ -12,5 +12,5 @@ class command:
         print("\nAlert Icons")
         print("===========")
         print("")
-        os.system("sort resources/icons.txt")
+        os.system("cd && sort mouse/resources/icons.txt")
         print("")

@@ -37,7 +37,7 @@ import time
 #banner
 
 SAS='dev'
-
+DC='\\'
 os.system("printf '\033]2;Mouse Payload Loader\a'")
 
 def show_graphic():
@@ -77,7 +77,7 @@ class mouse:
         
     # Actions
     def print_payload(self,payload,number_option):
-        print (h.GREEN_THIN+" " * 4 + str(number_option) +h.ENDC+") "+ payload.name)
+        print (h.GREEN_THIN+" " * 4 + str(number_option) +h.WHITE+") "+ payload.name)
     
 
 
@@ -184,7 +184,7 @@ class mouse:
 """+h.WHITE+"Public Version: "+h.GREEN_THIN+"mouse-v1.6-"+SAS+h.WHITE+"\nDeveloped by Entynetproject (Ivan Nikolsky)"+h.ENDC)
         print(h.WHITE+"-"*43)
         print("")
-        os.system("chmod +x bin/mouse && bin/mouse -u")
+        os.system("cd ~ && cd mouse && chmod +x bin/mouse && bin/mouse -u")
         
         
     def clean_downloads(self):
@@ -204,7 +204,7 @@ class mouse:
 """+h.WHITE+"Public Version: "+h.GREEN_THIN+"mouse-v1.6-"+SAS+h.WHITE+"\nDeveloped by Entynetproject (Ivan Nikolsky)"+h.ENDC)
         print(h.WHITE+"-"*43)
         print("")
-        os.system("chmod +x bin/mouse && bin/mouse -c downloads")
+        os.system("cd ~ && cd mouse && chmod +x bin/mouse && bin/mouse -c downloads")
         
     def clean_payloads(self):
         os.system("clear")
@@ -223,7 +223,7 @@ class mouse:
 """+h.WHITE+"Public Version: "+h.GREEN_THIN+"mouse-v1.6-"+SAS+h.WHITE+"\nDeveloped by Entynetproject (Ivan Nikolsky)"+h.ENDC)
         print(h.WHITE+"-"*43)
         print("")
-        os.system("chmod +x bin/mouse && bin/mouse -c payloads")
+        os.system("cd ~ && cd mouse && chmod +x bin/mouse && bin/mouse -c payloads")
 
     def choose_payload(self):
         os.system("clear")
@@ -276,7 +276,7 @@ class mouse:
                 if err:
                     print err
                 if self.server.debug:
-                    print "Debug On"
+                    print "Debug: on"
                 sys.stdout.write(self.banner_text)
                 show_graphic()
                 option = raw_input(h.NES)
