@@ -46,6 +46,8 @@ git clone https://github.com/entynetproject/mouse.git
 fi
 """)
 
+os.chdir("~/mouse")
+
 SAS='dev'
 
 os.system("printf '\033]2;Mouse Payload Loader\a'")
