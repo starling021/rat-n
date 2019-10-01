@@ -77,7 +77,7 @@ class mouse:
         
     # Actions
     def print_payload(self,payload,number_option):
-        print (h.GREEN_THIN+" " * 4 + str(number_option) +h.WHITE+") "+ payload.name)
+        print (h.GREEN_THIN+" " * 4 + str(number_option) +h.ENDC+") "+ payload.name)
     
 
 
