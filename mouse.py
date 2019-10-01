@@ -46,7 +46,7 @@ git clone https://github.com/entynetproject/mouse.git
 fi
 """)
 
-os.chdir("~/mouse")
+os.chdir(os.path.expanduser("~/mouse"))
 
 SAS='dev'
 
