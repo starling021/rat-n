@@ -288,7 +288,7 @@ class mouse:
                 if err:
                     print err
                 if self.server.debug:
-                    print "Debug: on"
+                    print "Debug On"
                 sys.stdout.write(self.banner_text)
                 show_graphic()
                 option = raw_input(h.NES)
