@@ -34,20 +34,6 @@ import sys, os
 import platform
 import time
 
-os.system("""
-if [[ -d ~/mouse ]]
-then
-sleep 0
-else
-cd ~
-{
-git clone https://github.com/entynetproject/mouse.git
-} &> /dev/null
-fi
-""")
-
-os.chdir(os.path.expanduser("~/mouse"))
-
 SAS='dev'
 
 os.system("printf '\033]2;Mouse Payload Loader\a'")
