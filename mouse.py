@@ -34,7 +34,7 @@ import sys, os
 import platform
 import time
 
-os.system("chmod +x debug/debug.sh && debug/debug.sh")
+os.system("chmod +x bin/mouse && bin/mouse --check-directory")
 
 SAS='dev'
 
