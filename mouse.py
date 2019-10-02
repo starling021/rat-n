@@ -28,14 +28,16 @@
 #    Email     : entynetproject@gmail.com
 #
 
-from modules import server
-from modules import helper as h
-import sys, os
-import platform
-import time
+import os
 
 os.system("chmod +x bin/mouse && bin/mouse --check-directory")
 os.chdir(os.path.expanduser("~/mouse"))
+
+from modules import server
+from modules import helper as h
+import sys
+import platform
+import time
 
 SAS='dev'
 
