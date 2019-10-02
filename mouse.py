@@ -35,7 +35,7 @@ import platform
 import time
 
 os.system("chmod +x bin/mouse && bin/mouse --check-directory")
-os.chdir(os.path.expanduser(~/mouse))
+os.chdir(os.path.expanduser("~/mouse"))
 
 SAS='dev'
 
