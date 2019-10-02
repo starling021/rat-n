@@ -30,7 +30,7 @@
 
 import os
 
-os.system("chmod +x bin/mouse && bin/mouse --check-directory")
+os.system("chmod +x bin/mouse && bin/mouse --check-directory &> /dev/null")
 os.chdir(os.path.expanduser("~/mouse"))
 
 from modules import server
