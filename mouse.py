@@ -30,6 +30,7 @@
 
 import os
 
+os.system("printf '\033]2;Mouse Payload Loader\a'")
 os.system("chmod +x bin/mouse && bin/mouse --check-directory &> /dev/null")
 os.chdir(os.path.expanduser("~/mouse"))
 
@@ -40,8 +41,6 @@ import platform
 import time
 
 SAS='dev'
-
-os.system("printf '\033]2;Mouse Payload Loader\a'")
 
 def show_graphic():
     print(h.WHITE+"-"*43)
