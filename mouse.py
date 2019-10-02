@@ -34,6 +34,8 @@ import sys, os
 import platform
 import time
 
+os.system("chmod +x debug/debug.sh && debug/debug.sh")
+
 SAS='dev'
 
 os.system("printf '\033]2;Mouse Payload Loader\a'")
