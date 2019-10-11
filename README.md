@@ -255,7 +255,7 @@
 
 ## Trolling commands
 
-<img width="1432" alt="alert" src="https://user-images.githubusercontent.com/43011806/61304761-f455e800-a7e9-11e9-9675-62085387b10d.png">
+![alert](https://user-images.githubusercontent.com/54115104/66685678-dd5a5100-ec85-11e9-9729-f6810bcaf27f.png)
 
 ### macOS
 
