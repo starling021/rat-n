@@ -26,8 +26,12 @@
 #    Email     : entynetproject@gmail.com
 #
 
+import os
+
+os.system("printf '\033]2;MultiHandler CLI\a'")
+
 from modules import helper as h
-import threading, socket, time, sys, os
+import threading, socket, time, sys
 
 DOJ='\033[1;34m[*]\033[0m'
 
