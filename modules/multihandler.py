@@ -27,9 +27,6 @@
 #
 
 import os
-
-os.system("printf '\033]2;MultiHandler CLI\a'")
-
 from modules import helper as h
 import threading, socket, time, sys
 
