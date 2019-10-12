@@ -285,7 +285,7 @@
 
 ## Stealing commands
 
-![screenshot](https://user-images.githubusercontent.com/54115104/66684999-f9f58980-ec83-11e9-8a69-3ea9d17553f6.png)
+![screenshot](https://user-images.githubusercontent.com/54115104/66701587-58fbe280-ed06-11e9-9c2f-6714023dcaba.png)
 
 ### macOS
 
