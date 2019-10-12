@@ -31,8 +31,6 @@
 import os
 
 os.system("printf '\033]2;Mouse Payload Loader\a'")
-os.system("chmod +x bin/mouse && bin/mouse --check-directory")
-os.chdir(os.path.expanduser("~/mouse"))
 
 from modules import server
 from modules import helper as h
