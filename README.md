@@ -325,7 +325,7 @@
 
 ## Other commands
 
-![su](https://user-images.githubusercontent.com/54115104/66684995-f95cf300-ec83-11e9-8170-8bb1dfed471f.png)
+![su](https://user-images.githubusercontent.com/54115104/66701093-fb18cc00-ed00-11e9-8603-7eb62a3638f4.png)
 
 ### macOS
 
