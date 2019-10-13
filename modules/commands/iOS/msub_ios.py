@@ -24,10 +24,10 @@ class command:
         if cmd_data['args'] == "uninstall":
             h.info_general("Removing mpl.dylib (1/2)...")
             session.send_command({"cmd":"rm","args":"/Library/MobileSubstrate/DynamicLibraries/.mpl.plist"})
-            time.sleep(0)
+            time.sleep(0.3)
     	    h.info_general("Removing mpl.plist (2/2)...")
             session.send_command({"cmd":"rm","args":"/Library/MobileSubstrate/DynamicLibraries/.mpl.plist"})
-            time.sleep(0)
+            time.sleep(0.3)
             h.info_general("Restarting SpringBoard...")
             time.sleep(1)
             session.send_command({"cmd":"killall","args":"SpringBoard"})
