@@ -1,3 +1,5 @@
+import modules.helper as h
+
 class command:
     def __init__(self):
         self.name = "location"
@@ -14,4 +16,4 @@ class command:
        		cmd_data = {'cmd':'locationoff','args':''}
         error = session.send_command(cmd_data)
         if error:
-        	print error
+        	print(h.RED+"[-]"+h.WHITE+" MPL Substrate is not installed!")
