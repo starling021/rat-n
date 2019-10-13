@@ -3,8 +3,6 @@
     -------          -----------
     battery          Get battery level.
     getvol           Get volume level.
-    location         Toggle location services.
     msub             Install or uninstall MPL Substrate.
-    mute             Update and view mute status.
     setvol           Set output volume.
     sysinfo          View system information.
