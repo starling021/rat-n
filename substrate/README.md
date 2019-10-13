@@ -73,9 +73,11 @@
 
 ## iOS
 
-    home           : Simulate a home button press.
     dhome          : Simulate a double home button press.
-    
+    home           : Simulate a home button press.
+    locat          : Toggle location services.
+    mute           : Update and view mute status.
+
 ***
 
 # Terms of use
