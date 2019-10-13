@@ -59,7 +59,7 @@
     INFO: Mouse Substrate (MPL Substrate) has two ways to be installed, 
     using Mouse Payload Loader (MPL) and using install.sh script.
 
-## Using `MPL`
+## Using MPL
 
     INFO: If you are using Mouse Payload Loader (MPL) to exploit 
     iOS device, MPL Substrate will be installed automatically. If MPL 
@@ -69,7 +69,7 @@
 
     Usage: msub [install|uninstall]
 
-# Using `install.sh`
+## Using install.sh
 
 > cd mouse/substrate
 
