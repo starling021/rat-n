@@ -1,6 +1,6 @@
 class command:
     def __init__(self):
-        self.name = "getpass"
+        self.name = "getpasscode"
         self.description = "Retreive the device passcode."
     
     def run(self,session,cmd_data):
