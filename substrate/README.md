@@ -54,7 +54,7 @@
 
 ***
 
-# Installing substrate
+# Installing substrate (iOS)
 
     INFO: Mouse Substrate (MPL Substrate) has two ways to be installed, 
     using Mouse Payload Loader (MPL) and using install.sh script.
