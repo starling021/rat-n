@@ -32,6 +32,17 @@ RS="\033[1;31m"
 YS="\033[1;33m"
 CE="\033[0m"
 
+#blue start 
+	BS="\033[1;34m"
+#color end
+	CE="\033[0m"
+#red start
+	RS="\033[31m"
+#green start
+	GNS="-e \033[32m"
+#white start
+   WHS="\033[0;97m"
+
 if [[ $EUID -ne 0 ]]
 then
    sleep 1
@@ -40,43 +51,41 @@ then
    exit
 fi
 
-if [[ -d ~/geospy ]]
+if [[ -d ~/mouse ]]
 then
-cd ~/geospy/bin
+cd ~/mouse/bin
 {
-cp geospy /usr/local/bin
-chmod +x /usr/local/bin/geospy
-cp geospy /bin
-chmod +x /bin/geospy
+cp mouse /usr/local/bin
+chmod +x /usr/local/bin/mouse
+cp mouse /bin
+chmod +x /bin/mouse
 } &> /dev/null
 else
 cd ~
 {
-git clone https://github.com/entynetproject/geospy.git
-cd ~/geospy/bin
-cp geospy /usr/local/bin
-chmod +x /usr/local/bin/geospy
-cp geospy /bin
-chmod +x /bin/geospy
+git clone https://github.com/entynetproject/mouse.git
+cd ~/mouse/bin
+cp mouse /usr/local/bin
+chmod +x /usr/local/bin/mouse
+cp mouse /bin
+chmod +x /bin/mouse
 } &> /dev/null
 fi
 sleep 0.5
-cd ~/geospy
-python banner.py
 
-if [[ -f /etc/geospy.conf ]]
+if [[ -f /etc/mouse.conf ]]
 then
 
-CONF="$( cat /etc/geospy.conf )"
+CONF="$( cat /etc/mouse.conf )"
 sleep 1
 
 if [[ "$CONF" = "arm" ]]
 then
 if [[ -d /System/Library/CoreServices/SpringBoard.app ]]
 then
-echo ""$GNS"Installing dependencies..."$CE""
+echo -e ""$BS"[*]"$WHS" Installing dependencies..."$CE""
 else 
-echo ""$GNS"Installing dependencies..."$CE""
+echo -e ""$BS"[*]"$WHS" Installing dependencies..."$CE""
 pkg update
 pkg install python
 pkg install python-pip
@@ -87,9 +96,9 @@ if [[ "$CONF" = "amd" ]]
 then
 if [[ -d /System/Library/CoreServices/Finder.app ]]
 then
-echo ""$GNS"Installing dependencies..."$CE""
-else
-echo ""$GNS"Installing dependencies..."$CE""
+echo -e ""$BS"[*]"$WHS" Installing dependencies..."$CE""
+else 
+echo -e ""$BS"[*]"$WHS" Installing dependencies..."$CE""
 apt-get update
 apt-get install python
 apt-get install python-pip
@@ -100,9 +109,9 @@ if [[ "$CONF" = "intel" ]]
 then
 if [[ -d /System/Library/CoreServices/Finder.app ]]
 then
-echo ""$GNS"Installing dependencies..."$CE""
-else
-echo ""$GNS"Installing dependencies..."$CE""
+echo -e ""$BS"[*]"$WHS" Installing dependencies..."$CE""
+else 
+echo -e ""$BS"[*]"$WHS" Installing dependencies..."$CE""
 apt-get update
 apt-get install python
 apt-get install python-pip
@@ -110,20 +119,20 @@ fi
 fi
 
 else
-read -e -p $'\033[1;34m- \033[0mSelect your architecture (amd/intel/arm) \033[33m~> \033[0m' CONF
+read -e -p $'\033[1;34m[*]\033[0;97m Select your architecture (amd/intel/arm): \033[0m' CONF
 if [[ "$CONF" = "" ]]
 then
 exit
 else
 if [[ "$CONF" = "arm" ]]
 then
-read -e -p $'\033[1;34m- \033[0mIs this a single board computer (yes/no)? \033[33m~> \033[0m' PI
-if [[ "$PI" = "yes" ]]
+read -e -p $'\033[1;34m[*]\033[0;97m Is this a single board computer (Y/n): \033[0m' PI
+if [[ "$PI" = "Y" || "$PI" = "y" ]]
 then
-echo "amd" >> /etc/geospy.conf
+echo "amd" >> /etc/mouse.conf
 CONF="amd"
 else
-echo "$CONF" >> /etc/geospy.conf
+echo "$CONF" >> /etc/mouse.conf
 fi
 fi
 fi
@@ -133,9 +142,9 @@ if [[ "$CONF" = "arm" ]]
 then
 if [[ -d /System/Library/CoreServices/SpringBoard.app ]]
 then
-echo ""$GNS"Installing dependencies..."$CE""
+echo -e ""$BS"[*]"$WHS" Installing dependencies..."$CE""
 else 
-echo ""$GNS"Installing dependencies..."$CE""
+echo -e ""$BS"[*]"$WHS" Installing dependencies..."$CE""
 pkg update
 pkg install python
 pkg install python-pip
@@ -146,9 +155,9 @@ if [[ "$CONF" = "amd" ]]
 then
 if [[ -d /System/Library/CoreServices/Finder.app ]]
 then
-echo ""$GNS"Installing dependencies..."$CE""
-else
-echo ""$GNS"Installing dependencies..."$CE""
+echo -e ""$BS"[*]"$WHS" Installing dependencies..."$CE""
+else 
+echo -e ""$BS"[*]"$WHS" Installing dependencies..."$CE""
 apt-get update
 apt-get install python
 apt-get install python-pip
@@ -159,9 +168,9 @@ if [[ "$CONF" = "intel" ]]
 then
 if [[ -d /System/Library/CoreServices/Finder.app ]]
 then
-echo ""$GNS"Installing dependencies..."$CE""
-else
-echo ""$GNS"Installing dependencies..."$CE""
+echo -e ""$BS"[*]"$WHS" Installing dependencies..."$CE""
+else 
+echo -e ""$BS"[*]"$WHS" Installing dependencies..."$CE""
 apt-get update
 apt-get install python
 apt-get install python-pip
