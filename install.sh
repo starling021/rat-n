@@ -72,8 +72,10 @@ chmod +x /bin/mouse
 } &> /dev/null
 fi
 sleep 0.5
+echo
 cd ~/mouse
 cat banner/banner.txt
+echo
 
 if [[ -f /etc/mouse.conf ]]
 then
