@@ -72,6 +72,8 @@ chmod +x /bin/mouse
 } &> /dev/null
 fi
 sleep 0.5
+clear
+sleep 0.5
 echo
 cd ~/mouse
 cat banner/banner.txt
