@@ -87,6 +87,7 @@ cp -r ~/mouse/payloads ~/.mouse
 rm -rf ~/mouse
 rm /bin/mouse
 rm /usr/local/bin/mouse
+rm /data/data/com.termux/files/usr/bin/mouse
 cd ~
 git clone https://github.com/entynetproject/mouse.git
 cd mouse
