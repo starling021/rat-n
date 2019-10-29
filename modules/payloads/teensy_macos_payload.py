@@ -5,7 +5,7 @@ class payload:
 	def __init__(self):
 		self.name = "Teensy macOS"
 		self.description = "Arduino payload that replicates keystrokes for shell script execution."
-		self.usage = "install via arduino"
+		self.usage = "Install via arduino."
 
 	def run(self,server):
 		while 1:
