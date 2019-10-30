@@ -38,7 +38,7 @@
 
 > chmod +x debian.sh
 
-> ./debian.sh build
+> ./debian.sh -b
 
 ## Dynamic library
 
