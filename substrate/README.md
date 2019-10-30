@@ -50,7 +50,7 @@
 
 > cd mpl
 
-> make build
+> make package
 
 ***
 
