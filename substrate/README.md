@@ -38,7 +38,7 @@
 
 > chmod +x debian.sh
 
-> ./debian.sh -b
+> ./debian.sh --build
 
 ## Dynamic library
 
@@ -50,7 +50,7 @@
 
 > cd mpl
 
-> make package
+> make build
 
 ***
 
