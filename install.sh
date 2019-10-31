@@ -97,8 +97,7 @@ echo -e ""$BS"[*]"$WHS" Installing dependencies..."$CE""
 else 
 echo -e ""$BS"[*]"$WHS" Installing dependencies..."$CE""
 pkg update
-pkg -y install python2
-pkg -y install python-pip
+pkg -y install python
 pkg -y install openssl
 fi
 fi
@@ -111,8 +110,7 @@ echo -e ""$BS"[*]"$WHS" Installing dependencies..."$CE""
 else 
 echo -e ""$BS"[*]"$WHS" Installing dependencies..."$CE""
 apt-get update
-apt-get -y install python2
-apt-get -y install python-pip
+apt-get -y install python
 apt-get -y install openssl
 fi
 fi
@@ -125,8 +123,7 @@ echo -e ""$BS"[*]"$WHS" Installing dependencies..."$CE""
 else 
 echo -e ""$BS"[*]"$WHS" Installing dependencies..."$CE""
 apt-get update
-apt-get -y install python2
-apt-get -y install python-pip
+apt-get -y install python
 apt-get -y install openssl
 fi
 
@@ -160,8 +157,7 @@ echo -e ""$BS"[*]"$WHS" Installing dependencies..."$CE""
 else 
 echo -e ""$BS"[*]"$WHS" Installing dependencies..."$CE""
 pkg update
-pkg -y install python2
-pkg -y install python-pip
+pkg -y install python
 pkg -y install openssl
 fi
 fi
@@ -174,8 +170,7 @@ echo -e ""$BS"[*]"$WHS" Installing dependencies..."$CE""
 else 
 echo -e ""$BS"[*]"$WHS" Installing dependencies..."$CE""
 apt-get update
-apt-get -y install python2
-apt-get -y install python-pip
+apt-get -y install python
 apt-get -y install openssl
 fi
 fi
@@ -188,8 +183,7 @@ echo -e ""$BS"[*]"$WHS" Installing dependencies..."$CE""
 else 
 echo -e ""$BS"[*]"$WHS" Installing dependencies..."$CE""
 apt-get update
-apt-get -y install python2
-apt-get -y install python-pip
+apt-get -y install python
 apt-get -y install openssl
 fi
 fi
