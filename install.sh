@@ -126,6 +126,7 @@ apt-get update
 apt-get -y install python
 apt-get -y install openssl
 fi
+fi
 
 else
 read -e -p $'\033[1;34m[*]\033[0;97m Select your architecture (amd/intel/arm): \033[0m' CONF
