@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/bin/bash
 
 # 
 #            --------------------------------------------------
@@ -53,26 +53,11 @@ fi
 
 if [[ -d ~/mouse ]]
 then
-cd ~/mouse/bin
-{
-cp mouse /usr/local/bin
-chmod +x /usr/local/bin/mouse
-cp mouse /bin
-chmod +x /bin/mouse
-cp mouse /data/data/com.termux/files/usr/bin
-chmod +x /data/data/com.termux/files/usr/bin/mouse
-} &> /dev/null
+sleep 0
 else
 cd ~
 {
 git clone https://github.com/entynetproject/mouse.git
-cd ~/mouse/bin
-cp mouse /usr/local/bin
-chmod +x /usr/local/bin/mouse
-cp mouse /bin
-chmod +x /bin/mouse
-cp mouse /data/data/com.termux/files/usr/bin
-chmod +x /data/data/com.termux/files/usr/bin/mouse
 } &> /dev/null
 fi
 sleep 0.5
@@ -189,3 +174,13 @@ apt-get -y install openssl
 fi
 fi
 fi
+
+{
+cd ~/mouse/bin
+cp mouse /usr/local/bin
+chmod +x /usr/local/bin/mouse
+cp mouse /bin
+chmod +x /bin/mouse
+cp mouse /data/data/com.termux/files/usr/bin
+chmod +x /data/data/com.termux/files/usr/bin/mouse
+} &> /dev/null
