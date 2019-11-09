@@ -28,7 +28,7 @@
 #    Email     : entynetproject@gmail.com
 #
 
-RS="\033[31m"
+RS="\033[1;31m"
 YS="\033[1;33m"
 CE="\033[0m"
 WHS="\033[0;97m"
