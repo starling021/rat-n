@@ -100,10 +100,10 @@
 
 ***
 
-# Mouse (MPL) license
+# Mouse Substrate license
  
         --------------------------------------------------
-                       Mouse Payload Loader          
+                          Mouse Substrate          
         --------------------------------------------------
       Copyright (C) <2015>  <Entynetproject (Ivan Nikolsky)>
 
