@@ -32,7 +32,5 @@
  	 mv .cydia-package/Library/MobileSubstrate/DynamicLibraries/msub.plist .cydia-package/Library/MobileSubstrate/DynamicLibraries/.msub.plist
  	 # control file
          cat control >> .cydia-package/DEBIAN/control
-         #postinst
-         echo "#!/bin/bash" >> .cydia-package/DEBIAN/postinst
-         chmod +x .cydia-package/DEBIAN/postinst
+         # building
          dpkg -b .cydia-package msub.deb
