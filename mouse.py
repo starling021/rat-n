@@ -86,7 +86,7 @@ class mouse:
                     (((-'    __//
                            (((-'
 """+h.WHITE+"Mouse Payload Loader"+h.GREEN_THIN+" v1.6"+h.WHITE+"\nDeveloped by Entynetproject"+h.ENDC)
-        print(h.WHITE+"-"*43)
+        print(h.WHITE+"-"*27)
         print("")
         if not self.server.set_host_port():
             return
@@ -108,7 +108,7 @@ class mouse:
                     (((-'    __//
                            (((-'
 """+h.WHITE+"Mouse Payload Loader"+h.GREEN_THIN+" v1.6"+h.WHITE+"\nDeveloped by Entynetproject"+h.ENDC)
-        print(h.WHITE+"-"*43)
+        print(h.WHITE+"-"*27)
         print("")
         if not self.server.set_host_port():
             return
@@ -153,7 +153,7 @@ class mouse:
                     (((-'    __//
                            (((-'
 """+h.WHITE+"Mouse Payload Loader"+h.GREEN_THIN+" v1.6"+h.WHITE+"\nDeveloped by Entynetproject"+h.ENDC)
-        print(h.WHITE+"-"*43)
+        print(h.WHITE+"-"*27)
         print("")
         exit()
         
@@ -172,7 +172,7 @@ class mouse:
                     (((-'    __//
                            (((-'
 """+h.WHITE+"Mouse Payload Loader"+h.GREEN_THIN+" v1.6"+h.WHITE+"\nDeveloped by Entynetproject"+h.ENDC)
-        print(h.WHITE+"-"*43)
+        print(h.WHITE+"-"*27)
         print("")
         os.system("chmod +x bin/mouse && bin/mouse -u")
         
@@ -192,7 +192,7 @@ class mouse:
                     (((-'    __//
                            (((-'
 """+h.WHITE+"Mouse Payload Loader"+h.GREEN_THIN+" v1.6"+h.WHITE+"\nDeveloped by Entynetproject"+h.ENDC)
-        print(h.WHITE+"-"*43)
+        print(h.WHITE+"-"*27)
         print("")
         os.system("chmod +x bin/mouse && bin/mouse -c downloads")
         
@@ -211,7 +211,7 @@ class mouse:
                     (((-'    __//
                            (((-'
 """+h.WHITE+"Mouse Payload Loader"+h.GREEN_THIN+" v1.6"+h.WHITE+"\nDeveloped by Entynetproject"+h.ENDC)
-        print(h.WHITE+"-"*43)
+        print(h.WHITE+"-"*27)
         print("")
         os.system("chmod +x bin/mouse && bin/mouse -c payloads")
 
@@ -230,7 +230,7 @@ class mouse:
                     (((-'    __//
                            (((-'
 """+h.WHITE+"Mouse Payload Loader"+h.GREEN_THIN+" v1.6"+h.WHITE+"\nDeveloped by Entynetproject"+h.ENDC)
-        print(h.WHITE+"-"*43)
+        print(h.WHITE+"-"*27)
         print("")
         number_option = 1
         for key in self.payloads:
