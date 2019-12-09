@@ -63,7 +63,7 @@ class mouse:
                 (((-'       __//  '--. /   mouse/MPL
                           (((-'    __//
                                  (((-'
-"""+h.WHITE+"Mouse Payload Loader"+h.GREEN_THIN+" v1.6"+h.WHITE+"\nDeveloped by Entynetproject (Ivan Nikolsky)\n"+h.ENDC
+"""+h.WHITE+"Mouse Payload Loader"+h.GREEN_THIN+" v1.6"+h.WHITE+"\nDeveloped by Entynetproject\n"+h.ENDC
         
     # Actions
     def print_payload(self,payload,number_option):
@@ -85,7 +85,7 @@ class mouse:
                 (((-'       __//  '--. /   mouse/MPL
                           (((-'    __//
                                  (((-'
-"""+h.WHITE+"Mouse Payload Loader"+h.GREEN_THIN+" v1.6"+h.WHITE+"\nDeveloped by Entynetproject (Ivan Nikolsky)"+h.ENDC)
+"""+h.WHITE+"Mouse Payload Loader"+h.GREEN_THIN+" v1.6"+h.WHITE+"\nDeveloped by Entynetproject"+h.ENDC)
         print(h.WHITE+"-"*43)
         print("")
         if not self.server.set_host_port():
@@ -107,7 +107,7 @@ class mouse:
                 (((-'       __//  '--. /   mouse/MPL
                           (((-'    __//
                                  (((-'
-"""+h.WHITE+"Mouse Payload Loader"+h.GREEN_THIN+" v1.6"+h.WHITE+"\nDeveloped by Entynetproject (Ivan Nikolsky)"+h.ENDC)
+"""+h.WHITE+"Mouse Payload Loader"+h.GREEN_THIN+" v1.6"+h.WHITE+"\nDeveloped by Entynetproject"+h.ENDC)
         print(h.WHITE+"-"*43)
         print("")
         if not self.server.set_host_port():
@@ -152,7 +152,7 @@ class mouse:
                 (((-'       __//  '--. /   mouse/MPL
                           (((-'    __//
                                  (((-'
-"""+h.WHITE+"Mouse Payload Loader"+h.GREEN_THIN+" v1.6"+h.WHITE+"\nDeveloped by Entynetproject (Ivan Nikolsky)"+h.ENDC)
+"""+h.WHITE+"Mouse Payload Loader"+h.GREEN_THIN+" v1.6"+h.WHITE+"\nDeveloped by Entynetproject"+h.ENDC)
         print(h.WHITE+"-"*43)
         print("")
         exit()
@@ -171,7 +171,7 @@ class mouse:
                 (((-'       __//  '--. /   mouse/MPL
                           (((-'    __//
                                  (((-'
-"""+h.WHITE+"Mouse Payload Loader"+h.GREEN_THIN+" v1.6"+h.WHITE+"\nDeveloped by Entynetproject (Ivan Nikolsky)"+h.ENDC)
+"""+h.WHITE+"Mouse Payload Loader"+h.GREEN_THIN+" v1.6"+h.WHITE+"\nDeveloped by Entynetproject"+h.ENDC)
         print(h.WHITE+"-"*43)
         print("")
         os.system("chmod +x bin/mouse && bin/mouse -u")
@@ -191,7 +191,7 @@ class mouse:
                 (((-'       __//  '--. /   mouse/MPL
                           (((-'    __//
                                  (((-'
-"""+h.WHITE+"Mouse Payload Loader"+h.GREEN_THIN+" v1.6"+h.WHITE+"\nDeveloped by Entynetproject (Ivan Nikolsky)"+h.ENDC)
+"""+h.WHITE+"Mouse Payload Loader"+h.GREEN_THIN+" v1.6"+h.WHITE+"\nDeveloped by Entynetproject"+h.ENDC)
         print(h.WHITE+"-"*43)
         print("")
         os.system("chmod +x bin/mouse && bin/mouse -c downloads")
@@ -210,7 +210,7 @@ class mouse:
                 (((-'       __//  '--. /   mouse/MPL
                           (((-'    __//
                                  (((-'
-"""+h.WHITE+"Mouse Payload Loader"+h.GREEN_THIN+" v1.6"+h.WHITE+"\nDeveloped by Entynetproject (Ivan Nikolsky)"+h.ENDC)
+"""+h.WHITE+"Mouse Payload Loader"+h.GREEN_THIN+" v1.6"+h.WHITE+"\nDeveloped by Entynetproject"+h.ENDC)
         print(h.WHITE+"-"*43)
         print("")
         os.system("chmod +x bin/mouse && bin/mouse -c payloads")
@@ -229,7 +229,7 @@ class mouse:
                 (((-'       __//  '--. /   mouse/MPL
                           (((-'    __//
                                  (((-'
-"""+h.WHITE+"Mouse Payload Loader"+h.GREEN_THIN+" v1.6"+h.WHITE+"\nDeveloped by Entynetproject (Ivan Nikolsky)"+h.ENDC)
+"""+h.WHITE+"Mouse Payload Loader"+h.GREEN_THIN+" v1.6"+h.WHITE+"\nDeveloped by Entynetproject"+h.ENDC)
         print(h.WHITE+"-"*43)
         print("")
         number_option = 1
