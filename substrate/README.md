@@ -22,51 +22,7 @@
     
 ***
 
-# Building substrate (iOS)
-
-    INFO: You can build Mouse Substrate as a 
-    debian package or as a dynamic library.
-    
-## Debian Package
-
-    INFO: Debian package is a binary package for distributing 
-    and installing software in the Debian project system and 
-    others using the dpkg package management system.
-
-> cd mouse/substrate
-
-> chmod +x debian.sh
-
-> ./debian.sh -b
-
-## Dynamic Library
-
-    INFO: Dynamic is a collection of functions compiled 
-    and stored in an executable with purpose of being 
-    linked by other programs at run-time.
-
-> cd mouse/substrate
-
-> cd mpl
-
-> make build
-
-***
-
-# Installing substrate (iOS)
-
-    INFO: You can install Mouse Substrate using debian 
-    package or using Mouse Payload Loader (MPL).
-    
-## Debian Package
-
-> cd mouse/substrate
-
-> cd debs
-
-> dpkg -i mouse-substrate.deb
-
-## Mouse (MPL)
+# Using mouse substrate
 
     INFO: If you are using Mouse Payload Loader (MPL) 
     to remotely access iOS device, you can install Mouse 
@@ -96,14 +52,6 @@
     home           : Simulate a home button press.
     locat          : Toggle location services.
     mute           : Update and view mute status.
-
-***
-
-# Mouse substrate disclaimer
-
-    INFO: Usage of the Mouse Substrate for attacking targets without prior mutual consent is illegal. 
-    It is the end user's responsibility to obey all applicable local, state, federal, and international laws. 
-    Developers assume no liability and are not responsible for any misuse or damage caused by this program.
 
 ***
 
