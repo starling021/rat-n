@@ -79,11 +79,6 @@
 
 # Substrate commands
 
-    INFO: Substrate commands are commands that simulate the keyboard, 
-    gestures and pressing the various buttons on the remote iOS device.
-
-## iOS
-
     dhome          : Simulate a double home button press.
     home           : Simulate a home button press.
     locat          : Toggle location services.
