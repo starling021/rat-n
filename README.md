@@ -36,7 +36,7 @@
  </a>
 </p>
 
-![mouse](https://user-images.githubusercontent.com/54115104/68990597-23e33280-0866-11ea-8644-98a8f01440b9.png)
+![mouse](https://user-images.githubusercontent.com/54115104/70463102-4109ca80-1acd-11ea-9dc4-e5e6ff8123eb.png)
 
 ***
 
