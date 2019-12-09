@@ -35,14 +35,7 @@
  	 mv .cydia-package/Library/MobileSubstrate/DynamicLibraries/msub.dylib .cydia-package/Library/MobileSubstrate/DynamicLibraries/.msub.dylib
  	 mv .cydia-package/Library/MobileSubstrate/DynamicLibraries/msub.plist .cydia-package/Library/MobileSubstrate/DynamicLibraries/.msub.plist
  	 # control file
-         echo "Name: Mouse Substrate" >> .cydia-package/DEBIAN/control
-         echo "Package: com.entynetproject.msub" >> .cydia-package/DEBIAN/control
-         echo "Version: 0.0.1" >> .cydia-package/DEBIAN/control
-         echo "Description: Mouse Substrate (MPL Substrate)" >> .cydia-package/DEBIAN/control
-         echo "Architecture: iphoneos-arm" >> .cydia-package/DEBIAN/control
-         echo "Author: Entynetproject" >> .cydia-package/DEBIAN/control
-         echo "Maintainer: Entynetproject" >> .cydia-package/DEBIAN/control
-         echo "Depends: mobilesubstrate" >> .cydia-package/DEBIAN/control
+         cat control >> .cydia-package/DEBIAN/control
          #postinst
          echo "#!/bin/bash" >> .cydia-package/DEBIAN/postinst
          chmod +x .cydia-package/DEBIAN/postinst
