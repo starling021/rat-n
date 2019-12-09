@@ -16,10 +16,9 @@
 
 # About mouse substrate
 
-    INFO: Mouse Substrate (MPL Substrate) is a package that will 
-    be installed on the victim's iOS device after receiving remote 
-    control. Mouse Substrate allows you to run substrate commands 
-    and services on the victim’s remote iOS device.
+    INFO: Mouse Substrate (MPL Substrate) is a package that 
+    can be installed on the victim's iOS device after receiving 
+    remote control to run substrate commands and services.
     
 ***
 
@@ -56,9 +55,9 @@
 
 # About msub command
 
-    INFO: If you are using Mouse Payload Loader (MPL) to remotely access iOS 
-    device, MPL Substrate will be installed automatically. If MPL Substrate will 
-    not be installed automatically, install it using Mouse CLI msub command.
+    INFO: If you are using Mouse Payload Loader (MPL) 
+    to remotely access iOS device, you can install Mouse 
+    Substrate (MPL Substrate) using Mouse CLI msub command.
     
 > msub
 
