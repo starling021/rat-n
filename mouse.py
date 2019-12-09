@@ -31,7 +31,7 @@ import time
 SAS='dev'
 
 def show_graphic():
-    print(h.WHITE+"-"*43)
+    print(h.WHITE+"-"*27)
     print("")
     print(h.GREEN_THIN+"    1"+h.ENDC+") Start Server")
     print(h.GREEN_THIN+"    2"+h.ENDC+") Start MultiHandler")
