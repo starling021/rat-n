@@ -53,7 +53,7 @@
 
 ***
 
-# About msub command
+# Install via mouse
 
     INFO: If you are using Mouse Payload Loader (MPL) 
     to remotely access iOS device, you can install Mouse 
