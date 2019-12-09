@@ -56,9 +56,9 @@
 
 # About msub command
 
-    INFO: If you are using Mouse Payload Loader (MPL) to exploit iOS 
-    device, MPL Substrate will be installed automatically. If MPL Substrate 
-    will not installed automatically, install it using Mouse CLI msub command.
+    INFO: If you are using Mouse Payload Loader (MPL) to remotely access iOS 
+    device, MPL Substrate will be installed automatically. If MPL Substrate will 
+    not be installed automatically, install it using Mouse CLI msub command.
     
 > msub
 
