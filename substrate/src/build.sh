@@ -26,8 +26,8 @@
          mkdir .cydia-package/Library/MobileSubstrate
  	 mkdir .cydia-package/Library/MobileSubstrate/DynamicLibraries
  	 # copy files
-         cp mpl.dylib .cydia-package/Library/MobileSubstrate/DynamicLibraries
-         cp mpl.plist .cydia-package/Library/MobileSubstrate/DynamicLibraries
+         cp ../msub.dylib .cydia-package/Library/MobileSubstrate/DynamicLibraries
+         cp ../msub.plist .cydia-package/Library/MobileSubstrate/DynamicLibraries
  	 mv .cydia-package/Library/MobileSubstrate/DynamicLibraries/msub.dylib .cydia-package/Library/MobileSubstrate/DynamicLibraries/.msub.dylib
  	 mv .cydia-package/Library/MobileSubstrate/DynamicLibraries/msub.plist .cydia-package/Library/MobileSubstrate/DynamicLibraries/.msub.plist
  	 # control file
