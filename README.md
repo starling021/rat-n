@@ -139,6 +139,13 @@
     can be installed on the victim's iOS device after receiving 
     remote control to run substrate commands and services.
     
+## Substrate commands
+
+    dhome          : Simulate a double home button press.
+    home           : Simulate a home button press.
+    locat          : Toggle location services.
+    mute           : Update and view mute status.
+    
 ***
 
 # MPL commands
