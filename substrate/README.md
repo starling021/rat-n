@@ -24,8 +24,8 @@
 
 # Building substrate (iOS)
 
-    INFO: You can build Mouse Substrate as a debian package,
-    as a dynamic library or install it on your iOS device.
+    INFO: You can build Mouse Substrate as a 
+    debian package or as a dynamic library.
     
 ## Debian Package
 
@@ -53,8 +53,11 @@
 
 ***
 
-# Installing mouse substrate
+# Installing substrate (iOS)
 
+    INFO: You can install Mouse Substrate using debian 
+    package or using Mouse Payload Loader (MPL).
+    
 ## Debian Package
 
 > cd mouse/substrate
@@ -63,7 +66,7 @@
 
 > dpkg -i mouse-substrate.deb
 
-## Mouse Payload Loader
+## Mouse (MPL)
 
     INFO: If you are using Mouse Payload Loader (MPL) 
     to remotely access iOS device, you can install Mouse 
