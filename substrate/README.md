@@ -62,7 +62,7 @@
 
 > cd mouse/substrate
 
-> cd deb
+> cd debs
 
 > dpkg -i mouse-substrate.deb
 
