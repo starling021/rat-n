@@ -32,7 +32,7 @@
 
     Usage: msub [install|uninstall]
 
-## Installation
+## Mouse substrate installation
 
 > msub install
 
@@ -40,7 +40,7 @@
     [*] Uploading msub.plist (2/2)...
     [*] Restarting SpringBoard...
 
-## Uninstallation
+## Mouse substrate uninstallation
 
 > msub uninstall
 
