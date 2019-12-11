@@ -1,9 +1,9 @@
 Package: com.entynetproject.mplios
-Name: Mouse iOS
+Name: Mouse iOS Payload
 Depends: 
 Version: 1.6
 Architecture: iphoneos-arm
-Description: mouse/MPL iOS
+Description: Mouse iOS Payload
 Maintainer: Entynetproject
 Author: Entynetproject
 Section: System
