@@ -296,7 +296,7 @@
     close          : Close application.
     imessage       : Send message through the messages app.
     itunes         : Control iTunes player.
-    keyboard       : Control target's keyboard.
+    keyboard       : Control keyboard.
     kill           : Terminate or signal a process.
     killall        : Kill process by name.
     open           : Open application.
