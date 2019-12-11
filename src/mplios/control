@@ -1,7 +1,7 @@
 Package: com.entynetproject.mouse
 Name: Mouse iOS
 Depends: 
-Version: 0.0.1
+Version: 1.6.0
 Architecture: iphoneos-arm
 Description: mouse/MPL iOS
 Maintainer: Entynetproject
