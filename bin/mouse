@@ -129,7 +129,8 @@ then
 {
 cd ~/mouse
 } &> /dev/null
-python mouse.py
+chmod +x mouse
+./mouse
 else
 {
 ASESR="$( curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//' )"
@@ -141,7 +142,8 @@ cd ~
 git clone https://github.com/entynetproject/mouse.git
 cd ~/mouse
 } &> /dev/null
-python mouse.py
+chmod +x mouse
+./mouse
 else
 cd ~
 sleep 1
