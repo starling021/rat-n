@@ -29,7 +29,7 @@
 #white start
         WHS="\033[0;97m"
 
-if [[ "$2" = "downloads" ]]
+if [[ "$1" = "downloads" ]]
 then
 {
 cd ~/mouse
@@ -41,7 +41,7 @@ echo -e ""$BS"[*]"$WHS" Cleaning up..."$CE""
 sleep 10
 exit
 
-elif [[ "$2" = "payloads" ]]
+elif [[ "$1" = "payloads" ]]
 then
 {
 cd ~/mouse
