@@ -6,7 +6,7 @@ class command:
 	def __init__(self):
 		self.name = "download"
 		self.description = "Download remote file."
-		self.usage = "Usage: download <filename>"
+		self.usage = "Usage: download <remote_file>"
 		self.type = "native"
 
 	def run(self,session,cmd_data):
