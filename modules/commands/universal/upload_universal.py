@@ -8,8 +8,12 @@ class command:
         self.usage = "Usage: upload <filename> <path>"
     
     def run(self,session,cmd_data):
+        w = os.environ['OLDPWD']
+        os.chdir(w)
         if not cmd_data['args']:
             print self.usage
+            w = os.environ['OLDPWD']
+            os.chdir(w)
             return
         else:
             paths = re.split(r'(?<!\\) ', cmd_data['args'].rstrip())
@@ -33,3 +37,5 @@ class command:
 
             session.upload_file(paths[0],remote_dir,remote_file)
             h.info_general("File successfully uploaded!")
+            w = os.environ['OLDPWD']
+            os.chdir(w)
