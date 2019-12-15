@@ -129,12 +129,8 @@ class Server:
             "/.mpl "+payload_parameter+" 2>/dev/null &\n"
             return (instructions,payload)
         else:
-            if "GET / HTTP/1.1" in device_arch:
-                h.info_error("The device is not recognized!!!")
-                return
-            else:
-                h.info_error("The device is not recognized!")
-                return
+            h.info_error("The device is not recognized!")
+            return
 
     def listen_for_stager(self):
         #craft shell script
