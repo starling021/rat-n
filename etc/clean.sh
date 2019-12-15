@@ -53,3 +53,10 @@ echo -e ""$BS"[*]"$WHS" Cleaning up..."$CE""
 sleep 10
 exit
 fi
+
+echo -e "Usage: clean.sh [OPTION...]"
+echo -e "Copyright (C) 2019, Entynetproject. All Rights Reserved."
+echo -e
+echo -e "   -d  --downloads  Clean up downloads."
+echo -e "   -p  --payloads   Clean up payloads."
+echo -e "   -h  --help       Give this help list."
