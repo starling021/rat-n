@@ -37,6 +37,7 @@ echo -e
 echo -e "   -d  --downloads  Clean up downloads."
 echo -e "   -p  --payloads   Clean up payloads."
 echo -e "   -h  --help       Give this help list."
+echo -e
 
 elif [[ "$1" = "-d" || "$1" = "--downloads" ]]
 then
@@ -69,3 +70,5 @@ echo -e
 echo -e "   -d  --downloads  Clean up downloads."
 echo -e "   -p  --payloads   Clean up payloads."
 echo -e "   -h  --help       Give this help list."
+echo -e
+exit
