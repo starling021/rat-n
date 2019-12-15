@@ -42,11 +42,11 @@
 
 # About mouse (MPL)
 
-    INFO: Mouse Payload Loader (MPL) is a post exploitation surveillance tool written 
-    in Python, C and Objective-C. It gives you a command line session with extra functionality 
-    between you and a target machine with simple MPL payload. MPL gives you the power and convenience 
-    of uploading/downloading files, tab completion, taking pictures, location tracking, shell command 
-    execution, persistence, escalating privileges, password retrieval, and much more.
+    INFO: Mouse Payload Loader (MPL) is an iOS and macOS post exploitation surveillance 
+    tool that gives you a command line session with extra functionality between you and 
+    a target machine with simple MPL payload. MPL gives you the power and convenience of 
+    uploading and downloading files, tab completion, taking pictures, location tracking,
+    shell command execution, escalating privileges, password retrieval, and much more.
   
 ***
     
