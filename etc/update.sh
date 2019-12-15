@@ -1,3 +1,5 @@
+#!/bin/bash
+
 if [[ -d /data/data/com.termux ]]
 then
 if [[ -f /data/data/com.termux/files/usr/bin/mouse ]]
