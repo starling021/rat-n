@@ -29,7 +29,16 @@
 #white start
         WHS="\033[0;97m"
 
-if [[ "$1" = "downloads" ]]
+if [[ "$1" = "-h" || "$1" = "--help" ]]
+then
+echo -e "Usage: clean.sh [OPTION...]"
+echo -e "Copyright (C) 2019, Entynetproject. All Rights Reserved."
+echo -e
+echo -e "   -d  --downloads  Clean up downloads."
+echo -e "   -p  --payloads   Clean up payloads."
+echo -e "   -h  --help       Give this help list."
+
+elif [[ "$1" = "-d" || "$1" = "--downloads" ]]
 then
 {
 cd ~/mouse
@@ -41,7 +50,7 @@ echo -e ""$BS"[*]"$WHS" Cleaning up..."$CE""
 sleep 10
 exit
 
-elif [[ "$1" = "payloads" ]]
+elif [[ "$1" = "-p" || "$1" = "--payloads" ]]
 then
 {
 cd ~/mouse
