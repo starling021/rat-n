@@ -14,7 +14,7 @@ class command:
         else:
             paths = re.split(r'(?<!\\) ', cmd_data['args'].rstrip())
             if len(paths) > 2:
-                print "USAGE"
+                print "Usage: upload <filename> <path>"
                 return
             
             local_dir = os.path.split(paths[0])[0]
