@@ -160,8 +160,7 @@ class Server:
         try:
             bash_stager, executable = self.craft_payload(device_arch)
         except Exception as e:
-            h.info_error(str(e))
-            raw_input("Press the enter key to continue...")
+            raw_input("Press enter to continue...")
             return
         self.verbose_print("Sending MPL Payload...")
         self.debug_print(bash_stager.strip())
