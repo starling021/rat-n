@@ -192,7 +192,7 @@ class mouse:
 """+h.WHITE+"Mouse Payload Loader"+h.GREEN_THIN+" v1.6"+h.WHITE+"\nDeveloped by Entynetproject"+h.ENDC)
         print(h.WHITE+"-"*27)
         print("")
-        os.system("chmod +x etc/clean.sh && etc/clean.sh downloads")
+        os.system("chmod +x etc/clean.sh && etc/clean.sh -d")
         
     def clean_payloads(self):
         os.system("clear")
@@ -211,7 +211,7 @@ class mouse:
 """+h.WHITE+"Mouse Payload Loader"+h.GREEN_THIN+" v1.6"+h.WHITE+"\nDeveloped by Entynetproject"+h.ENDC)
         print(h.WHITE+"-"*27)
         print("")
-        os.system("chmod +x etc/clean.sh && etc/clean.sh payloads")
+        os.system("chmod +x etc/clean.sh && etc/clean.sh -p")
 
     def choose_payload(self):
         os.system("clear")
