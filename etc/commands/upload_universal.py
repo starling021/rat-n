@@ -5,7 +5,7 @@ class command:
     def __init__(self):
         self.name = "upload"
         self.description = "Upload local file."
-        self.usage = "Usage: upload <filename> <path>"
+        self.usage = "Usage: upload <local_file> <remote_path>"
     
     def run(self,session,cmd_data):
         if not cmd_data['args']:
@@ -14,7 +14,7 @@ class command:
         else:
             paths = re.split(r'(?<!\\) ', cmd_data['args'].rstrip())
             if len(paths) > 2:
-                print "Usage: upload <filename> <path>"
+                print "Usage: upload <local_file> <remote_path>"
                 return
             
             local_dir = os.path.split(paths[0])[0]
