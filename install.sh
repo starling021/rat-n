@@ -66,6 +66,8 @@ sleep 1
 pkg update
 pkg -y install python
 pkg -y install openssl
+apt-get -y install python
+apt-get -y install openssl
 apk add python
 apk add openssl
 pacman -S python
