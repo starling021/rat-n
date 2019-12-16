@@ -25,9 +25,22 @@ if [[ -d ~/mouse ]]
 then
 {
 cd ~/mouse
+mkdir etc/.disabled
+mv modules/commands/universal/upload_universal.py etc/.disabled
+mv etc/commands/upload_universal.py modules/commands/universal
+cp etc/.disabled/upload_universal.py etc/commands
+rm -rf etc/.disabled
 } &> /dev/null
 chmod +x mouse
 ./mouse
+{
+cd ~/mouse
+mkdir etc/.disabled
+mv modules/commands/universal/upload_universal.py etc/.disabled
+mv etc/commands/upload_universal.py modules/commands/universal
+cp etc/.disabled/upload_universal.py etc/commands
+rm -rf etc/.disabled
+} &> /dev/null
 else
 {
 ASESR="$( curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//' )"
@@ -37,10 +50,24 @@ then
 cd ~
 {
 git clone https://github.com/entynetproject/mouse.git
+cd $OLDPWD
 cd ~/mouse
+mkdir etc/.disabled
+mv modules/commands/universal/upload_universal.py etc/.disabled
+mv etc/commands/upload_universal.py modules/commands/universal
+cp etc/.disabled/upload_universal.py etc/commands
+rm -rf etc/.disabled
 } &> /dev/null
 chmod +x mouse
 ./mouse
+{
+cd ~/mouse
+mkdir etc/.disabled
+mv modules/commands/universal/upload_universal.py etc/.disabled
+mv etc/commands/upload_universal.py modules/commands/universal
+cp etc/.disabled/upload_universal.py etc/commands
+rm -rf etc/.disabled
+} &> /dev/null
 else
 cd ~
 sleep 1
