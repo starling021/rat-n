@@ -70,8 +70,13 @@ apt-get -y install python
 apt-get -y install openssl
 apk add python
 apk add openssl
-pacman -S python
-pacman -S openssl
+pacman -Sy
+yes | pacman -S python
+yes | pacman -S openssl
+zypper install -y python
+zypper install -y openssl
+yum -y install python
+yum -y install openssl
 }
 
 {
