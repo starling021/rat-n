@@ -73,6 +73,7 @@ apk add openssl
 pacman -Sy
 yes | pacman -S python
 yes | pacman -S openssl
+zypper refresh
 zypper install -y python
 zypper install -y openssl
 yum -y install python
