@@ -64,27 +64,37 @@ sleep 1
 
 {
 pkg update
+pkg -y install git
 pkg -y install python
 pkg -y install openssl
+apt-get update
+apt-get -y install git
 apt-get -y install python
 apt-get -y install openssl
 apk update
+apk add git
 apk add python
 apk add openssl
 pacman -Sy
+pacman -S --noconfirm git
 pacman -S --noconfirm python
 pacman -S --noconfirm openssl
 zypper refresh
+zypper install -y git
 zypper install -y python
 zypper install -y openssl
+yum -y install git
 yum -y install python
 yum -y install openssl
+dnf -y install git
 dnf -y install python
 dnf -y install openssl
 eopkg update-repo
+eopkg -y install git
 eopkg -y install python
 eopkg -y install openssl
 xbps-install -S
+xbps-install -y git
 xbps-install -y python
 xbps-install -y openssl
 }
