@@ -108,3 +108,7 @@ chmod +x /bin/mouse
 cp mouse /data/data/com.termux/files/usr/bin
 chmod +x /data/data/com.termux/files/usr/bin/mouse
 } &> /dev/null
+
+sleep 1
+echo -e ""$GNS"[+]"$WHS" Successfully installed!"$CE""
+sleep 1
