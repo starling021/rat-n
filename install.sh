@@ -87,8 +87,6 @@ eopkg -y install openssl
 xbps-install -S
 xbps-install -y python
 xbps-install -y openssl
-nix-env -i python
-nix-env -i openssl
 }
 
 {
