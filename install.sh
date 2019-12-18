@@ -68,6 +68,7 @@ pkg -y install python
 pkg -y install openssl
 apt-get -y install python
 apt-get -y install openssl
+apk update
 apk add python
 apk add openssl
 pacman -Sy
@@ -80,8 +81,10 @@ yum -y install python
 yum -y install openssl
 dnf -y install python
 dnf -y install openssl
-eopkg install python
-eopkg install openssl
+eopkg update-repo
+eopkg -y install python
+eopkg -y install openssl
+xbps-install -S
 xbps-install -y python
 xbps-install -y openssl
 nix-env -i python
