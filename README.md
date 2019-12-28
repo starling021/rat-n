@@ -143,16 +143,16 @@
     
 ***
 
-# Mouse CLI
+# Mouse (MPL) CLI
 
 ![cli](https://user-images.githubusercontent.com/54115104/66684997-f9f58980-ec83-11e9-8557-2a710c15b805.png)
 
-    After a session is established, we can execute commands on that device through 
-    the Mouse (MPL) CLI. We can show all available commands by typing "help". Mouse 
-    CLI allows you to control a remote device. Remote device can be controlled by Mouse 
-    CLI commands. You can explore list of available Mouse CLI commands bellow.
+    After a session is established, we can execute commands on that device through the
+    Mouse (MPL) CLI. We can show all available commands by typing "help". Mouse (MPL) CLI 
+    allows you to control a remote device. Remote device can be controlled by Mouse (MPL)
+    CLI commands. You can explore list of available Mouse (MPL) CLI commands bellow.
 
-### Local commands
+## Local commands
 
 ![exec](https://user-images.githubusercontent.com/54115104/66684992-f8c45c80-ec83-11e9-8dcd-8063112bd4c9.png)
 
@@ -161,11 +161,11 @@
     exec           : Execute local shell commands.
     exit           : Close current session and exit.
 
-### System commands
+## System commands
 
 ![mount](https://user-images.githubusercontent.com/54115104/66684994-f95cf300-ec83-11e9-87c6-12cbeb5d01e0.png)
 
-#### macOS
+### macOS
 
     cat            : Concatenate and print files.
     cd             : Change current directory.
@@ -200,7 +200,7 @@
     trap           : Configure signals.
     w              : List terminal sessions.
     
-#### iOS
+### iOS
 
     cat            : Concatenate and print files.
     cd             : Change current directory.
@@ -235,11 +235,11 @@
     trap           : Configure signals.
     w              : List terminal sessions.
     
-### Settings commands
+## Settings commands
 
 ![getvol](https://user-images.githubusercontent.com/54115104/66684990-f8c45c80-ec83-11e9-9df8-b3120b57db8a.png)
 
-#### macOS
+### macOS
 
     getpaste       : Get pasteboard contents.
     getvol         : Get speaker output volume.
@@ -247,7 +247,7 @@
     setbright      : Set screen brightness.
     setvol         : Set output volume.
 
-#### iOS
+### iOS
 
     battery        : Get battery level.
     getvol         : Get volume level.
@@ -255,37 +255,37 @@
     setvol         : Set output volume.
     sysinfo        : Show system information.
     
-### Substrate commands
+## Substrate commands
 
-#### iOS
+### iOS
 
     dhome          : Simulate a double home button press.
     home           : Simulate a home button press.
     locat          : Toggle location services.
     mute           : Update and show mute status.
 
-### Development commands
+## Development commands
 
 ![python](https://user-images.githubusercontent.com/54115104/66685000-f9f58980-ec83-11e9-8a33-38757905e952.png)
 
-#### macOS
+### macOS
 
     clang          : The Clang compiler.
     make           : GNU make utility.
     osascript      : Execute OSA scripts.
     python         : The Python compiler.
     
-#### iOS
+### iOS
 
     clang          : The Clang compiler.
     make           : GNU make utility.
     python         : The Python compiler.
 
-### Trolling commands
+## Trolling commands
 
 ![alert](https://user-images.githubusercontent.com/54115104/66685678-dd5a5100-ec85-11e9-9729-f6810bcaf27f.png)
 
-#### macOS
+### macOS
 
     alert          : Make alert show up on device.
     chwall         : Change desktop wallpaper.
@@ -298,7 +298,7 @@
     open           : Open application.
     say            : Convert text to speach.
     
-#### iOS
+### iOS
 
     alert          : Make alert show up on device.
     dial           : Dial a phone number.
@@ -311,11 +311,11 @@
     say            : Convert text to speach.
     vibrate        : Vibrate device.
 
-### Stealing commands
+## Stealing commands
 
 ![screenshot](https://user-images.githubusercontent.com/54115104/66701587-58fbe280-ed06-11e9-9c2f-6714023dcaba.png)
 
-#### macOS
+### macOS
 
     download       : Download remote file.
     getfacebook    : Retrieve facebook session cookies.
@@ -324,7 +324,7 @@
     prompt         : Prompt user to type password.
     screenshot     : Take screenshot.
     
-#### iOS
+### iOS
 
     download       : Download remote file.
     getcontacts    : Download addressbook.
@@ -335,34 +335,34 @@
     mic            : Record mic sound.
     picture        : Take picture through the camera.
     
-### Boot commands
+## Boot commands
 
-#### macOS
+### macOS
 
     reboot         : Reboot device.
     shutdown       : Shutdown device.
     sleep          : Put device into sleep mode.
     suspend        : Suspend current session.
     
-#### iOS
+### iOS
 
     reboot         : Reboot device.
     respring       : Restart SpringBoard.
     safemode       : Put device into SafeMode.
     shutdown       : Shutdown device.
 
-### Other commands
+## Other commands
 
 ![su](https://user-images.githubusercontent.com/54115104/66701093-fb18cc00-ed00-11e9-8603-7eb62a3638f4.png)
 
-#### macOS
+### macOS
 
     icons          : List system alert icons.
     pid            : Get MPL process ID.
     su             : Login as root.
     upload         : Upload local file.
 
-#### iOS
+### iOS
 
     bundleids      : List bundle identifiers.
     islocked       : Check if the device is locked.
