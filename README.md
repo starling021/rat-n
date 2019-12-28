@@ -145,17 +145,13 @@
 
 # Mouse CLI
 
+![cli](https://user-images.githubusercontent.com/54115104/66684997-f9f58980-ec83-11e9-8557-2a710c15b805.png)
+
     After a session is established, we can execute commands on that device through 
-    the Mouse (MPL) CLI. We can show all available commands by typing "help".
+    the Mouse (MPL) CLI. We can show all available commands by typing "help". Mouse 
+    CLI allows you to control a remote device. Remote device can be controlled by Mouse 
+    CLI commands. You can explore list of available Mouse CLI commands bellow.
 
-## Mouse CLI commands
-
-![help](https://user-images.githubusercontent.com/54115104/66684997-f9f58980-ec83-11e9-8557-2a710c15b805.png)
-
-    Mouse CLI commands are commands that allow you to control a remote device via 
-    Mouse CLI or via MultiHandler CLI. Each operating system of the remote device has 
-    its own set of MPL commands. You can explore supported operating systems bellow.
-    
 ### Local commands
 
 ![exec](https://user-images.githubusercontent.com/54115104/66684992-f8c45c80-ec83-11e9-8dcd-8063112bd4c9.png)
