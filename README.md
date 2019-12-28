@@ -42,7 +42,7 @@
 
 # About Mouse (MPL)
 
-    INFO: Mouse Payload Loader (MPL) is an iOS and macOS post exploitation surveillance 
+    Mouse Payload Loader (MPL) is an iOS and macOS post exploitation surveillance 
     tool that gives you a command line session with extra functionality between you and 
     a target machine with simple MPL payload. MPL gives you the power and convenience of 
     uploading and downloading files, tab completion, taking pictures, location tracking,
@@ -74,13 +74,13 @@
 
 ![payloads](https://user-images.githubusercontent.com/54115104/68298895-8f314580-00ab-11ea-8943-a3f237291427.png)
 
-    INFO: MPL payloads are executed on the target machine. The payload first sends over 
+    MPL payloads are executed on the target machine. The payload first sends over 
     instructions for getting and sending back device details to our server and then chooses 
     the appropriate executable to establish a secure remote control session.
 
 ## Bourne-Again Shell payload
 
-    INFO: Selecting Bourne-Again Shell payload from the payload 
+    Selecting Bourne-Again Shell payload from the payload 
     menu will give us a 1 liner that establishes a remote MPL 
     session upon execution on the target machine.
 
@@ -88,7 +88,7 @@
 
 ## Teensy macOS payload (USB injection)
 
-    INFO: Teensy is a development USB board that can be programmed 
+    Teensy is a development USB board that can be programmed 
     with the Arduino IDE. It emulates usb keyboard strokes extremely 
     fast and can inject the MPL payload just in a few seconds!
 
@@ -96,15 +96,15 @@
     
 ## Rubber Duck payload (USB injection)
 
-    INFO: USB Rubber Duck is a development USB board that can inject 
+    USB Rubber Duck is a development USB board that can inject 
     uploaded to duck SD card inject.bin payload in a few seconds!
 
     Platform: macOS
     
 ## Application macOS payload
 
-    INFO: Selecting Application macOS from the payload menu will give 
-    us standart MPL payload that converted to the macOS application.
+    Selecting Application macOS from the payload menu will give you
+    standart MPL payload that converted to the macOS application.
     
     Platform: macOS
 
@@ -114,19 +114,19 @@
 
 ![mcli](https://user-images.githubusercontent.com/54115104/66684993-f95cf300-ec83-11e9-8b65-f51568fa8e82.png)
 
-    INFO: After a session is established, we can execute commands on that device 
-    through the Mouse (MPL) CLI. We can show all available commands by typing "help".
+    After a session is established, we can execute commands on that device through 
+    the Mouse (MPL) CLI. We can show all available commands by typing "help".
     
 ## Taking pictures
 
-    INFO: Both iOS and macOS payloads have picture taking capability. 
+    Both iOS and macOS payloads have picture taking capability. 
     The picture command lets you take a picture from the iSight on 
     macOS as well as the front or back camera on iOS.
     
 ## Tab completion
 
-    INFO: Similar to most command line interfaces, MPL supports 
-    tab completion. When you start typing the path to a directory or 
+    Similar to most command line interfaces, MPL supports tab 
+    completion. When you start typing the path to a directory or 
     filename, we can complete the rest of the path using the tab key.
 
 ***
@@ -135,16 +135,16 @@
 
 ![multihandler](https://user-images.githubusercontent.com/54115104/66684989-f82bc600-ec83-11e9-922b-dc784c6af241.png)
 
-    INFO: The Multihandler option lets us handler multiple 
-    sessions. We can choose to interact with different devices 
-    while listening for new connections in the background.
+    The Multihandler option lets us handler multiple sessions. 
+    You can choose to interact with different devices while 
+    listening for new connections in the background.
     
 ***
 
 # Mouse Substrate (MPL Substrate)
 
-    INFO: Mouse Substrate (MPL Substrate) is a package that 
-    can be installed on the target iOS device after receiving 
+    Mouse Substrate (MPL Substrate) is a package that can 
+    be installed on the target iOS device after receiving 
     remote control to run substrate commands and services.
     
 ## Substrate commands
@@ -160,7 +160,7 @@
 
 ![help](https://user-images.githubusercontent.com/54115104/66684997-f9f58980-ec83-11e9-8557-2a710c15b805.png)
 
-    INFO: MPL commands are commands that allow you to control a remote device via 
+    MPL commands are commands that allow you to control a remote device via 
     Mouse CLI or via MultiHandler CLI. Each operating system of the remote device has 
     its own set of MPL commands. You can explore supported operating systems bellow.
     
@@ -385,7 +385,7 @@
 
 # Mouse (MPL) disclaimer
 
-    INFO: Usage of the Mouse Payload Loader for attacking targets without prior mutual consent is illegal. 
+    Usage of the Mouse Payload Loader for attacking targets without prior mutual consent is illegal. 
     It is the end user's responsibility to obey all applicable local, state, federal, and international laws. 
     Developers assume no liability and are not responsible for any misuse or damage caused by this program.
 
