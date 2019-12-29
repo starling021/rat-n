@@ -198,10 +198,6 @@ class Session:
 		print("\nLocal Commands")
                 print("==============")
 		os.system("cat resources/local_cmds.txt")
-
-	        print("\nSystem Commands")
-                print("===============")
-		os.system("cat resources/system_cmds.txt")
 		
 		print("\nSettings Commands")
                 print("=================")
