@@ -189,16 +189,11 @@
     netstat        : Show network status.
     ps             : Show process status.
     pwd            : Show current directory.
-    read           : Read user input.
     rm             : Remove files or directories.
     rmdir          : Remove directories.
-    sudo           : Execute command as root.
-    ssh            : OpenSSH SSH client.
-    syscmds        : Display all system commands.
     time           : Display current time.
     touch          : Create files.
     trap           : Configure signals.
-    w              : List terminal sessions.
     
 ### iOS
 
@@ -227,13 +222,9 @@
     read           : Read user input.
     rm             : Remove files or directories.
     rmdir          : Remove directories.
-    sudo           : Execute command as root.
-    ssh            : OpenSSH SSH client.
-    syscmds        : Display all system commands.
     time           : Display current time.
     touch          : Create files.
     trap           : Configure signals.
-    w              : List terminal sessions.
     
 ## Settings commands
 
