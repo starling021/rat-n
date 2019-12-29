@@ -179,8 +179,7 @@
     hash           : Display last executed commands.
     head           : Display first new lines of file.
     kill           : Terminate or signal a process.
-    killall        : Kill process by name.
-    ln             : Create softlink on oldname.  
+    killall        : Kill process by name.  
     ls             : List contents of a directory.
     mkdir          : Create directories.
     more           : Read contents of a file.
@@ -209,8 +208,7 @@
     hash           : Display last executed commands.
     head           : Display first new lines of file.
     kill           : Terminate or signal a process.
-    killall        : Kill process by name.
-    ln             : Create softlink on oldname.  
+    killall        : Kill process by name.  
     ls             : List contents of a directory.
     mkdir          : Create directories.
     more           : Read contents of a file.
