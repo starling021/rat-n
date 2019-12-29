@@ -101,7 +101,7 @@ class Session:
 				elif cmd in self.server.modules_local.keys():
 					self.server.modules_local[cmd].run(self,cmd_data)
 				else:
-					print("Invalid command!")
+					h.info_error("Invalid command: "+cmd)
 				#else:
 				#	try:
 				#		result = self.send_command(cmd_data)
