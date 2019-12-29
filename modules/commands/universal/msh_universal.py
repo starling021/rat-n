@@ -12,6 +12,6 @@ class command:
             if msh == "exit":
                 return
             else:
-		result = session.send_command(cmd_data)
+		result = session.send_command(msh)
 		if result:
 		    print result.rstrip()
