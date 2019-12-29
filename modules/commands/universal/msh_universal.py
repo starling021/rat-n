@@ -14,5 +14,3 @@ class command:
             else:
 		msh_command = {"cmd": msh, "args":msh[len(msh) + 1:]}
 		result = session.send_command(msh_command)
-		if result:
-		    print result.rstrip()
