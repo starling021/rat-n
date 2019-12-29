@@ -7,9 +7,11 @@ class command:
     
     def run(self,session,cmd_data):
         while 1:
-			#prepare command
-			msh = raw_input("msh# ")
+	    #prepare command
+	    msh = raw_input("msh# ")
             if msh == "exit":
                 return
             else:
-                h.info_error("Invalid command: "+msh)
+		result = self.send_command(cmd_data)
+		if result:
+		    print result.rstrip()
