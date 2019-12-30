@@ -9,7 +9,7 @@ class command:
     
     def run(self,session,cmd_data):
 	os.system("printf '\033]2;Mouse Shell\a'")
-	print(session.uid)
+	uid = session.send_command({"cmd":"echo","args":"$UID"})
 	if session.uid == "0":
 		whoami = "# "
 	else:
