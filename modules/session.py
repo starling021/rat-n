@@ -77,10 +77,15 @@ class Session:
 		readline.parse_and_bind('tab: complete')
 
 		command_modules = self.server.get_modules(self.type)
+		os.system("printf '\033]2;Mouse CLI\a'")
 		while 1:
 			try:
 				#prepare command
-				raw = raw_input(self.get_handle())
+				if self.uid == "0":
+					whoami = "# "
+				else:
+					whoami = "$ "
+				raw = raw_input(h.GREEN+ "[" + self.hostname + h.WHITE + "@" + h.GREEN + self.username + h.ENDC + " " + WHITE_C + self.current_directory + h.GREEN + "]" + h.WHITE + whoami + h.ENDC)
 				if not raw or raw.replace(" ","") == "":
 					continue
 				cmd = raw.split()[0]
@@ -120,16 +125,6 @@ class Session:
 				return
 			except Exception as e:
 				print e
-
-
-	def get_handle(self):
-		"""Interact with an active session"""
-		if self.needs_refresh:
-			return h.info_general_raw("Waiting for connection...")
-		os.system("printf '\033]2;Mouse CLI\a'")
-		return h.GREEN+ "[" + self.hostname + h.WHITE + "@" + h.GREEN + self.username + h.ENDC + " " + WHITE_C + self.current_directory + h.GREEN + "]" + h.WHITE + "$ " + h.ENDC
-
-        
 
 	def tab_complete(self, text, state):
 		# TODO: tab complete 'ls ', use get_completer_delims
