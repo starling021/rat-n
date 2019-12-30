@@ -284,8 +284,8 @@
 ### macOS
 
     icons          : List system alert icons.
-    msh            : Open target device shell.
     pid            : Get MPL process ID.
+    shell          : Open target device shell.
     su             : Login as root.
     upload         : Upload local file.
 
@@ -293,8 +293,8 @@
 
     bundleids      : List bundle identifiers.
     islocked       : Check if the device is locked.
-    msh            : Open target device shell.
     pid            : Get MPL process ID.
+    shell          : Open target device shell.
     upload         : Upload local file.
 
 ***

