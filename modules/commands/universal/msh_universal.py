@@ -8,7 +8,7 @@ class command:
 	
     def msh(self):
 	os.system("printf '\033]2;Mouse Shell\a'")
-        return h.GREEN+ "[" + self.hostname + h.WHITE + "@" + h.GREEN + self.username + h.ENDC + " " + WHITE_C + self.current_directory + h.GREEN + "]" + h.WHITE + "# " + h.ENDC
+        return h.GREEN+ "[" + session.hostname + h.WHITE + "@" + h.GREEN + session.username + h.ENDC + " " + WHITE_C + session.current_directory + h.GREEN + "]" + h.WHITE + "# " + h.ENDC
     
     def run(self,session,cmd_data):
         while 1:
