@@ -14,13 +14,16 @@ class command:
         while 1:
 	    #prepare command
 	    msh = raw_input(self.msh())
-		
 	    if not msh or msh.replace(" ","") == "":
 	        continue
 	    mshd = msh.split()[0]
 	    mshd_data = {"cmd": mshd, "args":msh[len(mshd) + 1:]}
 	    if mshd == "exit":
                 return
+	    if mshd == "cd":
+		pass
+	    if mshd == "ls":
+		pass
             else:
 		try:
 		    result = session.send_command(mshd_data)
