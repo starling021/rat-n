@@ -81,7 +81,7 @@ class Session:
 		while 1:
 			try:
 				#prepare command
-				raw = raw_input(get_handle())
+				raw = raw_input(self.get_handle())
 				if not raw or raw.replace(" ","") == "":
 					continue
 				cmd = raw.split()[0]
