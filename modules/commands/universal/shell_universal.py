@@ -8,15 +8,13 @@ class command:
         self.description = "Open target device shell."
     
     def run(self,session,cmd_data):
-	os.system("printf '\033]2;Mouse Shell\a'")
-	uid = session.send_command({"cmd":"echo","args":"$UID"})
-	if session.uid == "0":
-		whoami = "# "
-	else:
-		whoami = "$ "
 	while 1:
-	    #prepare command
-	    shell = raw_input(h.RED+session.username+"@"+session.hostname+h.WHITE+":"+session.current_directory+whoami)
+	    uid = session.send_command({"cmd":"echo","args":"$UID"})
+	    if session.uid == "0":
+		whoami = "# "
+	    else:
+		whoami = "$ "
+	    shell = raw_input(session.hostname+":"+session.current_directory+" "+session.username+whoami)
 	    if not shell or shell.replace(" ","") == "":
 	        continue
 	    shelld = shell.split()[0]
