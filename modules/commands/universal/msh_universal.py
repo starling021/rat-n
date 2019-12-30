@@ -2,6 +2,9 @@ import modules.helper as h
 import json
 import os
 
+ssl = ssl_sock.recv(256)
+device_info = json.loads(ssl)
+
 class command:
     def __init__(self):
         self.name = "msh"
