@@ -180,32 +180,6 @@
     msub           : Install or uninstall MPL Substrate.
     setvol         : Set output volume.
     sysinfo        : Show system information.
-    
-## Substrate commands
-
-### iOS
-
-    dhome          : Simulate a double home button press.
-    home           : Simulate a home button press.
-    locat          : Toggle location services.
-    mute           : Update and show mute status.
-
-## Development commands
-
-![python](https://user-images.githubusercontent.com/54115104/66685000-f9f58980-ec83-11e9-8a33-38757905e952.png)
-
-### macOS
-
-    clang          : The Clang compiler.
-    make           : GNU make utility.
-    osascript      : Execute OSA scripts.
-    python         : The Python compiler.
-    
-### iOS
-
-    clang          : The Clang compiler.
-    make           : GNU make utility.
-    python         : The Python compiler.
 
 ## Trolling commands
 
@@ -219,8 +193,6 @@
     imessage       : Send message through the messages app.
     itunes         : Control iTunes player.
     keyboard       : Control keyboard.
-    kill           : Terminate or signal a process.
-    killall        : Kill process by name.
     open           : Open application.
     say            : Convert text to speach.
     
