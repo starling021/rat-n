@@ -5,7 +5,7 @@ import os
 class command:
     def __init__(self):
         self.name = "msh"
-        self.description = "Mouse (MPL) Shell."
+        self.description = "Open target device shell."
 	
     def msh(self):
 	os.system("printf '\033]2;Mouse Shell\a'")
