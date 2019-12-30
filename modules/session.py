@@ -121,7 +121,6 @@ class Session:
 		os.system("printf '\033]2;Mouse CLI\a'")
 		mousel = "\033[4;77m"
 		return mousel+"mouse"+h.ENDC+"("+str(self.conn.getpeername()[0]+")> "
-		#self.hostname+"@"+self.username+")> "
 
 	def tab_complete(self, text, state):
 		# TODO: tab complete 'ls ', use get_completer_delims
