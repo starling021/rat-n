@@ -77,7 +77,6 @@ class Session:
 		readline.parse_and_bind('tab: complete')
 
 		command_modules = self.server.get_modules(self.type)
-		os.system("printf '\033]2;Mouse CLI\a'")
 		while 1:
 			try:
 				#prepare command
@@ -120,12 +119,13 @@ class Session:
 		if self.needs_refresh:
 			return h.info_general_raw("Waiting for connection...")
 		os.system("printf '\033]2;Mouse CLI\a'")
-		if self.uid == "0":
+		uid = self.send_command({"cmd":"echo","args":"$UID"})
+		if uid[:-1] == "0":
 			whoami = "# "
 		else:
 			whoami = "$ "
 		mousel = "\033[4;77m"
-		return "("+h.GREEN+"mouse"+h.ENDC+"/"+h.GREEN+"CLI"+h.ENDC+")> "
+		return h.GREEN+ "[" + self.hostname + h.WHITE + "@" + h.GREEN + self.username + h.ENDC + " " + WHITE_C + self.current_directory + h.GREEN + "]" + h.WHITE + whoami + h.ENDC)
 
 	def tab_complete(self, text, state):
 		# TODO: tab complete 'ls ', use get_completer_delims
