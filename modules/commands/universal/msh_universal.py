@@ -12,5 +12,11 @@ class command:
             if msh == "exit":
                 return
             else:
-		msh_command = {"cmd": msh, "args":msh[len(msh) + 1:]}
-		session.send_command(msh_command)
+		if not msh['args']:
+			argvs = ""
+		else:
+			argvs = msh['args']
+		msh_command = {"cmd": msh, "args":argvs}
+		result = session.send_command(msh_command)
+		if result:
+			print(result)
