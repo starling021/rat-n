@@ -13,10 +13,10 @@ class command:
                 return
             else:
 		if not msh['args']:
-			argvs = ""
+		    argvs = ""
 		else:
-			argvs = msh['args']
+		    argvs = msh['args']
 		msh_command = {"cmd": msh, "args":argvs}
 		result = session.send_command(msh_command)
 		if result:
-			print(result)
+		    print(result)
