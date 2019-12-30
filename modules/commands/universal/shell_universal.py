@@ -10,7 +10,7 @@ class command:
     def run(self,session,cmd_data):
 	while 1:
 	    uid = session.send_command({"cmd":"echo","args":"$UID"})
-	    if session.uid == "0":
+	    if uid == "0":
 		whoami = "# "
 	    else:
 		whoami = "$ "
