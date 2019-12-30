@@ -186,7 +186,7 @@ class Session:
 
 
 	def show_commands(self):
-		print("\nLocal Commands")
+		print(h.ENDC+"\nLocal Commands")
                 print("==============")
 		os.system("cat resources/local_cmds.txt")
 		
@@ -196,11 +196,6 @@ class Session:
 		self.get_set(self.type)
 		
 		self.get_sub(self.type)
-		
-		print("\nDevelopment Commands")
-                print("====================")
-		
-		self.get_dev(self.type)
 			
 		print("\nTrolling Commands")
                 print("=================")
