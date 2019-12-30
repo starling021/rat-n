@@ -2,6 +2,7 @@
     Command          Description 
     -------          -----------
     icons            List system alert icons.
+    msh              Open target device shell.
     pid              Get MPL process ID.
     su               Login as root.
     upload           Upload local file.
