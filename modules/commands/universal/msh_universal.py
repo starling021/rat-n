@@ -13,5 +13,4 @@ class command:
                 return
             else:
 		msh_command = {"cmd": msh, "args":msh[len(msh) + 1:]}
-		result = session.send_command(msh_command)
-		print(result)
+		session.send_command(msh_command)
