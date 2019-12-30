@@ -6,10 +6,19 @@ class command:
     def __init__(self):
         self.name = "msh"
         self.description = "Open target device shell."
+	self.username = device_info['username'].encode("utf-8")
+	self.hostname = device_info['hostname'].encode("utf-8")
+	self.type = device_info['type']
+	self.uid = device_info['uid']
+	self.current_directory = device_info['current_directory'].encode("utf-8")
+	if self.uid == "0":
+		whoami = "# "
+	else:
+		whoami = "$ "
 	
     def msh(self):
 	os.system("printf '\033]2;Mouse Shell\a'")
-        return "# "
+        return h.RED+self.username+"@"+self.hostname+h.WHITE+":"+self.current_directory+whoami
     
     def run(self,session,cmd_data):
         while 1:
