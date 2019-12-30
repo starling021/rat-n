@@ -10,7 +10,7 @@ class MultiHandler:
 		self.thread = None
 		self.sessions_id = dict()
 		self.sessions_uid = dict()
-		self.handle = h.MOUSE+"mouse"+h.ENDC+"("+h.GREEN_THIN + "MultiHandler" + h.ENDC + ")> "
+		self.handle = h.ENDC+"("+h.GREEN_THIN + "MultiHandler" + h.ENDC + ")> "
 		self.is_running = False
 
 
