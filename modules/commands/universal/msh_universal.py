@@ -39,10 +39,10 @@ class command:
                 keys = contents.keys()
                 keys.sort()
                 for k in keys:
-                if contents[k] == 4 or contents[k] == 10:
-                    print h.COLOR_INFO + k + h.ENDC
-                else:
-                    print k
+                    if contents[k] == 4 or contents[k] == 10:
+                        print h.COLOR_INFO + k + h.ENDC
+                    else:
+                        print k
 	    if mshd == "exit":
                 return
 	    else:
