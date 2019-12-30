@@ -117,10 +117,10 @@ class Session:
 	def get_handle(self):
 		"""Interact with an active session"""
 		if self.needs_refresh:
-			return h.info_general_raw("Waiting for connection...")
+		    return h.info_general_raw("Waiting for connection...")
 		os.system("printf '\033]2;Mouse CLI\a'")
 		mousel = "\033[4;77m"
-		return mousel+"mouse"+h.ENDC+"("+str(self.conn.getpeername()[0]+")> "
+		return mousel+"mouse"+h.ENDC+"()> "
 
 	def tab_complete(self, text, state):
 		# TODO: tab complete 'ls ', use get_completer_delims
