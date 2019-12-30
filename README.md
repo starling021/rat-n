@@ -286,6 +286,7 @@
     icons          : List system alert icons.
     pid            : Get MPL process ID.
     shell          : Open target device shell.
+    su             : Login as root.
     upload         : Upload local file.
 
 ### iOS
