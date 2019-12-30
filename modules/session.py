@@ -50,12 +50,6 @@ class Session:
 			os.system("cat resources/settings_cmds_macos.txt")
   	        elif device_type == "iOS":
 		        os.system("cat resources/settings_cmds_ios.txt")
-		
-	def get_dev(self,device_type):
-		if device_type == "macos":
-			os.system("cat resources/development_cmds_macos.txt")
-  	        elif device_type == "iOS":
-		        os.system("cat resources/development_cmds_ios.txt")
 	
 	def get_troll(self,device_type):
 		if device_type == "macos":
@@ -120,7 +114,7 @@ class Session:
 		    return h.info_general_raw("Waiting for connection...")
 		os.system("printf '\033]2;Mouse CLI\a'")
 		mousel = "\033[4;77m"
-		return h.WHITE+"("+h.GREEN+self.hostname+h.WHITE+"@"+h.GREEN+self.username+h.WHITE+")> "
+		return h.WHITE+"["+h.GREEN+self.hostname+h.WHITE+"@"+h.GREEN+self.username+h.WHITE+"]> "
 
 	def tab_complete(self, text, state):
 		# TODO: tab complete 'ls ', use get_completer_delims
