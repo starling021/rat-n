@@ -124,7 +124,8 @@ class Session:
 			whoami = "# "
 		else:
 			whoami = "$ "
-		return h.GREEN+ "[" + self.hostname + h.WHITE + "@" + h.GREEN + self.username + h.ENDC + " " + WHITE_C + self.current_directory + h.GREEN + "]" + h.WHITE + whoami + h.ENDC
+		mousel = "\033[4;77m"
+		return mousel+"mouse"+h.END+" >"
 
 	def tab_complete(self, text, state):
 		# TODO: tab complete 'ls ', use get_completer_delims
