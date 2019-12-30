@@ -45,7 +45,7 @@ class command:
                         print k
 	    if mshd == "exit":
                 return
-	    else:
+	    if mshd != "cd" or mshd != "ls" or mshd != "exit":
 		try:
 		    result = session.send_command(mshd_data)
 		    if result:
