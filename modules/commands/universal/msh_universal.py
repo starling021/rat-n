@@ -1,5 +1,4 @@
 import modules.helper as h
-import modules.session
 import json
 import os
 
@@ -8,22 +7,22 @@ class command:
         self.name = "msh"
         self.description = "Open target device shell."
 	
-    def msh(self,session):
+    def msh(self):
 	os.system("printf '\033]2;Mouse Shell\a'")
 	if session.uid == "0":
 		whoami = "# "
 	else:
 		whoami = "$ "
-	#username = session.send_command({"cmd":"whoami", "args":""})
-	#hostname = session.send_command({"cmd":"hostname","args":""})
-	#current_directory = session.send_command({"cmd":"pwd","args":""})
-	#uid = session.send_command({"cmd":"echo","args":"$UID"})
-	return h.RED+session.username+"@"+session.hostname+h.WHITE+":"+session.current_directory+whoami
+	return h.RED+username+"@"+hostname+h.WHITE+":"+current_directory+whoami
     
     def run(self,session,cmd_data):
-        while 1:
+        username = session.send_command({"cmd":"whoami", "args":""})
+	hostname = session.send_command({"cmd":"hostname","args":""})
+	current_directory = session.send_command({"cmd":"pwd","args":""})
+	uid = session.send_command({"cmd":"echo","args":"$UID"})
+	while 1:
 	    #prepare command
-	    msh = raw_input(self.msh())
+	    msh = raw_input(self.msh(session))
 	    if not msh or msh.replace(" ","") == "":
 	        continue
 	    mshd = msh.split()[0]
