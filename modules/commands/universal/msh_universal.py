@@ -25,5 +25,5 @@ class command:
 		    result = session.send_command(mshd_data)
 		    if result:
 			print result.rstrip()
-		    except KeyboardInterrupt:
-			session.send_command({"cmd":"killtask"})
+		except KeyboardInterrupt:
+	            session.send_command({"cmd":"killtask"})
