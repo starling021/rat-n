@@ -120,7 +120,7 @@ class Session:
 		    return h.info_general_raw("Waiting for connection...")
 		os.system("printf '\033]2;Mouse CLI\a'")
 		mousel = "\033[4;77m"
-		return h.MOUSE+"mouse"+h.ENDC+"("+h.GREEN+self.hostname+h.ENDC+"@"+h.GREEN+self.username+h.ENDC+")> "
+		return h.ENDC+"("+h.GREEN+self.hostname+h.ENDC+"@"+h.GREEN+self.username+h.ENDC+")> "
 
 	def tab_complete(self, text, state):
 		# TODO: tab complete 'ls ', use get_completer_delims
