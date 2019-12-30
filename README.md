@@ -118,7 +118,7 @@
     You can choose to interact with different devices while 
     listening for new connections in the background.
     
-## Substrate commands
+## MultiHandler commands
 
     close          : Close active session.
     exit           : Close all sessions and exit.
