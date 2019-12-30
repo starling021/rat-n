@@ -125,7 +125,7 @@ class Session:
 		else:
 			whoami = "$ "
 		mousel = "\033[4;77m"
-		return mousel+"mouse"+h.END+" >"
+		return mousel+"mouse"+h.ENDC+" >"
 
 	def tab_complete(self, text, state):
 		# TODO: tab complete 'ls ', use get_completer_delims
