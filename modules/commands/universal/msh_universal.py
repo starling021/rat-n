@@ -29,7 +29,7 @@ class command:
         	     h.info_error('Unable to get current directory!')
 	    if mshd == "ls":
                 if not mshd_data['args']:
-                mshd_data['args'] = '.'
+                    mshd_data['args'] = '.'
                 data = session.send_command(mshd_data)
                 try:
                     contents = json.loads(data)
