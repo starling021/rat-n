@@ -81,11 +81,7 @@ class Session:
 		while 1:
 			try:
 				#prepare command
-				if self.uid == "0":
-					whoami = "# "
-				else:
-					whoami = "$ "
-				raw = raw_input(h.GREEN+ "[" + self.hostname + h.WHITE + "@" + h.GREEN + self.username + h.ENDC + " " + WHITE_C + self.current_directory + h.GREEN + "]" + h.WHITE + whoami + h.ENDC)
+				raw = raw_input(get_handle())
 				if not raw or raw.replace(" ","") == "":
 					continue
 				cmd = raw.split()[0]
@@ -107,13 +103,6 @@ class Session:
 					self.server.modules_local[cmd].run(self,cmd_data)
 				else:
 					h.info_error("Invalid command: "+cmd)
-				#else:
-				#	try:
-				#		result = self.send_command(cmd_data)
-				#		if result:
-				#			print result.rstrip()
-				#	except KeyboardInterrupt:
-				#		self.send_command({"cmd":"killtask"})
 			except KeyboardInterrupt:
 				try:
 					print ""
@@ -125,6 +114,17 @@ class Session:
 				return
 			except Exception as e:
 				print e
+				
+	def get_handle(self):
+		"""Interact with an active session"""
+		if self.needs_refresh:
+			return h.info_general_raw("Waiting for connection...")
+		os.system("printf '\033]2;Mouse CLI\a'")
+		if self.uid == "0":
+			whoami = "# "
+		else:
+			whoami = "$ "
+		return h.GREEN+ "[" + self.hostname + h.WHITE + "@" + h.GREEN + self.username + h.ENDC + " " + WHITE_C + self.current_directory + h.GREEN + "]" + h.WHITE + whoami + h.ENDC
 
 	def tab_complete(self, text, state):
 		# TODO: tab complete 'ls ', use get_completer_delims
