@@ -9,6 +9,7 @@ class command:
     
     def run(self,session,cmd_data):
 	os.system("printf '\033]2;Mouse Shell\a'")
+	print(session.uid)
 	if session.uid == "0":
 		whoami = "# "
 	else:
