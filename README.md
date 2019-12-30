@@ -160,69 +160,6 @@
     help           : Show all available commands.
     exec           : Execute local shell commands.
     exit           : Close current session and exit.
-
-## System commands
-
-![mount](https://user-images.githubusercontent.com/54115104/66684994-f95cf300-ec83-11e9-87c6-12cbeb5d01e0.png)
-
-### macOS
-
-    cat            : Concatenate and print files.
-    cd             : Change current directory.
-    chflags        : Change flags on file.
-    chgrp          : Change files groups.
-    chmod          : Change permissions.
-    cp             : Copy files or directories.
-    date           : Display current date.
-    du             : Display disk usage statistics.
-    echo           : Write arguments to standard output.
-    hash           : Display last executed commands.
-    head           : Display first new lines of file.
-    kill           : Terminate or signal a process.
-    killall        : Kill process by name.  
-    ls             : List contents of a directory.
-    mkdir          : Create directories.
-    more           : Read contents of a file.
-    mount          : Mount file systems.
-    mv             : Move files or directories.
-    netstat        : Show network status.
-    ps             : Show process status.
-    pwd            : Show current directory.
-    rm             : Remove files or directories.
-    rmdir          : Remove directories.
-    time           : Display current time.
-    touch          : Create files.
-    trap           : Configure signals.
-    
-### iOS
-
-    cat            : Concatenate and print files.
-    cd             : Change current directory.
-    chflags        : Change flags on file.
-    chgrp          : Change files groups.
-    chmod          : Change permissions.
-    cp             : Copy files or directories.
-    date           : Display current date.
-    du             : Display disk usage statistics.
-    echo           : Write arguments to standard output.
-    hash           : Display last executed commands.
-    head           : Display first new lines of file.
-    kill           : Terminate or signal a process.
-    killall        : Kill process by name.  
-    ls             : List contents of a directory.
-    mkdir          : Create directories.
-    more           : Read contents of a file.
-    mount          : Mount file systems.
-    mv             : Move files or directories.
-    netstat        : Show network status.
-    ps             : Show process status.
-    pwd            : Show current directory.
-    read           : Read user input.
-    rm             : Remove files or directories.
-    rmdir          : Remove directories.
-    time           : Display current time.
-    touch          : Create files.
-    trap           : Configure signals.
     
 ## Settings commands
 
@@ -347,6 +284,7 @@
 ### macOS
 
     icons          : List system alert icons.
+    msh            : Open target device shell.
     pid            : Get MPL process ID.
     su             : Login as root.
     upload         : Upload local file.
@@ -355,6 +293,7 @@
 
     bundleids      : List bundle identifiers.
     islocked       : Check if the device is locked.
+    msh            : Open target device shell.
     pid            : Get MPL process ID.
     upload         : Upload local file.
 
