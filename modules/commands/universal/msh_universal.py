@@ -1,4 +1,5 @@
 import modules.helper as h
+import json
 import os
 
 class command:
@@ -18,13 +19,33 @@ class command:
 	        continue
 	    mshd = msh.split()[0]
 	    mshd_data = {"cmd": mshd, "args":msh[len(mshd) + 1:]}
+	    if mshd == "cd":
+		result = json.loads(session.send_command(cmd_data))
+                if 'error' in result:
+        	    h.info_error(result['error'])
+                elif 'current_directory' in result:
+        	    session.current_directory = result['current_directory'].encode('utf-8')
+                else:
+        	     h.info_error('Unable to get current directory!')
+	    if mshd == "ls":
+                if not mshd_data['args']:
+                mshd_data['args'] = '.'
+                data = session.send_command(mshd_data)
+                try:
+                    contents = json.loads(data)
+                except:
+                    print data
+                    return
+                keys = contents.keys()
+                keys.sort()
+                for k in keys:
+                if contents[k] == 4 or contents[k] == 10:
+                    print h.COLOR_INFO + k + h.ENDC
+                else:
+                    print k
 	    if mshd == "exit":
                 return
-	    if mshd == "cd":
-		pass
-	    if mshd == "ls":
-		pass
-            else:
+	    else:
 		try:
 		    result = session.send_command(mshd_data)
 		    if result:
