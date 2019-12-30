@@ -119,13 +119,9 @@ class Session:
 		if self.needs_refresh:
 			return h.info_general_raw("Waiting for connection...")
 		os.system("printf '\033]2;Mouse CLI\a'")
-		uid = self.send_command({"cmd":"echo","args":"$UID"})
-		if uid[:-1] == "0":
-			whoami = "# "
-		else:
-			whoami = "$ "
 		mousel = "\033[4;77m"
-		return mousel+"mouse"+h.ENDC+"("+self.hostname+"@"+self.username+")> "
+		return mousel+"mouse"+h.ENDC+"("+str(session.conn.getpeername()[0]+")> "
+		#self.hostname+"@"+self.username+")> "
 
 	def tab_complete(self, text, state):
 		# TODO: tab complete 'ls ', use get_completer_delims
