@@ -3,6 +3,6 @@
     -------          -----------
     getpaste         Get pasteboard contents.
     getvol           Get speaker output volume.
-    idletime         Get user activity time.
+    idletime         Show user activity time.
     setbright        Set screen brightness.
     setvol           Set output volume.
