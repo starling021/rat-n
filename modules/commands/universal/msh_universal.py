@@ -18,7 +18,7 @@ class command:
 	    if not msh or msh.replace(" ","") == "":
 	        continue
 	    mshd = msh.split()[0]
-	    mshd_data = {"cmd": cmd, "args":msh[len(mshd) + 1:]}
+	    mshd_data = {"cmd": mshd, "args":msh[len(mshd) + 1:]}
 	    if mshd == "exit":
                 return
             else:
