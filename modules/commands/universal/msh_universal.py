@@ -15,9 +15,9 @@ class command:
 	    #prepare command
 	    msh = raw_input(self.msh())
 		
-	    if not raw or raw.replace(" ","") == "":
+	    if not msh or msh.replace(" ","") == "":
 	        continue
-	    mshd = raw.split()[0]
+	    mshd = msh.split()[0]
 	    mshd_data = {"cmd": cmd, "args":msh[len(mshd) + 1:]}
 	    if mshd == "exit":
                 return
