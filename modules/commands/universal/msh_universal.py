@@ -20,7 +20,7 @@ class command:
 	    mshd = msh.split()[0]
 	    mshd_data = {"cmd": mshd, "args":msh[len(mshd) + 1:]}
 	    if mshd == "cd":
-		result = json.loads(session.send_command(cmd_data))
+		result = json.loads(session.send_command(mshd_data))
                 if 'error' in result:
         	    h.info_error(result['error'])
                 elif 'current_directory' in result:
@@ -45,10 +45,13 @@ class command:
                         print k
 	    if mshd == "exit":
                 return
-	    if mshd != "cd" or mshd != "ls" or mshd != "exit":
+	    else:
 		try:
 		    result = session.send_command(mshd_data)
 		    if result:
-			print result.rstrip()
+		        if mshd == "ls" or mshd == "cd":
+			    pass
+			else:
+			    print result.rstrip()
 		except KeyboardInterrupt:
 	            session.send_command({"cmd":"killtask"})
