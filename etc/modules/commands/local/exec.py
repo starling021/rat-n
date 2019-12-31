@@ -16,7 +16,9 @@ class command:
             print("")
             w = os.environ['OLDPWD']
             os.chdir(w)
+            
             split_args = cmd_data['args'].split()
             os.system(cmd_data['args'])
+            
             g = os.environ['HOME']
             os.chdir(g + "/mouse")      
