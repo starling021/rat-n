@@ -95,7 +95,7 @@ class Session:
 				elif cmd in self.server.modules_local.keys():
 					self.server.modules_local[cmd].run(self,cmd_data)
 				else:
-					h.info_error("Invalid Command: "+cmd)
+					h.info_error("Unrecognized command!")
 			except KeyboardInterrupt:
 				try:
 					print ""

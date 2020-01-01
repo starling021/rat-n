@@ -144,7 +144,7 @@ class MultiHandler:
 					self.stop_server()
 					return
 				else:
-					h.info_error("Invalid Command: " + cmd)
+					h.info_error("Unrecognized command!")
 
 			except KeyboardInterrupt:
 				sys.stdout.write("\n")
