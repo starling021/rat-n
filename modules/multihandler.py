@@ -32,13 +32,12 @@ class MultiHandler:
 			if self.is_running:
 				session = self.server.listen_for_stager()
 				if session:
-					if session.uid in self.sessions_uid.keys():
-					    self.sessions_uid[session.uid] = session
-					    self.sessions_id[id_number] = session
-					    session.id = id_number
-					    id_number += 1
-					    sys.stdout.write("\n{0} Session {1} opened.{2}\n{3}".format(DOJ,str(session.id),h.WHITE,self.handle))
-					    sys.stdout.flush()
+					self.sessions_uid[session.uid] = session
+					self.sessions_id[id_number] = session
+					session.id = id_number
+					id_number += 1
+					sys.stdout.write("\n{0} Session {1} opened.{2}\n{3}".format(DOJ,str(session.id),h.WHITE,self.handle))
+					sys.stdout.flush()
 			else:
 				return
 
