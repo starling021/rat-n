@@ -33,7 +33,7 @@ class MultiHandler:
 				session = self.server.listen_for_stager()
 				if session:
 					if session.uid in self.sessions_uid.keys():
-						session.uid += "u"
+						sessions.uid = session.uid + 0
 					self.sessions_uid[session.uid] = session
 					self.sessions_id[id_number] = session
 					session.id = id_number
