@@ -2,5 +2,6 @@
     Command          Description
     -------          -----------
     reboot           Reboot device.
+    shutdown         Shutdown device.
     sleep            Put device into sleep mode.
     suspend          Suspend current session.
