@@ -238,7 +238,6 @@
 ### macOS
 
     reboot         : Reboot device.
-    shutdown       : Shutdown device.
     sleep          : Put device into sleep mode.
     suspend        : Suspend current session.
     
@@ -247,7 +246,6 @@
     reboot         : Reboot device.
     respring       : Restart SpringBoard.
     safemode       : Put device into SafeMode.
-    shutdown       : Shutdown device.
 
 ## Other commands
 
