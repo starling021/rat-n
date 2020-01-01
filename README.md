@@ -237,6 +237,7 @@
 
 ### macOS
 
+    ldrestart      : Restart kernel.
     reboot         : Reboot device.
     sleep          : Put device into sleep mode.
     suspend        : Suspend current session.
