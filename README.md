@@ -237,7 +237,6 @@
 
 ### macOS
 
-    ldrestart      : Restart kernel.
     reboot         : Reboot device.
     sleep          : Put device into sleep mode.
     suspend        : Suspend current session.
@@ -245,7 +244,6 @@
 ### iOS
 
     reboot         : Reboot device.
-    shutdown       : Shutdown device.
     respring       : Restart SpringBoard.
     safemode       : Put device into SafeMode.
 
