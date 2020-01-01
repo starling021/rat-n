@@ -33,8 +33,7 @@ class MultiHandler:
 				session = self.server.listen_for_stager()
 				if session:
 					if session.uid in self.sessions_uid.keys():
-						if self.sessions_uid[session.uid].needs_refresh:
-							self.update_session(self.sessions_uid[session.uid],session)
+						self.update_session(self.sessions_uid[session.uid],session)
 						self.sessions_uid[session.uid] = session
 						self.sessions_id[id_number] = session
 						session.id = id_number
