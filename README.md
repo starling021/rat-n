@@ -244,6 +244,7 @@
 ### iOS
 
     reboot         : Reboot device.
+    shutdown       : Shutdown device.
     respring       : Restart SpringBoard.
     safemode       : Put device into SafeMode.
 
