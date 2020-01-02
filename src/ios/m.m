@@ -1,6 +1,6 @@
-#include "mpl.h"
+#include "m.h"
 
-@implementation mpl
+@implementation m
 
 @synthesize fileManager;
 NSPipe *stdinPipe;
