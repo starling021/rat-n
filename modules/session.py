@@ -57,7 +57,7 @@ class Session:
   	        elif device_type == "iOS":
 		        os.system("cat resources/trollsploit_cmds_ios.txt")
 			
-	def get_mouse(self,device_type):
+	def get_other(self,device_type):
 		if device_type == "macos":
 			os.system("cat resources/other_cmds_macos.txt")
   	        elif device_type == "iOS":
