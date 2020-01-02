@@ -1,8 +1,0 @@
-
-    Command          Description 
-    -------          -----------
-    bundleids        List bundle identifiers.
-    islocked         Check if the device is locked.
-    pid              Get MPL process ID.
-    shell            Open target device shell.
-    upload           Upload local file.
