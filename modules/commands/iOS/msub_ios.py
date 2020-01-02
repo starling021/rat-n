@@ -4,7 +4,7 @@ import re, os, time
 class command:
     def __init__(self):
         self.name = "msub"
-        self.description = "Install or uninstall MPL Substrate."
+        self.description = "Install or uninstall Mouse Substrate."
         self.usage = "Usage: msub [install|uninstall]"
     
     def run(self,session,cmd_data):

