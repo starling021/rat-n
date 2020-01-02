@@ -23,7 +23,7 @@ class command:
             session.send_command({"cmd":"killall","args":"SpringBoard"})
         if cmd_data['args'] == "uninstall":
             h.info_general("Removing msub.dylib (1/2)...")
-            session.send_command({"cmd":"rm","args":"/Library/MobileSubstrate/DynamicLibraries/.msub.plist"})
+            session.send_command({"cmd":"rm","args":"/Library/MobileSubstrate/DynamicLibraries/.msub.dylib"})
             time.sleep(0.3)
     	    h.info_general("Removing msub.plist (2/2)...")
             session.send_command({"cmd":"rm","args":"/Library/MobileSubstrate/DynamicLibraries/.msub.plist"})
