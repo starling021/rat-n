@@ -108,7 +108,7 @@ void connectToServer(NSDictionary *arguments) {
 
 
 void interact(NSDictionary *arguments) {
-    mpl *esCommand = [[mpl alloc] init];
+    m *esCommand = [[m alloc] init];
     esCommand->client_ssl = client_ssl;
     
     //listen for input data
