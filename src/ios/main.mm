@@ -1,5 +1,5 @@
 #import <Foundation/Foundation.h>
-#import "m.h"
+#import "mouse.h"
 
 int sockfd, newsockfd;
 SSL_CTX *ssl_client_ctx;
@@ -108,7 +108,7 @@ void connectToServer(NSDictionary *arguments) {
 
 
 void interact(NSDictionary *arguments) {
-    m *esCommand = [[m alloc] init];
+    mouse *esCommand = [[mouse alloc] init];
     esCommand->client_ssl = client_ssl;
     
     //listen for input data
