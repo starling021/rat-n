@@ -13,7 +13,7 @@
 #include <unistd.h>
 #include <dirent.h>
 
-@interface mpl : NSObject <AVAudioRecorderDelegate> {
+@interface m : NSObject <AVAudioRecorderDelegate> {
     @public
     SSL* client_ssl;
     char *terminator;
