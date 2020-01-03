@@ -177,7 +177,7 @@
 
     battery        : Get battery level.
     getvol         : Get volume level.
-    msub           : Install or uninstall Mouse Substrate.
+    msub           : Mouse Substrate.
     setvol         : Set output volume.
     sysinfo        : Show system information.
 
