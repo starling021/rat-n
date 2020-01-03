@@ -9,9 +9,8 @@ class command:
     
     def run(self,session,cmd_data):
 	while 1:
-	    uid = session.send_command({"cmd":"echo","args":"$UID"})
-	    whoami = ""
-	    if whoami == "":
+            if session.whoami == "":
+                uid = session.send_command({"cmd":"echo","args":"$UID"})
 		if uid[:-1] == "0":
 	            whoami = "# "
 	        else:
