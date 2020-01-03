@@ -15,6 +15,7 @@ WHITE_C='\033[4;97m'
 
 class Session:
 	def __init__(self,server,conn,device_info):
+                self.whoami = ""
 		self.server = server
 		self.conn = conn
 		self.username = device_info['username'].encode("utf-8")
