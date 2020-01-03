@@ -37,7 +37,7 @@ def show_graphic():
     print(h.GREEN_THIN+"    4"+h.ENDC+") Clean Payloads")
     print(h.GREEN_THIN+"    5"+h.ENDC+") Clean Downloads")
     print(h.GREEN_THIN+"    6"+h.ENDC+") Update Mouse")
-    print(h.GREEN_THIN+"    0"+h.ENDC+") Exit")
+    print(h.GREEN_THIN+"    7"+h.ENDC+") Exit Mouse")
     print("")
     
 class mouse:
@@ -275,7 +275,7 @@ class mouse:
                     "4" : self.clean_payloads,
                     "5" : self.clean_downloads,
                     "6" : self.update_mouse,
-                    "0" : self.exit_menu
+                    "7" : self.exit_menu
                 }
                 try:
                     choose[option]()
