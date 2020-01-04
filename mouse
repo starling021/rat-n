@@ -114,10 +114,10 @@ class mouse:
 
 
     def prompt_run_server(self):
-        if raw_input(h.CYAN+"[*]"+h.WHITE+" Start Server? (Y/n): ") == "n":
+        if raw_input(h.CYAN+"[*]"+h.WHITE+" Start Server? (Y/n): "+h.ENDC) == "n":
             return
         else:
-            if raw_input(h.CYAN+"[*]"+h.WHITE+" MultiHandler? (y/N): ") == "y":
+            if raw_input(h.CYAN+"[*]"+h.WHITE+" MultiHandler? (y/N): "+h.ENDC) == "y":
                 self.server.start_multi_handler()
             else:
                 self.server.start_single_handler()
