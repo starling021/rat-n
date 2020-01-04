@@ -72,7 +72,7 @@
 
 # Building payloads (macOS/iOS)
 
-![payloads](https://user-images.githubusercontent.com/54115104/71770528-d4e48000-2f2d-11ea-98dd-90292559124e.png)
+![payloads](https://user-images.githubusercontent.com/54115104/71771319-483fbf00-2f39-11ea-8ab5-0f64551b9455.png)
 
     Mouse payloads are executed on the target machine. The payload first sends over 
     instructions for getting and sending back device details to our server and then chooses 
@@ -183,7 +183,7 @@
 
 ## Trolling commands
 
-![alert](https://user-images.githubusercontent.com/54115104/71770524-d4e48000-2f2d-11ea-91cb-d3c23ef9804e.png)
+![alert](https://user-images.githubusercontent.com/54115104/71771318-47a72880-2f39-11ea-8d18-28866e7e9977.png)
 
 ### macOS
 
