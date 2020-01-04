@@ -239,7 +239,7 @@ class mouse:
         while 1:
             try:
                 # choose payload
-                option = raw_input(h.info_general_raw("Choose Payload> "))
+                option = raw_input(h.info_general_raw("Mouse Payload: "))
                 if not option:
                   continue
                 selected_payload = self.payloads[self.payloads.keys()[int(option) - 1]]
@@ -264,7 +264,7 @@ class mouse:
                 if err:
                     print err
                 if self.server.debug:
-                    print "Debug mode: on"
+                    print "Debug Mode: on"
                 sys.stdout.write(self.banner_text)
                 show_graphic()
                 option = raw_input(h.NES)
