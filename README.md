@@ -249,7 +249,7 @@
 
 ## Other commands
 
-![shell](https://user-images.githubusercontent.com/54115104/71603762-b7469d80-2b5e-11ea-837d-955e5d8df1d4.png)
+![shell](https://user-images.githubusercontent.com/54115104/71770614-e0847680-2f2e-11ea-9c90-5152fe54447d.png)
 
 ### macOS
 
