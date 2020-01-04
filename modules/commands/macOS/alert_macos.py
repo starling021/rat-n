@@ -13,8 +13,8 @@ class command:
         message = raw_input(h.CYAN+"[*]"+h.WHITE+" Alert Message: "+h.ENDC)
         icon = raw_input(h.CYAN+"[*]"+h.WHITE+" Alert Icon: "+h.ENDC)
         application = raw_input(h.CYAN+"[*]"+h.WHITE+" Alert Application: "+h.ENDC)
-        fbutton = raw_input(h.CYAN+"[*]"+h.WHITE+" First button: "+h.ENDC)
-        sbutton = raw_input(h.CYAN+"[*]"+h.WHITE+" Second button: "+h.ENDC)
+        fbutton = raw_input(h.CYAN+"[*]"+h.WHITE+" First Button: "+h.ENDC)
+        sbutton = raw_input(h.CYAN+"[*]"+h.WHITE+" Second Button: "+h.ENDC)
         one = '"'
         payload = """
         tell application """+one+""""""+application+""""""+one+"""
