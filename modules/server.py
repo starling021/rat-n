@@ -52,7 +52,6 @@ class Server:
             choice = raw_input(h.info_general_raw("Local Host: "))
             if choice != "":
                 lhost = choice
-            h.info_general("LHOST ==> " + lhost)
             while True:
                 lport = raw_input(h.info_general_raw("Local Port: "))
                 if not lport:
@@ -60,13 +59,12 @@ class Server:
                 try:
                     lport = int(lport)
                 except ValueError:
-                    h.info_error("Invalid port, please enter a valid integer")
+                    h.info_error("Invalid port, please enter a valid integer.")
                     continue
                 if lport < 1024:
-                    h.info_error("Invalid port, please enter a value >= 1024")
+                    h.info_error("Invalid port, please enter a value >= 1024.")
                     continue
                 break
-            h.info_general("LPORT ==> " + str(lport))
             self.host = socket.gethostbyname(lhost)
             self.port = lport
             return True
@@ -99,10 +97,10 @@ class Server:
     def craft_payload(self,device_arch):
         # TODO: Detect uid before we send executable
         if not self.host:
-            h.info_error("Local Host is not set")
+            h.info_error("Local Host is not set!")
             return
         if not self.port:
-            h.info_error("Local Port is not set")
+            h.info_error("Local Port is not set!")
             return
         payload_parameter = h.b64(json.dumps({"ip":self.host,"port":self.port,"debug":self.debug}))
         if device_arch in self.macos_architectures:
