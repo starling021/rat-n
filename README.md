@@ -72,7 +72,7 @@
 
 # Building payloads (macOS/iOS)
 
-![payloads](https://user-images.githubusercontent.com/54115104/71603753-b6157080-2b5e-11ea-8d21-cbb5f2aad399.png)
+![payloads](https://user-images.githubusercontent.com/54115104/71770528-d4e48000-2f2d-11ea-98dd-90292559124e.png)
 
     Mouse payloads are executed on the target machine. The payload first sends over 
     instructions for getting and sending back device details to our server and then chooses 
@@ -112,7 +112,7 @@
 
 # MultiHandler CLI
 
-![multihandler](https://user-images.githubusercontent.com/54115104/71603752-b6157080-2b5e-11ea-8712-a59a60530b09.png)
+![multihandler](https://user-images.githubusercontent.com/54115104/71770527-d4e48000-2f2d-11ea-98ff-f4e6a9b8ce62.png)
 
     The Multihandler option lets us handler multiple sessions. 
     You can choose to interact with different devices while 
@@ -145,7 +145,7 @@
 
 # Mouse CLI
 
-![help](https://user-images.githubusercontent.com/54115104/71603758-b6ae0700-2b5e-11ea-9a88-1b87deee7a1c.png)
+![help](https://user-images.githubusercontent.com/54115104/71770526-d4e48000-2f2d-11ea-9240-1a1f749c8460.png)
 
     After a session is established, we can execute commands on that device through 
     the Mouse CLI. We can show all available commands by typing "help". Mouse CLI 
@@ -154,7 +154,7 @@
 
 ## Local commands
 
-![exec](https://user-images.githubusercontent.com/54115104/71603757-b6ae0700-2b5e-11ea-8db1-aef544668cd5.png)
+![exec](https://user-images.githubusercontent.com/54115104/71770525-d4e48000-2f2d-11ea-9c63-bdea00f781b7.png)
 
     clear          : Clear terminal input/output.
     help           : Show all available commands.
@@ -163,7 +163,7 @@
     
 ## Settings commands
 
-![getvol-setvol](https://user-images.githubusercontent.com/54115104/71603760-b7469d80-2b5e-11ea-998a-d16a30708571.png)
+![setvol](https://user-images.githubusercontent.com/54115104/71770530-d57d1680-2f2d-11ea-9e4b-3d4f5b3007ab.png)
 
 ### macOS
 
@@ -183,7 +183,7 @@
 
 ## Trolling commands
 
-![alert](https://user-images.githubusercontent.com/54115104/71603756-b6ae0700-2b5e-11ea-8e25-208aa79efb96.png)
+![alert](https://user-images.githubusercontent.com/54115104/71770524-d4e48000-2f2d-11ea-91cb-d3c23ef9804e.png)
 
 ### macOS
 
@@ -211,7 +211,7 @@
 
 ## Stealing commands
 
-![screenshot](https://user-images.githubusercontent.com/54115104/71603761-b7469d80-2b5e-11ea-9034-b32a1e79a836.png)
+![screenshot](https://user-images.githubusercontent.com/54115104/71770529-d57d1680-2f2d-11ea-901b-ab9703c0bd0c.png)
 
 ### macOS
 
