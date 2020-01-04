@@ -49,12 +49,12 @@ class Server:
         try:
             lhost = h.getip()
             lport = None
-            choice = raw_input(h.info_general_raw("Set Local Host> "))
+            choice = raw_input(h.info_general_raw("Set Local Host> ") + h.ENDC)
             if choice != "":
                 lhost = choice
             h.info_general("LHOST ==> " + lhost)
             while True:
-                lport = raw_input(h.info_general_raw("Set Local Port> "))
+                lport = raw_input(h.info_general_raw("Set Local Port> ") + h.ENDC)
                 if not lport:
                     lport = 4444
                 try:
