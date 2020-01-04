@@ -32,7 +32,7 @@ def info_general(string):
 
 
 def info_general_raw(string):
-    return "{0}[*] {1}{2}".format(CYAN,ENDC,string)
+    return "{0}[*] {1}{2}".format(CYAN,WHITE,string)
     
 
 def info_error(string):
