@@ -70,11 +70,11 @@
 
 ***
 
-# Building payloads (macOS/iOS)
+# Mouse Payloads (macOS/iOS)
 
 ![payloads](https://user-images.githubusercontent.com/54115104/71771319-483fbf00-2f39-11ea-8ab5-0f64551b9455.png)
 
-    Mouse payloads are executed on the target machine. The payload first sends over 
+    Mouse Payloads are executed on the target machine. The payload first sends over 
     instructions for getting and sending back device details to our server and then chooses 
     the appropriate executable to establish a secure remote control session.
 
