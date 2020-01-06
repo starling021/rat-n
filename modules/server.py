@@ -65,6 +65,7 @@ class Server:
                     h.info_error("Invalid port, please enter a value >= 1024.")
                     continue
                 break
+            h.info_general("Using "+lhost+":"+lport)
             self.host = socket.gethostbyname(lhost)
             self.port = lport
             return True
