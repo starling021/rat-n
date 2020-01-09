@@ -165,7 +165,7 @@
 
 ![exec](https://user-images.githubusercontent.com/54115104/72089625-6e8ca280-331d-11ea-982e-c4470c79141d.png)
 
-    clear          : Clear terminal input/output.
+    clear          : Clear terminal window.
     help           : Show all available commands.
     exec           : Execute local shell commands.
     exit           : Close current session and exit.
