@@ -70,6 +70,15 @@
 
 ***
 
+# Mouse Framework execution
+
+   To execute Mouse Framework you 
+   should execute the following command.
+
+> mouse
+
+***
+
 # Mouse Payloads (macOS/iOS)
 
 ![payloads](https://user-images.githubusercontent.com/54115104/71848194-2415e680-30cf-11ea-9dbe-9c0d2d028dd4.png)
