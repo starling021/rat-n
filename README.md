@@ -72,8 +72,8 @@
 
 # Mouse Framework execution
 
-   To execute Mouse Framework you 
-   should execute the following command.
+    To execute Mouse Framework you 
+    should execute the following command.
 
 > mouse
 
