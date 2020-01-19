@@ -15,6 +15,7 @@ class Server:
         self.ios_architectures = ["arm64","armv7s", "arm"]
         self.host = None
         self.port = None
+        self.sos = None
         self.debug = False
         self.is_multi = False
         self.modules_macos = self.import_modules("modules/commands/macOS")
