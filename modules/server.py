@@ -40,8 +40,10 @@ class Server:
     def get_modules(self,device_type):
         if device_type == "macos": 
             result = self.modules_macos
+            sos = "macOS"
         elif device_type == "iOS":
             result = self.modules_ios
+            sos = "iOS"
         result.update(self.modules_universal)
         return result
 
@@ -166,7 +168,7 @@ class Server:
         conn.send(bash_stager)
 
         # send executable
-        self.debug_print("Sending Binary Executable...")
+        self.verbose_print("Executing "+self.sos+" Payload...")
         conn.send(executable)
         conn.close()
         self.verbose_print("Establishing Connection...")
