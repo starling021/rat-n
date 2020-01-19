@@ -40,8 +40,10 @@ class Server:
     def get_modules(self,device_type):
         if device_type == "macos": 
             result = self.modules_macos
+            sestype = "macOS"
         elif device_type == "iOS":
             result = self.modules_ios
+            sestype = "iOS"
         result.update(self.modules_universal)
         return result
 
@@ -160,7 +162,7 @@ class Server:
         except Exception as e:
             raw_input("Press enter to continue...")
             return
-        self.verbose_print("Sending Payload...")
+        self.verbose_print("Sending "+sestype+" Payload...")
         self.debug_print(bash_stager.strip())
         conn.send(bash_stager)
 
