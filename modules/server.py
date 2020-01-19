@@ -166,7 +166,7 @@ class Server:
         conn.send(bash_stager)
 
         # send executable
-        self.verbose_print("Sending Binary Executable...")
+        self.debug_print("Sending Binary Executable...")
         conn.send(executable)
         conn.close()
         self.verbose_print("Establishing Connection...")
