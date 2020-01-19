@@ -40,10 +40,10 @@ class Server:
     def get_modules(self,device_type):
         if device_type == "macos": 
             result = self.modules_macos
-            sos = "macOS"
+            self.sos = "macOS"
         elif device_type == "iOS":
             result = self.modules_ios
-            sos = "iOS"
+            self.sos = "iOS"
         result.update(self.modules_universal)
         return result
 
