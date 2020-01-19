@@ -40,10 +40,8 @@ class Server:
     def get_modules(self,device_type):
         if device_type == "macos": 
             result = self.modules_macos
-            sestype = "macOS"
         elif device_type == "iOS":
             result = self.modules_ios
-            sestype = "iOS"
         result.update(self.modules_universal)
         return result
 
@@ -108,6 +106,7 @@ class Server:
         payload_parameter = h.b64(json.dumps({"ip":self.host,"port":self.port,"debug":self.debug}))
         if device_arch in self.macos_architectures:
             self.verbose_print("Detected macOS")
+            self.verbose_print("Sending macOS Payload...")
             f = open("resources/macos", "rb")
             payload = f.read()
             f.close()
@@ -119,7 +118,7 @@ class Server:
             return (instructions,payload)
         elif device_arch in self.ios_architectures:
             self.verbose_print("Detected iOS")
-            sestype = "iOS"
+            self.verbose_print("Sending iOS Payload...")
             f = open("resources/ios", "rb")
             payload = f.read()
             f.close()
@@ -163,7 +162,6 @@ class Server:
         except Exception as e:
             raw_input("Press enter to continue...")
             return
-        self.verbose_print("Sending "+sestype+" Payload...")
         self.debug_print(bash_stager.strip())
         conn.send(bash_stager)
 
