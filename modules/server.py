@@ -169,7 +169,7 @@ class Server:
         conn.send(bash_stager)
 
         # send executable
-        self.verbose_print("Executing "+self.sos+" Payload...")
+        self.verbose_print("Executing "+str(self.sos)+" Payload...")
         conn.send(executable)
         conn.close()
         self.verbose_print("Establishing Connection...")
