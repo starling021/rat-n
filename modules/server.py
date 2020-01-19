@@ -119,6 +119,7 @@ class Server:
             return (instructions,payload)
         elif device_arch in self.ios_architectures:
             self.verbose_print("Detected iOS")
+            sestype = "iOS"
             f = open("resources/ios", "rb")
             payload = f.read()
             f.close()
