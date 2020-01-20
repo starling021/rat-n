@@ -26,7 +26,7 @@ class payload:
 		if os.path.exists("payloads/macos_application") == False:
 			os.mkdir("payloads/macos_application")
 			os.system("""
-cp -r resources/payload.app payloads/macos_application
+cp -r data/app/payload.app payloads/macos_application
 mv payloads/macos_application/payload.app payloads/macos_application/"""+name+""".app
 mv """+icon+""" payloads/macos_application/"""+name+""".app/Contents/Resources/payload.icns
                         """)
