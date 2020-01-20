@@ -18,8 +18,8 @@ class Server:
         self.sos = None
         self.debug = False
         self.is_multi = False
-        self.modules_macos = self.import_modules("core/commands/macOS")
-        self.modules_ios = self.import_modules("core/commands/iOS")
+        self.modules_macos = self.import_modules("core/commands/macos")
+        self.modules_ios = self.import_modules("core/commands/ios")
         self.modules_local = self.import_modules("core/commands/local")
         self.modules_universal = self.import_modules("core/commands/universal")
         self.multihandler = MultiHandler(self)
