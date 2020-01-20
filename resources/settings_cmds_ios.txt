@@ -1,8 +1,0 @@
-
-    Command          Description 
-    -------          -----------
-    battery          Get battery level.
-    getvol           Get volume level.
-    msub             Mouse Substrate.
-    setvol           Set output volume.
-    sysinfo          Show system information.

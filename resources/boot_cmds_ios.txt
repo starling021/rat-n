@@ -1,6 +1,0 @@
-
-    Command          Description 
-    -------          -----------
-    reboot           Reboot device.
-    respring         Restart SpringBoard.
-    safemode         Put device into SafeMode.

@@ -1,8 +1,0 @@
-
-    Command          Description 
-    -------          -----------
-    getpaste         Get pasteboard contents.
-    getvol           Get speaker output volume.
-    idletime         Show user activity time.
-    setbright        Set screen brightness.
-    setvol           Set output volume.
