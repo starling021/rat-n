@@ -110,7 +110,7 @@ class Server:
         if device_arch in self.macos_architectures:
             self.verbose_print("Connecting to macOS...")
             self.verbose_print("Sending macOS Payload...")
-            f = open("resources/macos", "rb")
+            f = open("data/payloads/macos", "rb")
             payload = f.read()
             f.close()
             #save to tmp, 
@@ -123,7 +123,7 @@ class Server:
         elif device_arch in self.ios_architectures:
             self.verbose_print("Connecting to iOS...")
             self.verbose_print("Sending iOS Payload...")
-            f = open("resources/ios", "rb")
+            f = open("data/payloads/ios", "rb")
             payload = f.read()
             f.close()
             instructions = \
