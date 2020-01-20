@@ -181,7 +181,7 @@ class Session:
 	def show_commands(self):
 		print(h.ENDC+"\nLocal Commands")
                 print("==============")
-		os.system("cat resources/local_cmds.txt")
+		os.system("cat data/cmds/local_cmds.txt")
 		
 		print("\nSettings Commands")
                 print("=================")
