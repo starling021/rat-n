@@ -22,8 +22,8 @@ import os
 
 os.system("printf '\033]2;Mouse Framework\a'")
 
-from modules import server
-from modules import helper as h
+from core import server
+from core import helper as h
 import sys
 import platform
 import time
@@ -124,7 +124,7 @@ class mouse:
 
 
     def import_payloads(self):
-        path = "modules/payloads"
+        path = "core/payloads"
         sys.path.append(path)
         modules = dict()
         for mod in os.listdir(path):
