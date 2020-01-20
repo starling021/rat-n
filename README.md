@@ -83,9 +83,8 @@
 
 ![payloads](https://user-images.githubusercontent.com/54115104/72089626-6e8ca280-331d-11ea-8f67-bd8b3660d538.png)
 
-    Mouse Payloads are executed on the target machine. The payload first sends over 
-    instructions for getting and sending back device details to our server and then chooses 
-    the appropriate executable to establish a secure remote control session.
+    Mouse Payloads are intended to 
+    get remote target machine session.
 
 ## Bourne-Again Shell payload
 
