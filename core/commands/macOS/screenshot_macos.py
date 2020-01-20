@@ -1,7 +1,7 @@
 import json
 import time
 import os
-import modules.helper as h
+import core.helper as h
 
 class command:
     def __init__(self):

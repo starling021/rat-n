@@ -1,4 +1,4 @@
-from modules import helper as h
+from core import helper as h
 class payload:
 	def __init__(self):
 		self.name = "Bourne-Again Shell"

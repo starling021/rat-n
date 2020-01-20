@@ -1,4 +1,4 @@
-from modules import helper as h
+from core import helper as h
 import os, time
 
 class payload:

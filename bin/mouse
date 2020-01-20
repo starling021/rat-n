@@ -25,14 +25,14 @@ then
 {
 cd ~/mouse
 mkdir etc/.disabled
-mv modules/commands/universal/upload_universal.py etc/.disabled
-mv etc/modules/commands/universal/upload_universal.py modules/commands/universal
-cp etc/.disabled/upload_universal.py etc/modules/commands/universal
+mv core/commands/universal/upload_universal.py etc/.disabled
+mv etc/core/commands/universal/upload_universal.py core/commands/universal
+cp etc/.disabled/upload_universal.py etc/core/commands/universal
 rm -rf etc/.disabled
 mkdir etc/.disabled
-mv modules/commands/local/exec.py etc/.disabled
-mv etc/modules/commands/local/exec.py modules/commands/local
-cp etc/.disabled/exec.py etc/modules/commands/local
+mv core/commands/local/exec.py etc/.disabled
+mv etc/core/commands/local/exec.py core/commands/local
+cp etc/.disabled/exec.py etc/core/commands/local
 rm -rf etc/.disabled
 } &> /dev/null
 chmod +x mouse
@@ -40,14 +40,14 @@ chmod +x mouse
 {
 cd ~/mouse
 mkdir etc/.disabled
-mv modules/commands/universal/upload_universal.py etc/.disabled
-mv etc/modules/commands/universal/upload_universal.py modules/commands/universal
-cp etc/.disabled/upload_universal.py etc/modules/commands/universal
+mv core/commands/universal/upload_universal.py etc/.disabled
+mv etc/core/commands/universal/upload_universal.py core/commands/universal
+cp etc/.disabled/upload_universal.py etc/core/commands/universal
 rm -rf etc/.disabled
 mkdir etc/.disabled
-mv modules/commands/local/exec.py etc/.disabled
-mv etc/modules/commands/local/exec.py modules/commands/local
-cp etc/.disabled/exec.py etc/modules/commands/local
+mv core/commands/local/exec.py etc/.disabled
+mv etc/core/commands/local/exec.py core/commands/local
+cp etc/.disabled/exec.py etc/core/commands/local
 rm -rf etc/.disabled
 } &> /dev/null
 else
@@ -62,14 +62,14 @@ git clone https://github.com/entynetproject/mouse.git
 cd $OLDPWD
 cd ~/mouse
 mkdir etc/.disabled
-mv modules/commands/universal/upload_universal.py etc/.disabled
-mv etc/modules/commands/universal/upload_universal.py modules/commands/universal
-cp etc/.disabled/upload_universal.py etc/modules/commands/universal
+mv core/commands/universal/upload_universal.py etc/.disabled
+mv etc/core/commands/universal/upload_universal.py core/commands/universal
+cp etc/.disabled/upload_universal.py etc/core/commands/universal
 rm -rf etc/.disabled
 mkdir etc/.disabled
-mv modules/commands/local/exec.py etc/.disabled
-mv etc/modules/commands/local/exec.py modules/commands/local
-cp etc/.disabled/exec.py etc/modules/commands/local
+mv core/commands/local/exec.py etc/.disabled
+mv etc/core/commands/local/exec.py core/commands/local
+cp etc/.disabled/exec.py etc/core/commands/local
 rm -rf etc/.disabled
 } &> /dev/null
 chmod +x mouse
@@ -77,14 +77,14 @@ chmod +x mouse
 {
 cd ~/mouse
 mkdir etc/.disabled
-mv modules/commands/universal/upload_universal.py etc/.disabled
-mv etc/modules/commands/universal/upload_universal.py modules/commands/universal
-cp etc/.disabled/upload_universal.py etc/modules/commands/universal
+mv core/commands/universal/upload_universal.py etc/.disabled
+mv etc/core/commands/universal/upload_universal.py core/commands/universal
+cp etc/.disabled/upload_universal.py etc/core/commands/universal
 rm -rf etc/.disabled
 mkdir etc/.disabled
-mv modules/commands/local/exec.py etc/.disabled
-mv etc/modules/commands/local/exec.py modules/commands/local
-cp etc/.disabled/exec.py etc/modules/commands/local
+mv core/commands/local/exec.py etc/.disabled
+mv etc/core/commands/local/exec.py core/commands/local
+cp etc/.disabled/exec.py etc/core/commands/local
 rm -rf etc/.disabled
 } &> /dev/null
 else

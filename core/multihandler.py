@@ -1,5 +1,5 @@
 import os
-from modules import helper as h
+from core import helper as h
 import threading, socket, time, sys
 
 DOJ='\033[1;34m[*]\033[0;97m'

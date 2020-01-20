@@ -1,6 +1,6 @@
 import time
 import getpass
-import modules.helper as h
+import core.helper as h
 
 class command:
     def __init__(self):

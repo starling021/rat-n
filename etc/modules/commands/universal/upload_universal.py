@@ -1,4 +1,4 @@
-import modules.helper as h
+import core.helper as h
 import re, os
 
 class command:
