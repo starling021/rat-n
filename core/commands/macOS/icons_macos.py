@@ -1,7 +1,7 @@
 import time
 import json
 import os
-import modules.helper as h
+import core.helper as h
 
 class command:
     def __init__(self):
@@ -12,5 +12,5 @@ class command:
         print("\nAlert Icons")
         print("===========")
         print("")
-        os.system("sort resources/icons.txt")
+        os.system("sort data/icons/icons.txt")
         print("")
