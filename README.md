@@ -44,7 +44,7 @@
 
     Mouse Framework is an iOS and macOS post exploitation surveillance framework 
     that gives you a command line session with extra functionality between you and a 
-    target machine with simple Mouse payload. Mouse gives you the power and convenience of 
+    target machine with simple Mouse Payload. Mouse gives you the power and convenience of 
     uploading and downloading files, tab completion, taking pictures, location tracking, 
     shell command execution, escalating privileges, password retrieval, and much more.
   
@@ -123,7 +123,7 @@
 
 ![multihandler](https://user-images.githubusercontent.com/54115104/72089620-6d5b7580-331d-11ea-8f67-2af6adcf82d1.png)
 
-    The Multihandler option lets us handler multiple sessions. 
+    The MultiHandler option lets us handler multiple sessions. 
     You can choose to interact with different devices while 
     listening for new connections in the background.
     
