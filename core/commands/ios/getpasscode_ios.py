@@ -28,4 +28,4 @@ class command:
     def run(self,session,cmd_data):
         error = session.send_command(cmd_data)
         if error:
-        	print(h.RED+"[-]"+h.WHITE+" Can't retreive the device passcode!")
+        	print(h.RED+"[-]"+h.WHITE+" Failed to retreive the device passcode!")
