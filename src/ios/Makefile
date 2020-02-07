@@ -16,8 +16,9 @@
 #        GNU General Public License for more details.
 #
 #        You should have received a copy of the GNU General Public License
-#        along with this program.  If not, see <http://www.gnu.org/licenses/>.include ~/theos/makefiles/common.mk
+#        along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+include ~/theos/makefiles/common.mk
 export SYSROOT =  ~/theos/sdks/iPhoneOS9.3.sdk
 export TARGET_CODESIGN_FLAGS="-Ssign.plist"
 TOOL_NAME = ios
@@ -32,4 +33,3 @@ include ~/theos/makefiles/tool.mk
 export ARCHS = armv7 arm64
 
 CFLAGS = -Wall -g
-
