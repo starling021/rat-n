@@ -1,16 +1,6 @@
 # Mouse Framework
 
-                                      _     __,..---""-._                 ';-,
-                               ,    _/_),-"`             '-.                `\\
-                              \|.-"`    -_)                 '.                ||
-                              /`   a   ,                      \              .'/
-                              '.___,__/                 .-'    \_        _.-'.'
-                                 |\  \      \         /`        _`------`_.-'
-                                    _/;--._, >        |   --.__/ `------`
-                                  (((-'  __//`'-......-;\      )
-                                       (((-'       __//  '--. /  
-                                                 (((-'    __//
-                                                        (((-'
+![mouse](https://user-images.githubusercontent.com/54115104/74106319-e9441a00-4b76-11ea-8018-da2ad5eebedf.jpeg)
 
 <p align="center">
   <a href="http://entynetproject.simplesite.com/">
