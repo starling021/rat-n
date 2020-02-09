@@ -1,6 +1,6 @@
 # Mouse Framework
 
-![mouse](https://user-images.githubusercontent.com/54115104/74106444-22c95500-4b78-11ea-94d9-076e31b1f90d.jpeg)
+![mouse](https://user-images.githubusercontent.com/54115104/74106887-b05a7400-4b7b-11ea-8885-bac3b5c359a3.jpeg)
 
 <p align="center">
   <a href="http://entynetproject.simplesite.com/">
