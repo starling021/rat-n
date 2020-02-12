@@ -99,24 +99,24 @@ class MultiHandler:
 
 	def interact_with_session(self,session_number):
 		if not session_number:
-			print "Usage: interact <session_number>"
+			print "Usage: interact <session_ID>"
 			return
 		try:
 			self.sessions_id[int(session_number)].interact()
 		except:
-			h.info_error("Invalid session number!")
+			h.info_error("Invalid session ID!")
 
 
 	def close_session(self,session_number):
 		if not session_number:
-			print "Usage: close <session_number>"
+			print "Usage: close <session_ID>"
 			return
 		try:
 			session = self.sessions_id[int(session_number)]
 			session.disconnect(False)
 			h.info_general('Closing session ' + session_number + '...')
 		except:
-			h.info_error("Invalid session number!")
+			h.info_error("Invalid session ID!")
 
 
 	def stop_server(self):
