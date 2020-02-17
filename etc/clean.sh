@@ -31,7 +31,7 @@
 
 if [[ "$1" = "-h" || "$1" = "--help" ]]
 then
-echo -e "Usage: ./clean.sh [option]"
+echo -e "Usage: clean.sh [option]"
 echo -e
 echo -e "  -d, --downloads  Clean up downloads."
 echo -e "  -p, --payloads   Clean up payloads."
@@ -63,7 +63,7 @@ sleep 10
 exit
 fi
 
-echo -e "Usage: ./clean.sh [option]"
+echo -e "Usage: clean.sh [option]"
 echo -e
 echo -e "  -d, --downloads  Clean up downloads."
 echo -e "  -p, --payloads   Clean up payloads."
