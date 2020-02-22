@@ -1,7 +1,7 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 #            ---------------------------------------------------
-#                              Mouse Framework                                 
+#                              Mouse Framework
 #            ---------------------------------------------------
 #                Copyright (C) <2019-2020>  <Entynetproject>
 #
@@ -22,6 +22,6 @@ class command:
     def __init__(self):
         self.name = "getvol"
         self.description = "Get volume level."
-    
+
     def run(self,session,cmd_data):
-        print("Current volume: "+session.send_command(cmd_data))
+        print(("Current volume: "+session.send_command(cmd_data)))

@@ -1,7 +1,7 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 #            ---------------------------------------------------
-#                              Mouse Framework                                 
+#                              Mouse Framework
 #            ---------------------------------------------------
 #                Copyright (C) <2019-2020>  <Entynetproject>
 #
@@ -28,10 +28,10 @@ class command:
         self.description = "Change desktop wallpaper."
         self.type = "applescript"
 
-        
+
 
     def run(self,session,cmd_data):
-        picture = raw_input(h.WW+"[>]"+h.WHITE+" Wallpaper Picture: "+h.ENDC)
+        picture = input(h.WW+"[>]"+h.WHITE+" Wallpaper Picture: "+h.ENDC)
         one = '"'
         payload = """
         tell application "Finder" to set desktop picture to POSIX file "/usr/local/share/picture.jpg"

@@ -1,7 +1,7 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 #            ---------------------------------------------------
-#                              Mouse Framework                                 
+#                              Mouse Framework
 #            ---------------------------------------------------
 #                Copyright (C) <2019-2020>  <Entynetproject>
 #
@@ -29,7 +29,7 @@ class command:
         self.type = "native"
 
     def run(self,session,cmd_data):
-        title = raw_input(h.WW+"[>]"+h.WHITE+" Alert Title: "+h.ENDC)
-        message = raw_input(h.WW+"[>]"+h.WHITE+" Alert Message: "+h.ENDC)
+        title = input(h.WW+"[>]"+h.WHITE+" Alert Title: "+h.ENDC)
+        message = input(h.WW+"[>]"+h.WHITE+" Alert Message: "+h.ENDC)
         session.send_command({"cmd":"alert","args":json.dumps({"title":title,"message":message})})
         return ""

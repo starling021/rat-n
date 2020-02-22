@@ -1,7 +1,7 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 #            ---------------------------------------------------
-#                              Mouse Framework                                 
+#                              Mouse Framework
 #            ---------------------------------------------------
 #                Copyright (C) <2019-2020>  <Entynetproject>
 #
@@ -24,8 +24,8 @@ class command:
     def __init__(self):
         self.name = "getpasscode"
         self.description = "Retreive the device passcode."
-    
+
     def run(self,session,cmd_data):
         error = session.send_command(cmd_data)
         if error:
-        	print(h.RED+"[-]"+h.WHITE+" Failed to retreive the device passcode!")
+            print((h.RED+"[-]"+h.WHITE+" Failed to retreive the device passcode!"))

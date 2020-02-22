@@ -1,7 +1,7 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 #            ---------------------------------------------------
-#                              Mouse Framework                                 
+#                              Mouse Framework
 #            ---------------------------------------------------
 #                Copyright (C) <2019-2020>  <Entynetproject>
 #
@@ -25,4 +25,4 @@ class command:
         self.type = "native"
 
     def run(self,session,cmd_data):
-        print("PID: "+session.send_command(cmd_data))
+        print(("PID: "+session.send_command(cmd_data)))

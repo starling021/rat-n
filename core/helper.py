@@ -1,7 +1,7 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 #            ---------------------------------------------------
-#                              Mouse Framework                                 
+#                              Mouse Framework
 #            ---------------------------------------------------
 #                Copyright (C) <2019-2020>  <Entynetproject>
 #
@@ -49,7 +49,7 @@ def clear():
 
 
 def info_general(string):
-    print "{0}[*] {1}{2}".format(CYAN,WHITE,string)
+    print("{0}[*] {1}{2}".format(CYAN,WHITE,string))
 
 
 def info_general_raw(string):
@@ -57,18 +57,18 @@ def info_general_raw(string):
 
 def info_question_raw(string):
     return "{0}[?] {1}{2}{3}".format(WW,WHITE,string,ENDC)
-    
+
 
 def info_error(string):
-    print "{0}[-] {1}{2}".format(RED,WHITE,string)
+    print("{0}[-] {1}{2}".format(RED,WHITE,string))
 
 
 def info_warning(string):
-    print "{0}[!] {1}{2}".format(YELLOW,WHITE,string)
+    print("{0}[!] {1}{2}".format(YELLOW,WHITE,string))
 
 
 def show_command(mod):
-    print mod.name + " " * (15 - len(mod.name)) + ": " + mod.description
+    print(mod.name + " " * (15 - len(mod.name)) + ": " + mod.description)
 
 
 def b64(s):
@@ -101,7 +101,7 @@ def find_longest_common_prefix(values):
 
 
 def generate_keys():
-    print (CYAN+"[*]"+WHITE+" Initializing server...")
+    print((CYAN+"[*]"+WHITE+" Initializing server..."))
     if not os.path.exists(".keys"):
         os.makedirs(".keys")
     os.system(
@@ -109,5 +109,3 @@ def generate_keys():
       "openssl genrsa -out server.key 2048 2>/dev/null;"+
       "openssl req -new -key server.key -subj '/C=US/ST=mouse/L=mouse/O=mouse/CN=mouse' -out server.csr;"+
       "openssl x509 -req -days 365 -in server.csr -signkey server.key -out server.crt 2>/dev/null")
-
-    

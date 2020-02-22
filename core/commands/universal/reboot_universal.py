@@ -1,7 +1,7 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 #            ---------------------------------------------------
-#                              Mouse Framework                                 
+#                              Mouse Framework
 #            ---------------------------------------------------
 #                Copyright (C) <2019-2020>  <Entynetproject>
 #
@@ -19,9 +19,9 @@
 #        along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 class command:
-	def __init__(self):
-		self.name = "reboot"
-		self.description = "Reboot device."
+    def __init__(self):
+        self.name = "reboot"
+        self.description = "Reboot device."
 
-	def run(self,session,cmd_data):
-		session.send_command({"cmd":"reboot","args":""})
+    def run(self,session,cmd_data):
+        session.send_command({"cmd":"reboot","args":""})

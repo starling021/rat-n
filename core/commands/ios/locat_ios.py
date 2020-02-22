@@ -1,7 +1,7 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 #            ---------------------------------------------------
-#                              Mouse Framework                                 
+#                              Mouse Framework
 #            ---------------------------------------------------
 #                Copyright (C) <2019-2020>  <Entynetproject>
 #
@@ -25,15 +25,15 @@ class command:
         self.name = "locat"
         self.description = "Toggle location services."
         self.usage = "Usage: locat [on|off]"
-    
+
     def run(self,session,cmd_data):
-       	if not cmd_data['args'] or not cmd_data['args'] in ['on','off']:
-       		print self.usage
-       		return
-       	if cmd_data['args'] == "on":
-       		cmd_data = {'cmd':'locationon','args':''}
-       	elif cmd_data['args'] == "off":
-       		cmd_data = {'cmd':'locationoff','args':''}
+        if not cmd_data['args'] or not cmd_data['args'] in ['on','off']:
+            print(self.usage)
+            return
+        if cmd_data['args'] == "on":
+            cmd_data = {'cmd':'locationon','args':''}
+        elif cmd_data['args'] == "off":
+            cmd_data = {'cmd':'locationoff','args':''}
         error = session.send_command(cmd_data)
         if error:
-        	print(h.RED+"[-]"+h.WHITE+" Mouse Substrate is not installed!")
+            print((h.RED+"[-]"+h.WHITE+" Mouse Substrate is not installed!"))

