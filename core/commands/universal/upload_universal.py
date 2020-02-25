@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 #            ---------------------------------------------------
-#                              Mouse Framework
+#                              Mouse Framework                                 
 #            ---------------------------------------------------
 #                Copyright (C) <2019-2020>  <Entynetproject>
 #
@@ -26,20 +26,20 @@ class command:
         self.name = "upload"
         self.description = "Upload local file."
         self.usage = "Usage: upload <local_file> <remote_dir>"
-
+    
     def run(self,session,cmd_data):
         if not cmd_data['args']:
-            print(self.usage)
+            print self.usage
             return
         else:
             paths = re.split(r'(?<!\\) ', cmd_data['args'].rstrip())
             if len(paths) > 2:
-                print("Usage: upload <local_file> <remote_dir>")
+                print "Usage: upload <local_file> <remote_dir>"
                 return
-
+            
             local_dir = os.path.split(paths[0])[0]
             local_file = os.path.split(paths[0])[1]
-
+            
             if len(paths) == 1:
                 remote_dir = "."
                 remote_file = local_file

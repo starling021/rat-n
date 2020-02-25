@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 #            ---------------------------------------------------
-#                              Mouse Framework
+#                              Mouse Framework                                 
 #            ---------------------------------------------------
 #                Copyright (C) <2019-2020>  <Entynetproject>
 #
@@ -24,8 +24,8 @@ class command:
     def __init__(self):
         self.name = "home"
         self.description = "Simulate a home button press."
-
+    
     def run(self,session,cmd_data):
         error = session.send_command(cmd_data)
         if error:
-            print((h.RED+"[-]"+h.WHITE+" Mouse Substrate is not installed!"))
+        	print(h.RED+"[-]"+h.WHITE+" Mouse Substrate is not installed!")

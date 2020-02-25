@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 #            ---------------------------------------------------
-#                              Mouse Framework
+#                              Mouse Framework                                 
 #            ---------------------------------------------------
 #                Copyright (C) <2019-2020>  <Entynetproject>
 #
@@ -19,9 +19,9 @@
 #        along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 class command:
-    def __init__(self):
-        self.name = "sysinfo"
-        self.description = "Show system information."
-
-    def run(self,session,cmd_data):
-        print(session.send_command(cmd_data))
+	def __init__(self):
+		self.name = "sysinfo"
+		self.description = "Show system information."
+    
+	def run(self,session,cmd_data):
+		print session.send_command(cmd_data)

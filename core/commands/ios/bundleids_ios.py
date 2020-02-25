@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 #            ---------------------------------------------------
-#                              Mouse Framework
+#                              Mouse Framework                                 
 #            ---------------------------------------------------
 #                Copyright (C) <2019-2020>  <Entynetproject>
 #
@@ -24,10 +24,10 @@ class command:
     def __init__(self):
         self.name = "bundleids"
         self.description = "List bundle identifiers."
-
+    
     def run(self,session,cmd_data):
         print("\nBundle Identifiers")
         print("==================")
         print("")
-        print(session.send_command(cmd_data).rstrip())
+        print session.send_command(cmd_data).rstrip()
         print("")

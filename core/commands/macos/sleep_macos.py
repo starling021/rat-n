@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 #            ---------------------------------------------------
-#                              Mouse Framework
+#                              Mouse Framework                                 
 #            ---------------------------------------------------
 #                Copyright (C) <2019-2020>  <Entynetproject>
 #
@@ -24,8 +24,8 @@ class command:
         self.description = "Put device into sleep mode."
 
     def run(self,session,cmd_data):
-        cmd_data["cmd"] = "osascript"
-        cmd_data["args"] = " -e 'tell application \"Finder\" to sleep'"
+    	cmd_data["cmd"] = "osascript"
+    	cmd_data["args"] = " -e 'tell application \"Finder\" to sleep'"
         result = session.send_command(cmd_data)
         if result:
-            print(result)
+        	print result

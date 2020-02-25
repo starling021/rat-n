@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 #            ---------------------------------------------------
-#                              Mouse Framework
+#                              Mouse Framework                                 
 #            ---------------------------------------------------
 #                Copyright (C) <2019-2020>  <Entynetproject>
 #
@@ -30,18 +30,18 @@ class command:
         self.type = "native"
 
     def run(self,session,cmd_data):
-        h.info_general("Taking screenshot...")
-        result = json.loads(session.send_command(cmd_data))
-        if 'error' in result:
-            h.info_error(result['error'])
-            return
-        elif 'size' in result:
-            size = int(result['size'])
-            data = session.sock_receive_data(size)
-            file_name = "screenshot_{0}.jpg".format(int(time.time()))
-            h.info_general("Saving {0}".format(file_name))
-            # save to file
-            f = open(os.path.join('downloads',file_name),'w')
-            f.write(data)
-            f.close()
-            h.info_general("Saved to downloads/{0}".format(file_name))
+	h.info_general("Taking screenshot...")
+    	result = json.loads(session.send_command(cmd_data))
+    	if 'error' in result:
+    		h.info_error(result['error'])
+    		return
+    	elif 'size' in result:
+			size = int(result['size'])
+			data = session.sock_receive_data(size)
+			file_name = "screenshot_{0}.jpg".format(int(time.time()))
+			h.info_general("Saving {0}".format(file_name))
+			# save to file
+			f = open(os.path.join('downloads',file_name),'w')
+			f.write(data)
+			f.close()
+			h.info_general("Saved to downloads/{0}".format(file_name))
