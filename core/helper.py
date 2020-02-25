@@ -72,7 +72,7 @@ def show_command(mod):
 
 
 def b64(s):
-    return base64.b64encode(s)
+    return base64.b64encode(s.encode())
 
 
 def getip():
