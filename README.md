@@ -29,10 +29,10 @@
 
 # About Mouse Framework
 
-    Mouse Framework is an iOS and macOS post exploitation surveillance framework that 
-    gives you a command line session with extra functionality between you and a target 
-    machine using only a simple Mouse Payload. Mouse gives you the power and convenience 
-    of uploading and downloading files, tab completion, taking pictures, location tracking, 
+    Mouse Framework is an iOS and macOS post exploitation framework that gives you 
+    a command line session with extra functionality between you and a target machine 
+    using only a simple Mouse Payload. Mouse gives you the power and convenience of 
+    uploading and downloading files, tab completion, taking pictures, location tracking, 
     shell command execution, escalating privileges, password retrieval, and much more.
   
 ***
