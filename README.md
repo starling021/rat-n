@@ -66,6 +66,27 @@
 
 ***
 
+# Why Mouse Framework
+
+* A lot of different payloads.
+```
+There are a lot of different payloads in Mouse Framework 
+such as Bourne-Again Shell and Rubber Duck payloads.
+```
+* Accessing device shell.
+```
+Mouse Framework can be used to remotely 
+access iOS/macOS device shell.
+```
+* A lot of different functions.
+```
+There are a lot of different functions in Mouse 
+CLI such as displaying alerts, recording mic sound 
+and taking pictures on remote iOS/macOS device.
+```
+
+***
+
 # Mouse Payloads (macOS/iOS)
 
 ![payloads](https://user-images.githubusercontent.com/54115104/72089626-6e8ca280-331d-11ea-8f67-bd8b3660d538.png)
