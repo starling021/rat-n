@@ -112,7 +112,6 @@ class Server:
 
 
     def start_multi_handler(self):
-        os.system("printf '\033]2;MultiHandler CLI\a'")
         self.multihandler.start_background_server()
         self.multihandler.interact()
         print ""
