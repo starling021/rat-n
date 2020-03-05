@@ -68,11 +68,12 @@
 
 # Why Mouse Framework
 
- * Device shell access.
+ * Simple and clear UX/UI.
 ```
-Mouse Framework can be used to remotely 
-access iOS/macOS device shell.
-```
+Mouse Framework has a simple and clear UX/UI. 
+It is easy to understand and it will be easier 
+for you to master the Mouse Framework.
+```  
  * A lot of different functions.
 ```
 There are a lot of different functions in Mouse 
