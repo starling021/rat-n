@@ -52,4 +52,4 @@ class command:
                     remote_file = local_file
 
             session.upload_file(paths[0],remote_dir,remote_file)
-            h.info_general("File successfully uploaded!")
+            h.info_success("File successfully uploaded!")
