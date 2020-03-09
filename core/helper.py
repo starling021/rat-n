@@ -25,6 +25,7 @@ import socket
 
 WINDOWS = sys.platform.startswith('win')
 #colors
+GG = '' if WINDOWS else '\033[1;32m'
 WW = '' if WINDOWS else '\033[1;77m'
 GREEN = '' if WINDOWS else '\033[0;33m'
 RED = '' if WINDOWS else '\033[1;31m'
@@ -47,9 +48,11 @@ CMD_LS = 'dir' if WINDOWS else 'ls'
 def clear():
     os.system(CMD_CLEAR)
 
+def info_success(string):
+    print "{0}[+] {1}{2}{3}".format(GG,WHITE,string,ENDC)
 
 def info_general(string):
-    print "{0}[*] {1}{2}".format(CYAN,WHITE,string)
+    print "{0}[*] {1}{2}{3}".format(CYAN,WHITE,string,ENDC)
 
 
 def info_general_raw(string):
@@ -60,11 +63,11 @@ def info_question_raw(string):
     
 
 def info_error(string):
-    print "{0}[-] {1}{2}".format(RED,WHITE,string)
+    print "{0}[-] {1}{2}{3}".format(RED,WHITE,string,ENDC)
 
 
 def info_warning(string):
-    print "{0}[!] {1}{2}".format(YELLOW,WHITE,string)
+    print "{0}[!] {1}{2}{3}".format(YELLOW,WHITE,string,ENDC)
 
 
 def show_command(mod):
