@@ -38,6 +38,10 @@ rm -rf etc/.disabled
 chmod +x mouse
 ./mouse
 {
+if [[ -f ~/mouse/.updated ]]
+then
+rm ~/mouse/.updated
+else
 cd ~/mouse
 mkdir etc/.disabled
 mv core/commands/universal/upload_universal.py etc/.disabled
@@ -49,6 +53,7 @@ mv core/commands/local/exec.py etc/.disabled
 mv etc/core/commands/local/exec.py core/commands/local
 cp etc/.disabled/exec.py etc/core/commands/local
 rm -rf etc/.disabled
+fi
 } &> /dev/null
 else
 {
@@ -75,6 +80,10 @@ rm -rf etc/.disabled
 chmod +x mouse
 ./mouse
 {
+if [[ -f ~/mouse/.updated ]]
+then
+rm ~/mouse/.updated
+else
 cd ~/mouse
 mkdir etc/.disabled
 mv core/commands/universal/upload_universal.py etc/.disabled
@@ -86,6 +95,7 @@ mv core/commands/local/exec.py etc/.disabled
 mv etc/core/commands/local/exec.py core/commands/local
 cp etc/.disabled/exec.py etc/core/commands/local
 rm -rf etc/.disabled
+fi
 } &> /dev/null
 else
 cd ~
