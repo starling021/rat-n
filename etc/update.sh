@@ -87,5 +87,7 @@ cp -r ~/.mouse/payloads ~/mouse
 rm -rf ~/.mouse
 } &> /dev/null
 echo -e ""$GNS"[+] "$WHS"Successfully updated!"$CE""
+cd .
+touch .updated
 sleep 1
 exit
