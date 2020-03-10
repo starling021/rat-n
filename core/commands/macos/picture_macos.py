@@ -41,7 +41,7 @@ class command:
 				f = open(os.path.join('downloads',file_name),'w')
 				f.write(data)
 				f.close()
-				h.info_general("Saved to downloads/{0}".format(file_name))
+				h.info_success("Saved to downloads/{0}!".format(file_name))
 		except Exception as e:
 			print e
 
