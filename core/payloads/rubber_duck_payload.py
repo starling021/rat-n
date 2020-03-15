@@ -23,7 +23,7 @@ import os, time
 
 class payload:
 	def __init__(self):
-		self.name = "Rubber Duck (USB injection)"
+		self.name = "Rubber Duck Payload"
 		self.description = "Arduino payload that replicates keystrokes for shell script execution."
 		self.usage = "Install via ducktoolkit.com site."
 
