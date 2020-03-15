@@ -21,7 +21,7 @@
 from core import helper as h
 class payload:
 	def __init__(self):
-		self.name = "Target Shell Payload"
+		self.name = "Target Shell payload"
 		self.description = "Creates a shell payload."
 		self.usage = "Run in terminal."
 
