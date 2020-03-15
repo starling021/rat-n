@@ -23,7 +23,7 @@ import os, time
 
 class payload:
 	def __init__(self):
-		self.name = "Teensy macOS Payload"
+		self.name = "Teensy macOS payload"
 		self.description = "Arduino payload that replicates keystrokes for shell script execution."
 		self.usage = "Install via arduino."
 
