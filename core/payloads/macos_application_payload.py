@@ -23,7 +23,7 @@ import os, time
 
 class payload:
 	def __init__(self):
-		self.name = "Application macOS"
+		self.name = "Application macOS Payload"
 		self.description = "Convert payload into the macOS Application."
 		self.usage = "Run this application."
 
