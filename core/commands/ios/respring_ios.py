@@ -18,10 +18,14 @@
 #        You should have received a copy of the GNU General Public License
 #        along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+import core.helper as h
+import time
+
 class command:
 	def __init__(self):
 		self.name = "respring"
 		self.description = "Restart SpringBoard."
 
 	def run(self,session,cmd_data):
+		time.sleep(1)
 		session.send_command({"cmd":"killall","args":"SpringBoard"})
