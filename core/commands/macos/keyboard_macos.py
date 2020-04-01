@@ -45,7 +45,7 @@ class command:
 
     def run(self,session,cmd_data):
         #do something with conn if you want
-        print "Type Ctrl-C to quit."
+        print "Press Ctrl-C to stop."
         print "Start typing..."
         while 1:
             key = getch()
