@@ -92,8 +92,8 @@ such as Bourne-Again Shell and Rubber Duck payloads.
 
 # Mouse Framework disclaimer
 
-    Usage of the Mouse Framework for attacking targets without prior mutual consent is illegal. 
-    It is the end user's responsibility to obey all applicable local, state, federal, and international laws. 
+    Usage of the Mouse Framework for attacking targets without prior mutual consent is illegal.
+    It is the end user's responsibility to obey all applicable local, state, federal, and international laws.
     Developers assume no liability and are not responsible for any misuse or damage caused by this program.
 
 ***
@@ -101,9 +101,9 @@ such as Bourne-Again Shell and Rubber Duck payloads.
 # Mouse Framework license
  
         ---------------------------------------------------
-                          Mouse Framework                            
+                          Mouse Framework                  
         ---------------------------------------------------
-            Copyright (C) <2019-2020>  <Entynetproject>      
+            Copyright (C) <2019-2020>  <Entynetproject>
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -116,4 +116,4 @@ such as Bourne-Again Shell and Rubber Duck payloads.
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.                
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
