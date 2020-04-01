@@ -29,12 +29,14 @@
 
 # About Mouse Framework
 
-    Mouse Framework is an iOS and macOS post-exploitation framework that gives you 
-    a command line session with extra functionality between you and a target machine 
-    using only a simple Mouse Payload. Mouse gives you the power and convenience of 
-    uploading and downloading files, tab completion, taking pictures, location tracking, 
-    shell command execution, escalating privileges, password retrieval, and much more.
-  
+```
+Mouse Framework is an iOS and macOS post-exploitation framework that gives you 
+a command line session with extra functionality between you and a target machine 
+using only a simple Mouse Payload. Mouse gives you the power and convenience of 
+uploading and downloading files, tab completion, taking pictures, location tracking, 
+shell command execution, escalating privileges, password retrieval, and much more.
+```
+
 ***
     
 # Getting started
@@ -59,8 +61,10 @@
 
 # Mouse Framework execution
 
-    To execute Mouse Framework you 
-    should execute the following command.
+```
+To execute Mouse Framework you 
+should execute the following command.
+```
 
 > mouse
 
@@ -92,28 +96,32 @@ such as Bourne-Again Shell and Rubber Duck payloads.
 
 # Mouse Framework disclaimer
 
-    Usage of the Mouse Framework for attacking targets without prior mutual consent is illegal.
-    It is the end user's responsibility to obey all applicable local, state, federal, and international laws.
-    Developers assume no liability and are not responsible for any misuse or damage caused by this program.
+```
+Usage of the Mouse Framework for attacking targets without prior mutual consent is illegal.
+It is the end user's responsibility to obey all applicable local, state, federal, and international laws.
+Developers assume no liability and are not responsible for any misuse or damage caused by this program.
+```
 
 ***
 
 # Mouse Framework license
  
-        ---------------------------------------------------
-                          Mouse Framework                  
-        ---------------------------------------------------
-            Copyright (C) <2019-2020>  <Entynetproject>
+```
+    ---------------------------------------------------
+                      Mouse Framework                
+    ---------------------------------------------------
+        Copyright (C) <2019-2020>  <Entynetproject>
 
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    any later version.
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+any later version.
 
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-    GNU General Public License for more details.
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
 
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+```
