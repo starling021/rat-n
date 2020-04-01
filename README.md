@@ -108,7 +108,7 @@ Developers assume no liability and are not responsible for any misuse or damage 
  
 ```
     ---------------------------------------------------
-                      Mouse Framework                
+                      Mouse Framework                  
     ---------------------------------------------------
         Copyright (C) <2019-2020>  <Entynetproject>
 
