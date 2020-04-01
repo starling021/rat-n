@@ -73,18 +73,23 @@ should execute the following command.
 # Why Mouse Framework
 
  * Simple and clear UX/UI.
+
 ```
 Mouse Framework has a simple and clear UX/UI. 
 It is easy to understand and it will be easier 
 for you to master the Mouse Framework.
 ```  
+
  * A lot of different functions.
+
 ```
 There are a lot of different functions in Mouse 
 CLI such as displaying alerts, recording mic sound 
 and taking pictures on remote iOS/macOS device.
 ```
+
  * A lot of different payloads.
+
 ```
 There are a lot of different payloads in Mouse Framework 
 such as Bourne-Again Shell and Rubber Duck payloads.
