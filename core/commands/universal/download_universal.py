@@ -34,32 +34,17 @@ class command:
 		if not cmd_data['args']:
             		print self.usage
             		return
-        	else:
-            		paths = re.split(r'(?<!\\) ', cmd_data['args'].rstrip())
-            	if len(paths) > 2:
-                	print "Usage: download <remote_path> <local_path>"
-                	return
-            
-            	local_dir = os.path.split(paths[0])[0]
-            	local_file = os.path.split(paths[0])[1]
-            
-            	if len(paths) == 1:
-                	remote_dir = "."
-                	remote_file = local_file
-            	else:
-                	remote_dir = os.path.split(paths[1])[0]
-                	if not remote_dir:
-                    		remote_dir = "."
-                	remote_file = os.path.split(paths[1])[1]
-                	if not remote_file:
-                    		remote_file = local_file
+
+                if len(cmd_data['args'].split()) < 2:
+                        print self.usage
+                        return
 		
 		h.info_general("Downloading {0}...".format(remote_dir))
 		data = session.download_file(cmd_data['args'])
 		if data:
 			# save to downloads
 			h.info_general("Saving {0}...".format(remote_dir))
-			f = open(os.path.join(paths[0],remote_dir),'w')
+			f = open(os.path.join(local,remote),'w')
 			f.write(data)
 			f.close()
 			h.info_success("Saved to downloads/{0}!".format(remote_dir))
