@@ -54,12 +54,12 @@ class command:
                 	if not remote_file:
                     		remote_file = local_file
 		
-		h.info_general("Downloading {0}...".format(file_name))
+		h.info_general("Downloading {0}...".format(remote_dir))
 		data = session.download_file(cmd_data['args'])
 		if data:
 			# save to downloads
-			h.info_general("Saving {0}...".format(file_name))
+			h.info_general("Saving {0}...".format(remote_dir))
 			f = open(os.path.join(paths[0],remote_dir),'w')
 			f.write(data)
 			f.close()
-			h.info_success("Saved to downloads/{0}!".format(file_name))
+			h.info_success("Saved to downloads/{0}!".format(remote_dir))
