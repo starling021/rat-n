@@ -21,6 +21,7 @@
 import json
 import os
 import core.helper as h
+import re
 
 class command:
 	def __init__(self):
