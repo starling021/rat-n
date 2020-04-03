@@ -39,6 +39,9 @@ class command:
                         print self.usage
                         return
 		
+		w = os.environ['OLDPWD']
+            	os.chdir(w)
+		
 		remote_path = os.path.split(cmd_data['args'].split()[0])[-1]
 		local_path = cmd_data['args'].split()[1]
 		h.info_general("Downloading {0}...".format(cmd_data['args'].split()[0]))
@@ -51,3 +54,5 @@ class command:
 			f.close()
 			saved = os.path.join(local_path,remote_path)
 			h.info_success("Saved to "+saved+"!")
+		g = os.environ['HOME']
+            	os.chdir(g + "/mouse")
