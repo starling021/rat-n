@@ -36,7 +36,7 @@ class command:
 				size = int(response["size"])
 				file_name = "isight_{0}.jpg".format(int(time.time()))
 				data = session.sock_receive_data(size)
-				h.info_general("Saving {0}".format(file_name))
+				h.info_general("Saving {0}...".format(file_name))
 				# save to file
 				f = open(os.path.join('downloads',file_name),'w')
 				f.write(data)
