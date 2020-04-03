@@ -30,6 +30,11 @@ mv etc/core/commands/universal/upload_universal.py core/commands/universal
 cp etc/.disabled/upload_universal.py etc/core/commands/universal
 rm -rf etc/.disabled
 mkdir etc/.disabled
+mv core/commands/universal/download_universal.py etc/.disabled
+mv etc/core/commands/universal/download_universal.py core/commands/universal
+cp etc/.disabled/download_universal.py etc/core/commands/universal
+rm -rf etc/.disabled
+mkdir etc/.disabled
 mv core/commands/local/exec.py etc/.disabled
 mv etc/core/commands/local/exec.py core/commands/local
 cp etc/.disabled/exec.py etc/core/commands/local
@@ -47,6 +52,11 @@ mkdir etc/.disabled
 mv core/commands/universal/upload_universal.py etc/.disabled
 mv etc/core/commands/universal/upload_universal.py core/commands/universal
 cp etc/.disabled/upload_universal.py etc/core/commands/universal
+rm -rf etc/.disabled
+mkdir etc/.disabled
+mv core/commands/universal/download_universal.py etc/.disabled
+mv etc/core/commands/universal/download_universal.py core/commands/universal
+cp etc/.disabled/download_universal.py etc/core/commands/universal
 rm -rf etc/.disabled
 mkdir etc/.disabled
 mv core/commands/local/exec.py etc/.disabled
@@ -72,6 +82,11 @@ mv etc/core/commands/universal/upload_universal.py core/commands/universal
 cp etc/.disabled/upload_universal.py etc/core/commands/universal
 rm -rf etc/.disabled
 mkdir etc/.disabled
+mv core/commands/universal/download_universal.py etc/.disabled
+mv etc/core/commands/universal/download_universal.py core/commands/universal
+cp etc/.disabled/download_universal.py etc/core/commands/universal
+rm -rf etc/.disabled
+mkdir etc/.disabled
 mv core/commands/local/exec.py etc/.disabled
 mv etc/core/commands/local/exec.py core/commands/local
 cp etc/.disabled/exec.py etc/core/commands/local
@@ -89,6 +104,11 @@ mkdir etc/.disabled
 mv core/commands/universal/upload_universal.py etc/.disabled
 mv etc/core/commands/universal/upload_universal.py core/commands/universal
 cp etc/.disabled/upload_universal.py etc/core/commands/universal
+rm -rf etc/.disabled
+mkdir etc/.disabled
+mv core/commands/universal/download_universal.py etc/.disabled
+mv etc/core/commands/universal/download_universal.py core/commands/universal
+cp etc/.disabled/download_universal.py etc/core/commands/universal
 rm -rf etc/.disabled
 mkdir etc/.disabled
 mv core/commands/local/exec.py etc/.disabled
