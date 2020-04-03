@@ -49,4 +49,4 @@ class command:
 			f = open(os.path.join(local_path,remote_path),'w')
 			f.write(data)
 			f.close()
-			h.info_success("Successfully downloaded!")
+			h.info_success("Saved to "+local_path+"!")
