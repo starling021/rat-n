@@ -33,7 +33,7 @@ class command:
 		data = session.download_file('/var/mobile/Library/AddressBook/'+file_name)
 		if data:
 			# save to downloads
-			h.info_general("Saving {0}".format(file_name))
+			h.info_general("Saving {0}...".format(file_name))
 			f = open(os.path.join('downloads',file_name),'w')
 			f.write(data)
 			f.close()
