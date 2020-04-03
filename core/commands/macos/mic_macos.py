@@ -40,7 +40,7 @@ class command:
                 data = session.download_file("/tmp/.avatmp")
                 # save to file
                 file_name = "mic{0}.caf".format(str(int(time.time())))
-                h.info_general("Saving {0}".format(file_name))
+                h.info_general("Saving {0}...".format(file_name))
                 f = open(os.path.join('downloads',file_name),'w')
                 f.write(data)
                 f.close()
