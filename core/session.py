@@ -245,9 +245,9 @@ class Session:
 				size = int(result['size'])
 				return self.sock_receive_data(size)
 		elif status == 0:
-			print path + ": No such file or directory!"
+			h.info_error("Remote file: " + path + ": does not exist!")
 		elif status == 2:
-			print path + " is a directory!"
+			h.info_error("Remote file: " + path + ": does not exist!")
 
 
 	def upload_file(self,file_path,remote_dir,remote_file_name):
@@ -265,7 +265,7 @@ class Session:
 				self.sock_send(chunk)
 			self.sock_send(term)
 		else:
-			h.info_error("Local file: " + file_path + " does not exist!")
+			h.info_error("Local file: " + file_path + ": does not exist!")
 
 
 	def sock_send(self,data):
