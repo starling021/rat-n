@@ -31,7 +31,7 @@ class command:
 		self.type = "native"
 
 	def run(self,session,cmd_data):
-		if not cmd_data['args']:
+		if len(cmd_data['args'].split()) < 1:
             		print self.usage
             		return
 
@@ -39,12 +39,14 @@ class command:
                         print self.usage
                         return
 		
-		h.info_general("Downloading {0}...".format(remote_dir))
-		data = session.download_file(cmd_data['args'])
+		remote_path = cmd_data['args'].split()[0]
+		local_path = cmd_data['args'].split()[1]
+		h.info_general("Downloading {0}...".format(remote_path))
+		data = session.download_file(remote_path)
 		if data:
 			# save to downloads
-			h.info_general("Saving {0}...".format(remote_dir))
-			f = open(os.path.join(local,remote),'w')
+			h.info_general("Saving {0}...".format(remote_path))
+			f = open(os.path.join(local_path,remote_path),'w')
 			f.write(data)
 			f.close()
-			h.info_success("Saved to downloads/{0}!".format(remote_dir))
+			h.info_success("Successfully downloaded!")
