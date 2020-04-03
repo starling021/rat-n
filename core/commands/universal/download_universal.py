@@ -27,27 +27,21 @@ class command:
 	def __init__(self):
 		self.name = "download"
 		self.description = "Download remote file."
-		self.usage = "Usage: download <remote_path> <local_path>"
+		self.usage = "Usage: download <remote_file> <local_dir>"
 		self.type = "native"
 
 	def run(self,session,cmd_data):
-		if len(cmd_data['args'].split()) < 1:
+		if not cmd_data['args']:
             		print self.usage
             		return
-
-                if len(cmd_data['args'].split()) < 2:
-                        print self.usage
-                        return
 		
-		remote_path = os.path.split(cmd_data['args'].split()[0])[-1]
-		local_path = cmd_data['args'].split()[1]
-		h.info_general("Downloading {0}...".format(cmd_data['args'].split()[0]))
-		data = session.download_file(cmd_data['args'].split()[0])
+		remote_path = os.path.split(cmd_data['args'])[-1]
+		h.info_general("Downloading {0}...".format(remote_path)
+		data = session.download_file(cmd_data['args'])
 		if data:
 			# save to downloads
-			h.info_general("Saving {0}...".format(cmd_data['args'].split()[0]))
-			f = open(os.path.join(local_path,remote_path),'w')
+			h.info_general("Saving {0}...".format(remote_path)
+			f = open(os.path.join('downloads',remote_path),'w')
 			f.write(data)
 			f.close()
-			saved = os.path.join(local_path,remote_path)
-			h.info_success("Saved to "+saved+"!")
+			h.info_success("Saved to downloads/"+remote_path+"!")
