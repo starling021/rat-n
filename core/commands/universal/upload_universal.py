@@ -50,6 +50,9 @@ class command:
                 remote_file = os.path.split(paths[1])[1]
                 if not remote_file:
                     remote_file = local_file
-
-            session.upload_file(paths[0],remote_dir,remote_file)
+            try:
+                session.upload_file(paths[0],remote_dir,remote_file)
+            except:
+                print("\033[1;31[-] \033[0mRemote directory: does not exist!")
+                return
             h.info_success("File successfully uploaded!")
