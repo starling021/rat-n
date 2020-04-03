@@ -36,11 +36,11 @@ class command:
             		return
 		
 		remote_path = os.path.split(cmd_data['args'])[-1]
-		h.info_general("Downloading {0}...".format(remote_path)
+		h.info_general("Downloading {0}...".format(remote_path))
 		data = session.download_file(cmd_data['args'])
 		if data:
 			# save to downloads
-			h.info_general("Saving {0}...".format(remote_path)
+			h.info_general("Saving {0}...".format(remote_path))
 			f = open(os.path.join('downloads',remote_path),'w')
 			f.write(data)
 			f.close()
