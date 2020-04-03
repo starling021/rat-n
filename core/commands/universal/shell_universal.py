@@ -60,7 +60,6 @@ class command:
                     contents = json.loads(data)
                 except:
                     print data
-                    return
                 keys = contents.keys()
                 keys.sort()
                 for k in keys:
