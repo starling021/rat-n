@@ -39,16 +39,15 @@ class command:
                         print self.usage
                         return
 		
-		remote_path = cmd_data['args'].split()[0]
+		remote_path = os.path.split(cmd_data['args'].split()[0])[-1]
 		print(remote_path)
 		local_path = cmd_data['args'].split()[1]
-		print(local_path)
 		h.info_general("Downloading {0}...".format(remote_path))
 		data = session.download_file(remote_path)
 		if data:
 			# save to downloads
 			h.info_general("Saving {0}...".format(remote_path))
-			f = open(os.path.join(remote_path,local_path),'w')
+			f = open(os.path.join(local_path,remote_path),'w')
 			f.write(data)
 			f.close()
 			h.info_success("Saved to "+local_path+"!")
