@@ -51,9 +51,7 @@ class command:
                 if not remote_file:
                     remote_file = local_file
 
-            path = remote_dir + remote_file
-            path = path[::-1]
-            path = path[path.index('/')+1:][::-1]
-            os.system("mkdir "+path+" > /dev/null")
+            print(remote_file)
+                
             session.upload_file(paths[0],remote_dir,remote_file)
             h.info_success("File successfully uploaded!")
