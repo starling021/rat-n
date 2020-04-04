@@ -53,8 +53,8 @@ class command:
              
             raw = remote_dir + '/' + remote_file
             if os.path.exists(raw):
-                print(local_file)
-                session.upload_file(paths[0],remote_dir,local_file)
+                print(paths[0])
+                session.upload_file(paths[0],raw,local_file)
                 h.info_success("File successfully uploaded!")
             else:
                 h.info_error("Local directory: "+raw+": does not exists!")
