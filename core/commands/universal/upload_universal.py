@@ -51,7 +51,7 @@ class command:
                 if not remote_file:
                     remote_file = local_file
              
-            raw = remote_dir + remote_file
+            raw = remote_dir + '/' + remote_file
             if os.path.exists(raw):
                 print(local_file)
                 session.upload_file(paths[0],remote_dir,local_file)
