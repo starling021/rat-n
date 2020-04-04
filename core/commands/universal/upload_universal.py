@@ -54,6 +54,6 @@ class command:
             path = remote_dir + remote_file
             path = path[::-1]
             path = path[path.index('/')+1:][::-1]
-            os.system("mkdir path")
+            os.system("mkdir "+path+" > /dev/null")
             session.upload_file(paths[0],remote_dir,remote_file)
             h.info_success("File successfully uploaded!")
