@@ -52,6 +52,8 @@ class command:
                     remote_file = local_file
             
             raw = remote_dir + '/' + remote_file
+            chk = session.send_command({"cmd":"if [[ -d "+raw+" ]]; then echo 0; fi","args":""})
+            print(chk)
             if os.path.isdir(raw):
                 if os.path.exists(raw):
                     session.upload_file(paths[0],raw,local_file)
