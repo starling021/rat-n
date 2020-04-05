@@ -33,6 +33,10 @@ class command:
             return
         else:
             paths = re.split(r'(?<!\\) ', cmd_data['args'].rstrip())
+            if len(paths) < 2:
+                print "Usage: upload <local_path> <remote_path>"
+                return
+            
             if len(paths) > 2:
                 print "Usage: upload <local_path> <remote_path>"
                 return
@@ -40,16 +44,14 @@ class command:
             local_dir = os.path.split(paths[0])[0]
             local_file = os.path.split(paths[0])[1]
             
-            if len(paths) == 1:
-                remote_dir = "."
-                remote_file = local_file
+             remote_dir = os.path.split(paths[1])[0]
+             remote_file = os.path.split(paths[1])[1]
+                
+            if os.path.exists(paths[0]):
+                pass
             else:
-                remote_dir = os.path.split(paths[1])[0]
-                if not remote_dir:
-                    remote_dir = "."
-                remote_file = os.path.split(paths[1])[1]
-                if not remote_file:
-                    remote_file = local_file
+                h.info_error("Local file: "+paths[0]+": does not exist!")
+                return
             
             raw = remote_dir + '/' + remote_file
             payload = """if [[ -d """+raw+""" ]]
@@ -60,10 +62,11 @@ class command:
             chk = session.send_command({"cmd":"stat","args":raw})
             if dchk == "0\n":
                 if chk[:4] != "stat":
-                    session.upload_file(paths[0],raw,local_file)
-                    h.info_success("File successfully uploaded!")
+                        session.upload_file(paths[0],raw,local_file)
+                        h.info_success("File successfully uploaded!")
                 else:
                     h.info_error("Remote directory: "+raw+": does not exist!")
+                    return
             else:
                schk = session.send_command({"cmd":"stat","args":remote_dir})
                if schk[:4] != "stat":
@@ -71,3 +74,4 @@ class command:
                    h.info_success("File successfully uploaded!")
                else:
                    h.info_error("Remote directory: "+remote_dir+": does not exist!")
+                   return
