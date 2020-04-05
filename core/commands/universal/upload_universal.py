@@ -52,18 +52,24 @@ class command:
                     remote_file = local_file
             
             raw = remote_dir + '/' + remote_file
+            payload = """if [[ -d """+raw+""" ]]
+            then
+            echo 0
+            fi"""
+            dchk = session.send_command({"cmd":"","args":payload})
+            print(dckh)
+            return
             chk = session.send_command({"cmd":"stat","args":raw})
-            print(chk)
-            print(chk[:4])
-            if os.path.isdir(raw):
-                if os.path.exists(raw):
+            if dchk == "0":
+                if chk[:4] != "stat":
                     session.upload_file(paths[0],raw,local_file)
                     h.info_success("File successfully uploaded!")
                 else:
-                    h.info_error("Local directory: "+raw+": does not exists!")
+                    h.info_error("Remote directory: "+raw+": does not exists!")
             else:
-               if os.path.exists(remote_dir):
+               schk = session.send_command({"cmd":"stat","args":remote_dir})
+               if schk[:4] != "stat":
                    session.upload_file(paths[0],remote_dir,remote_file)
                    h.info_success("File successfully uploaded!")
                else:
-                   h.info_error("Local directory: "+remote_dir+": does not exists!")
+                   h.info_error("Remote directory: "+remote_dir+": does not exists!")
