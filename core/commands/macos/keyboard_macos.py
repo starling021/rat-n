@@ -40,7 +40,7 @@ except ImportError:
 class command:
     def __init__(self):
         self.name = "keyboard"
-        self.description = "Control target's keyboard."
+        self.description = "Control device keyboard."
         self.type = "applescript"
         self.id = 115
 
