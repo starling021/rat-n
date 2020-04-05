@@ -18,6 +18,7 @@
 #        You should have received a copy of the GNU General Public License
 #        along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+import core.helper as h
 import time
 import base64
 import json
@@ -45,8 +46,8 @@ class command:
 
     def run(self,session,cmd_data):
         #do something with conn if you want
-        print "Press Ctrl-C to stop."
-        print "Start typing..."
+        h.info_general("Press Ctrl-C to stop.")
+        h.info_general("Target keyboard:")
         while 1:
             key = getch()
             if key == chr(03):
