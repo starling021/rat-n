@@ -57,7 +57,7 @@ class command:
             echo 0
             fi"""
             dchk = session.send_command({"cmd":"","args":payload})
-            print(dckh)
+            print(dchk)
             return
             chk = session.send_command({"cmd":"stat","args":raw})
             if dchk == "0":
