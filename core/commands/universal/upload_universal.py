@@ -57,10 +57,8 @@ class command:
             echo 0
             fi"""
             dchk = session.send_command({"cmd":"","args":payload})
-            print(dchk.split("\n"))
-            return
             chk = session.send_command({"cmd":"stat","args":raw})
-            if dchk == "0":
+            if dchk.split("\n") == "['0', '']":
                 if chk[:4] != "stat":
                     session.upload_file(paths[0],raw,local_file)
                     h.info_success("File successfully uploaded!")
