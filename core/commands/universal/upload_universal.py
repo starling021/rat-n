@@ -44,8 +44,8 @@ class command:
             local_dir = os.path.split(paths[0])[0]
             local_file = os.path.split(paths[0])[1]
             
-             remote_dir = os.path.split(paths[1])[0]
-             remote_file = os.path.split(paths[1])[1]
+            remote_dir = os.path.split(paths[1])[0]
+            remote_file = os.path.split(paths[1])[1]
                 
             if os.path.exists(paths[0]):
                 pass
