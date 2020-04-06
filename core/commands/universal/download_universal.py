@@ -75,5 +75,5 @@ class command:
 				    print(E+"Error: "+rp+": not a directory!")
                    	    else:
 			        print(E+"Local directory: "+rp+": does not exists!")
-                    else:
-		        print(E+"Remote file: "+cmd_data['args'].split()[0]+": does not exist!")
+                else:
+		    print(E+"Remote file: "+cmd_data['args'].split()[0]+": does not exist!")
