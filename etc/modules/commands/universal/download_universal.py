@@ -46,6 +46,6 @@ class command:
 			f = open(os.path.join('downloads',remote_path),'w')
 			f.write(data)
 			f.close()
-			h.info_success("Saved to downloads/"+remote_path+"!")
+			h.info_success("Saved to ~/mouse/downloads/"+remote_path+"!")
 		g = os.environ['HOME']
             	os.chdir(g + "/mouse")
