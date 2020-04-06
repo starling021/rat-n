@@ -27,21 +27,53 @@ class command:
 	def __init__(self):
 		self.name = "download"
 		self.description = "Download remote file."
-		self.usage = "Usage: download <remote_path>"
+		self.usage = "Usage: download <remote_path> <local_path>"
 		self.type = "native"
 
 	def run(self,session,cmd_data):
-		if not cmd_data['args']:
+		if len(cmd_data['args'].split()) < 2:
             		print self.usage
             		return
 		
-		remote_path = os.path.split(cmd_data['args'])[-1]
-		data = session.download_file(cmd_data['args'])
-		h.info_general("Downloading {0}...".format(remote_path))
-		if data:
-			# save to downloads
-			h.info_general("Saving {0}...".format(remote_path))
-			f = open(os.path.join('downloads',remote_path),'w')
-			f.write(data)
-			f.close()
-			h.info_success("Saved to downloads/"+remote_path+"!")
+		payload = """if [[ -d """+cmd_data['args'].split()[0]+"""
+		then
+		echo 0
+		fi"""
+		chk = session.send_command({"cmd":"stat","args":cmd_data['args'].split()[0]})
+                if chk[:4] == "stat":
+		    if dchk == "0\n":
+			h.info_error("Error: "+cmd_data['args'].split()[0]+": not a file!")
+		    else:
+		        if os.path.isdir(cmd_data['args'].split()[1]):
+		    	    if os.path.exists(cmd_data['args'].split()[1]):
+			        rp = os.path.split(con.split()[0])[1]
+			        data = session.download_file(cmd_data['args'].split()[0])
+			        h.info_general("Downloading {0}...".format(rp))
+			        if data:
+			            h.info_general("Saving to "+cmd_data['args']+"/{0}...".format(rp))
+			            f = open(os.path.join(cmd_data['args'].split()[1],rp),'w')
+			            f.write(data)
+			            f.close()
+			            h.info_success("Saved to "+cmd_data['args'].split()[1]+"/"+rp+"!")
+                            else:
+                                print(E+"Local directory: "+cmd_data['args'].split()[1]+": does not exist!")
+                        else:
+			    rp = os.path.split(cmd_data['args'].split()[1])[0]
+                            if os.path.exists(rp):
+			        if os.path.isdir(rp):
+				    rp = os.path.split(cmd_data['args'].split()[1])[1]
+				    pr = os.path.split(cmd_data['args'].split()[0])[1]
+			    	    data = session.download_file(cmd_data['args'])
+			    	    h.info_general("Downloading {0}...".format(rp))
+			    	    if data:
+			                h.info_general("Saving to {0}...".format(cmd_data['args'].split()[0]))
+			                f = open(os.path.join(cmd_data['args'].split()[1],rp),'w')
+			                f.write(data)
+			                f.close()
+			                h.info_success("Saved to "+cmd_data['args'].split()[1]+"/"+pr+"!")
+                                else:
+				    print(E+"Error: "+rp+": not a directory!")
+                   	    else:
+			        print(E+"Local directory: "+rp+": does not exists!")
+                    else:
+		        print(E+"Remote file: "+cmd_data['args'].split()[0]+": does not exist!")
