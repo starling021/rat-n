@@ -66,7 +66,6 @@ class command:
                         h.info_success("File successfully uploaded!")
                 else:
                     h.info_error("Remote directory: "+raw+": does not exist!")
-                    return
             else:
                schk = session.send_command({"cmd":"stat","args":remote_dir})
                if schk[:4] != "stat":
@@ -74,4 +73,3 @@ class command:
                    h.info_success("File successfully uploaded!")
                else:
                    h.info_error("Remote directory: "+remote_dir+": does not exist!")
-                   return
