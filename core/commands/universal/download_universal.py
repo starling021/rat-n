@@ -47,7 +47,7 @@ class command:
 		    else:
 		        if os.path.isdir(cmd_data['args'].split()[1]):
 		    	    if os.path.exists(cmd_data['args'].split()[1]):
-			        rp = os.path.split(con.split()[0])[1]
+			        rp = os.path.split(cmd_data['args'].split()[0])[1]
 			        data = session.download_file(cmd_data['args'].split()[0])
 			        h.info_general("Downloading {0}...".format(rp))
 			        if data:
