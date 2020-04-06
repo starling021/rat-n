@@ -77,4 +77,4 @@ class command:
                    	    else:
 			        h.info_error("Local directory: "+rp+": does not exists!")
                 else:
-		    h.info_error("Remote file: "+cmd_data['args'].split()[0]+": does not exist!")
+		    h.info_error("Remotee file: "+cmd_data['args'].split()[0]+": does not exist!")
