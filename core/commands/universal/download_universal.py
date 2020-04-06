@@ -57,7 +57,7 @@ class command:
 			            h.info_success("Saved to "+cmd_data['args'].split()[1]+"/"+rp+"!")
                              else:
                                  print(E+"Local directory: "+cmd_data['args'].split()[1]+": does not exist!")
-                         else:
+			else:
 			    rp = os.path.split(cmd_data['args'].split()[1])[0]
                             if os.path.exists(rp):
 			        if os.path.isdir(rp):
