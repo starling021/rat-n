@@ -74,13 +74,17 @@ class command:
             else:
                schk = session.send_command({"cmd":"stat","args":remote_dir})
                if schk[:4] != "stat":
+                   payload = """if [[ -d """+remote_dir+""" ]]
+                   then
+                   echo 0
+                   fi"""
+                   dschk = session.send_command({"cmd":"","args":payload})
                    if sdchk[:4] == "0":
-                       h.info_error("Error: "+raw+": not a file!")
+                       h.info_error("Error: "+remote_dir+": not a file!")
                    else:
                        session.upload_file(paths[0],remote_dir,remote_file)
                        h.info_success("File successfully uploaded!")
                else:
                    h.info_error("Remote directory: "+remote_dir+": does not exist!")
-            
             g = os.environ['HOME']
             os.chdir(g + "/mouse")
