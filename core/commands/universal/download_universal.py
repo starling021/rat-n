@@ -39,6 +39,7 @@ class command:
 		then
 		echo 0
 		fi"""
+		dchk = session.send_command({"cmd":"","args":payload})
 		chk = session.send_command({"cmd":"stat","args":cmd_data['args'].split()[0]})
                 if chk[:4] != "stat":
 		    if dchk == "0\n":
