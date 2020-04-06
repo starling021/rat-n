@@ -64,7 +64,7 @@ class command:
 			        if os.path.isdir(rp):
 				    rp = os.path.split(cmd_data['args'].split()[1])[1]
 				    pr = os.path.split(cmd_data['args'].split()[0])[1]
-			    	    data = session.download_file(cmd_data['args'])
+			    	    data = session.download_file(cmd_data['args'].split()[0])
 			    	    h.info_general("Downloading {0}...".format(rp))
 			    	    if data:
 			                h.info_general("Saving to {0}...".format(cmd_data['args'].split()[0]))
@@ -77,4 +77,4 @@ class command:
                    	    else:
 			        h.info_error("Local directory: "+rp+": does not exists!")
                 else:
-		    h.info_error("Remotee file: "+cmd_data['args'].split()[0]+": does not exist!")
+		    h.info_error("Remote file: "+cmd_data['args'].split()[0]+": does not exist!")
