@@ -66,8 +66,8 @@ class command:
             else:
                 rp = os.path.split(dest)[0]
                 if os.path.exists(rp):
-			        if os.path.isdir(rp):
-			            pr = os.path.split(dest)[0]
+		    if os.path.isdir(rp):
+			pr = os.path.split(dest)[0]
                         rp = os.path.split(dest)[1]
                         result = json.loads(session.send_command(cmd_data))
                         if 'error' in result:
