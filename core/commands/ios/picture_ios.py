@@ -51,10 +51,10 @@ class command:
 				f.close()
 			    else:
 				if 'error' in response:
-				    h.info_error(response['error'])
+				    h.info_error("Failed to take picture!")
 				    return
 				else:
-				    h.info_error("Unexpected error!")
+				    h.info_error("Failed to take picture!")
 				    return
 		         except:
 			     h.info_error("Failed to take picture!")
@@ -90,10 +90,10 @@ class command:
 				    f.close()
 			        else:
 				    if 'error' in response:
-				        h.info_error(response['error'])
+				        h.info_error("Failed to take picture!")
 				        return
 				    else:
-				        h.info_error("Unexpected error!")
+				        h.info_error("Failed to take picture!")
 				        return
 		            except:
 			        h.info_error("Failed to take picture!")
