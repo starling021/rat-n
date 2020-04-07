@@ -40,7 +40,7 @@ class command:
                     print self.usage
             	    return
 		
-        if cmd_data['args'] == "start":
+        if cmd_data['args'] == "stop":
 		    dest = cmd_data['args'][1]
             if os.path.isdir(dest):
                 if os.path.exists(dest):
