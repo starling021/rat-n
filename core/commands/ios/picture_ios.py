@@ -44,18 +44,18 @@ class command:
 			 try:
 			     response = json.loads(session.send_command(cmd_data))
 			     if 'success' in response:
-			        size = int(response["size"])
-				data = session.sock_receive_data(size)
-				f = open(os.path.join(dest,'picture.jpg'),'w')
-				f.write(data)
-				f.close()
-			    else:
-				if 'error' in response:
-				    h.info_error("Failed to take picture!")
-				    return
-				else:
-				    h.info_error("Failed to take picture!")
-				    return
+			         size = int(response["size"])
+				 data = session.sock_receive_data(size)
+				 f = open(os.path.join(dest,'picture.jpg'),'w')
+				 f.write(data)
+				 f.close()
+			     else:
+				 if 'error' in response:
+				     h.info_error("Failed to take picture!")
+				     return
+				 else:
+				     h.info_error("Failed to take picture!")
+				     return
 		         except:
 			     h.info_error("Failed to take picture!")
 			     return
