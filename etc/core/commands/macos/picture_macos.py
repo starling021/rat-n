@@ -48,7 +48,7 @@ class command:
 			        f = open(os.path.join(dest,'picture.jpg'),'w')
 			        f.write(data)
 			        f.close()
-		        except:
+		         except:
 		            h.info_error("Failed to take picture!")
 			    g = os.environ['HOME']
         		    os.chdir(g + "/mouse")
