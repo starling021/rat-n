@@ -47,10 +47,15 @@ class command:
             remote_dir = os.path.split(paths[1])[0]
             remote_file = os.path.split(paths[1])[1]
                 
+            w = os.environ['OLDPWD']
+            os.chdir(w)
+                
             if os.path.exists(paths[0]):
                 pass
             else:
                 h.info_error("Local file: "+paths[0]+": does not exist!")
+                g = os.environ['HOME']
+                os.chdir(g + "/mouse")
                 return
             
             raw = paths[1]
@@ -75,20 +80,22 @@ class command:
                 else:
                     h.info_error("Remote directory: "+raw+": does not exist!")
             else:
-               schk = session.send_command({"cmd":"stat","args":remote_dir})
-               if schk[:4] != "stat":
-                   payload = """if [[ -d """+remote_dir+""" ]]
-                   then
-                   echo 0
-                   fi"""
-                   dschk = session.send_command({"cmd":"","args":payload})
-                   if sdchk[:4] == "0":
-                       h.info_error("Error: "+remote_dir+": not a file!")
-                   else:
-                       h.info_general("Uploading "+local_file+"...")
-                       session.upload_file(paths[0],remote_dir,remote_file)
-                       h.info_general("Saving to "+raw+"...")
-                       time.sleep(1)
-                       h.info_success("Saved to "+raw+"...")
-               else:
-                   h.info_error("Remote directory: "+remote_dir+": does not exist!")
+                schk = session.send_command({"cmd":"stat","args":remote_dir})
+                if schk[:4] != "stat":
+                    payload = """if [[ -d """+remote_dir+""" ]]
+                    then
+                    echo 0
+                    fi"""
+                    dschk = session.send_command({"cmd":"","args":payload})
+                    if sdchk[:4] == "0":
+                        h.info_error("Error: "+remote_dir+": not a file!")
+                    else:
+                        h.info_general("Uploading "+local_file+"...")
+                        session.upload_file(paths[0],remote_dir,remote_file)
+                        h.info_general("Saving to "+raw+"...")
+                        time.sleep(1)
+                        h.info_success("Saved to "+raw+"...")
+                else:
+                    h.info_error("Remote directory: "+remote_dir+": does not exist!")
+            g = os.environ['HOME']
+            os.chdir(g + "/mouse")
