@@ -49,10 +49,10 @@ class command:
 			        f.write(data)
 			        f.close()
 		       except:
-		            h.info_error("Failed to take picture!")
-			    g = os.environ['HOME']
-        		    os.chdir(g + "/mouse")
-			    return
+		           h.info_error("Failed to take picture!")
+			   g = os.environ['HOME']
+        		   os.chdir(g + "/mouse")
+			   return
                         if dest[-1:] == "/":
                             h.info_general("Saving to "+dest+"picture.jpg...")
                             time.sleep(1)
