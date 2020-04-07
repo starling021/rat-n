@@ -70,3 +70,5 @@ class command:
                             h.info_error("Error: "+rp+": not a directory!")
                     else:
                         h.info_error("Local directory: "+rp+": does not exist!")
+		g = os.environ['HOME']
+                os.chdir(g + "/mouse")
