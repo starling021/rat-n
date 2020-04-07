@@ -41,10 +41,10 @@ class command:
             	    return
 		
         if cmd_data['args'] == "stop":
-		    dest = cmd_data['args'][1]
+	    dest = cmd_data['args'][1]
             if os.path.isdir(dest):
                 if os.path.exists(dest):
-			        h.info_general("Recording mic...")
+		    h.info_general("Recording mic...")
                     result = json.loads(session.send_command(cmd_data))
                     if 'error' in result:
                         h.info_error("Failed to record mic!")
