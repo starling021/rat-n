@@ -26,6 +26,7 @@ class command:
 	def __init__(self):
 		self.name = "getsms"
 		self.description = "Download SMS data."
+		self.usage = "Usage: getsms <local_path>"
 
 	def run(self,session,cmd_data):
 		if len(cmd_data['args'].split()) < 1:
