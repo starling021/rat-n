@@ -41,7 +41,7 @@ class command:
 			 h.info_general("Taking screenshot...")
 			 result = json.loads(session.send_command(cmd_data))
     			 if 'error' in result:
-    	    		     h.info_error(result['error'])
+    	    		     h.info_error("Failed to take screenshot!")
             		     return
     			 elif 'size' in result:
 	    		     size = int(result['size'])
@@ -68,7 +68,7 @@ class command:
 			    h.info_general("Taking screenshot...")
 			    result = json.loads(session.send_command(cmd_data))
     			    if 'error' in result:
-    	    		        h.info_error(result['error'])
+    	    		        h.info_error("Failed to take screenshot!")
             		        return
     			    elif 'size' in result:
 	    		        size = int(result['size'])
