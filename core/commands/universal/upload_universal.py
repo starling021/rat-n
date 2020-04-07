@@ -64,7 +64,7 @@ class command:
                 if chk[:4] != "stat":
                         h.info_general("Uploading "+local_file+"...")
                         session.upload_file(paths[0],raw,local_file)
-                        if raw[:-1] == "/":
+                        if raw[-1:] == "/":
                             h.info_general("Saving to "+raw+""+local_file+"...")
                             time.sleep(1)
                             h.info_success("Saved to "+raw+""+local_file+"...")
