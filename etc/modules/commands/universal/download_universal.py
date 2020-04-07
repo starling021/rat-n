@@ -35,8 +35,6 @@ class command:
             		print self.usage
             		return
 		
-		w = os.environ['OLDPWD']
-            	os.chdir(w)
 		payload = """if [[ -d """+cmd_data['args'].split()[0]+"""
 		then
 		echo 0
@@ -84,5 +82,3 @@ class command:
 			        h.info_error("Local directory: "+rp+": does not exists!")
                 else:
 		    h.info_error("Remote file: "+cmd_data['args'].split()[0]+": does not exist!")
-	    	g = os.environ['HOME']
-            	os.chdir(g + "/mouse")

@@ -41,9 +41,6 @@ class command:
                 print "Usage: upload <local_path> <remote_path>"
                 return
             
-            w = os.environ['OLDPWD']
-            os.chdir(w)
-            
             local_dir = os.path.split(paths[0])[0]
             local_file = os.path.split(paths[0])[1]
             
@@ -54,8 +51,6 @@ class command:
                 pass
             else:
                 h.info_error("Local file: "+paths[0]+": does not exist!")
-                g = os.environ['HOME']
-                os.chdir(g + "/mouse")
                 return
             
             raw = paths[1]
@@ -97,5 +92,3 @@ class command:
                        h.info_success("Saved to "+raw+"...")
                else:
                    h.info_error("Remote directory: "+remote_dir+": does not exist!")
-            g = os.environ['HOME']
-            os.chdir(g + "/mouse")
