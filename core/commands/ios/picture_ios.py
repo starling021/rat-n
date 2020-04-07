@@ -56,7 +56,7 @@ class command:
 				else:
 				    h.info_error("Failed to take picture!")
 				    return
-		        except:
+		         except:
 			     h.info_error("Failed to take picture!")
 			     return
                          if dest[-1:] == "/":
