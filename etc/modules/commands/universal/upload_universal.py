@@ -58,7 +58,7 @@ class command:
                 os.chdir(g + "/mouse")
                 return
             
-            raw = remote_dir + '/' + remote_file
+            raw = paths[1]
             payload = """if [[ -d """+raw+""" ]]
             then
             echo 0
@@ -67,8 +67,16 @@ class command:
             chk = session.send_command({"cmd":"stat","args":raw})
             if dchk == "0\n":
                 if chk[:4] != "stat":
+                        h.info_general("Uploading "+local_file+"...")
                         session.upload_file(paths[0],raw,local_file)
-                        h.info_success("File successfully uploaded!")
+                        if raw[:-1] == "/":
+                            h.info_general("Saving to "+raw+""+local_file+"...")
+                            time.sleep(1)
+                            h.info_success("Saved to "+raw+""+local_file+"...")
+                        else:
+                            h.info_general("Saving to "+raw+"/"+local_file+"...")
+                            time.sleep(1)
+                            h.info_success("Saved to "+raw+"/"+local_file+"...")
                 else:
                     h.info_error("Remote directory: "+raw+": does not exist!")
             else:
@@ -82,8 +90,11 @@ class command:
                    if sdchk[:4] == "0":
                        h.info_error("Error: "+remote_dir+": not a file!")
                    else:
+                       h.info_general("Uploading "+local_file+"...")
                        session.upload_file(paths[0],remote_dir,remote_file)
-                       h.info_success("File successfully uploaded!")
+                       h.info_general("Saving to "+raw+"...")
+                       time.sleep(1)
+                       h.info_success("Saved to "+raw+"...")
                else:
                    h.info_error("Remote directory: "+remote_dir+": does not exist!")
             g = os.environ['HOME']
