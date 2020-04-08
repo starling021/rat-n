@@ -65,6 +65,7 @@ class command:
 		if os.path.isdir(rp):
 		    pr = os.path.split(dest)[0]
                     rp = os.path.split(dest)[1]
+		    print(pr + " " + rp)
 		    h.info_general("Taking screenshot...")
 		    result = json.loads(session.send_command(cmd_data))
     		    if 'error' in result:
