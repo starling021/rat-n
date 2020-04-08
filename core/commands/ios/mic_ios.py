@@ -89,4 +89,4 @@ class command:
         
         elif cmd_data['args'].split()[0] == "start":
             h.info_general("Recording mic...")
-            h.info_general(session.send_command(cmd_data))
+            session.send_command(cmd_data)
