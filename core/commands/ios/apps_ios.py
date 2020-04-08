@@ -26,8 +26,4 @@ class command:
         self.description = "List all applications."
     
     def run(self,session,cmd_data):
-        print("\nBundle Identifiers")
-        print("==================")
-        print("")
         print session.send_command(cmd_data).rstrip()
-        print("")
