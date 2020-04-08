@@ -42,6 +42,7 @@ class command:
 		dchk = session.send_command({"cmd":"","args":payload})
 		chk = session.send_command({"cmd":"stat","args":cmd_data['args'].split()[0]})
                 if chk[:4] != "stat":
+		    print(dchk)
 		    if dchk == "0\n":
 			h.info_error("Error: "+cmd_data['args'].split()[0]+": not a file!")
 		    else:
