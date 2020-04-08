@@ -48,7 +48,11 @@ class command:
             remote_file = os.path.split(paths[1])[1]
                 
             if os.path.exists(paths[0]):
-                pass
+                if os.path.isdir(paths[0]):
+                    h.info_error("Error: "+paths[0]+": not a file!")
+                    return
+                else:
+                    pass
             else:
                 h.info_error("Local file: "+paths[0]+": does not exist!")
                 return
