@@ -42,6 +42,7 @@ class command:
 		
         if cmd_data['args'].split()[0] == "stop":
 	    dest = cmd_data['args'].split()[1]
+	    cmd_data['args'] = "stop"
             if os.path.isdir(dest):
                 if os.path.exists(dest):
 		    h.info_general("Recording mic...")
