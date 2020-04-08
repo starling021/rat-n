@@ -43,7 +43,7 @@ class command:
     		if 'error' in result:
     	    	    h.info_error("Failed to take screenshot!")
                     return
-    		elif 'size' in result:
+    		if 'size' in result:
 	    	    size = int(result['size'])
 	    	    data = session.sock_receive_data(size)
 	            f = open(os.path.join(dest,'screenshot.jpg'),'w')
@@ -70,15 +70,15 @@ class command:
     		    if 'error' in result:
     	    		h.info_error("Failed to take screenshot!")
             		return												
-    		    elif 'size' in result:
-	    		 size = int(result['size'])
-	    		 data = session.sock_receive_data(size)
-	    		 f = open(os.path.join(pr,rp),'w')
-	    		 f.write(data)
-	    		 f.close()
+    		    if 'size' in result:
+	    	        size = int(result['size'])
+	    		data = session.sock_receive_data(size)
+	    		f = open(os.path.join(pr,rp),'w')
+	    		f.write(data)
+	    	        f.close()
                     h.info_general("Saving to "+dest+"...")
-                         time.sleep(1)
-                         h.info_success("Saved to "+dest+"!")
+                    time.sleep(1)
+                    h.info_success("Saved to "+dest+"!")
                 else:
                     h.info_error("Error: "+rp+": not a directory!")
             else:
