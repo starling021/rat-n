@@ -40,7 +40,7 @@ class command:
                     print self.usage
             	    return
 		
-        if cmd_data['args'] == "stop":
+        if cmd_data['args'].split()[0] == "stop":
 	    dest = cmd_data['args'].split()[1]
             if os.path.isdir(dest):
                 if os.path.exists(dest):
@@ -88,6 +88,5 @@ class command:
                     h.info_error("Local directory: "+rp+": does not exist!")
         
         elif cmd_data['args'].split()[0] == "start":
-	    cmd_data['args'] = "record"
             h.info_general("Recording mic...")
             session.send_command(cmd_data)
