@@ -43,6 +43,7 @@ class command:
     			if 'error' in result:
     	    		    h.info_error("Failed to take screenshot!")
             		    return
+			
     			elif 'size' in result:
 	    		    size = int(result['size'])
 	    		    data = session.sock_receive_data(size)
@@ -71,6 +72,7 @@ class command:
     			    if 'error' in result:
     	    		        h.info_error("Failed to take screenshot!")
             		        return
+																
     			    elif 'size' in result:
 	    		        size = int(result['size'])
 	    		        data = session.sock_receive_data(size)
