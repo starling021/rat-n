@@ -42,7 +42,7 @@ class payload:
 		if os.path.exists("payloads/teensy_macos") == False:
 			os.mkdir("payloads/teensy_macos")
 		payload_save_path = "payloads/teensy_macos/teensy_macos.ino"
-		payload = """
+		payload = """\
 #include "Keyboard.h"
 
 void typeKey(uint8_t key)
