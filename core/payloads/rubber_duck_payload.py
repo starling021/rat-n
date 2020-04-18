@@ -45,7 +45,7 @@ class payload:
 		if os.path.exists("payloads/rubber_duck") == False:
 			os.mkdir("payloads/rubber_duck")
 		payload_save_path = "payloads/rubber_duck/payload.txt"
-		payload = """
+		payload = """\
 DELAY 500
 COMMAND SPACE
 DELAY 500
