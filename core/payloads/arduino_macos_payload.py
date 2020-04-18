@@ -41,7 +41,7 @@ class payload:
 			os.mkdir("payloads")
 		if os.path.exists("payloads/teensy_macos") == False:
 			os.mkdir("payloads/teensy_macos")
-		payload_save_path = "payloads/teensy_macos/teensy_macos.ino"
+		payload_save_path = "payloads/arduino_macos/arduino_macos.ino"
 		payload = """\
 #include "Keyboard.h"
 
