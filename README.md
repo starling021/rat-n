@@ -92,7 +92,7 @@ and taking pictures on remote iOS/macOS device.
 
 ```
 There are a lot of different payloads in Mouse Framework 
-such as Bourne-Again Shell and Rubber Duck payloads.
+such as Target Shell and Duck or Arduino payloads.
 ```
 
 ![payloads](https://user-images.githubusercontent.com/54115104/79684971-f7c94480-823d-11ea-9b90-59b829cabe17.png)
