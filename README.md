@@ -23,7 +23,7 @@
  </a>
 </p>
 
-![mouse](https://user-images.githubusercontent.com/54115104/79684968-f6981780-823d-11ea-8a32-8aca6c6c57b5.png)
+![mouse](https://user-images.githubusercontent.com/54115104/79686466-3b757b80-8249-11ea-8de1-64d79a5f4d32.png)
 
 ***
 
@@ -95,7 +95,7 @@ There are a lot of different payloads in Mouse Framework
 such as Target Shell and Duck or Arduino payloads.
 ```
 
-![payloads](https://user-images.githubusercontent.com/54115104/79684971-f7c94480-823d-11ea-9b90-59b829cabe17.png)
+![payloads](https://user-images.githubusercontent.com/54115104/79686472-403a2f80-8249-11ea-880c-68c7562a0763.png)
 
 ***
 
