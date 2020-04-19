@@ -63,8 +63,6 @@ class payload:
 		    else:
 		        h.info_error("Local directory: "+direct+": does not exist!")
 		        exit
-		g = os.environ['HOME']
-                os.chdir(g + "/mouse")
 		payload = """\
 DELAY 500
 COMMAND SPACE
@@ -82,3 +80,5 @@ DELAY 500"""
 		f.write(payload)
 		f.close()
 		h.info_success("Saved to " + payload_save_path + "!")
+		g = os.environ['HOME']
+                os.chdir(g + "/mouse")
