@@ -40,10 +40,10 @@ class payload:
 		path = raw_input(h.info_general_raw("Output File: ")).strip(" ")
 		direct = os.path.split(path)[0]
 		if os.path.exists(direct):
-			payload_save_path = path
+		    payload_save_path = path
 		else:
-			h.info_error("Local directory: "+direct+": does not exist!")
-			exit
+		    h.info_error("Local directory: "+direct+": does not exist!")
+		    exit
 		payload = """\
 #include "Keyboard.h"
 
