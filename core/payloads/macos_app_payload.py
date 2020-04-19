@@ -52,16 +52,15 @@ class payload:
 		    direct = os.path.split(path)[0]
 		    if os.path.exists(direct):
 			if os.path.isdir(direct):
-		            payload_save_path = path
+		            payload_save_path = path+"/Contents/MacOS/payload.sh"
 			else:
 			    h.info_error("Error: "+direct+": not a directory!")
 			    exit
 		    else:
 		        h.info_error("Local directory: "+direct+": does not exist!")
 		        exit
-		os.system("cp -r data/app/payload.app "+path)
-		os.system("mv "+icon+" "+path+"/Contents/Resources/payload.icns")
-		payload_save_path = path+".app/Contents/MacOS/payload.sh"
+		os.system("cp -r data/app/payload.app "+path+" > /dev/null")
+		os.system("mv "+icon+" "+path+"/Contents/Resources/payload.icns > /dev/null")
 		payload = """\
 #! /usr/bin/env bash
 """+shell_command
