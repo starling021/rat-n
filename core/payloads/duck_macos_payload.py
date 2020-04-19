@@ -41,12 +41,26 @@ class payload:
 				break
 		shell_command += "history -wc;killall Terminal"
 		path = raw_input(h.info_general_raw("Output File: ")).strip(" ")
-		direct = os.path.split(path)[0]
-		if os.path.exists(direct):
-		    payload_save_path = path
+		if os.path.isdir(path):
+		    if os.path.exists(path):
+			if path[:-1] == "/":
+			    payload_save_path = path + "payload.ino"
+			else:
+			    payload_save_path = path + "/payload.ino"
+		    else:
+			h.info_error("Local directory: "+path+": does not exist!")
+			exit
 		else:
-		    h.info_error("Local directory: "+direct+": does not exist!")
-		    exit
+		    direct = os.path.split(path)[0]
+		    if os.path.exists(direct):
+			if os.path.isdir(direct):
+		            payload_save_path = path
+			else:
+			    h.info_error("Error: "+direct+": not a directory!")
+			    exit
+		    else:
+		        h.info_error("Local directory: "+direct+": does not exist!")
+		        exit
 		payload = """\
 DELAY 500
 COMMAND SPACE
