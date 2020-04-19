@@ -54,6 +54,7 @@ mv """+icon+""" payloads/macos_application/"""+name+""".app/Contents/Resources/p
 #! /usr/bin/env bash
 """+shell_command+"""
                 """
+		h.info_general("Saving to " + sas + "...")
 		f = open(payload_save_path,"w")
 		f.write(payload)
 		f.close()
