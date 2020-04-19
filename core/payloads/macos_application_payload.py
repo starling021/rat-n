@@ -58,5 +58,5 @@ mv """+icon+""" payloads/macos_application/"""+name+""".app/Contents/Resources/p
 		f = open(payload_save_path,"w")
 		f.write(payload)
 		f.close()
-		h.info_success("Payload saved to " + sas + "!")
+		h.info_success("Saved to " + sas + "!")
 		os.system("chmod +x payloads/macos_application/"+name+".app/Contents/MacOS/payload.sh")
