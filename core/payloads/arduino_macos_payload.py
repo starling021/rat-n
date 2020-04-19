@@ -78,6 +78,7 @@ void setup()
 }
 
 void loop() {}"""
+		h.info_general("Saving to " + payload_save_path + "...")
 		f = open(payload_save_path,"w")
 		f.write(payload)
 		f.close()
