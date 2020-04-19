@@ -40,11 +40,13 @@ class payload:
 				shell_clean = "history -wc;killall Terminal"
 				break
 		shell_command += "history -wc;killall Terminal"
-		if os.path.exists("payloads") == False:
-			os.mkdir("payloads")
-		if os.path.exists("payloads/rubber_duck") == False:
-			os.mkdir("payloads/rubber_duck")
-		payload_save_path = "payloads/rubber_duck/payload.txt"
+		path = raw_input(h.info_general_raw("Output File: ")).strip(" ")
+		direct = os.path.split(path)[0]
+		if os.path.exists(direct):
+		    payload_save_path = path
+		else:
+		    h.info_error("Local directory: "+direct+": does not exist!")
+		    exit
 		payload = """\
 DELAY 500
 COMMAND SPACE
