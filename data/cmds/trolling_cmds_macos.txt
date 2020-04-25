@@ -6,6 +6,6 @@
     close          Close application.
     imessage       Send message via iMessage.
     itunes         Control iTunes player.
-    keyboard       Control keyboard.
+    keyboard       Control device keyboard.
     open           Open application.
     say            Convert text to speach.
