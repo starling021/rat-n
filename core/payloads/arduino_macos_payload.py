@@ -49,15 +49,18 @@ class payload:
 			h.info_error("Local directory: "+dest+": does not exist!")
 		else:
 		    direct = os.path.split(path)[0]
-		    if os.path.exists(direct):
-		        if os.path.isdir(direct):
-		            payload_save_path = path
+		    if direct != "":
+		        if os.path.exists(direct):
+		            if os.path.isdir(direct):
+		                payload_save_path = path
+		            else:
+			        h.info_error("Error: "+direct+": not a directory!")
+			        exit
 		        else:
-			    h.info_error("Error: "+direct+": not a directory!")
-			    exit
+		            h.info_error("Local directory: "+direct+": does not exist!")
+		            exit
 		    else:
-		        h.info_error("Local directory: "+direct+": does not exist!")
-		        exit
+			payload_save_path = path
 			
 		payload = """\
 #include "Keyboard.h"
