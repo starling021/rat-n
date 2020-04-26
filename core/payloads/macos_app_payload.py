@@ -46,7 +46,11 @@ class payload:
 		direct = os.path.split(path)[0]
 		if os.path.exists(direct):
 		    if os.path.isdir(direct):
-		        payload_save_path = path
+		        if os.path.isdir(path):
+			    h.info_error("Error: "+path+": is a directory!")
+			    exit
+			else:
+		            payload_save_path = path
 		    else:
 			h.info_error("Error: "+direct+": not a directory!")
 			exit
