@@ -43,8 +43,6 @@ class payload:
         	    path = os.environ['OLDPWD']+'/'+path
     		else:
         	    path = path
-		w = os.environ['OLDPWD']
-                os.chdir(w)
 		if os.path.isdir(path):
 		    if os.path.exists(path):
 			if path[:-1] == "/":
@@ -106,5 +104,3 @@ void loop() {}"""
 		f.write(payload)
 		f.close()
 		h.info_success("Saved to " + payload_save_path + "!")
-		g = os.environ['HOME']
-                os.chdir(g + "/mouse")
