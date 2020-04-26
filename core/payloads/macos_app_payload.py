@@ -42,9 +42,9 @@ class payload:
 		if os.path.isdir(path):
 		    if os.path.exists(path):
 			if path[-1:] == "/":
-                             payload_save_path = path + "payload.ino"
+                             payload_save_path = path + "payload.app"
                         else:
-                             payload_save_path = path + "/payload.ino"
+                             payload_save_path = path + "/payload.app"
 		    else:
 			h.info_error("Local directory: "+dest+": does not exist!")
 		else:
