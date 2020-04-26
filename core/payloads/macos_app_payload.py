@@ -40,6 +40,9 @@ class payload:
 				break
 		shell_command += "history -wc;killall Terminal"
 		path = raw_input(h.info_general_raw("Output File: ")).strip(" ")
+		if path == "":
+		    while path != "":
+			path = raw_input(h.info_general_raw("Output File: ")).strip(" ")
 		if os.path.isdir(path):
 		    if os.path.exists(path):
 			if path[-1:] == "/":
