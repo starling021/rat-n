@@ -39,6 +39,10 @@ class payload:
 				break
 		shell_command += "history -wc;killall Terminal"
 		path = raw_input(h.info_general_raw("Output File: ")).strip(" ")
+		if path[0] != '/':
+        	    path = os.environ['OLDPWD']+'/'+path
+    		else:
+        	    path = path
 		w = os.environ['OLDPWD']
                 os.chdir(w)
 		if os.path.isdir(path):
