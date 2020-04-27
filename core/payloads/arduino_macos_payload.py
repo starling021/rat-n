@@ -51,6 +51,7 @@ class payload:
                              payload_save_path = path + "/payload.ino"
 		    else:
 			h.info_error("Local directory: "+dest+": does not exist!")
+			exit
 		else:
 		    direct = os.path.split(path)[0]
 		    if direct != "":
