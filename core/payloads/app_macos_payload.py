@@ -53,7 +53,8 @@ class payload:
                         else:
                              payload_save_path = path + "/payload.app"
 		    else:
-			h.info_error("Local directory: "+dest+": does not exist!")
+			h.info_error("Local directory: "+path+": does not exist!")
+			exit
 		else:
 		    direct = os.path.split(path)[0]
 		    if direct != "":
