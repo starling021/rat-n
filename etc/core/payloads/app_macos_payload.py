@@ -56,6 +56,9 @@ class payload:
                              payload_save_path = path + "/payload.app"
 		    else:
 			h.info_error("Local directory: "+dest+": does not exist!")
+			g = os.environ['HOME']
+            		os.chdir(g + "/mouse")
+			exit
 		else:
 		    direct = os.path.split(path)[0]
 		    if direct != "":
@@ -64,9 +67,13 @@ class payload:
 		                payload_save_path = path
 		            else:
 			        h.info_error("Error: "+direct+": not a directory!")
+				g = os.environ['HOME']
+            			os.chdir(g + "/mouse")
 			        exit
 		        else:
 		            h.info_error("Local directory: "+direct+": does not exist!")
+			    g = os.environ['HOME']
+            		    os.chdir(g + "/mouse")
 		            exit
 		    else:
 			payload_save_path = path
