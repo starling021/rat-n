@@ -61,22 +61,23 @@ class payload:
 			exit
 		else:
 		    direct = os.path.split(path)[0]
-		    if direct != "":
-		        if os.path.exists(direct):
-		            if os.path.isdir(direct):
-		                payload_save_path = path
-		            else:
-			        h.info_error("Error: "+direct+": not a directory!")
-				g = os.environ['HOME']
-            			os.chdir(g + "/mouse")
-			        exit
+		    if direct == "":
+			direct = "."
+		    else:
+			pass
+		    if os.path.exists(direct):
+		        if os.path.isdir(direct):
+		            payload_save_path = path
 		        else:
-		            h.info_error("Local directory: "+direct+": does not exist!")
+			    h.info_error("Error: "+direct+": not a directory!")
 			    g = os.environ['HOME']
             		    os.chdir(g + "/mouse")
-		            exit
+			    exit
 		    else:
-			payload_save_path = path
+		        h.info_error("Local directory: "+direct+": does not exist!")
+			g = os.environ['HOME']
+            		os.chdir(g + "/mouse")
+		        exit
 		os.system("cp -r data/app/payload.app "+path+" > /dev/null")
 		os.system("mv "+icon+" "+path+"/Contents/Resources/payload.icns > /dev/null")
 		payload = """\
