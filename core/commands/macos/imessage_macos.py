@@ -34,14 +34,14 @@ class command:
         else:
             phone = cmds[0]
             message = cmds[1]
-        h.info_general("Sending message to "+phone+"...")
-        payload = """tell application "Messages"
-        set targetService to 1st service whose service type = iMessage
-        set targetBuddy to buddy \""""+phone+"""\" of targetService
-        send \""""+message+"""\" to targetBuddy
-        end tell"""
-        cmd_data.update({"args":payload})
-        cmd_data.update({"cmd":self.type})
-        result = session.send_command(cmd_data)
-        if result and result != "(null)":
-            print result
+            h.info_general("Sending message to "+phone+"...")
+            payload = """tell application "Messages"
+            set targetService to 1st service whose service type = iMessage
+            set targetBuddy to buddy \""""+phone+"""\" of targetService
+            send \""""+message+"""\" to targetBuddy
+            end tell"""
+            cmd_data.update({"args":payload})
+            cmd_data.update({"cmd":self.type})
+            result = session.send_command(cmd_data)
+            if result and result != "(null)":
+                print result
