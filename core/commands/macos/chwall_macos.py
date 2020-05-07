@@ -32,6 +32,7 @@ class command:
         
 
     def run(self,session,cmd_data):
+        cmds = cmd_data['args'].split()
         if len(cmds) < 1:
             print self.usage
         else:
