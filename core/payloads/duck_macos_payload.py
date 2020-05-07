@@ -41,8 +41,8 @@ class payload:
 				break
 		shell_command += "history -wc;killall Terminal"
 		path = raw_input(h.info_general_raw("Output path: ")).strip(" ")
-		while path == "":
-		    path = raw_input(h.info_general_raw("Output path: ")).strip(" ")
+		if path == "":
+		    path = "payload.txt"
 		if os.path.isdir(path):
 		    if os.path.exists(path):
 			if path[-1:] == "/":
