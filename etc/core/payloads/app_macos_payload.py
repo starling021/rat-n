@@ -50,7 +50,7 @@ class payload:
             	os.chdir(w)
 		if os.path.isdir(path):
 		    if os.path.exists(path):
-			if path[-1:] == "/":
+			if path[-1] == "/":
                              payload_save_path = path + "payload.app"
                         else:
                              payload_save_path = path + "/payload.app"

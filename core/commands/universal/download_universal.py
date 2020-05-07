@@ -55,7 +55,7 @@ class command:
 			            f = open(os.path.join(cmd_data['args'].split()[1],rp),'w')
 			            f.write(data)
 			            f.close()
-                                    if cmd_data['args'].split()[1][-1:] == "/":
+                                    if cmd_data['args'].split()[1][-1] == "/":
                                         h.info_success("Saved to "+cmd_data['args'].split()[1]+""+rp+"!")
                                     else:
 			                h.info_success("Saved to "+cmd_data['args'].split()[1]+"/"+rp+"!")
