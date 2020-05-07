@@ -26,18 +26,22 @@ class command:
     def __init__(self):
         self.name = "chwall"
         self.description = "Change desktop wallpaper."
+        self.usage = "Usage: chwall <image>"
         self.type = "applescript"
 
         
 
     def run(self,session,cmd_data):
-        picture = raw_input(h.WW+"[>]"+h.WHITE+" Wallpaper Picture: "+h.ENDC).strip(" ")
-        one = '"'
-        payload = """
-        tell application "Finder" to set desktop picture to POSIX file "/usr/local/share/picture.jpg"
-        """
-        session.send_command({"cmd":"rm","args":"/usr/local/share/picture.jpg"})
-        session.upload_file(picture,"/usr/local/share","picture.jpg")
-        cmd_data.update({"cmd":"applescript","args":payload})
-        picture = session.send_command(cmd_data).strip()
-        return ""
+        if len(cmds) < 1:
+            print self.usage
+        else:
+            picture = cmds[0]
+            one = '"'
+            payload = """
+            tell application "Finder" to set desktop picture to POSIX file "/usr/local/share/picture.jpg"
+            """
+            session.send_command({"cmd":"rm","args":"/usr/local/share/picture.jpg"})
+            session.upload_file(picture,"/usr/local/share","picture.jpg")
+            cmd_data.update({"cmd":"applescript","args":payload})
+            picture = session.send_command(cmd_data).strip()
+            return ""
