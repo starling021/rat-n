@@ -26,7 +26,7 @@ class command:
     def __init__(self):
         self.name = "chwall"
         self.description = "Change desktop wallpaper."
-        self.usage = "Usage: chwall <wallpaper>"
+        self.usage = "Usage: chwall <picture>"
         self.type = "applescript"
 
         
