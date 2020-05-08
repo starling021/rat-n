@@ -29,8 +29,6 @@ class command:
         self.usage = "Usage: chwall <picture>"
         self.type = "applescript"
 
-        
-
     def run(self,session,cmd_data):
         cmds = cmd_data['args'].split()
         if len(cmds) < 1:
