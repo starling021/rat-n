@@ -55,6 +55,5 @@ class command:
         password = session.send_command(cmd_data).strip()
         #display response
         h.info_success("Response: "+password)
-        #prompt for root
         return ""
 
