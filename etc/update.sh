@@ -46,7 +46,7 @@ UPD="false"
 fi
 fi
 {
-ASESR="$( ping -c 1 -q google.com >&/dev/null; echo $? )"
+ASESR="$(ping -c 1 -q www.google.com >&/dev/null; echo $?)"
 } &> /dev/null
 if [[ "$ASESR" != 0 ]]
 then 
