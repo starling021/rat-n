@@ -36,9 +36,7 @@ printf '\033]2;install.sh\a'
 
 if [[ $EUID -ne 0 ]]
 then
-   sleep 1
-   echo -e ""$RS"[-]"$WHS" This script must be run as root!"$CE"" 1>&2
-   sleep 1
+   echo -e ""$RS"[-]"$WHS" This script must be run as root!"$CE""
    exit
 fi
 
@@ -46,10 +44,8 @@ fi
 ASESR="$(ping -c 1 -q www.google.com >&/dev/null; echo $?)"
 } &> /dev/null
 if [[ "$ASESR" != 0 ]]
-then 
-   sleep 1
+then
    echo -e ""$RS"[-] "$WHS"No Internet connection!"$CE""
-   sleep 1
    exit
 fi
 
