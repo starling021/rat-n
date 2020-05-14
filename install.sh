@@ -107,6 +107,14 @@ git clone https://github.com/entynetproject/mouse.git
 } &> /dev/null
 fi
 
+if [[ -d ~/mouse ]]
+then
+cd ~/mouse
+else
+echo -e ""$RS"[-]"$WHS" Installation failed!"$CE""
+exit
+fi
+
 {
 cd bin
 cp mouse /usr/local/bin
