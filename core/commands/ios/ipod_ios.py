@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 #            ---------------------------------------------------
 #                              Mouse Framework                                 
@@ -25,8 +25,8 @@ class command:
         self.usage = "Usage: ipod [play|pause|next|prev|info]"
     
     def run(self,session,cmd_data):
-    	if not cmd_data['args'] or not cmd_data['args'] in ['play','pause','next','prev','info']:
-    		print self.usage
+        if not cmd_data['args'] or not cmd_data['args'] in ['play','pause','next','prev','info']:
+            print(self.usage)
         result = session.send_command(cmd_data)
         if result:
-        	print result.rstrip()
+            print(result.decode().rstrip())

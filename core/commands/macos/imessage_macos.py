@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 #            ---------------------------------------------------
 #                              Mouse Framework                                 
@@ -30,7 +30,7 @@ class command:
     def run(self,session,cmd_data):
         cmds = cmd_data['args'].split()
         if len(cmds) < 2:
-            print self.usage
+            print(self.usage)
         else:
             phone = cmds[0]
             message = cmds[1]
@@ -43,5 +43,6 @@ class command:
             cmd_data.update({"args":payload})
             cmd_data.update({"cmd":self.type})
             result = session.send_command(cmd_data)
+            result = result.decode()
             if result and result != "(null)":
-                print result
+                print(result)

@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 #            ---------------------------------------------------
 #                              Mouse Framework                                 
@@ -26,5 +26,5 @@ class command:
 
     def run(self,session,cmd_data):
         print("===================")
-        print session.send_command(cmd_data)
+        print(session.send_command(cmd_data).decode())
         print("===================")

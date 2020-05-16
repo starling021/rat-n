@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 #            ---------------------------------------------------
 #                              Mouse Framework                                 
@@ -19,7 +19,7 @@
 #        along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import os
-from core import helper as h
+import core.helper as h
 import threading, socket, time, sys
 
 DOJ='\033[1;34m[*]\033[0;97m'
@@ -82,9 +82,9 @@ class MultiHandler:
 
 	def show_session(self,session):
 		try:
-			print str(session.id) + " | " +\
+			print(str(session.id) + " | " +\
 			session.hostname + "@" + session.username + " | " + \
-			str(session.conn.getpeername()[0]) 
+			str(session.conn.getpeername()[0]))
 		except Exception as e:
 			h.info_error(str(e))
 
@@ -99,7 +99,7 @@ class MultiHandler:
 
 	def interact_with_session(self,session_number):
 		if not session_number:
-			print "Usage: interact <session_ID>"
+			print("Usage: interact <session_ID>")
 			return
 		try:
 			self.sessions_id[int(session_number)].interact()
@@ -109,7 +109,7 @@ class MultiHandler:
 
 	def close_session(self,session_number):
 		if not session_number:
-			print "Usage: close <session_ID>"
+			print("Usage: close <session_ID>")
 			return
 		try:
 			session = self.sessions_id[int(session_number)]
@@ -129,14 +129,14 @@ class MultiHandler:
 
 
 	def show_command(self,name,description):
-                print("\n\033[0mMultiHandler Commands")
-                print("=====================")
+		print("\n\033[0mMultiHandler Commands")
+		print("=====================")
 		os.system("cat data/cmds/multihandler_cmds.txt")
 		print("")
 
 	def show_commands(self):
 		print("\n\033[0mMultiHandler Commands")
-                print("=====================")
+		print("=====================")
 		os.system("cat data/cmds/multihandler_cmds.txt")
 		print("")
 
@@ -146,7 +146,7 @@ class MultiHandler:
 		h.info_general("Type \"help\" for commands.")
 		while 1:
 			try:
-				input_data = raw_input(self.handle).strip(" ")
+				input_data = input(self.handle).strip(" ")
 				if not input_data:
 					continue
 				cmd = input_data.split()[0]

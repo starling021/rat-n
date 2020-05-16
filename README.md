@@ -1,9 +1,3 @@
-# MOUSE3 Coming Soon!
-
-# `SOON WE WILL RELEASE MOUSE FRAMEWORK WITH PYTHON3 SUPPORT, YAY!`
-
-# [@game-lover](https://github.com/game-lover) - `OUR HELPER`
-
 # Mouse Framework
 
 ![mouse](https://user-images.githubusercontent.com/54115104/74106887-b05a7400-4b7b-11ea-8885-bac3b5c359a3.jpeg)

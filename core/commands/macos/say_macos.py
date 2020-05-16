@@ -18,14 +18,17 @@
 #        You should have received a copy of the GNU General Public License
 #        along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import json
-class command:
-    def __init__(self):
-        self.name = "getvol"
-        self.description = "Get speaker output volume."
-        self.type = "applescript"
+import core.helper as h
+import time
 
-    def run(self,session,cmd_data):
-        payload = "output volume of (get volume settings)"
-        cmd_data.update({"cmd":"applescript","args":payload})
-        print("Current Volume: "+session.send_command(cmd_data).decode())
+class command:
+	def __init__(self):
+		self.name = "reboot"
+		self.description = "Convert text to speach."
+		self.usage = "Usage: say <text>"
+
+	def run(self,session,cmd_data):
+		if len(cmd_data['args'].split()) < 2:
+			print(self.usage)
+		else:
+			session.send_command({"cmd":"say","args":cmd_data['args'].split()[1]})
