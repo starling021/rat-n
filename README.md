@@ -2,13 +2,7 @@
 
 # `SOON WE WILL RELEASE MOUSE FRAMEWORK WITH PYTHON3 SUPPORT, YAY!`
 
-# @game-lover - `OUR HELPER`
-
-# WE NEED YOUR HELP
-
-# `We need your help in translation Mouse Framework to python3`
-
-# `If you want to team submit an issue`
+# [@game-lover](https://github.com/game-lover) - `OUR HELPER`
 
 # Mouse Framework
 
