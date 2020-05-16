@@ -23,7 +23,7 @@ import time
 
 class command:
 	def __init__(self):
-		self.name = "reboot"
+		self.name = "say"
 		self.description = "Convert text to speach."
 		self.usage = "Usage: say <text>"
 
