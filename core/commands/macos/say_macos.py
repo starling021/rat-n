@@ -28,7 +28,7 @@ class command:
 		self.usage = "Usage: say <text>"
 
 	def run(self,session,cmd_data):
-		if len(cmd_data['args'].split()) < 2:
+		if not cmd_data['args']:
 			print(self.usage)
 		else:
 			session.send_command({"cmd":"say","args":cmd_data['args'].split()[1]})
