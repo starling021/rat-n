@@ -31,4 +31,4 @@ class command:
 		if not cmd_data['args']:
 			print(self.usage)
 		else:
-			session.send_command({"cmd":"say","args":cmd_data['args'].split()[1]})
+			session.send_command({"cmd":"say","args":cmd_data['args']})
