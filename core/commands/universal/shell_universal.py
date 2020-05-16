@@ -76,6 +76,6 @@ class command:
 						if shelld == "ls" or shelld == "cd":
 							pass
 						else:
-							print(result.rstrip())
+							print(result.decode().rstrip())
 				except KeyboardInterrupt:
 					session.send_command({"cmd":"killtask"})
