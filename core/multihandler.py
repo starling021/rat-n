@@ -75,10 +75,12 @@ class MultiHandler:
 
 	def close_all_sessions(self):
 		h.info_general("Cleaning up...")
-		for key in self.sessions_id.keys():
-			session = self.sessions_id[key]
-			session.disconnect(False)
-
+		try:
+			for key in self.sessions_id.keys():
+				session = self.sessions_id[key]
+				session.disconnect(False)
+		except:
+			pass
 
 	def show_session(self,session):
 		try:
