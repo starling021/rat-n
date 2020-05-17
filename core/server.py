@@ -169,9 +169,9 @@ class Server:
         conn.send(identification_shell_command.encode())
         try:
             device_arch = conn.recv(128).decode().strip()
+            if not device_arch:
+                return
         except:
-            pass
-        if not device_arch:
             return
 
         try:
