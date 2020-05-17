@@ -29,6 +29,6 @@ class command:
     def run(self,session,cmd_data):
         if not cmd_data['args']:
             print(self.usage)
-        result = session.send_command(cmd_data)
-        if result:
+        error = session.send_command(cmd_data)
+        if error:
             h.info_error("Failed to open application!")
