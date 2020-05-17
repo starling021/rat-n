@@ -28,7 +28,4 @@ class command:
 		if not cmd_data['args']:
 			print(self.usage)
 			return
-		if not cmd_data['args']:
-			print(usage)
-			return
 		session.send_command(cmd_data)
