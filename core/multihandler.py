@@ -47,7 +47,7 @@ class MultiHandler:
 	def background_listener(self):
 		self.server.is_multi = True
 		self.is_running = True
-		id_number = -1
+		id_number = 0
 		while 1:
 			if self.is_running:
 				session = self.server.listen_for_stager()
