@@ -22,7 +22,7 @@ import os
 import core.helper as h
 import threading, socket, time, sys
 
-G = '\033[1;34m[*] \033[0m'
+G = '\033[1;32m[+] \033[0m'
 
 class MultiHandler:
 	def __init__(self,server):
@@ -61,7 +61,7 @@ class MultiHandler:
 						self.sessions_id[id_number] = session
 						session.id = id_number
 						id_number += 1
-						sys.stdout.write("\n{0} Session {1} opened.{2}\n{3}".format(G,str(session.id),h.WHITE,self.handle))
+						sys.stdout.write("\n{0} Session {1} opened!{2}\n{3}".format(G,str(session.id),h.WHITE,self.handle))
 						sys.stdout.flush()
 			else:
 				return
@@ -93,7 +93,7 @@ class MultiHandler:
 
 	def list_sessions(self):
 		if not self.sessions_id:
-			h.info_general("No active sessions.")
+			h.info_error("No active sessions!")
 		else:
 			for key in self.sessions_id:
 				self.show_session(self.sessions_id[key])
