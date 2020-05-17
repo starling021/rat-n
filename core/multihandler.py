@@ -22,6 +22,8 @@ import os
 import core.helper as h
 import threading, socket, time, sys
 
+G = '\033[1;34m[*] \033[0m'
+
 class MultiHandler:
 	def __init__(self,server):
 		self.server = server
@@ -59,7 +61,7 @@ class MultiHandler:
 						self.sessions_id[id_number] = session
 						session.id = id_number
 						id_number += 1
-						sys.stdout.write("\n{0} Session {1} opened.{2}\n{3}".format(DOJ,str(session.id),h.WHITE,self.handle))
+						sys.stdout.write("\n{0} Session {1} opened.{2}\n{3}".format(G,str(session.id),h.WHITE,self.handle))
 						sys.stdout.flush()
 			else:
 				return
