@@ -18,6 +18,8 @@
 #        You should have received a copy of the GNU General Public License
 #        along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+import core.helper as h
+
 class command:
     def __init__(self):
         self.name = "open"
@@ -29,4 +31,4 @@ class command:
             print(self.usage)
         result = session.send_command(cmd_data)
         if result:
-            print(result.decode())
+            h.info_error("Failed to open application!")
