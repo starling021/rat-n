@@ -53,20 +53,10 @@ class command:
 				else:
 					h.info_error('Unable to get current directory!')
 			if shelld == "ls":
-				if not shelld_data['args']:
-					shelld_data['args'] = '.'
-				data = session.send_command(shelld_data)
-				try:
-					contents = json.loads(data)
-				except:
-					print(data)
-				keys = contents.keys()
-				keys = sorted(keys)
-				for k in keys:
-					if contents[k] == 4 or contents[k] == 10:
-						print(h.COLOR_INFO + k + h.ENDC)
-					else:
-						print(k)
+				if len(shell.split()) < 2:
+					print(session.send_command({'cmd':'ls -al','args':'.'}).decode())
+				else:
+					print(session.send_command({'cmd':'ls -al','args':shell.split()[1]}).decode())
 			if shelld == "exit":
 				return
 			else:
