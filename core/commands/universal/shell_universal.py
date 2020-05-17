@@ -34,7 +34,7 @@ class command:
 		h.info_general("Opening device shell...")
 		time.sleep(1)
 		while 1:
-			uid = session.send_command({"cmd":"echo","args":"$UID"})
+			uid = session.send_command({"cmd":"echo","args":"$UID"}).decode()
 			if uid[:-1] == "0":
 				whoami = "# "
 			else:
