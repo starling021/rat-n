@@ -26,4 +26,5 @@ class command:
         self.description = "List all applications."
     
     def run(self,session,cmd_data):
+        cmd_data = {'cmd': 'bundleids', 'args': ''}
         print(session.send_command(cmd_data).decode().rstrip())
