@@ -49,7 +49,6 @@ class Server:
                 continue
             else:
                 m = __import__(mod[:-3]).command()
-                #add module info to dictionary
                 modules[m.name] = m
         return modules
 
