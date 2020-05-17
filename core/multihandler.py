@@ -22,8 +22,6 @@ import os
 import core.helper as h
 import threading, socket, time, sys
 
-DOJ='\033[1;34m[*]\033[0;97m'
-
 class MultiHandler:
 	def __init__(self,server):
 		self.server = server
@@ -99,24 +97,24 @@ class MultiHandler:
 
 	def interact_with_session(self,session_number):
 		if not session_number:
-			print("Usage: interact <session_ID>")
+			print("Usage: interact <session>")
 			return
 		try:
 			self.sessions_id[int(session_number)].interact()
 		except:
-			h.info_error("Invalid session ID!")
+			h.info_error("No such session!")
 
 
 	def close_session(self,session_number):
 		if not session_number:
-			print("Usage: close <session_ID>")
+			print("Usage: close <session>")
 			return
 		try:
 			session = self.sessions_id[int(session_number)]
 			session.disconnect(False)
 			h.info_general('Closing session ' + session_number + '...')
 		except:
-			h.info_error("Invalid session ID!")
+			h.info_error("No such session!")
 
 
 	def stop_server(self):
@@ -169,4 +167,3 @@ class MultiHandler:
 				sys.stdout.write("\n")
 				self.stop_server()
 				return
-
