@@ -25,12 +25,8 @@ import binascii
 from core.multihandler import MultiHandler
 import time
 
-downloads_dir = "../downloads"
-
 class Server:
     def __init__(self):
-        if not os.path.isdir("downloads"):
-            os.makedirs("downloads")
         self.macos_architectures = ["i386"]
         self.ios_architectures = ["arm64","armv7s", "arm"]
         self.host = None
