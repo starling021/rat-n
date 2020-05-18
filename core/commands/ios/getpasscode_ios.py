@@ -22,7 +22,7 @@ import core.helper as h
 
 class command:
     def __init__(self):
-        self.name = "getpasscode"
+        self.name = "getpass"
         self.description = "Retreive the device passcode."
     
     def run(self,session,cmd_data):
