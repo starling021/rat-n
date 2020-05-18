@@ -31,6 +31,6 @@ class command:
         time.sleep(1)
         cmd_data["cmd"] = ";"
         cmd_data["args"] = "touch /var/mobile/Library/Preferences/com.saurik.mobilesubstrate.dat; killall SpringBoard"
-        result = session.send_command(cmd_data)
-        if result:
-            print(result.decode())
+        error = session.send_command(cmd_data)
+        if error:
+            h.info_error("Failed to put device into SafeMode!")

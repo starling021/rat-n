@@ -38,4 +38,4 @@ class command:
             cmd_data = {'cmd':'mute','args':''}
         error = session.send_command(cmd_data)
         if error:
-            print(h.RED+"[-]"+h.WHITE+" Mouse Substrate is not installed!")
+            h.info_error("Mouse Substrate is not installed!")
