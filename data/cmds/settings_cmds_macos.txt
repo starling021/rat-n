@@ -1,8 +1,8 @@
 
     Command        Description
     -------        -----------
-    getvol         Show volume level.
     icons          List system alert icons.
     idletime       Show user activity time.
     setbright      Set screen brightness.
     setvol         Set output volume.
+    volume         Show volume level.
