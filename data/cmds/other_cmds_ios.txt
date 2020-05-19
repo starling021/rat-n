@@ -2,5 +2,3 @@
     Command        Description
     -------        -----------
     pid            Get Mouse process ID.
-    shell          Open device shell.
-    upload         Upload local file.
