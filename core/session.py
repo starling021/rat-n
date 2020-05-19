@@ -203,7 +203,7 @@ class Session:
 		print("=================")
 		self.get_set(self.type)
 			
-		print("\nManagement Commands")
+		print("\nManaging Commands")
 		print("===================")
 		self.get_manage(self.type)
 		
