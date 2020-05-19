@@ -71,11 +71,11 @@ class Session:
 		elif device_type == "iOS":
 			os.system("cat data/cmds/settings_cmds_ios.txt")
 	
-	def get_troll(self,device_type):
+	def get_manage(self,device_type):
 		if device_type == "macos":
-			os.system("cat data/cmds/trolling_cmds_macos.txt")
+			os.system("cat data/cmds/management_cmds_macos.txt")
 		elif device_type == "iOS":
-			os.system("cat data/cmds/trolling_cmds_ios.txt")
+			os.system("cat data/cmds/management_cmds_ios.txt")
 			
 	def get_other(self,device_type):
 		if device_type == "macos":
@@ -201,29 +201,24 @@ class Session:
 		
 		print("\nSettings Commands")
 		print("=================")
-		
 		self.get_set(self.type)
-		
-		self.get_sub(self.type)
 			
-		print("\nTrolling Commands")
-		print("=================")
-		
-		self.get_troll(self.type)
+		print("\nManagement Commands")
+		print("===================")
+		self.get_manage(self.type)
 		
 		print("\nStealing Commands")
 		print("=================")
-		
 		self.get_steal(self.type)
+		
+		self.get_sub(self.type)
 		
 		print("\nBoot Commands")
 		print("=============")
-		
 		self.get_boot(self.type)
 		
 		print("\nOther Commands")
 		print("==============")
-		
 		self.get_other(self.type)
 
 		print("")
