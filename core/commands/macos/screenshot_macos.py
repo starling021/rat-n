@@ -26,7 +26,7 @@ import core.helper as h
 class command:
 	def __init__(self):
 		self.name = "screenshot"
-		self.description = "Take screenshot."
+		self.description = "Take device screenshot."
 		self.usage = "Usage: screenshot <local_path>"
 		self.type = "native"
 
