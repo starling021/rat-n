@@ -73,9 +73,9 @@ class Session:
 	
 	def get_manage(self,device_type):
 		if device_type == "macos":
-			os.system("cat data/cmds/management_cmds_macos.txt")
+			os.system("cat data/cmds/managing_cmds_macos.txt")
 		elif device_type == "iOS":
-			os.system("cat data/cmds/management_cmds_ios.txt")
+			os.system("cat data/cmds/managing_cmds_ios.txt")
 			
 	def get_other(self,device_type):
 		if device_type == "macos":
@@ -204,7 +204,7 @@ class Session:
 		self.get_set(self.type)
 			
 		print("\nManaging Commands")
-		print("===================")
+		print("=================")
 		self.get_manage(self.type)
 		
 		print("\nStealing Commands")
