@@ -24,4 +24,4 @@ class command:
         self.description = "Show battery level."
     
     def run(self,session,cmd_data):
-        print("Battery level: " +session.send_command(cmd_data).decode())
+        print("Battery level: " + session.send_command(cmd_data).decode())
