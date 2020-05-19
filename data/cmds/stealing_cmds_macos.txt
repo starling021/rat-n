@@ -6,4 +6,4 @@
     mic            Record microphone sound.
     picture        Take picture through iSight.
     prompt         Prompt user to type password.
-    screenshot     Take screenshot.
+    screenshot     Take device screenshot.
