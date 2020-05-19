@@ -10,3 +10,4 @@
     say            Convert text to speach.
     vibrate        Vibrate device.
     shell          Open device shell.
+    upload         Upload local file.
