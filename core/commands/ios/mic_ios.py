@@ -26,7 +26,7 @@ import os
 class command:
     def __init__(self):
         self.name = "mic"
-        self.description = "Record mic sound."
+        self.description = "Record microphone sound."
         self.usage = "Usage: mic [start|stop <local_path>]"
         
     def run(self,session,cmd_data):
