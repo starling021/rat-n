@@ -8,3 +8,6 @@
     keyboard       Control device keyboard.
     open           Open application.
     say            Convert text to speach.
+    shell          Open device shell.
+    su             Login as root.
+    upload         Upload local file.
