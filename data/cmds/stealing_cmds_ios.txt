@@ -7,5 +7,5 @@
     getpasscode    Retreive the device passcode.
     getsms         Get device SMS.
     locate         Get device location coordinates.
-    mic            Record mic sound.
+    mic            Record microphone sound.
     picture        Take picture through the camera.
