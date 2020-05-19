@@ -2,6 +2,7 @@
     Command        Description
     -------        -----------
     download       Download remote file.
+    getpaste       Get pasteboard contents.
     mic            Record mic sound.
     picture        Take picture through iSight.
     prompt         Prompt user to type password.
