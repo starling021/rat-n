@@ -29,7 +29,7 @@ class command:
         if session.send_command(cmd_data).decode().split("\n")[0] == "Unable to get Coordinates":
             h.info_error("Failed to locate device!")
         else:
-            latitude = session.send_command(cmd_data).decode.split("\n")[0].strip("Latitude : ")
-            longitude = session.send_command(cmd_data).decode.split("\n")[1].strip("Longitude : ")
+            latitude = session.send_command(cmd_data).decode().split("\n")[0].strip("Latitude : ")
+            longitude = session.send_command(cmd_data).decode().split("\n")[1].strip("Longitude : ")
             print("Latitude: "+latitude)
             print("Longitude: "+longitude)
