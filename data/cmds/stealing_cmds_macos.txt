@@ -3,7 +3,4 @@
     -------        -----------
     download       Download remote file.
     getpaste       Get pasteboard contents.
-    mic            Record microphone sound.
-    picture        Take picture through iSight.
     prompt         Prompt user to type password.
-    screenshot     Take device screenshot.
