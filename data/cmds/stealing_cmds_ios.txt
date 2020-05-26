@@ -6,6 +6,3 @@
     getnotes       Get device notes.
     getpasscode    Retreive the device passcode.
     getsms         Get device SMS.
-    locate         Get device location coordinates.
-    mic            Record microphone sound.
-    picture        Take picture through the camera.
