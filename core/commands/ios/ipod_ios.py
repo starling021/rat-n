@@ -31,7 +31,7 @@ class command:
             print(self.usage)
         result = session.send_command(cmd_data)
         if result:
-            if result == "Not Playing":
+            if result.decode().rstrip() == "Not Playing":
                 h.info_error("Not playing!")
             else:
                 print(result.decode().rstrip())
