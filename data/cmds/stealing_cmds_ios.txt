@@ -4,5 +4,5 @@
     download       Download remote file.
     getcontacts    Get device contacts.
     getnotes       Get device notes.
-    getpasscode    Retreive the device passcode.
+    getpasscode    Get device passcode.
     getsms         Get device SMS.
