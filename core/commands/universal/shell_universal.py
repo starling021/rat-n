@@ -61,7 +61,8 @@ class command:
 				return
 			else:
 				try:
-					result = session.send_command(shelld_data)
+					internal_shell = session.send_command({'cmd':'echo','args':'$SHELL'}).decode()
+					result = session.send_command({'cmd':internal_shell,'args':'-c "'+shelld+'"'})
 					if result:
 						if shelld == "ls" or shelld == "cd":
 							pass
