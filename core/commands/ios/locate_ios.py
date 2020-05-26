@@ -18,10 +18,15 @@
 #        You should have received a copy of the GNU General Public License
 #        along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+import core.helper as h
+
 class command:
     def __init__(self):
         self.name = "locate"
         self.description = "Get device location coordinates."
     
     def run(self,session,cmd_data):
-        print(session.send_command(cmd_data).decode())
+        if session.send_command(cmd_data).decode()[0] == "U":
+            h.info_error("Failed to locate device!")
+        else:
+            print(session.send_command(cmd_data).decode())
