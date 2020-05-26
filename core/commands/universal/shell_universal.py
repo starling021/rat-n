@@ -70,6 +70,6 @@ class command:
 							if result:
 								print(result.decode().rstrip())
 						else:
-							session.send_command({'cmd':'----------------------------------------','args':''})
+							session.send_command({'cmd':'----------------------------------------','args':''}).decode().replace("----------------------------------------", shelld)
 				except KeyboardInterrupt:
 					session.send_command({"cmd":"killtask"})
