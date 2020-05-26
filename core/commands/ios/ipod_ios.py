@@ -18,6 +18,8 @@
 #        You should have received a copy of the GNU General Public License
 #        along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+import core.helper as h
+
 class command:
     def __init__(self):
         self.name = "ipod"
@@ -29,4 +31,7 @@ class command:
             print(self.usage)
         result = session.send_command(cmd_data)
         if result:
-            print(result.decode().rstrip())
+            if result == "Not Playing":
+                h.info_error("Not playing!")
+            else:
+                print(result.decode().rstrip())
