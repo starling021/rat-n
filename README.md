@@ -92,7 +92,7 @@ and taking pictures on remote iOS/macOS device.
 
 ```
 There are a lot of different payloads in Mouse Framework 
-such as Target shell and Arduino payloads.
+such as target shell payload or arduino payload.
 ```
 
 ![payloads](https://user-images.githubusercontent.com/54115104/81423046-8e619500-915c-11ea-9f69-86ba0fe0793d.png)
