@@ -85,7 +85,7 @@ for you to master the Mouse Framework.
 ```
 There are a lot of different functions in Mouse Framework 
 such as displaying alerts, recording microphone sound 
-and taking pictures on remote iOS/macOS device.
+and taking pictures on remote iOS or macOS device.
 ```
 
 * A lot of different payloads.
