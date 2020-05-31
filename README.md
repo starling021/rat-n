@@ -83,8 +83,8 @@ for you to master the Mouse Framework.
 * A lot of different functions.
 
 ```
-There are a lot of different functions in Mouse 
-CLI such as displaying alerts, recording mic sound 
+There are a lot of different functions in Mouse Framework 
+such as displaying alerts, recording microphone sound 
 and taking pictures on remote iOS/macOS device.
 ```
 
@@ -92,7 +92,7 @@ and taking pictures on remote iOS/macOS device.
 
 ```
 There are a lot of different payloads in Mouse Framework 
-such as Target shell and Duck or Arduino payloads.
+such as Target shell and Arduino payloads.
 ```
 
 ![payloads](https://user-images.githubusercontent.com/54115104/81423046-8e619500-915c-11ea-9f69-86ba0fe0793d.png)
