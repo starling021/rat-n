@@ -22,8 +22,8 @@ import core.helper as h
 
 class command:
     def __init__(self):
-        self.name = "getpaste"
-        self.description = "Get pasteboard contents."
+        self.name = "pasteboard"
+        self.description = "Show pasteboard contents."
         self.type = "native"
 
     def run(self,session,cmd_data):
