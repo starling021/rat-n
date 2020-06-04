@@ -7,7 +7,6 @@
     keyboard       Control device keyboard.
     mic            Record microphone sound.
     open           Open application.
-    pasteboard     Show pasteboard contents.
     picture        Take picture through iSight.
     say            Convert text to speach.
     screenshot     Take device screenshot.
