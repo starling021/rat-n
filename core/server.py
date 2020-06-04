@@ -146,7 +146,7 @@ class Server:
             self.verbose_print("Executing iOS payload...") 
             return (instructions,payload)
         else:
-            h.info_error("The device is not recognized!")
+            h.info_error("Target device is not recognized!")
             return
 
     def listen_for_stager(self):
@@ -183,7 +183,7 @@ class Server:
 
         conn.send(executable)
         conn.close()
-        self.verbose_print("Establishing Connection...")
+        self.verbose_print("Establishing connection...")
 
         try:
             return self.listen_for_executable_payload(s)
