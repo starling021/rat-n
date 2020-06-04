@@ -3,6 +3,7 @@
     -------        -----------
     apps           List all applications.
     battery        Show battery level.
+    lastapp        Show last opened application.
     msub           Mouse Substrate.
     setvol         Set output volume.
     sysinfo        Show system information.
