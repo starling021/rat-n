@@ -18,6 +18,8 @@
 #        You should have received a copy of the GNU General Public License
 #        along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+import core.helper as h
+
 class command:
     def __init__(self):
         self.name = "getpaste"
@@ -25,5 +27,5 @@ class command:
         self.type = "native"
 
     def run(self,session,cmd_data):
-        print("Pasteboard contents:")
+        h.info_info("Pasteboard contents:")
         print(session.send_command(cmd_data).decode())
