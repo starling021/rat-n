@@ -1,4 +1,4 @@
 
     Command        Description
     -------        -----------
-    pid            Get Mouse process ID.
+    pid            Show Mouse process ID.
