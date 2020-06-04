@@ -1,4 +1,0 @@
-
-    Command        Description
-    -------        -----------
-    pid            Show Mouse process ID.
