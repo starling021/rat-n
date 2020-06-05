@@ -62,8 +62,8 @@ shell command execution, escalating privileges, password retrieval, and much mor
 # Mouse Framework execution
 
 ```
-To execute Mouse Framework you
-should execute the following command.
+To run Mouse Framework you should 
+execute the following command.
 ```
 
 > mouse
