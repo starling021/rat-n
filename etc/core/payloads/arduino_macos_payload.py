@@ -75,7 +75,7 @@ class payload:
 				g = os.environ['HOME']
 				os.chdir(g + "/mouse")
 				exit
-			
+		h.info_general("Creating payload...")
 		payload = """\
 #include "Keyboard.h"
 
