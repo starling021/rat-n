@@ -32,7 +32,7 @@ class payload:
 			shell = input(h.info_general_raw("Target shell: ")).strip(" ")
 			while shell == "":
 				shell = input(h.info_general_raw("Target shell: ")).strip(" ")
-				icon = input(h.info_general_raw("Application icon: ")).strip(" ")
+			icon = input(h.info_general_raw("Application icon: ")).strip(" ")
 			while icon == "":
 				icon = input(h.info_general_raw("Application icon: ")).strip(" ")
 			persistence = input(h.info_question_raw("Make persistent? (y/n): ")).strip(" ").lower()
@@ -54,7 +54,8 @@ class payload:
 					payload_save_path = path + "/payload.app"
 			else:
 				h.info_error("Local directory: "+path+": does not exist!")
-				exit
+				input("Press enter to continue...").strip(" ")
+				return
 		else:
 			direct = os.path.split(path)[0]
 			if direct == "":
@@ -66,10 +67,12 @@ class payload:
 					payload_save_path = path
 				else:
 					h.info_error("Error: "+direct+": not a directory!")
-					exit
+					input("Press enter to continue...").strip(" ")
+					return
 			else:
 				h.info_error("Local directory: "+direct+": does not exist!")
-				exit
+				input("Press enter to continue...").strip(" ")
+				return
 		h.info_general("Creating payload...")
 		os.system("cp -r data/app/payload.app "+path+" > /dev/null")
 		os.system("mv "+icon+" "+path+"/Contents/Resources/payload.icns > /dev/null")
