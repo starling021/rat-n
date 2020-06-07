@@ -67,7 +67,7 @@ class payload:
 			else:
 				h.info_error("Local directory: "+direct+": does not exist!")
 				exit
-			
+		h.info_general("Creating payload...")
 		payload = """\
 DELAY 500
 COMMAND SPACE
