@@ -112,14 +112,16 @@ class mouse:
 
 
     def prompt_run_server(self):
-        if input(h.WW+"[?]"+h.WHITE+" Start listener? (y/n): "+h.ENDC).strip(" ") == "y":
-            if input(h.WW+"[?]"+h.WHITE+" MultiHandler? (y/n): "+h.ENDC).strip(" ") == "y":
-                self.server.start_multi_handler()
-            else:
-                self.server.start_single_handler()
+        if os.path.exists(".nopayload"):
+            pass
         else:
-            return
-
+            if input(h.WW+"[?]"+h.WHITE+" Start listener? (y/n): "+h.ENDC).strip(" ") == "y":
+                if input(h.WW+"[?]"+h.WHITE+" MultiHandler? (y/n): "+h.ENDC).strip(" ") == "y":
+                    self.server.start_multi_handler()
+                else:
+                    self.server.start_single_handler()
+            else:
+                return
 
     def import_payloads(self):
         path = "core/payloads"
