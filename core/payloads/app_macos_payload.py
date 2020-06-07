@@ -30,8 +30,8 @@ class payload:
 	def run(self,server):
 		while 1:
 			shell = input(h.info_general_raw("Target shell: ")).strip(" ")
-			while shell == "":
-				shell = input(h.info_general_raw("Target shell: ")).strip(" ")
+			if shell == "":
+				shell = "sh"
 			icon = input(h.info_general_raw("Application icon: ")).strip(" ")
 			while icon == "":
 				icon = input(h.info_general_raw("Application icon: ")).strip(" ")
