@@ -35,11 +35,11 @@ class payload:
 			icon = input(h.info_general_raw("Application icon: ")).strip(" ")
 			if os.path.exists(icon):
 				if os.path.isdir(icon):
-					throw(("Error: "+run+": is a directory!"))
+					h.info_error("Error: "+run+": is a directory!")
 					input("Press enter to continue...").strip(" ")
 					return
 			else:
-				throw(("Input file: "+run+": does not exist!"))
+				h.info_error("Local file: "+run+": does not exist!")
 				input("Press enter to continue...").strip(" ")
 				return
 			persistence = input(h.info_question_raw("Make persistent? (y/n): ")).strip(" ").lower()
