@@ -77,10 +77,10 @@ class Server:
                 try:
                     lport = int(lport)
                 except ValueError:
-                    h.info_error("Invalid port, please enter a valid integer.")
+                    h.info_error("Invalid port!")
                     continue
                 if lport < 1024:
-                    h.info_error("Invalid port, please enter a value >= 1024.")
+                    h.info_error("Invalid port!")
                     continue
                 break
             self.host = socket.gethostbyname(lhost)
@@ -151,7 +151,7 @@ class Server:
     def listen_for_stager(self):
         identification_shell_command = 'com=$(uname -p); if [ $com != "unknown" ]; then echo $com; else uname; fi\n'
         
-        h.info_general("Binding to "+self.host+":"+str(self.lport)+"...")
+        h.info_general("Binding to "+self.host+":"+str(self.port)+"...")
         sr = os.system("ping -c 1 "+self.host+" >/dev/null 2>&1")
         if sr != 0:
             h.info_error("Failed to bind to "+self.host+":"+str(self.port)+"!")
