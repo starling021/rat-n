@@ -55,7 +55,8 @@ class payload:
 				h.info_error("Local directory: "+dest+": does not exist!")
 				g = os.environ['HOME']
 				os.chdir(g + "/mouse")
-				exit
+				input("Press enter to continue...").strip(" ")
+				return
 		else:
 			direct = os.path.split(path)[0]
 			if direct == "":
@@ -69,12 +70,14 @@ class payload:
 					h.info_error("Error: "+direct+": not a directory!")
 					g = os.environ['HOME']
 					os.chdir(g + "/mouse")
-					exit
+					input("Press enter to continue...").strip(" ")
+					return
 			else:
 				h.info_error("Local directory: "+direct+": does not exist!")
 				g = os.environ['HOME']
 				os.chdir(g + "/mouse")
-				exit
+				input("Press enter to continue...").strip(" ")
+				return
 		h.info_general("Creating payload...")
 		payload = """\
 DELAY 500
