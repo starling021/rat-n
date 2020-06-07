@@ -83,7 +83,6 @@ class Server:
                     h.info_error("Invalid port, please enter a value >= 1024.")
                     continue
                 break
-            h.info_general("Using "+lhost+":"+str(lport)+"...")
             self.host = socket.gethostbyname(lhost)
             self.port = lport
             return True
@@ -152,6 +151,7 @@ class Server:
     def listen_for_stager(self):
         identification_shell_command = 'com=$(uname -p); if [ $com != "unknown" ]; then echo $com; else uname; fi\n'
         
+        h.info_general("Using "+lhost+":"+str(lport)+"...")
         s = socket.socket()
         s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
         s.bind(('0.0.0.0', self.port))
