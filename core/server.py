@@ -136,6 +136,7 @@ class Server:
             return (instructions,payload)
         else:
             h.info_error("Target device is not recognized!")
+            input("Press enter to continue...").strip(" ")
             return
 
     def listen_for_stager(self):
@@ -145,6 +146,7 @@ class Server:
         sr = os.system("ping -c 1 "+self.host+" >/dev/null 2>&1")
         if sr != 0:
             h.info_error("Failed to bind to "+self.host+":"+str(self.port)+"!")
+            input("Press enter to continue...").strip(" ")
             return
         try:
             s = socket.socket()
@@ -153,6 +155,7 @@ class Server:
             s.listen(1)
         except:
             h.info_error("Failed to bind to "+self.host+":"+str(self.port)+"!")
+            input("Press enter to continue...").strip(" ")
             return
         h.info_general("Listening on port "+str(self.port)+"...")
         try:
@@ -174,7 +177,6 @@ class Server:
         try:
             bash_stager, executable = self.craft_payload(device_arch)
         except Exception as e:
-            input("Press enter to continue...").strip(" ")
             return
         self.debug_print(bash_stager.strip())
         conn.send(bash_stager.encode())
@@ -190,6 +192,7 @@ class Server:
             return
         except Exception as e:
             h.info_error("Error: " + str(e))
+            input("Press enter to continue...").strip(" ")
             return
 
 
