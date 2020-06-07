@@ -52,6 +52,7 @@ class payload:
 			else:
 				h.info_error("Local directory: "+path+": does not exist!")
 				input("Press enter to continue...").strip(" ")
+				os.system("touch .nopayload")
 				return
 		else:
 			direct = os.path.split(path)[0]
@@ -65,10 +66,12 @@ class payload:
 				else:
 					h.info_error("Error: "+direct+": not a directory!")
 					input("Press enter to continue...").strip(" ")
+					os.system("touch .nopayload")
 					return
 			else:
 				h.info_error("Local directory: "+direct+": does not exist!")
 				input("Press enter to continue...").strip(" ")
+				os.system("touch .nopayload")
 				return
 		h.info_general("Creating payload...")
 		payload = """\
@@ -112,4 +115,3 @@ void loop() {}"""
 		f.write(payload)
 		f.close()
 		h.info_success("Saved to " + payload_save_path + "!")
-		os.system("touch data/.payload")
