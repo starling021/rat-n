@@ -113,7 +113,7 @@ class mouse:
 
     def prompt_run_server(self):
         if os.path.exists(".nopayload"):
-            pass
+            return
         else:
             if input(h.WW+"[?]"+h.WHITE+" Start listener? (y/n): "+h.ENDC).strip(" ") == "y":
                 if input(h.WW+"[?]"+h.WHITE+" MultiHandler? (y/n): "+h.ENDC).strip(" ") == "y":
