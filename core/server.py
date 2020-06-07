@@ -151,10 +151,10 @@ class Server:
     def listen_for_stager(self):
         identification_shell_command = 'com=$(uname -p); if [ $com != "unknown" ]; then echo $com; else uname; fi\n'
         
-        h.info_general("Binding to "+lhost+":"+str(lport)+"...")
-        sr = os.system("ping -c 1 "+lhost+" >/dev/null 2>&1")
+        h.info_general("Binding to "+self.host+":"+str(self.lport)+"...")
+        sr = os.system("ping -c 1 "+self.host+" >/dev/null 2>&1")
         if sr != 0:
-            h.info_error("Failed to bind to "+lhost+":"+str(lport)+"!")
+            h.info_error("Failed to bind to "+self.host+":"+str(self.port)+"!")
             return
         s = socket.socket()
         s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
