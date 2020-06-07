@@ -55,8 +55,8 @@ class payload:
 				h.info_error("Local directory: "+path+": does not exist!")
 				g = os.environ['HOME']
 				os.chdir(g + "/mouse")
-				os.system("touch .nopayload")
 				input("Press enter to continue...").strip(" ")
+				os.system("touch .nopayload")
 				return
 		else:
 			direct = os.path.split(path)[0]
@@ -71,15 +71,15 @@ class payload:
 					h.info_error("Error: "+direct+": not a directory!")
 					g = os.environ['HOME']
 					os.chdir(g + "/mouse")
-					os.system("touch .nopayload")
 					input("Press enter to continue...").strip(" ")
+					os.system("touch .nopayload")
 					return
 			else:
 				h.info_error("Local directory: "+direct+": does not exist!")
 				g = os.environ['HOME']
 				os.chdir(g + "/mouse")
-				os.system("touch .nopayload")
 				input("Press enter to continue...").strip(" ")
+				os.system("touch .nopayload")
 				return
 		h.info_general("Creating payload...")
 		payload = """\
