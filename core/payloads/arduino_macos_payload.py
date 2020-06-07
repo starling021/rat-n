@@ -51,7 +51,8 @@ class payload:
 					payload_save_path = path + "/payload.ino"
 			else:
 				h.info_error("Local directory: "+path+": does not exist!")
-				exit
+				input("Press enter to continue...").strip(" ")
+				return
 		else:
 			direct = os.path.split(path)[0]
 			if direct == "":
@@ -63,10 +64,12 @@ class payload:
 					payload_save_path = path
 				else:
 					h.info_error("Error: "+direct+": not a directory!")
-					exit
+					input("Press enter to continue...").strip(" ")
+					return
 			else:
 				h.info_error("Local directory: "+direct+": does not exist!")
-				exit
+				input("Press enter to continue...").strip(" ")
+				return
 		h.info_general("Creating payload...")
 		payload = """\
 #include "Keyboard.h"
