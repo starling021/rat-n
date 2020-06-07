@@ -37,13 +37,13 @@ class payload:
 			os.chdir(w)
 			if os.path.exists(icon):
 				if os.path.isdir(icon):
-					throw(("Error: "+run+": is a directory!"))
+					h.info_error("Error: "+run+": is a directory!")
 					g = os.environ['HOME']
 					os.chdir(g + "/mouse")
 					input("Press enter to continue...").strip(" ")
 					return
 			else:
-				throw(("Input file: "+run+": does not exist!"))
+				h.info_error("Input file: "+run+": does not exist!")
 				g = os.environ['HOME']
 				os.chdir(g + "/mouse")
 				input("Press enter to continue...").strip(" ")
