@@ -70,19 +70,9 @@ class Server:
             choice = input(h.info_general_raw("Local host: ")).strip(" ")
             if choice != "":
                 lhost = choice
-            while True:
-                lport = input(h.info_general_raw("Local port: ")).strip(" ")
-                if not lport:
-                    lport = 4444
-                try:
-                    lport = int(lport)
-                except ValueError:
-                    h.info_error("Invalid port, please enter a valid integer.")
-                    continue
-                if lport < 1024:
-                    h.info_error("Invalid port, please enter a value >= 1024.")
-                    continue
-                break
+            lport = input(h.info_general_raw("Local port: ")).strip(" ")
+            if not lport:
+                lport = 4444
             self.host = socket.gethostbyname(lhost)
             self.port = lport
             return True
@@ -156,10 +146,14 @@ class Server:
         if sr != 0:
             h.info_error("Failed to bind to "+self.host+":"+str(self.port)+"!")
             return
-        s = socket.socket()
-        s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-        s.bind(('0.0.0.0', self.port))
-        s.listen(1)
+        try:
+            s = socket.socket()
+            s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+            s.bind(('0.0.0.0', self.port))
+            s.listen(1)
+        except:
+            h.info_error("Failed to bind to "+self.host+":"+str(self.port)+"!")
+            return
         h.info_general("Listening on port "+str(self.port)+"...")
         try:
             conn, addr = s.accept()
