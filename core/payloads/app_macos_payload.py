@@ -70,6 +70,7 @@ class payload:
 			else:
 				h.info_error("Local directory: "+direct+": does not exist!")
 				exit
+		h.info_general("Creating payload...")
 		os.system("cp -r data/app/payload.app "+path+" > /dev/null")
 		os.system("mv "+icon+" "+path+"/Contents/Resources/payload.icns > /dev/null")
 		payload = """\
