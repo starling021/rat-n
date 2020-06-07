@@ -154,7 +154,7 @@ class Server:
         h.info_general("Binding to "+lhost+":"+str(lport)+"...")
         sr = os.system("ping -c 1 "+lhost+" >/dev/null 2>&1")
         if sr != 0:
-            h.info_error("Failed to bind to "+lhost+":"+str(lport)+"...")
+            h.info_error("Failed to bind to "+lhost+":"+str(lport)+"!")
             return
         s = socket.socket()
         s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
