@@ -91,4 +91,3 @@ DELAY 500"""
 		f.write(payload)
 		f.close()
 		h.info_success("Saved to " + payload_save_path + "!")
-		os.system("touch .nopayload")
