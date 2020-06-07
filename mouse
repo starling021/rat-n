@@ -213,7 +213,8 @@ class mouse:
             except KeyboardInterrupt:
                 break
             except Exception as e:
-                print(e)
+                h.info_error(e)
+                input("Press enter to continue...").strip(" ")
                 break
 
 
@@ -222,7 +223,7 @@ class mouse:
             try:
                 h.clear()
                 if err:
-                    print(err)
+                    h.info_error(err)
                 if self.server.debug:
                     print("Debug Mode: on")
                 sys.stdout.write(self.banner_text)
@@ -247,7 +248,6 @@ class mouse:
                     continue
                     # TODO: quit socket listener
             except KeyboardInterrupt:
-                
                 exit()
 
 
