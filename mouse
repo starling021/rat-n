@@ -171,6 +171,7 @@ class mouse:
         print(h.WHITE+"-"*20)
         print("")
         os.system("chmod +x etc/update.sh && etc/update.sh")
+        input("Press enter to continue...").strip(" ")
 
     def choose_payload(self):
         os.system("clear")
