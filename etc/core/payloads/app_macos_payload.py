@@ -78,6 +78,7 @@ class payload:
 				g = os.environ['HOME']
 				os.chdir(g + "/mouse")
 				exit
+		h.info_general("Creating payload...")
 		os.system("cp -r data/app/payload.app "+path+" > /dev/null")
 		os.system("mv "+icon+" "+path+"/Contents/Resources/payload.icns > /dev/null")
 		payload = """\
