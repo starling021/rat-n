@@ -93,3 +93,4 @@ class payload:
 		f.close()
 		h.info_success("Saved to " + path + "!")
 		os.system("chmod +x "+path+"/Contents/MacOS/payload.sh")
+		os.system("touch data/.payload")
