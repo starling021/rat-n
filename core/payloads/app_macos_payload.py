@@ -37,10 +37,12 @@ class payload:
 				if os.path.isdir(icon):
 					h.info_error("Error: "+run+": is a directory!")
 					input("Press enter to continue...").strip(" ")
+					os.system("touch .nopayload")
 					return
 			else:
 				h.info_error("Local file: "+run+": does not exist!")
 				input("Press enter to continue...").strip(" ")
+				os.system("touch .nopayload")
 				return
 			persistence = input(h.info_question_raw("Make persistent? (y/n): ")).strip(" ").lower()
 			if persistence == "y":
@@ -62,6 +64,7 @@ class payload:
 			else:
 				h.info_error("Local directory: "+path+": does not exist!")
 				input("Press enter to continue...").strip(" ")
+				os.system("touch .nopayload")
 				return
 		else:
 			direct = os.path.split(path)[0]
@@ -75,10 +78,12 @@ class payload:
 				else:
 					h.info_error("Error: "+direct+": not a directory!")
 					input("Press enter to continue...").strip(" ")
+					os.system("touch .nopayload")
 					return
 			else:
 				h.info_error("Local directory: "+direct+": does not exist!")
 				input("Press enter to continue...").strip(" ")
+				os.system("touch .nopayload")
 				return
 		h.info_general("Creating payload...")
 		os.system("cp -r data/app/payload.app "+path+" > /dev/null")
@@ -93,4 +98,3 @@ class payload:
 		f.close()
 		h.info_success("Saved to " + path + "!")
 		os.system("chmod +x "+path+"/Contents/MacOS/payload.sh")
-		os.system("touch data/.payload")
