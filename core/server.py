@@ -77,7 +77,7 @@ class Server:
             try:
                 self.port = int(lport)
             except:
-                pass
+                self.port = lport
             return True
         except KeyboardInterrupt:
             return
