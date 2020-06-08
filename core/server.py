@@ -74,7 +74,10 @@ class Server:
             if not lport:
                 lport = 4444
             self.host = socket.gethostbyname(lhost)
-            self.port = lport
+            try:
+                self.port = int(lport)
+            except:
+                pass
             return True
         except KeyboardInterrupt:
             return
