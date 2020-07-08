@@ -21,6 +21,9 @@
   <a href="https://twitter.com/entynetproject">
     <img src="https://img.shields.io/badge/twitter-entynetproject-blue.svg">
  </a>
+  <a href="https://github.com/neoneggplant/EggShell">
+    <img src="https://img.shields.io/badge/based%20on-EggShell-red.svg">
+ </a>
 </p>
 
 ![mouse](https://user-images.githubusercontent.com/54115104/86508316-d6610900-bde7-11ea-8e6f-ce95ef15b5db.png)
